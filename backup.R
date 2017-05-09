@@ -36,7 +36,7 @@ mapa <- function(){
 
     points(ap, col="blue")
     
-    symbols(x=ap[c(42:47, ,1], y=ap[42:47,2], circles=rep(2500,6), add=T, inches=F, lty=2)
+    symbols(x=ap[c(42:47, 55:60),1], y=ap[c(42:47, 55:60),2], circles=rep(2500,12), add=T, inches=F, lty=2)
 
 legend('bottom', legend=c('Cloudlet', 'AP', 'Path', 'Handoff', 'Migration'), lwd=c(2, 2, 2, 8, 0.1), pch=c(1, 1, 20, 20, 20), title='Lengenda', bg='white', col=c('red', 'blue', 'blue', 'green', 'red'), ncol=3)
 #, inset=c(0,-0.4))
