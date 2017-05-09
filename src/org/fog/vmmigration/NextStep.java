@@ -1,6 +1,16 @@
 package org.fog.vmmigration;
 
+import java.io.BufferedWriter;
+import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
+import java.io.FileWriter;
+import java.io.IOException;
+import java.io.OutputStreamWriter;
+import java.io.PrintWriter;
+import java.io.UnsupportedEncodingException;
+import java.io.Writer;
 import java.util.List;
+import java.util.Queue;
 import java.util.Random;
 
 import org.cloudbus.cloudsim.core.CloudSim;
@@ -22,17 +32,50 @@ public class NextStep {
 //	}
 
 //	public  int contNextStep = 0;
+	
+	private static void saveMobility(MobileDevice st){
+		System.out.println(st.getMyId() + " Position: " + st.getCoord().getCoordX() + ", " + st.getCoord().getCoordY() + " Direction: " + st.getDirection() + " Speed: " + st.getSpeed());
+		System.out.println("Source AP: " + st.getSourceAp() + " Dest AP: " + st.getDestinationAp() + " Host: " + st.getHost().getId());
+		if(st.getDestinationServerCloudlet() == null){
+			System.out.print("Local server: " + st.getVmLocalServerCloudlet().getName() + " dest server: " + st.getDestinationServerCloudlet());		
+		}
+		else{
+			System.out.print("Local server: " + st.getVmLocalServerCloudlet().getName() + " dest server: " + st.getDestinationServerCloudlet().getName());
+		}
+		try(FileWriter fw = new FileWriter(st.getMyId()+"route.txt", true);
+			    BufferedWriter bw = new BufferedWriter(fw);
+			    PrintWriter out = new PrintWriter(bw))
+		{
+			out.println(st.getMyId() + "\t" + st.getCoord().getCoordX() + "\t" + st.getCoord().getCoordY() + "\t" + st.getDirection() + "\t" + st.getSpeed());
+		}
+		catch (UnsupportedEncodingException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		catch (FileNotFoundException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+	}
 
 	public static  void nextStep(List<FogDevice> serverCloudlets, List<ApDevice> apDevices, List<MobileDevice> smartThings, 
-			Coordinate coordDevices, int stepPolicy, int seed) {
+			Queue<String[]> q, Coordinate coordDevices, int stepPolicy, int seed) {
 		MobileDevice st=null;
 		Coordinate coordinate = new Coordinate();
 		for(int i = 0;i<smartThings.size();i++){//It makes the new position according direction and speed
 			st=smartThings.get(i);
-		//	if((st.getSourceAp()!=null)&&
+				//String[] s = q.peek();
+				//System.out.println(q.size()+" "+s[0]+" "+ s[1]+" "+ s[2]+" "+s[3]);
+			//	if((st.getSourceAp()!=null)&&
 //			if(st.isStatus()&&
-			if((st.getDirection()!=Directions.NONE))
-				coordinate.newCoordinate(st, stepPolicy, coordDevices);//1 -> It means that only one step 
+			if((st.getDirection()!=Directions.NONE)){
+				coordinate.newCoordinate(st, q);
+//				coordinate.newCoordinate(st, stepPolicy, coordDevices);//1 -> It means that only one step 
+			}
 			if(st.getCoord().getCoordX()==-1){
 			
 				if(st.getSourceServerCloudlet()!=null){
@@ -80,11 +123,14 @@ public class NextStep {
 					smartThings.remove(st);
 				}
 			}
+			else{
+				saveMobility(st);
+			}
 		}
 
-		Random rand = new Random((long)(CloudSim.clock())*seed);
-		int direction=0, speed=0,exchange=0;
-
+//		Random rand = new Random((long)(CloudSim.clock())*seed);
+//		int direction=0, speed=0,exchange=0;
+//
 //		for(MobileDevice stt: smartThings){//It exchange the x% of the cases
 //			exchange = rand.nextInt(100);// 4 -> 25%, 5 -> 20%, 10 -> 10%, 20 -> 5%, 50 -> 2% and 100 -> 1%
 //

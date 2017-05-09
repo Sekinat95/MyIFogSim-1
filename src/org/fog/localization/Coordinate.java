@@ -1,9 +1,11 @@
 package org.fog.localization;
 
 import java.util.Arrays;
+import java.util.Queue;
 
 import org.fog.entities.*;
 import org.fog.vmmobile.constants.*;
+import org.fog.vmmobile.constants.Directions;
 
 
 public class Coordinate { //extends Map {
@@ -36,6 +38,69 @@ public class Coordinate { //extends Map {
 		//	System.out.println("Removing SmartThing: "+smartThing.getId());
 		smartThing.setCoord((int) -1, (int)-1);
 	}
+	
+	public double radiansToDegree (Double direction){
+		
+		double degree = direction*(180/Math.PI);
+		
+		if (degree < 0)
+			degree += 360;
+	
+		return degree;
+	}
+	
+	public int convertDirection(Double direction){
+		
+		double degree = radiansToDegree(direction);
+		
+		if (degree > 337.5 && degree <= 22.5)
+			return Directions.EAST;
+		else if (degree > 22.5 && degree <= 67.5)
+			return Directions.NORTHEAST;
+		else if (degree > 67.5 && degree <= 112.5)
+			return Directions.NORTH;
+		else if (degree > 112.5 && degree <= 157.5)
+			return Directions.NORTHWEST;
+		else if (degree > 157.5 && degree <= 202.5)
+			return Directions.NORTHWEST;
+		else if (degree > 202.5 && degree <= 247.5)
+			return Directions.SOUTHWEST;
+		else if (degree > 247.5 && degree <= 292.5)
+			return Directions.SOUTH;
+		else
+			return Directions.SOUTHEAST;
+	}
+	
+	public void newCoordinate(MobileDevice smartThing, Queue<String[]>q){
+		
+		if(!q.isEmpty()){
+			String[] coodinates = q.poll();
+				
+			int direction = convertDirection(Double.parseDouble(coodinates[0]));
+			int x = (int) Double.parseDouble(coodinates[1]);
+			int y = (int) Double.parseDouble(coodinates[2]);
+			int speed = (int) Double.parseDouble(coodinates[3]);
+		
+				
+			//System.out.println("x: " + x+" y: "+y+"\tx: " + coodinates[1]+" y: "+coodinates[2]);
+				
+			if(x<0||y<0||x>=MaxAndMin.MAX_X||y>=MaxAndMin.MAX_Y){//It checks the CoordDevices limits.
+				desableSmartThing(smartThing);
+					//					coordDevices.setPositions(-1, oldCoordX, oldCoordY);
+		//			break;
+			}
+			else{
+				smartThing.setDirection(direction);
+				smartThing.getCoord().setCoordX(x);
+				smartThing.getCoord().setCoordY(y);
+				smartThing.setSpeed(speed);
+			}				
+		}
+		else{
+			desableSmartThing(smartThing);
+		}
+	}
+	
 	public  void newCoordinate(MobileDevice smartThing, int add, Coordinate coordDevices){//(pointUSER user,float add)
 
 		if(smartThing.getSpeed()!=0){

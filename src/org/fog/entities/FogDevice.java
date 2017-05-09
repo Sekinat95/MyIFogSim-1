@@ -1,5 +1,11 @@
 package org.fog.entities;
 
+import java.io.BufferedWriter;
+import java.io.FileNotFoundException;
+import java.io.FileWriter;
+import java.io.IOException;
+import java.io.PrintWriter;
+import java.io.UnsupportedEncodingException;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.HashSet;
@@ -615,7 +621,12 @@ public class FogDevice extends PowerDatacenter {
 		// TODO Auto-generated method stub
 
 		MobileDevice smartThing =(MobileDevice) ev.getData();
-
+		System.out.println("local " + smartThing.getVmLocalServerCloudlet().getName() + " "  + smartThing.getVmLocalServerCloudlet().getActiveApplications() +
+				" apps " + smartThing.getVmLocalServerCloudlet().getApplicationMap().values().toString());
+		System.out.println("dest: " + smartThing.getDestinationServerCloudlet().getName() + " "  + smartThing.getDestinationServerCloudlet().getActiveApplications() +
+				" apps " + smartThing.getDestinationServerCloudlet().getApplicationMap().values().toString());
+		System.out.println("smartthing id: " + smartThing.getMyId());
+		smartThing.getVmLocalServerCloudlet().applicationMap.values();
 		Application app = smartThing.getVmLocalServerCloudlet().applicationMap.get("MyApp_vr_game"+smartThing.getMyId());
 		if(app==null){
 			System.out.println("Clock: "+CloudSim.clock()+" - FogDevice.java - App == Null");
@@ -788,6 +799,9 @@ public class FogDevice extends PowerDatacenter {
 					LogMobile.debug("FogDevice.java", smartThing.getName()+" was scheduled the DELIVERY_VM  from "+
 							smartThing.getVmLocalServerCloudlet().getName()+" to "
 							+smartThing.getDestinationServerCloudlet().getName());
+					System.out.println("FogDevice.java"+ smartThing.getName()+" was scheduled the DELIVERY_VM  from "+
+							smartThing.getVmLocalServerCloudlet().getName()+" to "
+							+smartThing.getDestinationServerCloudlet().getName());
 
 					sendNow(smartThing.getDestinationServerCloudlet().getId(),MobileEvents.VM_MIGRATE,smartThing);
 					Map<String,Object> ma;
@@ -813,6 +827,8 @@ public class FogDevice extends PowerDatacenter {
 					else{
 						sendNow(smartThing.getVmLocalServerCloudlet().getId(),CloudSimTags.VM_MIGRATE,ma);
 						LogMobile.debug("FogDevice.java", "CloudSim.VM_MIGRATE was scheduled  to VM#: "+ smartThing.getVmMobileDevice().getId()+ " HOST#: "+
+								smartThing.getDestinationServerCloudlet().getHost().getId());
+						System.out.println("FogDevice.java" + " CloudSim.VM_MIGRATE was scheduled  to VM#: "+ smartThing.getVmMobileDevice().getId()+ " HOST#: "+
 								smartThing.getDestinationServerCloudlet().getHost().getId());
 						//	sendNow(smartThing.getDestinationServerCloudlet().getId(), FogEvents.APP_SUBMIT, applicationMap.get("MyApp_vr_game"+smartThing.getMyId()));
 					}
@@ -957,6 +973,7 @@ public class FogDevice extends PowerDatacenter {
 						MyStatistics.getInstance().getInitialTimeWithoutConnection().remove(st.getMyId());
 						st.setLockedToMigration(true);
 						st.setTimeFinishDeliveryVm(-1.0);
+						saveMigration(st);
 					}
 					else {
 						sendNow(getId(),MobileEvents.NO_MIGRATION,st);
@@ -973,6 +990,29 @@ public class FogDevice extends PowerDatacenter {
 		}
 	}
 
+	
+	private static void saveMigration(MobileDevice st){
+		System.out.println("MIGRATION " +st.getMyId() + " Position: " + st.getCoord().getCoordX() + ", " + st.getCoord().getCoordY() + " Direction: " + st.getDirection() + " Speed: " + st.getSpeed());
+		try(FileWriter fw = new FileWriter(st.getMyId()+"migration.txt", true);
+			    BufferedWriter bw = new BufferedWriter(fw);
+			    PrintWriter out = new PrintWriter(bw))
+		{
+			out.println(st.getMyId() + "\t" + st.getCoord().getCoordX() + "\t" + st.getCoord().getCoordY() + "\t" + st.getDirection() + "\t" + st.getSpeed());
+		}
+		catch (UnsupportedEncodingException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		catch (FileNotFoundException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+	}
+	
 
 	/**
 	 * Perform miscellaneous resource management tasks

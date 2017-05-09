@@ -1,10 +1,18 @@
 package org.fog.placement;
 
+import java.io.BufferedWriter;
+import java.io.FileNotFoundException;
+import java.io.FileWriter;
+import java.io.IOException;
+import java.io.PrintWriter;
+import java.io.UnsupportedEncodingException;
 import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.HashMap;
+import java.util.LinkedList;
 import java.util.List;
 import java.util.Map;
+import java.util.Queue;
 import java.util.Map.Entry;
 import java.util.Random;
 import java.util.Set;
@@ -51,6 +59,8 @@ public class MobileController extends SimEntity {
 	private static List<MobileDevice> smartThings;
 	private static List<ApDevice> apDevices;
 	private static List<FogBroker> brokerList;
+    private static Queue<String[]> q;
+
 
 	private Map<String, Application> applications;
 	private Map<String, Integer> appLaunchDelays;
@@ -63,7 +73,7 @@ public class MobileController extends SimEntity {
 	public MobileController(){
 
 	}
-	public MobileController(String name, List<FogDevice> serverCloudlets, List<ApDevice> apDevices, List<MobileDevice> smartThings,List<FogBroker> brokers, ModuleMapping moduleMapping
+	public MobileController(String name, List<FogDevice> serverCloudlets, List<ApDevice> apDevices, List<MobileDevice> smartThings,List<FogBroker> brokers, Queue<String[]> q, ModuleMapping moduleMapping
 			, int migPointPolicy, int migStrategyPolicy, int stepPolicy, Coordinate coordDevices, int seed, boolean migrationAble) {
 		// TODO Auto-generated constructor stub
 		super(name);
@@ -79,6 +89,7 @@ public class MobileController extends SimEntity {
 		setApDevices(apDevices);
 		setSmartThings(smartThings);
 		setBrokerList(brokers);
+		setQueue(q);
 		setMigPointPolicy(migPointPolicy);
 		setMigStrategyPolicy(migStrategyPolicy);
 		setStepPolicy(stepPolicy);
@@ -290,6 +301,7 @@ public class MobileController extends SimEntity {
 			NextStep.nextStep(getServerCloudlets()
 					, getApDevices()
 					, getSmartThings()
+					, getQueue()
 					, getCoordDevices()
 					, getStepPolicy()
 					, getSeed());
@@ -448,6 +460,8 @@ public class MobileController extends SimEntity {
 							send(st.getSourceAp().getId(),handoffTime,MobileEvents.START_HANDOFF,st);
 							send(st.getDestinationAp().getId(),handoffLocked,MobileEvents.UNLOCKED_HANDOFF,st);
 							MyStatistics.getInstance().setTotalHandoff(1);
+							
+							saveHandOff(st);
 
 							LogMobile.debug("MobileController.java", st.getName()+" handoff was scheduled! "+"SourceAp: "+st.getSourceAp().getName()
 									+" NextAp: "+st.getDestinationAp().getName()+"\n");
@@ -522,6 +536,28 @@ public class MobileController extends SimEntity {
 					//To do something
 				}
 			}
+		}
+	}
+	
+	private static void saveHandOff(MobileDevice st){
+		System.out.println("HANDOFF "+st.getMyId() + " Position: " + st.getCoord().getCoordX() + ", " + st.getCoord().getCoordY() + " Direction: " + st.getDirection() + " Speed: " + st.getSpeed());
+		try(FileWriter fw = new FileWriter(st.getMyId()+"handoff.txt", true);
+			    BufferedWriter bw = new BufferedWriter(fw);
+			    PrintWriter out = new PrintWriter(bw))
+		{
+			out.println(st.getMyId() + "\t" + st.getCoord().getCoordX() + "\t" + st.getCoord().getCoordY() + "\t" + st.getDirection() + "\t" + st.getSpeed());
+		}
+		catch (UnsupportedEncodingException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		catch (FileNotFoundException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
 		}
 	}
 	
@@ -792,6 +828,12 @@ public class MobileController extends SimEntity {
 	}
 	public static void setApDevices(List<ApDevice> apDevices) {
 		MobileController.apDevices = apDevices;
+	}
+	public static Queue<String[]> getQueue() {
+		return q;
+	}
+	public static void setQueue(Queue<String[]> q) {
+		MobileController.q = q;
 	}
 	public static Random getRand() {
 		return rand;

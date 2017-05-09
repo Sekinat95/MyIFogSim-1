@@ -1,4 +1,4 @@
-cscope 15 $HOME/Downloads/myiFogSimVmMobile               0001212713
+cscope 15 $HOME/Downloads/myiFogSimVmMobile               0001220101
 	@src/org/cloudbus/cloudsim/Cloudlet.java
 
 9 
@@ -138137,7 +138137,47 @@ MobeCÚŒŞËr
 ¡
 )){
 
-95 if(
+107 if(
+¡
+ !ğ
+nuÎ
+){
+
+108 if(
+¡
+.
+	`g‘SourûAp
+(è!ğ
+nuÎ
+){
+
+109 if(
+¡
+.
+	`g‘SourûAp
+().
+	`g‘S”v”CloudËtToVmMig¿‹
+(è!ğ
+nuÎ
+){
+
+110 if(
+¡
+.
+	`g‘VmLoÿlS”v”CloudËt
+(è!ğ
+nuÎ
+){
+
+111 
+Sy¡em
+.
+out
+.
+	`´šn
+("Nao NULO");
+
+112 if(
 ¡
 .
 	`g‘SourûAp
@@ -138149,7 +138189,15 @@ MobeCÚŒŞËr
 	`g‘VmLoÿlS”v”CloudËt
 ())){
 
-96 
+113 
+Sy¡em
+.
+out
+.
+	`´šn
+("Primeiro IF");
+
+114 
 d–ay
  +ğ
 N‘wÜkTİŞogy
@@ -138163,7 +138211,7 @@ N‘wÜkTİŞogy
 	`g‘SourûAp
 ().getId())
 
-97 + 
+115 + 
 N‘wÜkTİŞogy
 .
 	`g‘D–ay
@@ -138177,7 +138225,7 @@ N‘wÜkTİŞogy
 	`g‘VmLoÿlS”v”CloudËt
 ().getId())
 
-98 + 
+116 + 
 L©’cyByDi¡ªû
 .
 	`Ï‹ncyCÚÃùiÚ
@@ -138187,7 +138235,15 @@ L©’cyByDi¡ªû
 	`g‘VmLoÿlS”v”CloudËt
 (), st);
 
-101 
+119 
+Sy¡em
+.
+out
+.
+	`´šn
+("Segundo IF");
+
+120 
 sum
  = 
 N‘wÜkTİŞogy
@@ -138201,7 +138257,7 @@ N‘wÜkTİŞogy
 	`g‘SourûAp
 ().getId())
 
-102 + 
+121 + 
 N‘wÜkTİŞogy
 .
 	`g‘D–ay
@@ -138215,7 +138271,7 @@ N‘wÜkTİŞogy
 	`g‘S”v”CloudËt
 ().getId())
 
-104 + 
+123 + 
 N‘wÜkTİŞogy
 .
 	`g‘D–ay
@@ -138231,7 +138287,7 @@ N‘wÜkTİŞogy
 	`g‘VmLoÿlS”v”CloudËt
 ().getId())
 
-105 + 
+124 + 
 L©’cyByDi¡ªû
 .
 	`Ï‹ncyCÚÃùiÚ
@@ -138241,13 +138297,67 @@ L©’cyByDi¡ªû
 	`g‘VmLoÿlS”v”CloudËt
 (), st);
 
-106 
+125 
 d–ay
  +ğ
 sum
 ;
 
-112 
+129 
+Sy¡em
+.
+out
+.
+	`´šn
+("st.getVmLocalServerCloudlet() NULOOOOOOOOOOOOOOOOOOOOOOOOO");
+
+130 
+¡
+.
+	`g‘VmLoÿlS”v”CloudËt
+();
+
+135 
+¡
+.
+	`g‘SourûAp
+().
+	`g‘S”v”CloudËtToVmMig¿‹
+();
+
+139 
+Sy¡em
+.
+out
+.
+	`´šn
+("GetSourceAP NULOOOOOOOOO");
+
+140 
+¡
+.
+	`g‘SourûAp
+();
+
+144 
+Sy¡em
+.
+out
+.
+	`´šn
+("st NULOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOO");
+
+145 
+Sy¡em
+.
+out
+.
+	`´šn
+(
+¡
+);;
+
+150 
 MySti¡ics
 .
 	`g‘In¡ªû
@@ -138277,7 +138387,7 @@ tu¶e
 	`g‘Tu¶eTy³
 ());
 
-113 if(
+151 if(
 d–ay
 >
 TimeK“³r
@@ -138293,7 +138403,7 @@ loİ
 	`g‘LoİId
 ())){
 
-114 
+152 
 TimeK“³r
 .
 	`g‘In¡ªû
@@ -138309,7 +138419,7 @@ loİ
 d–ay
 );
 
-116 
+154 
 TimeK“³r
 .
 	`g‘In¡ªû
@@ -138323,7 +138433,7 @@ tu¶e
 	`g‘Aùu®Tu¶eId
 ());
 
-117 
+155 
 ÃwAv”age
  = (
 cu¼’tAv”age
@@ -138333,7 +138443,7 @@ cu¼’tCouÁ
 d–ay
 )/(currentCount+1);
 
-118 
+156 
 TimeK“³r
 .
 	`g‘In¡ªû
@@ -138349,7 +138459,7 @@ loİ
 ÃwAv”age
 );
 
-119 
+157 
 TimeK“³r
 .
 	`g‘In¡ªû
@@ -138365,39 +138475,39 @@ loİ
 cu¼’tCouÁ
 +1);
 
-123 
+162 
 	}
 }
 
-125 @
+164 @
 Ov”ride
 
 
-126 
+165 
 public
  
 	$shutdownEÁ™y
 () {
 
-128 
+167 
 	}
 }
 
-130 
+169 
 public
  
 	$g‘G©ewayDeviûId
 () {
 
-131  
+170  
 g©ewayDeviûId
 ;
 
-132 
+171 
 	}
 }
 
-134 
+173 
 public
  
 	$£tG©ewayDeviûId
@@ -138405,17 +138515,17 @@ public
 g©ewayDeviûId
 ) {
 
-135 
+174 
 this
 .
 g©ewayDeviûId
  = gatewayDeviceId;
 
-136 
+175 
 	}
 }
 
-138 
+177 
 public
  
 GeoLoÿtiÚ
@@ -138423,15 +138533,15 @@ GeoLoÿtiÚ
 	$g‘GeoLoÿtiÚ
 () {
 
-139  
+178  
 geoLoÿtiÚ
 ;
 
-140 
+179 
 	}
 }
 
-142 
+181 
 public
  
 	$£tGeoLoÿtiÚ
@@ -138441,31 +138551,31 @@ GeoLoÿtiÚ
 geoLoÿtiÚ
 ) {
 
-143 
+182 
 this
 .
 geoLoÿtiÚ
  = geoLocation;
 
-144 
+183 
 	}
 }
 
-146 
+185 
 public
  
 	$g‘U£rId
 () {
 
-147  
+186  
 u£rId
 ;
 
-148 
+187 
 	}
 }
 
-150 
+189 
 public
  
 	$£tU£rId
@@ -138473,17 +138583,17 @@ public
 u£rId
 ) {
 
-151 
+190 
 this
 .
 u£rId
  = userId;
 
-152 
+191 
 	}
 }
 
-154 
+193 
 public
  
 SŒšg
@@ -138491,15 +138601,15 @@ SŒšg
 	$g‘AµId
 () {
 
-155  
+194  
 ­pId
 ;
 
-156 
+195 
 	}
 }
 
-158 
+197 
 public
  
 	$£tAµId
@@ -138509,17 +138619,17 @@ SŒšg
 ­pId
 ) {
 
-159 
+198 
 this
 .
 ­pId
  =‡ppId;
 
-160 
+199 
 	}
 }
 
-162 
+201 
 public
  
 SŒšg
@@ -138527,15 +138637,15 @@ SŒšg
 	$g‘Aùu©ÜTy³
 () {
 
-163  
+202  
 aùu©ÜTy³
 ;
 
-164 
+203 
 	}
 }
 
-166 
+205 
 public
  
 	$£tAùu©ÜTy³
@@ -138545,17 +138655,17 @@ SŒšg
 aùu©ÜTy³
 ) {
 
-167 
+206 
 this
 .
 aùu©ÜTy³
  =‡ctuatorType;
 
-168 
+207 
 	}
 }
 
-170 
+209 
 public
  
 AµliÿtiÚ
@@ -138563,15 +138673,15 @@ AµliÿtiÚ
 	$g‘Aµ
 () {
 
-171  
+210  
 ­p
 ;
 
-172 
+211 
 	}
 }
 
-174 
+213 
 public
  
 	$£tAµ
@@ -138581,31 +138691,31 @@ AµliÿtiÚ
 ­p
 ) {
 
-175 
+214 
 this
 .
 ­p
  =‡pp;
 
-176 
+215 
 	}
 }
 
-178 
+217 
 public
  
 	$g‘L©’cy
 () {
 
-179  
+218  
 Ï‹ncy
 ;
 
-180 
+219 
 	}
 }
 
-182 
+221 
 public
  
 	$£tL©’cy
@@ -138613,31 +138723,31 @@ public
 Ï‹ncy
 ) {
 
-183 
+222 
 this
 .
 Ï‹ncy
  =†atency;
 
-184 
+223 
 	}
 }
 
-186 
+225 
 public
  
 	$g‘MyId
 () {
 
-187  
+226  
 myId
 ;
 
-188 
+227 
 	}
 }
 
-190 
+229 
 public
  
 	$£tMyId
@@ -138645,13 +138755,13 @@ public
 myId
 ) {
 
-191 
+230 
 this
 .
 myId
  = myId;
 
-192 
+231 
 	}
 }
 
@@ -139824,9 +139934,9 @@ impÜt
  
 	gjava
 .
-	gut
+	gio
 .
-	gA¼ayLi¡
+	gBufã»dWr™”
 ;
 
 4 
@@ -139834,9 +139944,9 @@ impÜt
  
 	gjava
 .
-	gut
+	gio
 .
-	gHashM­
+	gFeNÙFoundExû±iÚ
 ;
 
 5 
@@ -139844,9 +139954,9 @@ impÜt
  
 	gjava
 .
-	gut
+	gio
 .
-	gHashS‘
+	gFeWr™”
 ;
 
 6 
@@ -139854,9 +139964,9 @@ impÜt
  
 	gjava
 .
-	gut
+	gio
 .
-	gLškedLi¡
+	gIOExû±iÚ
 ;
 
 7 
@@ -139864,9 +139974,9 @@ impÜt
  
 	gjava
 .
-	gut
+	gio
 .
-	gLi¡
+	gPrštWr™”
 ;
 
 8 
@@ -139874,9 +139984,9 @@ impÜt
  
 	gjava
 .
-	gut
+	gio
 .
-	gM­
+	gUnsuµÜ‹dEncodšgExû±iÚ
 ;
 
 9 
@@ -139886,7 +139996,7 @@ impÜt
 .
 	gut
 .
-	gQueue
+	gA¼ayLi¡
 ;
 
 10 
@@ -139896,10 +140006,70 @@ impÜt
 .
 	gut
 .
-	gS‘
+	gHashM­
+;
+
+11 
+impÜt
+ 
+	gjava
+.
+	gut
+.
+	gHashS‘
 ;
 
 12 
+impÜt
+ 
+	gjava
+.
+	gut
+.
+	gLškedLi¡
+;
+
+13 
+impÜt
+ 
+	gjava
+.
+	gut
+.
+	gLi¡
+;
+
+14 
+impÜt
+ 
+	gjava
+.
+	gut
+.
+	gM­
+;
+
+15 
+impÜt
+ 
+	gjava
+.
+	gut
+.
+	gQueue
+;
+
+16 
+impÜt
+ 
+	gjava
+.
+	gut
+.
+	gS‘
+;
+
+18 
 impÜt
  
 	gÜg
@@ -139915,7 +140085,7 @@ impÜt
 	gPaœ
 ;
 
-13 
+19 
 impÜt
  
 	gÜg
@@ -139927,7 +140097,7 @@ impÜt
 	gCloudËt
 ;
 
-14 
+20 
 impÜt
  
 	gÜg
@@ -139939,7 +140109,7 @@ impÜt
 	gHo¡
 ;
 
-15 
+21 
 impÜt
  
 	gÜg
@@ -139951,7 +140121,7 @@ impÜt
 	gLog
 ;
 
-16 
+22 
 impÜt
  
 	gÜg
@@ -139963,7 +140133,7 @@ impÜt
 	gPe
 ;
 
-17 
+23 
 impÜt
  
 	gÜg
@@ -139975,7 +140145,7 @@ impÜt
 	gStÜage
 ;
 
-18 
+24 
 impÜt
  
 	gÜg
@@ -139987,7 +140157,7 @@ impÜt
 	gVm
 ;
 
-19 
+25 
 impÜt
  
 	gÜg
@@ -139999,7 +140169,7 @@ impÜt
 	gVmAÎoÿtiÚPŞicy
 ;
 
-20 
+26 
 impÜt
  
 	gÜg
@@ -140013,7 +140183,7 @@ impÜt
 	gCloudSim
 ;
 
-21 
+27 
 impÜt
  
 	gÜg
@@ -140027,7 +140197,7 @@ impÜt
 	gCloudSimTags
 ;
 
-22 
+28 
 impÜt
  
 	gÜg
@@ -140041,7 +140211,7 @@ impÜt
 	gSimEv’t
 ;
 
-23 
+29 
 impÜt
  
 	gÜg
@@ -140055,7 +140225,7 @@ impÜt
 	gPow”D©aûÁ”
 ;
 
-24 
+30 
 impÜt
  
 	gÜg
@@ -140069,7 +140239,7 @@ impÜt
 	gPow”Ho¡
 ;
 
-25 
+31 
 impÜt
  
 	gÜg
@@ -140085,7 +140255,7 @@ impÜt
 	gPow”Mod–
 ;
 
-26 
+32 
 impÜt
  
 	gÜg
@@ -140099,7 +140269,7 @@ impÜt
 	gRamProvisiÚ”Sim¶e
 ;
 
-27 
+33 
 impÜt
  
 	gÜg
@@ -140115,7 +140285,7 @@ impÜt
 	gBwProvisiÚ”Ov”bookšg
 ;
 
-28 
+34 
 impÜt
  
 	gÜg
@@ -140131,7 +140301,7 @@ impÜt
 	gPeProvisiÚ”Ov”bookšg
 ;
 
-29 
+35 
 impÜt
  
 	gÜg
@@ -140143,7 +140313,7 @@ impÜt
 	gAµEdge
 ;
 
-30 
+36 
 impÜt
  
 	gÜg
@@ -140155,7 +140325,7 @@ impÜt
 	gAµLoİ
 ;
 
-31 
+37 
 impÜt
  
 	gÜg
@@ -140167,7 +140337,7 @@ impÜt
 	gAµModuË
 ;
 
-32 
+38 
 impÜt
  
 	gÜg
@@ -140179,7 +140349,7 @@ impÜt
 	gAµliÿtiÚ
 ;
 
-33 
+39 
 impÜt
  
 	gÜg
@@ -140191,7 +140361,7 @@ impÜt
 	gCoÜdš©e
 ;
 
-34 
+40 
 impÜt
  
 	gÜg
@@ -140203,7 +140373,7 @@ impÜt
 	gDi¡ªûs
 ;
 
-35 
+41 
 impÜt
  
 	gÜg
@@ -140215,7 +140385,7 @@ impÜt
 	gMobeCÚŒŞËr
 ;
 
-36 
+42 
 impÜt
  
 	gÜg
@@ -140227,7 +140397,7 @@ impÜt
 	gAµModuËAÎoÿtiÚPŞicy
 ;
 
-37 
+43 
 impÜt
  
 	gÜg
@@ -140239,7 +140409,7 @@ impÜt
 	gSŒ—mO³¿tÜScheduËr
 ;
 
-38 
+44 
 impÜt
  
 	gÜg
@@ -140251,7 +140421,7 @@ impÜt
 	gCÚfig
 ;
 
-39 
+45 
 impÜt
  
 	gÜg
@@ -140263,7 +140433,7 @@ impÜt
 	gFogEv’ts
 ;
 
-40 
+46 
 impÜt
  
 	gÜg
@@ -140275,7 +140445,7 @@ impÜt
 	gFogUts
 ;
 
-41 
+47 
 impÜt
  
 	gÜg
@@ -140287,7 +140457,7 @@ impÜt
 	gLogg”
 ;
 
-42 
+48 
 impÜt
  
 	gÜg
@@ -140299,7 +140469,7 @@ impÜt
 	gModuËLaunchCÚfig
 ;
 
-43 
+49 
 impÜt
  
 	gÜg
@@ -140311,7 +140481,7 @@ impÜt
 	gN‘wÜkU§geMÚ™Ü
 ;
 
-44 
+50 
 impÜt
  
 	gÜg
@@ -140323,7 +140493,7 @@ impÜt
 	gTimeK“³r
 ;
 
-45 
+51 
 impÜt
  
 	gÜg
@@ -140335,7 +140505,7 @@ impÜt
 	gBefÜeMig¿tiÚ
 ;
 
-46 
+52 
 impÜt
  
 	gÜg
@@ -140347,7 +140517,7 @@ impÜt
 	gBefÜeMig¿tiÚ_OLD
 ;
 
-47 
+53 
 impÜt
  
 	gÜg
@@ -140359,7 +140529,7 @@ impÜt
 	gDecisiÚMig¿tiÚ
 ;
 
-48 
+54 
 impÜt
  
 	gÜg
@@ -140371,7 +140541,7 @@ impÜt
 	gMySti¡ics
 ;
 
-49 
+55 
 impÜt
  
 	gÜg
@@ -140383,7 +140553,7 @@ impÜt
 	gS”viû
 ;
 
-51 
+57 
 impÜt
  
 	gÜg
@@ -140395,7 +140565,7 @@ impÜt
 	gLogMobe
 ;
 
-52 
+58 
 impÜt
  
 	gÜg
@@ -140409,7 +140579,7 @@ impÜt
 	gMaxAndMš
 ;
 
-53 
+59 
 impÜt
  
 	gÜg
@@ -140423,7 +140593,7 @@ impÜt
 	gMobeEv’ts
 ;
 
-54 
+60 
 impÜt
  
 	gÜg
@@ -140437,7 +140607,7 @@ impÜt
 	gPŞic›s
 ;
 
-56 
+62 
 public
  cÏs 
 	cFogDeviû
@@ -140447,7 +140617,7 @@ ex‹nds
 	mPow”D©aûÁ”
  {
 
-57 
+63 
 ´Ùeùed
  
 	mQueue
@@ -140457,7 +140627,7 @@ ex‹nds
 	mnÜthTu¶eQueue
 ;
 
-58 
+64 
 ´Ùeùed
  
 	mQueue
@@ -140471,7 +140641,7 @@ ex‹nds
 	msouthTu¶eQueue
 ;
 
-60 
+66 
 ´Ùeùed
  
 	mLi¡
@@ -140481,7 +140651,7 @@ ex‹nds
 	maùiveAµliÿtiÚs
 ;
 
-62 
+68 
 ´Ùeùed
  
 	mM­
@@ -140493,7 +140663,7 @@ ex‹nds
 	m­¶iÿtiÚM­
 ;
 
-63 
+69 
 ´Ùeùed
  
 	mM­
@@ -140505,7 +140675,7 @@ ex‹nds
 	m­pToModuËsM­
 ;
 
-64 
+70 
 ´Ùeùed
  
 	mM­
@@ -140517,7 +140687,7 @@ ex‹nds
 	mchdToL©’cyM­
 ;
 
-67 
+73 
 ´Ùeùed
  
 	mM­
@@ -140527,31 +140697,31 @@ ex‹nds
 	mşoudT¿fficM­
 ;
 
-69 
+75 
 ´Ùeùed
  
 	mlockTime
 ;
 
-74 
+80 
 ´Ùeùed
  
 	m·»ÁId
 ;
 
-75 
+81 
 ´Ùeùed
  
 	mvŞ©P¬’tId
 ;
 
-80 
+86 
 ´Ùeùed
  
 	mcÚŒŞËrId
 ;
 
-84 
+90 
 ´Ùeùed
  
 	mLi¡
@@ -140561,7 +140731,7 @@ ex‹nds
 	mchd»nIds
 ;
 
-86 
+92 
 ´Ùeùed
  
 	mM­
@@ -140575,7 +140745,7 @@ ex‹nds
 	mchdToO³¿tÜsM­
 ;
 
-91 
+97 
 ´Ùeùed
  
 boŞ—n
@@ -140583,7 +140753,7 @@ boŞ—n
 	misSouthLškBusy
 ;
 
-96 
+102 
 ´Ùeùed
  
 boŞ—n
@@ -140591,25 +140761,25 @@ boŞ—n
 	misNÜthLškBusy
 ;
 
-98 
+104 
 ´Ùeùed
  
 	mu¶škBªdwidth
 ;
 
-99 
+105 
 ´Ùeùed
  
 	mdowÆškBªdwidth
 ;
 
-100 
+106 
 ´Ùeùed
  
 	mu¶škL©’cy
 ;
 
-101 
+107 
 ´Ùeùed
  
 	mLi¡
@@ -140623,43 +140793,43 @@ boŞ—n
 	massocŸ‹dAùu©ÜIds
 ;
 
-103 
+109 
 ´Ùeùed
  
 	m’”gyCÚsum±iÚ
 ;
 
-104 
+110 
 ´Ùeùed
  
 	mÏ¡Utiz©iÚUpd©eTime
 ;
 
-105 
+111 
 ´Ùeùed
  
 	mÏ¡Utiz©iÚ
 ;
 
-106 
+112 
 ´iv©e
  
 	mËv–
 ;
 
-108 
+114 
 ´Ùeùed
  
 	m¿‹P”Ms
 ;
 
-110 
+116 
 ´Ùeùed
  
 	mtÙ®Co¡
 ;
 
-112 
+118 
 ´Ùeùed
  
 	mM­
@@ -140671,7 +140841,7 @@ boŞ—n
 	mmoduËIn¡ªûCouÁ
 ;
 
-114 
+120 
 ´Ùeùed
  
 CoÜdš©e
@@ -140679,7 +140849,7 @@ CoÜdš©e
 	mcoÜd
 ;
 
-115 
+121 
 ´Ùeùed
  
 	mS‘
@@ -140689,7 +140859,7 @@ CoÜdš©e
 	m­Deviûs
 ;
 
-116 
+122 
 ´Ùeùed
  
 	mS‘
@@ -140699,7 +140869,7 @@ CoÜdš©e
 	msm¬tThšgs
 ;
 
-117 
+123 
 ´Ùeùed
  
 	mS‘
@@ -140709,7 +140879,7 @@ CoÜdš©e
 	msm¬tThšgsW™hVm
 ;
 
-118 
+124 
 ´Ùeùed
  
 	mS‘
@@ -140719,7 +140889,7 @@ CoÜdš©e
 	m£rv”CloudËts
 ;
 
-119 
+125 
 ´Ùeùed
  
 boŞ—n
@@ -140727,7 +140897,7 @@ boŞ—n
 	mavaabË
 ;
 
-120 
+126 
 ´Ùeùed
  
 S”viû
@@ -140735,7 +140905,7 @@ S”viû
 	m£rviû
 ;
 
-122 
+128 
 ´iv©e
  
 	mHashM­
@@ -140747,7 +140917,7 @@ S”viû
 	mÃtS”v”CloudËts
 ;
 
-123 
+129 
 ´Ùeùed
  
 DecisiÚMig¿tiÚ
@@ -140755,13 +140925,13 @@ DecisiÚMig¿tiÚ
 	mmig¿tiÚSŒ©egy
 ;
 
-124 
+130 
 ´Ùeùed
  
 	mpŞicyR•liÿVM
 ;
 
-125 
+131 
 ´iv©e
  
 FogDeviû
@@ -140769,7 +140939,7 @@ FogDeviû
 	m£rv”CloudËtToVmMig¿‹
 ;
 
-126 
+132 
 ´Ùeùed
  
 BefÜeMig¿tiÚ
@@ -140777,23 +140947,23 @@ BefÜeMig¿tiÚ
 	mbefÜeMig¿tiÚ
 ;
 
-128 
+134 
 ´Ùeùed
  
 	mmyId
 ;
 
-131 
+137 
 public
  
 	$g‘MyId
 () {
 
-132  
+138  
 myId
 ;
 
-135 
+141 
 public
  
 	$£tMyId
@@ -140801,17 +140971,17 @@ public
 myId
 ) {
 
-136 
+142 
 this
 .
 myId
  = myId;
 
-137 
+143 
 	}
 }
 
-139 
+145 
 public
  
 	gHashM­
@@ -140823,15 +140993,15 @@ public
 	$g‘N‘S”v”CloudËts
 () {
 
-140  
+146  
 ÃtS”v”CloudËts
 ;
 
-141 
+147 
 	}
 }
 
-143 
+149 
 public
  
 £tN‘S”v”CloudËts
@@ -140845,7 +141015,7 @@ DoubË
 ÃtS”v”CloudËts
 ) {
 
-144 
+150 
 	gthis
 .
 	gÃtS”v”CloudËts
@@ -140853,7 +141023,7 @@ DoubË
 ÃtS”v”CloudËts
 ;
 
-147 
+153 
 public
  
 S”viû
@@ -140861,15 +141031,15 @@ S”viû
 	$g‘S”viû
 () {
 
-148  
+154  
 £rviû
 ;
 
-149 
+155 
 	}
 }
 
-151 
+157 
 public
  
 	$£tS”viû
@@ -140879,17 +141049,17 @@ S”viû
 £rviû
 ) {
 
-152 
+158 
 this
 .
 £rviû
  = service;
 
-153 
+159 
 	}
 }
 
-155 
+161 
 public
  
 boŞ—n
@@ -140897,15 +141067,15 @@ boŞ—n
 	$isAvaabË
 () {
 
-156  
+162  
 avaabË
 ;
 
-157 
+163 
 	}
 }
 
-159 
+165 
 public
  
 	$£tAvaabË
@@ -140915,17 +141085,17 @@ boŞ—n
 avaabË
 ) {
 
-160 
+166 
 this
 .
 avaabË
  =‡vailable;
 
-161 
+167 
 	}
 }
 
-163 
+169 
 public
  
 	gS‘
@@ -140935,15 +141105,15 @@ public
 	$g‘Sm¬tThšgs
 () {
 
-164  
+170  
 sm¬tThšgs
 ;
 
-165 
+171 
 	}
 }
 
-167 
+173 
 public
  
 	$£tSm¬tThšgs
@@ -140955,7 +141125,7 @@ MobeDeviû
 aùiÚ
 ) {
 
-168 if(
+174 if(
 aùiÚ
  =ğ
 PŞic›s
@@ -140963,7 +141133,7 @@ PŞic›s
 ADD
 ){
 
-169 
+175 
 this
 .
 sm¬tThšgs
@@ -140973,7 +141143,7 @@ sm¬tThšgs
 ¡
 );
 
-172 
+178 
 this
 .
 sm¬tThšgs
@@ -140983,11 +141153,11 @@ sm¬tThšgs
 ¡
 );
 
-174 
+180 
 	}
 }
 
-176 
+182 
 public
  
 	gS‘
@@ -140997,15 +141167,15 @@ public
 	$g‘ApDeviûs
 () {
 
-177  
+183  
 ­Deviûs
 ;
 
-178 
+184 
 	}
 }
 
-180 
+186 
 public
  
 	$£tApDeviûs
@@ -141017,7 +141187,7 @@ ApDeviû
 aùiÚ
 ) {
 
-181 if(
+187 if(
 aùiÚ
  =ğ
 PŞic›s
@@ -141025,7 +141195,7 @@ PŞic›s
 ADD
 ){
 
-182 
+188 
 this
 .
 ­Deviûs
@@ -141035,7 +141205,7 @@ this
 ­
 );
 
-185 
+191 
 this
 .
 ­Deviûs
@@ -141045,11 +141215,11 @@ this
 ­
 );
 
-187 
+193 
 	}
 }
 
-189 
+195 
 public
  
 CoÜdš©e
@@ -141057,15 +141227,15 @@ CoÜdš©e
 	$g‘CoÜd
 () {
 
-190  
+196  
 coÜd
 ;
 
-191 
+197 
 	}
 }
 
-193 
+199 
 public
  
 	$£tCoÜd
@@ -141075,7 +141245,7 @@ coÜdX
 coÜdY
 ) {
 
-194 
+200 
 this
 .
 coÜd
@@ -141085,7 +141255,7 @@ coÜd
 coÜdX
 );
 
-195 
+201 
 this
 .
 coÜd
@@ -141095,21 +141265,21 @@ coÜd
 coÜdY
 );
 
-196 
+202 
 	}
 }
 
-198 
+204 
 public
  
 	$FogDeviû
 (){
 
-200 
+206 
 	}
 }
 
-203 
+209 
 public
  
 	$FogDeviû
@@ -141125,13 +141295,13 @@ coÜdY
 id
 ) {
 
-206 
+212 
 	`su³r
 (
 Çme
 );
 
-207 
+213 
 this
 .
 coÜd
@@ -141141,7 +141311,7 @@ coÜd
 	`CoÜdš©e
 ();
 
-211 
+217 
 this
 .
 	`£tCoÜd
@@ -141151,7 +141321,7 @@ coÜdX
 coÜdY
 );
 
-212 
+218 
 this
 .
 	`£tMyId
@@ -141159,7 +141329,7 @@ this
 id
 );
 
-213 
+219 
 sm¬tThšgs
  = 
 Ãw
@@ -141167,7 +141337,7 @@ sm¬tThšgs
 HashS‘
 <>();
 
-214 
+220 
 ­Deviûs
  = 
 Ãw
@@ -141175,7 +141345,7 @@ HashS‘
 HashS‘
 <>();
 
-215 
+221 
 ÃtS”v”CloudËts
  = 
 Ãw
@@ -141183,7 +141353,7 @@ HashS‘
 HashM­
 <>();
 
-216 
+222 
 £rv”CloudËts
  = 
 Ãw
@@ -141191,7 +141361,7 @@ HashM­
 HashS‘
 <>();
 
-217 
+223 
 this
 .
 	`£tAvaabË
@@ -141199,11 +141369,11 @@ this
 Œue
 );
 
-219 
+225 
 	}
 }
 
-221 
+227 
 public
  
 	$FogDeviû
@@ -141213,41 +141383,41 @@ SŒšg
 Çme
 ){
 
-222 
+228 
 	`su³r
 (
 Çme
 );
 
-223 
+229 
 	}
 }
 
-226 
+232 
 public
  
 FogDeviû
 (
 
-227 
+233 
 SŒšg
  
 Çme
 ,
 
-228 
+234 
 FogDeviûCh¬aù”i¡ics
  
 ch¬aù”i¡ics
 ,
 
-229 
+235 
 VmAÎoÿtiÚPŞicy
  
 vmAÎoÿtiÚPŞicy
 ,
 
-230 
+236 
 Li¡
 <
 StÜage
@@ -141255,11 +141425,11 @@ StÜage
 ¡ÜageLi¡
 ,
 
-231 
+237 
 schedulšgIÁ”v®
 ,
 
-232 
+238 
 u¶škBªdwidth
 , 
 dowÆškBªdwidth
@@ -141269,7 +141439,7 @@ u¶škL©’cy
 ¿‹P”Ms
 
 
-233 , 
+239 , 
 coÜdX
 , 
 coÜdY
@@ -141281,29 +141451,29 @@ S”viû
 £rviû
 
 
-234 , 
+240 , 
 DecisiÚMig¿tiÚ
  
 mig¿tiÚSŒ©egy
 
 
-235 , 
+241 , 
 pŞicyR•liÿVM
 
 
-236 , 
+242 , 
 BefÜeMig¿tiÚ
  
 befÜeMig¿tiÚ
 
 
-237 è
+243 è
 throws
  
 	gExû±iÚ
  {
 
-239 
+245 
 su³r
 (
 Çme
@@ -141317,7 +141487,7 @@ vmAÎoÿtiÚPŞicy
 schedulšgIÁ”v®
 );
 
-241 
+247 
 	gthis
 .
 	gcoÜd
@@ -141327,7 +141497,7 @@ schedulšgIÁ”v®
 CoÜdš©e
 ();
 
-244 
+250 
 	gthis
 .
 £tCoÜd
@@ -141337,7 +141507,7 @@ coÜdX
 coÜdY
 );
 
-245 
+251 
 	gthis
 .
 £tMyId
@@ -141345,7 +141515,7 @@ coÜdY
 id
 );
 
-246 
+252 
 	gsm¬tThšgs
  = 
 Ãw
@@ -141353,7 +141523,7 @@ id
 HashS‘
 <>();
 
-247 
+253 
 	gsm¬tThšgsW™hVm
  = 
 Ãw
@@ -141361,7 +141531,7 @@ HashS‘
 HashS‘
 <>();
 
-248 
+254 
 	g­Deviûs
  = 
 Ãw
@@ -141369,7 +141539,7 @@ HashS‘
 HashS‘
 <>();
 
-249 
+255 
 	gÃtS”v”CloudËts
  = 
 Ãw
@@ -141377,11 +141547,11 @@ HashS‘
 HashM­
 <>();
 
-250 
+256 
 £tVŞ©P¬’tId
 (-1);
 
-251 
+257 
 	gthis
 .
 £tAvaabË
@@ -141389,7 +141559,7 @@ HashM­
 Œue
 );
 
-252 
+258 
 	gthis
 .
 £tS”viû
@@ -141397,47 +141567,47 @@ HashM­
 £rviû
 );
 
-254 
+260 
 £tBefÜeMig¿‹
 (
 befÜeMig¿tiÚ
 );
 
-255 
+261 
 £tPŞicyR•liÿVM
 (
 pŞicyR•liÿVM
 );
 
-256 
+262 
 £tMig¿tiÚSŒ©egy
 (
 mig¿tiÚSŒ©egy
 );
 
-257 
+263 
 £tCh¬aù”i¡ics
 (
 ch¬aù”i¡ics
 );
 
-258 
+264 
 £tVmAÎoÿtiÚPŞicy
 (
 vmAÎoÿtiÚPŞicy
 );
 
-259 
+265 
 £tLa¡ProûssTime
 (0.0);
 
-260 
+266 
 £tStÜageLi¡
 (
 ¡ÜageLi¡
 );
 
-261 
+267 
 £tVmLi¡
 (
 Ãw
@@ -141447,43 +141617,43 @@ A¼ayLi¡
 Vm
 >());
 
-262 
+268 
 £tSchedulšgIÁ”v®
 (
 schedulšgIÁ”v®
 );
 
-263 
+269 
 £tU¶škBªdwidth
 (
 u¶škBªdwidth
 );
 
-264 
+270 
 £tDowÆškBªdwidth
 (
 dowÆškBªdwidth
 );
 
-265 
+271 
 £tU¶škL©’cy
 (
 u¶škL©’cy
 );
 
-266 
+272 
 £tR©eP”Ms
 (
 ¿‹P”Ms
 );
 
-267 
+273 
 £tS”v”CloudËtToVmMig¿‹
 (
 nuÎ
 );
 
-268 
+274 
 £tAssocŸ‹dAùu©ÜIds
 (
 Ãw
@@ -141497,7 +141667,7 @@ IÁeg”
 DoubË
 >>());
 
-269 
+275 
 Ho¡
  
 	gho¡
@@ -141507,7 +141677,7 @@ g‘Ch¬aù”i¡ics
 g‘Ho¡Li¡
 ()) {
 
-270 
+276 
 ho¡
 .
 £tD©aûÁ”
@@ -141515,7 +141685,7 @@ ho¡
 this
 );
 
-272 
+278 
 £tAùiveAµliÿtiÚs
 (
 Ãw
@@ -141525,13 +141695,13 @@ A¼ayLi¡
 SŒšg
 >());
 
-274 ià(
+280 ià(
 g‘Ch¬aù”i¡ics
 ().
 g‘Numb”OfPes
 () == 0) {
 
-275 
+281 
 throw
  
 Ãw
@@ -141543,7 +141713,7 @@ su³r
 g‘Name
 ()
 
-279 
+285 
 g‘Ch¬aù”i¡ics
 ().
 £tId
@@ -141553,7 +141723,7 @@ su³r
 g‘Id
 ());
 
-281 
+287 
 	g­¶iÿtiÚM­
  = 
 Ãw
@@ -141565,7 +141735,7 @@ SŒšg
 	gAµliÿtiÚ
 >();
 
-282 
+288 
 	g­pToModuËsM­
  = 
 Ãw
@@ -141579,7 +141749,7 @@ SŒšg
 	gSŒšg
 >>();
 
-283 
+289 
 	gnÜthTu¶eQueue
  = 
 Ãw
@@ -141589,7 +141759,7 @@ LškedLi¡
 Tu¶e
 >();
 
-284 
+290 
 	gsouthTu¶eQueue
  = 
 Ãw
@@ -141603,19 +141773,19 @@ Tu¶e
 	gIÁeg”
 >>();
 
-285 
+291 
 £tNÜthLškBusy
 (
 çl£
 );
 
-286 
+292 
 £tSouthLškBusy
 (
 çl£
 );
 
-289 
+295 
 £tChd»nIds
 (
 Ãw
@@ -141625,7 +141795,7 @@ A¼ayLi¡
 IÁeg”
 >());
 
-290 
+296 
 £tChdToO³¿tÜsM­
 (
 Ãw
@@ -141639,7 +141809,7 @@ Li¡
 SŒšg
 >>());
 
-292 
+298 
 	gthis
 .
 	gşoudT¿fficM­
@@ -141653,29 +141823,29 @@ IÁeg”
 	gIÁeg”
 >();
 
-294 
+300 
 	gthis
 .
 	glockTime
  = 0;
 
-296 
+302 
 	gthis
 .
 	g’”gyCÚsum±iÚ
  = 0;
 
-297 
+303 
 	gthis
 .
 	gÏ¡Utiz©iÚ
  = 0;
 
-298 
+304 
 £tTÙ®Co¡
 (0);
 
-299 
+305 
 £tModuËIn¡ªûCouÁ
 (
 Ãw
@@ -141689,7 +141859,7 @@ M­
 IÁeg”
 >>());
 
-300 
+306 
 £tChdToL©’cyM­
 (
 Ãw
@@ -141701,31 +141871,31 @@ IÁeg”
 DoubË
 >());
 
-303 
+309 
 public
  
 FogDeviû
 (
 
-304 
+310 
 SŒšg
  
 Çme
 ,
 
-305 
+311 
 FogDeviûCh¬aù”i¡ics
  
 ch¬aù”i¡ics
 ,
 
-306 
+312 
 VmAÎoÿtiÚPŞicy
  
 vmAÎoÿtiÚPŞicy
 ,
 
-307 
+313 
 Li¡
 <
 StÜage
@@ -141733,11 +141903,11 @@ StÜage
 ¡ÜageLi¡
 ,
 
-308 
+314 
 schedulšgIÁ”v®
 ,
 
-309 
+315 
 u¶škBªdwidth
 , 
 dowÆškBªdwidth
@@ -141747,7 +141917,7 @@ u¶škL©’cy
 ¿‹P”Ms
 
 
-310 ,
+316 ,
 coÜdX
 , 
 coÜdY
@@ -141755,13 +141925,13 @@ coÜdY
 id
 
 
-312 è
+318 è
 throws
  
 	gExû±iÚ
  {
 
-314 
+320 
 su³r
 (
 Çme
@@ -141775,7 +141945,7 @@ vmAÎoÿtiÚPŞicy
 schedulšgIÁ”v®
 );
 
-316 
+322 
 	gthis
 .
 	gcoÜd
@@ -141785,7 +141955,7 @@ schedulšgIÁ”v®
 CoÜdš©e
 ();
 
-319 
+325 
 	gthis
 .
 £tCoÜd
@@ -141795,7 +141965,7 @@ coÜdX
 coÜdY
 );
 
-320 
+326 
 	gthis
 .
 £tMyId
@@ -141803,7 +141973,7 @@ coÜdY
 id
 );
 
-321 
+327 
 	gsm¬tThšgs
  = 
 Ãw
@@ -141811,7 +141981,7 @@ id
 HashS‘
 <>();
 
-322 
+328 
 	gsm¬tThšgsW™hVm
  = 
 Ãw
@@ -141819,7 +141989,7 @@ HashS‘
 HashS‘
 <>();
 
-324 
+330 
 	g­Deviûs
  = 
 Ãw
@@ -141827,7 +141997,7 @@ HashS‘
 HashS‘
 <>();
 
-325 
+331 
 	gÃtS”v”CloudËts
  = 
 Ãw
@@ -141835,11 +142005,11 @@ HashS‘
 HashM­
 <>();
 
-326 
+332 
 £tVŞ©P¬’tId
 (-1);
 
-328 
+334 
 	gthis
 .
 £tAvaabË
@@ -141847,29 +142017,29 @@ HashM­
 Œue
 );
 
-329 
+335 
 £tCh¬aù”i¡ics
 (
 ch¬aù”i¡ics
 );
 
-330 
+336 
 £tVmAÎoÿtiÚPŞicy
 (
 vmAÎoÿtiÚPŞicy
 );
 
-331 
+337 
 £tLa¡ProûssTime
 (0.0);
 
-332 
+338 
 £tStÜageLi¡
 (
 ¡ÜageLi¡
 );
 
-333 
+339 
 £tVmLi¡
 (
 Ãw
@@ -141879,43 +142049,43 @@ A¼ayLi¡
 Vm
 >());
 
-334 
+340 
 £tSchedulšgIÁ”v®
 (
 schedulšgIÁ”v®
 );
 
-335 
+341 
 £tU¶škBªdwidth
 (
 u¶škBªdwidth
 );
 
-336 
+342 
 £tDowÆškBªdwidth
 (
 dowÆškBªdwidth
 );
 
-337 
+343 
 £tU¶škL©’cy
 (
 u¶škL©’cy
 );
 
-338 
+344 
 £tR©eP”Ms
 (
 ¿‹P”Ms
 );
 
-339 
+345 
 £tS”v”CloudËtToVmMig¿‹
 (
 nuÎ
 );
 
-341 
+347 
 £tAssocŸ‹dAùu©ÜIds
 (
 Ãw
@@ -141929,7 +142099,7 @@ IÁeg”
 DoubË
 >>());
 
-342 
+348 
 Ho¡
  
 	gho¡
@@ -141939,7 +142109,7 @@ g‘Ch¬aù”i¡ics
 g‘Ho¡Li¡
 ()) {
 
-343 
+349 
 ho¡
 .
 £tD©aûÁ”
@@ -141947,7 +142117,7 @@ ho¡
 this
 );
 
-345 
+351 
 £tAùiveAµliÿtiÚs
 (
 Ãw
@@ -141957,13 +142127,13 @@ A¼ayLi¡
 SŒšg
 >());
 
-347 ià(
+353 ià(
 g‘Ch¬aù”i¡ics
 ().
 g‘Numb”OfPes
 () == 0) {
 
-348 
+354 
 throw
  
 Ãw
@@ -141975,7 +142145,7 @@ su³r
 g‘Name
 ()
 
-352 
+358 
 g‘Ch¬aù”i¡ics
 ().
 £tId
@@ -141985,7 +142155,7 @@ su³r
 g‘Id
 ());
 
-354 
+360 
 	g­¶iÿtiÚM­
  = 
 Ãw
@@ -141997,7 +142167,7 @@ SŒšg
 	gAµliÿtiÚ
 >();
 
-355 
+361 
 	g­pToModuËsM­
  = 
 Ãw
@@ -142011,7 +142181,7 @@ SŒšg
 	gSŒšg
 >>();
 
-356 
+362 
 	gnÜthTu¶eQueue
  = 
 Ãw
@@ -142021,7 +142191,7 @@ LškedLi¡
 Tu¶e
 >();
 
-357 
+363 
 	gsouthTu¶eQueue
  = 
 Ãw
@@ -142035,19 +142205,19 @@ Tu¶e
 	gIÁeg”
 >>();
 
-358 
+364 
 £tNÜthLškBusy
 (
 çl£
 );
 
-359 
+365 
 £tSouthLškBusy
 (
 çl£
 );
 
-362 
+368 
 £tChd»nIds
 (
 Ãw
@@ -142057,7 +142227,7 @@ A¼ayLi¡
 IÁeg”
 >());
 
-363 
+369 
 £tChdToO³¿tÜsM­
 (
 Ãw
@@ -142071,7 +142241,7 @@ Li¡
 SŒšg
 >>());
 
-365 
+371 
 	gthis
 .
 	gşoudT¿fficM­
@@ -142085,29 +142255,29 @@ IÁeg”
 	gIÁeg”
 >();
 
-367 
+373 
 	gthis
 .
 	glockTime
  = 0;
 
-369 
+375 
 	gthis
 .
 	g’”gyCÚsum±iÚ
  = 0;
 
-370 
+376 
 	gthis
 .
 	gÏ¡Utiz©iÚ
  = 0;
 
-371 
+377 
 £tTÙ®Co¡
 (0);
 
-372 
+378 
 £tModuËIn¡ªûCouÁ
 (
 Ãw
@@ -142121,7 +142291,7 @@ M­
 IÁeg”
 >>());
 
-373 
+379 
 £tChdToL©’cyM­
 (
 Ãw
@@ -142133,31 +142303,31 @@ IÁeg”
 DoubË
 >());
 
-376 
+382 
 public
  
 FogDeviû
 (
 
-377 
+383 
 SŒšg
  
 Çme
 ,
 
-378 
+384 
 FogDeviûCh¬aù”i¡ics
  
 ch¬aù”i¡ics
 ,
 
-379 
+385 
 VmAÎoÿtiÚPŞicy
  
 vmAÎoÿtiÚPŞicy
 ,
 
-380 
+386 
 Li¡
 <
 StÜage
@@ -142165,11 +142335,11 @@ StÜage
 ¡ÜageLi¡
 ,
 
-381 
+387 
 schedulšgIÁ”v®
 ,
 
-382 
+388 
 u¶škBªdwidth
 , 
 dowÆškBªdwidth
@@ -142183,7 +142353,7 @@ throws
 	gExû±iÚ
  {
 
-383 
+389 
 su³r
 (
 Çme
@@ -142197,29 +142367,29 @@ vmAÎoÿtiÚPŞicy
 schedulšgIÁ”v®
 );
 
-384 
+390 
 £tCh¬aù”i¡ics
 (
 ch¬aù”i¡ics
 );
 
-385 
+391 
 £tVmAÎoÿtiÚPŞicy
 (
 vmAÎoÿtiÚPŞicy
 );
 
-386 
+392 
 £tLa¡ProûssTime
 (0.0);
 
-387 
+393 
 £tStÜageLi¡
 (
 ¡ÜageLi¡
 );
 
-388 
+394 
 £tVmLi¡
 (
 Ãw
@@ -142229,43 +142399,43 @@ A¼ayLi¡
 Vm
 >());
 
-389 
+395 
 £tSchedulšgIÁ”v®
 (
 schedulšgIÁ”v®
 );
 
-390 
+396 
 £tU¶škBªdwidth
 (
 u¶škBªdwidth
 );
 
-391 
+397 
 £tDowÆškBªdwidth
 (
 dowÆškBªdwidth
 );
 
-392 
+398 
 £tU¶škL©’cy
 (
 u¶škL©’cy
 );
 
-393 
+399 
 £tR©eP”Ms
 (
 ¿‹P”Ms
 );
 
-394 
+400 
 £tS”v”CloudËtToVmMig¿‹
 (
 nuÎ
 );
 
-396 
+402 
 £tAssocŸ‹dAùu©ÜIds
 (
 Ãw
@@ -142279,7 +142449,7 @@ IÁeg”
 DoubË
 >>());
 
-397 
+403 
 Ho¡
  
 	gho¡
@@ -142289,7 +142459,7 @@ g‘Ch¬aù”i¡ics
 g‘Ho¡Li¡
 ()) {
 
-398 
+404 
 ho¡
 .
 £tD©aûÁ”
@@ -142297,7 +142467,7 @@ ho¡
 this
 );
 
-400 
+406 
 £tAùiveAµliÿtiÚs
 (
 Ãw
@@ -142307,13 +142477,13 @@ A¼ayLi¡
 SŒšg
 >());
 
-402 ià(
+408 ià(
 g‘Ch¬aù”i¡ics
 ().
 g‘Numb”OfPes
 () == 0) {
 
-403 
+409 
 throw
  
 Ãw
@@ -142325,7 +142495,7 @@ su³r
 g‘Name
 ()
 
-407 
+413 
 g‘Ch¬aù”i¡ics
 ().
 £tId
@@ -142335,7 +142505,7 @@ su³r
 g‘Id
 ());
 
-409 
+415 
 	g­¶iÿtiÚM­
  = 
 Ãw
@@ -142347,7 +142517,7 @@ SŒšg
 	gAµliÿtiÚ
 >();
 
-410 
+416 
 	g­pToModuËsM­
  = 
 Ãw
@@ -142361,7 +142531,7 @@ SŒšg
 	gSŒšg
 >>();
 
-411 
+417 
 	gnÜthTu¶eQueue
  = 
 Ãw
@@ -142371,7 +142541,7 @@ LškedLi¡
 Tu¶e
 >();
 
-412 
+418 
 	gsouthTu¶eQueue
  = 
 Ãw
@@ -142385,19 +142555,19 @@ Tu¶e
 	gIÁeg”
 >>();
 
-413 
+419 
 £tNÜthLškBusy
 (
 çl£
 );
 
-414 
+420 
 £tSouthLškBusy
 (
 çl£
 );
 
-417 
+423 
 £tChd»nIds
 (
 Ãw
@@ -142407,7 +142577,7 @@ A¼ayLi¡
 IÁeg”
 >());
 
-418 
+424 
 £tChdToO³¿tÜsM­
 (
 Ãw
@@ -142421,7 +142591,7 @@ Li¡
 SŒšg
 >>());
 
-420 
+426 
 	gthis
 .
 	gşoudT¿fficM­
@@ -142435,29 +142605,29 @@ IÁeg”
 	gIÁeg”
 >();
 
-422 
+428 
 	gthis
 .
 	glockTime
  = 0;
 
-424 
+430 
 	gthis
 .
 	g’”gyCÚsum±iÚ
  = 0;
 
-425 
+431 
 	gthis
 .
 	gÏ¡Utiz©iÚ
  = 0;
 
-426 
+432 
 £tTÙ®Co¡
 (0);
 
-427 
+433 
 £tModuËIn¡ªûCouÁ
 (
 Ãw
@@ -142471,7 +142641,7 @@ M­
 IÁeg”
 >>());
 
-428 
+434 
 £tChdToL©’cyM­
 (
 Ãw
@@ -142483,13 +142653,13 @@ IÁeg”
 DoubË
 >());
 
-431 
+437 
 public
  
 	$FogDeviû
 (
 
-432 
+438 
 SŒšg
  
 Çme
@@ -142499,7 +142669,7 @@ ms
 ¿m
 ,
 
-433 
+439 
 u¶škBªdwidth
 , 
 dowÆškBªdwidth
@@ -142515,7 +142685,7 @@ throws
 Exû±iÚ
  {
 
-434 
+440 
 	`su³r
 (
 Çme
@@ -142529,7 +142699,7 @@ LškedLi¡
 StÜage
 >(), 0);
 
-436 
+442 
 Li¡
 <
 Pe
@@ -142541,7 +142711,7 @@ Pe
 A¼ayLi¡
 <Pe>();
 
-439 
+445 
 ³Li¡
 .
 	`add
@@ -142555,7 +142725,7 @@ A¼ayLi¡
 ms
 )));
 
-441 
+447 
 ho¡Id
  = 
 FogUts
@@ -142563,15 +142733,15 @@ FogUts
 	`g’”©eEÁ™yId
 ();
 
-442 
+448 
 ¡Üage
  = 1000000;
 
-443 
+449 
 bw
  = 10000;
 
-445 
+451 
 Pow”Ho¡
  
 ho¡
@@ -142581,11 +142751,11 @@ ho¡
 	`Pow”Ho¡
 (
 
-446 
+452 
 ho¡Id
 ,
 
-447 
+453 
 Ãw
  
 	`RamProvisiÚ”Sim¶e
@@ -142593,7 +142763,7 @@ ho¡Id
 ¿m
 ),
 
-448 
+454 
 Ãw
  
 	`BwProvisiÚ”Ov”bookšg
@@ -142601,15 +142771,15 @@ ho¡Id
 bw
 ),
 
-449 
+455 
 ¡Üage
 ,
 
-450 
+456 
 ³Li¡
 ,
 
-451 
+457 
 Ãw
  
 	`SŒ—mO³¿tÜScheduËr
@@ -142617,11 +142787,11 @@ bw
 ³Li¡
 ),
 
-452 
+458 
 pow”Mod–
 
 
-455 
+461 
 Li¡
 <
 Ho¡
@@ -142633,7 +142803,7 @@ ho¡Li¡
 A¼ayLi¡
 <Host>();
 
-456 
+462 
 ho¡Li¡
 .
 	`add
@@ -142641,7 +142811,7 @@ ho¡Li¡
 ho¡
 );
 
-458 
+464 
 	`£tVmAÎoÿtiÚPŞicy
 (
 Ãw
@@ -142651,7 +142821,7 @@ ho¡
 ho¡Li¡
 ));
 
-460 
+466 
 SŒšg
  
 ¬ch
@@ -142661,7 +142831,7 @@ CÚfig
 FOG_DEVICE_ARCH
 ;
 
-461 
+467 
 SŒšg
  
 os
@@ -142671,7 +142841,7 @@ CÚfig
 FOG_DEVICE_OS
 ;
 
-462 
+468 
 SŒšg
  
 vmm
@@ -142681,7 +142851,7 @@ CÚfig
 FOG_DEVICE_VMM
 ;
 
-463 
+469 
 time_zÚe
  = 
 CÚfig
@@ -142689,7 +142859,7 @@ CÚfig
 FOG_DEVICE_TIMEZONE
 ;
 
-464 
+470 
 co¡
  = 
 CÚfig
@@ -142697,7 +142867,7 @@ CÚfig
 FOG_DEVICE_COST
 ;
 
-465 
+471 
 co¡P”Mem
  = 
 CÚfig
@@ -142705,7 +142875,7 @@ CÚfig
 FOG_DEVICE_COST_PER_MEMORY
 ;
 
-466 
+472 
 co¡P”StÜage
  = 
 CÚfig
@@ -142713,7 +142883,7 @@ CÚfig
 FOG_DEVICE_COST_PER_STORAGE
 ;
 
-467 
+473 
 co¡P”Bw
  = 
 CÚfig
@@ -142721,7 +142891,7 @@ CÚfig
 FOG_DEVICE_COST_PER_BW
 ;
 
-469 
+475 
 FogDeviûCh¬aù”i¡ics
  
 ch¬aù”i¡ics
@@ -142731,7 +142901,7 @@ ch¬aù”i¡ics
 	`FogDeviûCh¬aù”i¡ics
 (
 
-470 
+476 
 ¬ch
 , 
 os
@@ -142747,23 +142917,23 @@ co¡
 co¡P”Mem
 ,
 
-471 
+477 
 co¡P”StÜage
 , 
 co¡P”Bw
 );
 
-473 
+479 
 	`£tCh¬aù”i¡ics
 (
 ch¬aù”i¡ics
 );
 
-475 
+481 
 	`£tLa¡ProûssTime
 (0.0);
 
-476 
+482 
 	`£tVmLi¡
 (
 Ãw
@@ -142773,25 +142943,25 @@ A¼ayLi¡
 Vm
 >());
 
-477 
+483 
 	`£tU¶škBªdwidth
 (
 u¶škBªdwidth
 );
 
-478 
+484 
 	`£tDowÆškBªdwidth
 (
 dowÆškBªdwidth
 );
 
-479 
+485 
 	`£tU¶škL©’cy
 (
 u¶škL©’cy
 );
 
-480 
+486 
 	`£tAssocŸ‹dAùu©ÜIds
 (
 Ãw
@@ -142805,7 +142975,7 @@ IÁeg”
 DoubË
 >>());
 
-481 
+487 
 Ho¡
  
 ho¡1
@@ -142815,7 +142985,7 @@ ho¡1
 	`g‘Ho¡Li¡
 ()) {
 
-482 
+488 
 ho¡1
 .
 	`£tD©aûÁ”
@@ -142823,7 +142993,7 @@ ho¡1
 this
 );
 
-484 
+490 
 	`£tAùiveAµliÿtiÚs
 (
 Ãw
@@ -142833,13 +143003,13 @@ A¼ayLi¡
 SŒšg
 >());
 
-485 ià(
+491 ià(
 	`g‘Ch¬aù”i¡ics
 ().
 	`g‘Numb”OfPes
 () == 0) {
 
-486 
+492 
 throw
  
 Ãw
@@ -142851,7 +143021,7 @@ su³r
 	`g‘Name
 ()
 
-491 
+497 
 	`g‘Ch¬aù”i¡ics
 ().
 	`£tId
@@ -142861,7 +143031,7 @@ su³r
 	`g‘Id
 ());
 
-493 
+499 
 ­¶iÿtiÚM­
  = 
 Ãw
@@ -142873,7 +143043,7 @@ SŒšg
 AµliÿtiÚ
 >();
 
-494 
+500 
 ­pToModuËsM­
  = 
 Ãw
@@ -142885,7 +143055,7 @@ SŒšg
 Li¡
 <String>>();
 
-495 
+501 
 nÜthTu¶eQueue
  = 
 Ãw
@@ -142895,7 +143065,7 @@ LškedLi¡
 Tu¶e
 >();
 
-496 
+502 
 southTu¶eQueue
  = 
 Ãw
@@ -142909,19 +143079,19 @@ Tu¶e
 IÁeg”
 >>();
 
-497 
+503 
 	`£tNÜthLškBusy
 (
 çl£
 );
 
-498 
+504 
 	`£tSouthLškBusy
 (
 çl£
 );
 
-501 
+507 
 	`£tChd»nIds
 (
 Ãw
@@ -142931,7 +143101,7 @@ A¼ayLi¡
 IÁeg”
 >());
 
-502 
+508 
 	`£tChdToO³¿tÜsM­
 (
 Ãw
@@ -142945,7 +143115,7 @@ Li¡
 SŒšg
 >>());
 
-504 
+510 
 this
 .
 şoudT¿fficM­
@@ -142957,29 +143127,29 @@ HashM­
 IÁeg”
 , Integer>();
 
-506 
+512 
 this
 .
 lockTime
  = 0;
 
-508 
+514 
 this
 .
 ’”gyCÚsum±iÚ
  = 0;
 
-509 
+515 
 this
 .
 Ï¡Utiz©iÚ
  = 0;
 
-510 
+516 
 	`£tTÙ®Co¡
 (0);
 
-511 
+517 
 	`£tChdToL©’cyM­
 (
 Ãw
@@ -142991,7 +143161,7 @@ IÁeg”
 DoubË
 >());
 
-512 
+518 
 	`£tModuËIn¡ªûCouÁ
 (
 Ãw
@@ -143005,25 +143175,25 @@ M­
 IÁeg”
 >>());
 
-513 
+519 
 	}
 }
 
-524 
+530 
 ´Ùeùed
  
 	$»gi¡”Oth”EÁ™y
 () {
 
-526 
+532 
 	}
 }
 
-528 @
+534 @
 Ov”ride
 
 
-529 
+535 
 ´Ùeùed
  
 	$´oûssOth”Ev’t
@@ -143033,44 +143203,20 @@ SimEv’t
 ev
 ) {
 
-530 
+536 
 ev
 .
 	`g‘Tag
 ()){
 
-531 
+537 
 FogEv’ts
 .
 TUPLE_ARRIVAL
 :
 
-532 
-	`´oûssTu¶eA¼iv®
-(
-ev
-);
-
-534 
-FogEv’ts
-.
-LAUNCH_MODULE
-:
-
-535 
-	`´oûssModuËA¼iv®
-(
-ev
-);
-
-537 
-FogEv’ts
-.
-RELEASE_OPERATOR
-:
-
 538 
-	`´oûssO³¿tÜR–—£
+	`´oûssTu¶eA¼iv®
 (
 ev
 );
@@ -143078,11 +143224,11 @@ ev
 540 
 FogEv’ts
 .
-SENSOR_JOINED
+LAUNCH_MODULE
 :
 
 541 
-	`´oûssS’sÜJoššg
+	`´oûssModuËA¼iv®
 (
 ev
 );
@@ -143090,11 +143236,11 @@ ev
 543 
 FogEv’ts
 .
-SEND_PERIODIC_TUPLE
+RELEASE_OPERATOR
 :
 
 544 
-	`£ndP”iodicTu¶e
+	`´oûssO³¿tÜR–—£
 (
 ev
 );
@@ -143102,11 +143248,11 @@ ev
 546 
 FogEv’ts
 .
-APP_SUBMIT
+SENSOR_JOINED
 :
 
 547 
-	`´oûssAµSubm™
+	`´oûssS’sÜJoššg
 (
 ev
 );
@@ -143114,55 +143260,55 @@ ev
 549 
 FogEv’ts
 .
-UPDATE_NORTH_TUPLE_QUEUE
+SEND_PERIODIC_TUPLE
 :
 
 550 
+	`£ndP”iodicTu¶e
+(
+ev
+);
+
+552 
+FogEv’ts
+.
+APP_SUBMIT
+:
+
+553 
+	`´oûssAµSubm™
+(
+ev
+);
+
+555 
+FogEv’ts
+.
+UPDATE_NORTH_TUPLE_QUEUE
+:
+
+556 
 	`upd©eNÜthTu¶eQueue
 ();
 
-552 
+558 
 FogEv’ts
 .
 UPDATE_SOUTH_TUPLE_QUEUE
 :
 
-553 
+559 
 	`upd©eSouthTu¶eQueue
 ();
 
-555 
+561 
 FogEv’ts
 .
 ACTIVE_APP_UPDATE
 :
 
-556 
-	`upd©eAùiveAµliÿtiÚs
-(
-ev
-);
-
-558 
-FogEv’ts
-.
-ACTUATOR_JOINED
-:
-
-559 
-	`´oûssAùu©ÜJošed
-(
-ev
-);
-
-561 
-FogEv’ts
-.
-LAUNCH_MODULE_INSTANCE
-:
-
 562 
-	`upd©eModuËIn¡ªûCouÁ
+	`upd©eAùiveAµliÿtiÚs
 (
 ev
 );
@@ -143170,35 +143316,35 @@ ev
 564 
 FogEv’ts
 .
-RESOURCE_MGMT
+ACTUATOR_JOINED
 :
 
 565 
-	`mªageResourûs
+	`´oûssAùu©ÜJošed
 (
 ev
 );
 
 567 
-MobeEv’ts
+FogEv’ts
 .
-MAKE_DECISION_MIGRATION
+LAUNCH_MODULE_INSTANCE
 :
 
 568 
-	`švokeDecisiÚMig¿tiÚ
+	`upd©eModuËIn¡ªûCouÁ
 (
 ev
 );
 
 570 
-MobeEv’ts
+FogEv’ts
 .
-TO_MIGRATION
+RESOURCE_MGMT
 :
 
 571 
-	`švokeBefÜeMig¿tiÚ
+	`mªageResourûs
 (
 ev
 );
@@ -143206,11 +143352,11 @@ ev
 573 
 MobeEv’ts
 .
-NO_MIGRATION
+MAKE_DECISION_MIGRATION
 :
 
 574 
-	`švokeNoMig¿tiÚ
+	`švokeDecisiÚMig¿tiÚ
 (
 ev
 );
@@ -143218,11 +143364,11 @@ ev
 576 
 MobeEv’ts
 .
-START_MIGRATION
+TO_MIGRATION
 :
 
 577 
-	`švokeS¹Mig¿tiÚ
+	`švokeBefÜeMig¿tiÚ
 (
 ev
 );
@@ -143230,11 +143376,11 @@ ev
 579 
 MobeEv’ts
 .
-ABORT_MIGRATION
+NO_MIGRATION
 :
 
 580 
-	`švokeAbÜtMig¿tiÚ
+	`švokeNoMig¿tiÚ
 (
 ev
 );
@@ -143242,11 +143388,11 @@ ev
 582 
 MobeEv’ts
 .
-REMOVE_VM_OLD_CLOUDLET
+START_MIGRATION
 :
 
 583 
-	`»moveVmOldS”v”CloudËt
+	`švokeS¹Mig¿tiÚ
 (
 ev
 );
@@ -143254,11 +143400,11 @@ ev
 585 
 MobeEv’ts
 .
-ADD_VM_NEW_CLOUDLET
+ABORT_MIGRATION
 :
 
 586 
-	`addVmNewS”v”CloudËt
+	`švokeAbÜtMig¿tiÚ
 (
 ev
 );
@@ -143266,11 +143412,11 @@ ev
 588 
 MobeEv’ts
 .
-DELIVERY_VM
+REMOVE_VM_OLD_CLOUDLET
 :
 
 589 
-	`d–iv”yVM
+	`»moveVmOldS”v”CloudËt
 (
 ev
 );
@@ -143278,11 +143424,11 @@ ev
 591 
 MobeEv’ts
 .
-CONNECT_ST_TO_SC
+ADD_VM_NEW_CLOUDLET
 :
 
 592 
-	`cÚÃùS”v”CloudËtSm¬tThšg
+	`addVmNewS”v”CloudËt
 (
 ev
 );
@@ -143290,11 +143436,11 @@ ev
 594 
 MobeEv’ts
 .
-DESCONNECT_ST_TO_SC
+DELIVERY_VM
 :
 
 595 
-	`descÚÃùS”v”CloudËtSm¬tThšg
+	`d–iv”yVM
 (
 ev
 );
@@ -143302,11 +143448,11 @@ ev
 597 
 MobeEv’ts
 .
-UNLOCKED_MIGRATION
+CONNECT_ST_TO_SC
 :
 
 598 
-	`unLockedMig¿tiÚ
+	`cÚÃùS”v”CloudËtSm¬tThšg
 (
 ev
 );
@@ -143314,11 +143460,11 @@ ev
 600 
 MobeEv’ts
 .
-VM_MIGRATE
+DESCONNECT_ST_TO_SC
 :
 
 601 
-	`myVmMig¿‹
+	`descÚÃùS”v”CloudËtSm¬tThšg
 (
 ev
 );
@@ -143326,20 +143472,44 @@ ev
 603 
 MobeEv’ts
 .
-SET_MIG_STATUS_TRUE
+UNLOCKED_MIGRATION
 :
 
 604 
+	`unLockedMig¿tiÚ
+(
+ev
+);
+
+606 
+MobeEv’ts
+.
+VM_MIGRATE
+:
+
+607 
+	`myVmMig¿‹
+(
+ev
+);
+
+609 
+MobeEv’ts
+.
+SET_MIG_STATUS_TRUE
+:
+
+610 
 	`migStusToLiveMig¿tiÚ
 (
 ev
 );
 
-610 
+616 
 	}
 }
 
-614 
+620 
 ´iv©e
  
 	$myVmMig¿‹
@@ -143349,7 +143519,7 @@ SimEv’t
 ev
 ) {
 
-617 
+623 
 MobeDeviû
  
 sm¬tThšg
@@ -143359,7 +143529,7 @@ ev
 	`g‘D©a
 ();
 
-619 
+625 
 AµliÿtiÚ
  
 ­p
@@ -143375,13 +143545,13 @@ sm¬tThšg
 	`g‘MyId
 ());
 
-620 if(
+626 if(
 ­p
 ==
 nuÎ
 ){
 
-621 
+627 
 Sy¡em
 .
 out
@@ -143393,13 +143563,13 @@ CloudSim
 	`şock
 ()+" - FogDevice.java - App == Null");
 
-622 
+628 
 Sy¡em
 .
 	`ex™
 (0);
 
-625 
+631 
 	`g‘AµliÿtiÚM­
 ().
 	`put
@@ -143409,7 +143579,7 @@ Sy¡em
 	`g‘AµId
 (),app);
 
-628 if(
+634 if(
 sm¬tThšg
 .
 	`g‘VmLoÿlS”v”CloudËt
@@ -143425,7 +143595,7 @@ sm¬tThšg
 nuÎ
 ){
 
-629 
+635 
 Sy¡em
 .
 out
@@ -143433,13 +143603,13 @@ out
 	`´šn
 ("FogDevice.java -‡pplicationMap did‚ot„emove.„eturn ==‚ull");
 
-630 
+636 
 Sy¡em
 .
 	`ex™
 (0);
 
-633 
+639 
 MobeCÚŒŞËr
  
 mobeCÚŒŞËr
@@ -143449,7 +143619,7 @@ CloudSim
 	`g‘EÁ™y
 ("MobileController");
 
-635 
+641 
 mobeCÚŒŞËr
 .
 	`g‘ModuËM­pšg
@@ -143465,7 +143635,7 @@ sm¬tThšg
 	`g‘Name
 (),getName(), 1);
 
-636 
+642 
 Sy¡em
 .
 out
@@ -143475,7 +143645,7 @@ out
 	`g‘Name
 ());
 
-637 
+643 
 mobeCÚŒŞËr
 .
 	`g‘ModuËM­pšg
@@ -143489,7 +143659,7 @@ sm¬tThšg
 	`g‘Name
 ());
 
-638 if(!
+644 if(!
 mobeCÚŒŞËr
 .
 	`g‘ModuËM­pšg
@@ -143499,7 +143669,7 @@ mobeCÚŒŞËr
 	`g‘Name
 ())){
 
-639 
+645 
 mobeCÚŒŞËr
 .
 	`g‘ModuËM­pšg
@@ -143517,7 +143687,7 @@ SŒšg
 IÁeg”
 >());
 
-640 
+646 
 mobeCÚŒŞËr
 .
 	`g‘ModuËM­pšg
@@ -143531,7 +143701,7 @@ mobeCÚŒŞËr
 sm¬tThšg
 .getName(), 1);
 
-643 
+649 
 mobeCÚŒŞËr
 .
 	`subm™AµliÿtiÚMig¿tiÚ
@@ -143541,7 +143711,7 @@ sm¬tThšg
 ­p
 , 1);
 
-646 
+652 
 	`£ndNow
 (
 mobeCÚŒŞËr
@@ -143555,11 +143725,11 @@ APP_SUBMIT_MIGRATE
 ­p
 );
 
-651 
+657 
 	}
 }
 
-653 
+659 
 ´iv©e
  
 	$unLockedMig¿tiÚ
@@ -143569,7 +143739,7 @@ SimEv’t
 ev
 ) {
 
-655 
+661 
 MobeDeviû
  
 sm¬tThšg
@@ -143579,7 +143749,7 @@ ev
 	`g‘D©a
 ();
 
-656 
+662 
 sm¬tThšg
 .
 	`£tLockedToMig¿tiÚ
@@ -143587,13 +143757,13 @@ sm¬tThšg
 çl£
 );
 
-657 
+663 
 sm¬tThšg
 .
 	`£tTimeFšishD–iv”yVm
 (-1);
 
-658 
+664 
 LogMobe
 .
 	`debug
@@ -143603,11 +143773,11 @@ sm¬tThšg
 	`g‘Name
 () +" hadhe migration unlocked");
 
-659 
+665 
 	}
 }
 
-661 
+667 
 ´iv©e
  
 	$descÚÃùS”v”CloudËtSm¬tThšg
@@ -143617,7 +143787,7 @@ SimEv’t
 ev
 ) {
 
-663 
+669 
 MobeDeviû
  
 sm¬tThšg
@@ -143627,13 +143797,13 @@ ev
 	`g‘D©a
 ();
 
-664 
+670 
 	`descÚÃùS”v”CloudËtSm¬tThšg
 (
 sm¬tThšg
 );
 
-665 
+671 
 MySti¡ics
 .
 	`g‘In¡ªû
@@ -143649,11 +143819,11 @@ CloudSim
 	`şock
 ());
 
-667 
+673 
 	}
 }
 
-669 
+675 
 ´iv©e
  
 	$cÚÃùS”v”CloudËtSm¬tThšg
@@ -143663,7 +143833,7 @@ SimEv’t
 ev
 ) {
 
-671 
+677 
 MobeDeviû
  
 sm¬tThšg
@@ -143673,13 +143843,13 @@ ev
 	`g‘D©a
 ();
 
-672 
+678 
 	`cÚÃùS”v”CloudËtSm¬tThšg
 (
 sm¬tThšg
 );
 
-673 
+679 
 MySti¡ics
 .
 	`g‘In¡ªû
@@ -143695,13 +143865,13 @@ CloudSim
 	`şock
 ());
 
-676 if(
+682 if(
 sm¬tThšg
 .
 	`g‘TimeFšishD–iv”yVm
 ()==-1){
 
-677 
+683 
 MySti¡ics
 .
 	`g‘In¡ªû
@@ -143717,7 +143887,7 @@ CloudSim
 	`şock
 ());
 
-680 
+686 
 sm¬tThšg
 .
 	`£tMigStus
@@ -143725,7 +143895,7 @@ sm¬tThšg
 çl£
 );
 
-681 
+687 
 sm¬tThšg
 .
 	`£tPo¡CİyStus
@@ -143733,7 +143903,7 @@ sm¬tThšg
 çl£
 );
 
-682 if(
+688 if(
 MySti¡ics
 .
 	`g‘In¡ªû
@@ -143749,7 +143919,7 @@ sm¬tThšg
 nuÎ
 ){
 
-683 
+689 
 MySti¡ics
 .
 	`g‘In¡ªû
@@ -143765,7 +143935,7 @@ CloudSim
 	`şock
 ());
 
-684 
+690 
 MySti¡ics
 .
 	`g‘In¡ªû
@@ -143779,7 +143949,7 @@ sm¬tThšg
 	`g‘MyId
 ());
 
-686 
+692 
 LogMobe
 .
 	`debug
@@ -143789,7 +143959,7 @@ sm¬tThšg
 	`g‘Name
 ()+ " had migStatuso false - connectServerCloudlet");
 
-687 
+693 
 MySti¡ics
 .
 	`g‘In¡ªû
@@ -143801,7 +143971,7 @@ sm¬tThšg
 	`g‘MyId
 (), 0.0);
 
-688 
+694 
 MySti¡ics
 .
 	`g‘In¡ªû
@@ -143821,7 +143991,7 @@ sm¬tThšg
 	`g‘Size
 ()*1024*1024*8, 0.0));
 
-690 if(!
+696 if(!
 sm¬tThšg
 .
 	`g‘SourûS”v”CloudËt
@@ -143831,7 +144001,7 @@ sm¬tThšg
 	`g‘VmLoÿlS”v”CloudËt
 ())){
 
-691 
+697 
 sm¬tThšg
 .
 	`g‘SourûS”v”CloudËt
@@ -143839,7 +144009,7 @@ sm¬tThšg
 	`descÚÃùS”v”CloudËtSm¬tThšg
 (smartThing);
 
-692 
+698 
 sm¬tThšg
 .
 	`g‘VmLoÿlS”v”CloudËt
@@ -143847,7 +144017,7 @@ sm¬tThšg
 	`cÚÃùS”v”CloudËtSm¬tThšg
 (smartThing);
 
-693 
+699 
 MySti¡ics
 .
 	`g‘In¡ªû
@@ -143855,17 +144025,17 @@ MySti¡ics
 	`£tMyCouÁLowe¡L©’cy
 (1);
 
-698 if(
+704 if(
 sm¬tThšg
 .
 	`g‘TimeFšishD–iv”yVm
 () !=-1){
 
-705 
+711 
 	}
 }
 
-707 
+713 
 ´iv©e
  
 	$addVmNewS”v”CloudËt
@@ -143875,11 +144045,11 @@ SimEv’t
 ev
 ) {
 
-710 
+716 
 	}
 }
 
-712 
+718 
 ´iv©e
  
 	$»moveVmOldS”v”CloudËt
@@ -143889,11 +144059,11 @@ SimEv’t
 ev
 ) {
 
-715 
+721 
 	}
 }
 
-717 
+723 
 ´iv©e
  
 	$švokeAbÜtMig¿tiÚ
@@ -143903,7 +144073,7 @@ SimEv’t
 ev
 ) {
 
-719 
+725 
 MobeDeviû
  
 sm¬tThšg
@@ -143913,7 +144083,7 @@ ev
 	`g‘D©a
 ();
 
-720 
+726 
 Sy¡em
 .
 out
@@ -143925,7 +144095,7 @@ sm¬tThšg
 	`g‘Name
 ());
 
-721 
+727 
 MySti¡ics
 .
 	`g‘In¡ªû
@@ -143939,7 +144109,7 @@ sm¬tThšg
 	`g‘MyId
 ());
 
-722 
+728 
 MySti¡ics
 .
 	`g‘In¡ªû
@@ -143953,7 +144123,7 @@ sm¬tThšg
 	`g‘MyId
 ());
 
-723 
+729 
 MySti¡ics
 .
 	`g‘In¡ªû
@@ -143967,7 +144137,7 @@ sm¬tThšg
 	`g‘MyId
 ());
 
-724 
+730 
 sm¬tThšg
 .
 	`£tMigStus
@@ -143975,7 +144145,7 @@ sm¬tThšg
 çl£
 );
 
-725 
+731 
 sm¬tThšg
 .
 	`£tPo¡CİyStus
@@ -143983,7 +144153,7 @@ sm¬tThšg
 çl£
 );
 
-726 
+732 
 sm¬tThšg
 .
 	`£tLockedToMig¿tiÚ
@@ -143991,13 +144161,13 @@ sm¬tThšg
 çl£
 );
 
-727 
+733 
 sm¬tThšg
 .
 	`£tTimeFšishD–iv”yVm
 (-1.0);
 
-728 
+734 
 sm¬tThšg
 .
 	`£tAbÜtMig¿tiÚ
@@ -144005,7 +144175,7 @@ sm¬tThšg
 Œue
 );
 
-729 
+735 
 sm¬tThšg
 .
 	`£tDe¡š©iÚS”v”CloudËt
@@ -144013,11 +144183,11 @@ sm¬tThšg
 	`g‘VmLoÿlS”v”CloudËt
 ());
 
-730 
+736 
 	}
 }
 
-733 
+739 
 public
  
 boŞ—n
@@ -144029,7 +144199,7 @@ MobeDeviû
 ¡
 ){
 
-734 
+740 
 ¡
 .
 	`£tSourûS”v”CloudËt
@@ -144037,7 +144207,7 @@ MobeDeviû
 this
 );
 
-736 
+742 
 	`£tSm¬tThšgs
 (
 ¡
@@ -144047,7 +144217,7 @@ PŞic›s
 ADD
 );
 
-738 
+744 
 ¡
 .
 	`£tP¬’tId
@@ -144055,7 +144225,7 @@ ADD
 	`g‘Id
 ());
 
-739 
+745 
 Ï‹ncy
  = 
 ¡
@@ -144063,7 +144233,7 @@ ADD
 	`g‘U¶škL©’cy
 ();
 
-741 
+747 
 	`g‘ChdToL©’cyM­
 ().
 	`put
@@ -144075,7 +144245,7 @@ ADD
 Ï‹ncy
 );
 
-742 
+748 
 	`addChd
 (
 ¡
@@ -144083,13 +144253,13 @@ ADD
 	`g‘Id
 ());
 
-753 
+759 
 	`£tU¶škL©’cy
 (
 	`g‘U¶škL©’cy
 ()+0.123812950236);
 
-756 
+762 
 LogMobe
 .
 	`debug
@@ -144099,15 +144269,15 @@ LogMobe
 	`g‘Name
 ()+" was connectedo "+getName());
 
-759  
+765  
 Œue
 ;
 
-760 
+766 
 	}
 }
 
-761 
+767 
 public
  
 boŞ—n
@@ -144119,7 +144289,7 @@ MobeDeviû
 ¡
 ){
 
-768 
+774 
 	`£tSm¬tThšgs
 (
 ¡
@@ -144129,7 +144299,7 @@ PŞic›s
 REMOVE
 );
 
-769 
+775 
 ¡
 .
 	`£tSourûS”v”CloudËt
@@ -144137,13 +144307,13 @@ REMOVE
 nuÎ
 );
 
-771 
+777 
 	`£tU¶škL©’cy
 (
 	`g‘U¶škL©’cy
 ()-0.123812950236);
 
-772 
+778 
 	`»moveChd
 (
 ¡
@@ -144151,7 +144321,7 @@ nuÎ
 	`g‘Id
 ());
 
-773 
+779 
 LogMobe
 .
 	`debug
@@ -144161,15 +144331,15 @@ LogMobe
 	`g‘Name
 ()+" was desconnectedo "+getName());
 
-774  
+780  
 Œue
 ;
 
-776 
+782 
 	}
 }
 
-777 
+783 
 ´iv©e
  
 	$švokeS¹Mig¿tiÚ
@@ -144179,7 +144349,7 @@ SimEv’t
 ev
 ) {
 
-780 
+786 
 MobeDeviû
  
 sm¬tThšg
@@ -144189,7 +144359,7 @@ ev
 	`g‘D©a
 ();
 
-782 if(
+788 if(
 MobeCÚŒŞËr
 .
 	`g‘Sm¬tThšgs
@@ -144199,13 +144369,13 @@ MobeCÚŒŞËr
 sm¬tThšg
 )){
 
-783 if(!
+789 if(!
 sm¬tThšg
 .
 	`isAbÜtMig¿tiÚ
 ()){
 
-784 if(
+790 if(
 sm¬tThšg
 .
 	`g‘SourûAp
@@ -144213,7 +144383,7 @@ sm¬tThšg
 nuÎ
 ){
 
-787 
+793 
 	`£nd
 (
 sm¬tThšg
@@ -144227,7 +144397,7 @@ MobeEv’ts
 DELIVERY_VM
 , smartThing);
 
-788 
+794 
 LogMobe
 .
 	`debug
@@ -144237,7 +144407,7 @@ sm¬tThšg
 	`g‘Name
 ()+" was scheduledhe DELIVERY_VM from "+
 
-789 
+795 
 sm¬tThšg
 .
 	`g‘VmLoÿlS”v”CloudËt
@@ -144245,7 +144415,7 @@ sm¬tThšg
 	`g‘Name
 ()+"o "
 
-790 +
+796 +
 sm¬tThšg
 .
 	`g‘De¡š©iÚS”v”CloudËt
@@ -144253,7 +144423,7 @@ sm¬tThšg
 	`g‘Name
 ());
 
-792 
+798 
 	`£ndNow
 (
 sm¬tThšg
@@ -144267,7 +144437,7 @@ MobeEv’ts
 VM_MIGRATE
 ,smartThing);
 
-793 
+799 
 M­
 <
 SŒšg
@@ -144277,7 +144447,7 @@ Objeù
 ma
 ;
 
-794 
+800 
 ma
  = 
 Ãw
@@ -144289,7 +144459,7 @@ SŒšg
 Objeù
 >();
 
-803 if(
+809 if(
 sm¬tThšg
 .
 	`g‘VmMobeDeviû
@@ -144297,7 +144467,7 @@ sm¬tThšg
 nuÎ
 ){
 
-804 
+810 
 Sy¡em
 .
 out
@@ -144309,7 +144479,7 @@ sm¬tThšg
 	`g‘Name
 ()+" has‡‚ull VM");
 
-806 
+812 
 ma
 .
 	`put
@@ -144319,7 +144489,7 @@ sm¬tThšg
 	`g‘VmMobeDeviû
 ());
 
-807 
+813 
 ma
 .
 	`put
@@ -144331,13 +144501,13 @@ sm¬tThšg
 	`g‘Ho¡
 ());
 
-808 if(
+814 if(
 ma
 .
 	`size
 ()<2){
 
-809 
+815 
 	`£ndNow
 (
 	`g‘Id
@@ -144349,7 +144519,7 @@ ABORT_MIGRATION
 sm¬tThšg
 );
 
-810 
+816 
 Sy¡em
 .
 out
@@ -144357,13 +144527,13 @@ out
 	`´šn
 ("FogDevice.java ma.size()<2");
 
-811 
+817 
 Sy¡em
 .
 	`ex™
 (0);
 
-814 
+820 
 	`£ndNow
 (
 sm¬tThšg
@@ -144379,7 +144549,7 @@ VM_MIGRATE
 ma
 );
 
-815 
+821 
 LogMobe
 .
 	`debug
@@ -144391,7 +144561,7 @@ sm¬tThšg
 	`g‘Id
 ()+ " HOST#: "+
 
-816 
+822 
 sm¬tThšg
 .
 	`g‘De¡š©iÚS”v”CloudËt
@@ -144401,7 +144571,7 @@ sm¬tThšg
 	`g‘Id
 ());
 
-821 
+827 
 	`£ndNow
 (
 sm¬tThšg
@@ -144415,7 +144585,7 @@ MobeEv’ts
 ABORT_MIGRATION
 ,smartThing);
 
-825 
+831 
 sm¬tThšg
 .
 	`£tAbÜtMig¿tiÚ
@@ -144423,7 +144593,7 @@ sm¬tThšg
 çl£
 );
 
-829 
+835 
 LogMobe
 .
 	`debug
@@ -144433,11 +144603,11 @@ sm¬tThšg
 	`g‘Name
 () +" wasƒxcluded from List of SmartThings!");
 
-831 
+837 
 	}
 }
 
-834 
+840 
 ´iv©e
  
 	$d–iv”yVM
@@ -144447,7 +144617,7 @@ SimEv’t
 ev
 ){
 
-835 
+841 
 MobeDeviû
  
 sm¬tThšg
@@ -144457,7 +144627,7 @@ ev
 	`g‘D©a
 ();
 
-836 ià(
+842 ià(
 MobeCÚŒŞËr
 .
 	`g‘Sm¬tThšgs
@@ -144467,7 +144637,7 @@ MobeCÚŒŞËr
 sm¬tThšg
 )){
 
-838 
+844 
 LogMobe
 .
 	`debug
@@ -144481,7 +144651,7 @@ sm¬tThšg
 	`g‘VmLoÿlS”v”CloudËt
 ().getName()
 
-839 + "Ø"+
+845 + "Ø"+
 sm¬tThšg
 .
 	`g‘De¡š©iÚS”v”CloudËt
@@ -144489,7 +144659,7 @@ sm¬tThšg
 	`g‘Name
 ());
 
-842 
+848 
 sm¬tThšg
 .
 	`g‘VmLoÿlS”v”CloudËt
@@ -144501,7 +144671,7 @@ PŞic›s
 REMOVE
 );
 
-844 
+850 
 sm¬tThšg
 .
 	`£tVmLoÿlS”v”CloudËt
@@ -144509,7 +144679,7 @@ sm¬tThšg
 	`g‘De¡š©iÚS”v”CloudËt
 ());
 
-845 
+851 
 sm¬tThšg
 .
 	`£tDe¡š©iÚS”v”CloudËt
@@ -144517,7 +144687,7 @@ sm¬tThšg
 nuÎ
 );
 
-847 
+853 
 sm¬tThšg
 .
 	`g‘VmLoÿlS”v”CloudËt
@@ -144529,7 +144699,7 @@ PŞic›s
 ADD
 );
 
-849 if(
+855 if(
 MySti¡ics
 .
 	`g‘In¡ªû
@@ -144543,7 +144713,7 @@ sm¬tThšg
 	`g‘MyId
 ())){
 
-850 
+856 
 sm¬tThšg
 .
 	`£tMigStus
@@ -144551,7 +144721,7 @@ sm¬tThšg
 çl£
 );
 
-851 
+857 
 sm¬tThšg
 .
 	`£tPo¡CİyStus
@@ -144559,7 +144729,7 @@ sm¬tThšg
 çl£
 );
 
-852 if(
+858 if(
 MySti¡ics
 .
 	`g‘In¡ªû
@@ -144575,7 +144745,7 @@ sm¬tThšg
 nuÎ
 ){
 
-853 
+859 
 MySti¡ics
 .
 	`g‘In¡ªû
@@ -144591,7 +144761,7 @@ CloudSim
 	`şock
 ());
 
-854 
+860 
 MySti¡ics
 .
 	`g‘In¡ªû
@@ -144605,7 +144775,7 @@ sm¬tThšg
 	`g‘MyId
 ());
 
-856 
+862 
 LogMobe
 .
 	`debug
@@ -144615,7 +144785,7 @@ sm¬tThšg
 	`g‘Name
 ()+ " had migStatuso false - deliveryVM");
 
-858 
+864 
 MySti¡ics
 .
 	`g‘In¡ªû
@@ -144639,7 +144809,7 @@ CloudSim
 	`g‘Size
 ()*1024*1024*8, 0.0));
 
-859 if(!
+865 if(!
 sm¬tThšg
 .
 	`g‘SourûS”v”CloudËt
@@ -144649,7 +144819,7 @@ sm¬tThšg
 	`g‘VmLoÿlS”v”CloudËt
 ())){
 
-860 
+866 
 sm¬tThšg
 .
 	`g‘SourûS”v”CloudËt
@@ -144657,7 +144827,7 @@ sm¬tThšg
 	`descÚÃùS”v”CloudËtSm¬tThšg
 (smartThing);
 
-861 
+867 
 sm¬tThšg
 .
 	`g‘VmLoÿlS”v”CloudËt
@@ -144665,7 +144835,7 @@ sm¬tThšg
 	`cÚÃùS”v”CloudËtSm¬tThšg
 (smartThing);
 
-869 
+875 
 mig¿tiÚLocked
  = (è((
 sm¬tThšg
@@ -144677,7 +144847,7 @@ sm¬tThšg
 	`g‘S³ed
 ()+1))+20000);
 
-870 
+876 
 	`£nd
 (
 sm¬tThšg
@@ -144693,7 +144863,7 @@ MobeEv’ts
 UNLOCKED_MIGRATION
 ,smartThing);
 
-871 
+877 
 MySti¡ics
 .
 	`g‘In¡ªû
@@ -144701,7 +144871,7 @@ MySti¡ics
 	`couÁMig¿tiÚ
 ();
 
-872 
+878 
 MySti¡ics
 .
 	`g‘In¡ªû
@@ -144715,7 +144885,7 @@ sm¬tThšg
 	`g‘MigTime
 ());
 
-874 
+880 
 sm¬tThšg
 .
 	`£tTimeFšishD–iv”yVm
@@ -144725,7 +144895,7 @@ CloudSim
 	`şock
 ());
 
-877 
+883 
 LogMobe
 .
 	`debug
@@ -144735,11 +144905,11 @@ sm¬tThšg
 	`g‘Name
 () +" wasƒxcluded by List of SmartThings! (inside Delivery Vm)");
 
-879 
+885 
 	}
 }
 
-883 
+889 
 ´iv©e
  
 	$švokeNoMig¿tiÚ
@@ -144749,7 +144919,7 @@ SimEv’t
 ev
 ) {
 
-885 
+891 
 MobeDeviû
  
 sm¬tThšg
@@ -144759,13 +144929,13 @@ ev
 	`g‘D©a
 ();
 
-887 if(
+893 if(
 sm¬tThšg
 .
 	`isLockedToMig¿tiÚ
 ()){
 
-888 
+894 
 LogMobe
 .
 	`debug
@@ -144775,7 +144945,7 @@ sm¬tThšg
 	`g‘Name
 ()+"‡lready is in migration Process orhe migration is†ocked");
 
-891 
+897 
 LogMobe
 .
 	`debug
@@ -144785,11 +144955,11 @@ sm¬tThšg
 	`g‘Name
 () + " is‚ot in Migrate");
 
-893 
+899 
 	}
 }
 
-895 
+901 
 ´iv©e
  
 	$švokeBefÜeMig¿tiÚ
@@ -144799,7 +144969,7 @@ SimEv’t
 ev
 ) {
 
-897 
+903 
 MobeDeviû
  
 sm¬tThšg
@@ -144809,7 +144979,7 @@ ev
 	`g‘D©a
 ();
 
-898 if(
+904 if(
 MobeCÚŒŞËr
 .
 	`g‘Sm¬tThšgs
@@ -144819,7 +144989,7 @@ MobeCÚŒŞËr
 sm¬tThšg
 )){
 
-900 if(
+906 if(
 sm¬tThšg
 .
 	`g‘SourûAp
@@ -144829,7 +144999,7 @@ nuÎ
 	`isMigStus
 ()){
 
-901 
+907 
 d–ayProûss
  = 
 	`g‘BefÜeMig¿‹
@@ -144839,11 +145009,11 @@ d–ayProûss
 sm¬tThšg
 );
 
-902 if(
+908 if(
 d–ayProûss
 >=0){
 
-904 if(
+910 if(
 	`g‘PŞicyR•liÿVM
 ()==
 PŞic›s
@@ -144851,7 +145021,7 @@ PŞic›s
 LIVE_MIGRATION
 ){
 
-905 
+911 
 sm¬tThšg
 .
 	`£tPo¡CİyStus
@@ -144859,7 +145029,7 @@ sm¬tThšg
 Œue
 );
 
-906 
+912 
 sm¬tThšg
 .
 	`£tTimeS¹LiveMig¿tiÚ
@@ -144869,7 +145039,7 @@ CloudSim
 	`şock
 ());
 
-910 
+916 
 sm¬tThšg
 .
 	`£tMigStus
@@ -144877,7 +145047,7 @@ sm¬tThšg
 Œue
 );
 
-911 
+917 
 MySti¡ics
 .
 	`g‘In¡ªû
@@ -144893,13 +145063,13 @@ CloudSim
 	`şock
 ());
 
-912 
+918 
 sm¬tThšg
 .
 	`£tTimeFšishD–iv”yVm
 (-1.0);
 
-913 
+919 
 	`£nd
 (
 sm¬tThšg
@@ -144917,7 +145087,7 @@ MobeEv’ts
 START_MIGRATION
 , smartThing);
 
-915 
+921 
 sm¬tThšg
 .
 	`£tLockedToMig¿tiÚ
@@ -144925,7 +145095,7 @@ sm¬tThšg
 Œue
 );
 
-920 
+926 
 	`£ndNow
 (
 sm¬tThšg
@@ -144939,7 +145109,7 @@ MobeEv’ts
 NO_MIGRATION
 ,smartThing);
 
-921 
+927 
 MySti¡ics
 .
 	`g‘In¡ªû
@@ -144953,7 +145123,7 @@ sm¬tThšg
 	`g‘MyId
 ());
 
-922 
+928 
 MySti¡ics
 .
 	`g‘In¡ªû
@@ -144967,7 +145137,7 @@ sm¬tThšg
 	`g‘MyId
 ());
 
-923 
+929 
 MySti¡ics
 .
 	`g‘In¡ªû
@@ -144981,7 +145151,7 @@ sm¬tThšg
 	`g‘MyId
 ());
 
-924 
+930 
 sm¬tThšg
 .
 	`£tMigStus
@@ -144989,7 +145159,7 @@ sm¬tThšg
 çl£
 );
 
-925 
+931 
 sm¬tThšg
 .
 	`£tPo¡CİyStus
@@ -144997,7 +145167,7 @@ sm¬tThšg
 çl£
 );
 
-926 
+932 
 sm¬tThšg
 .
 	`£tLockedToMig¿tiÚ
@@ -145005,13 +145175,13 @@ sm¬tThšg
 çl£
 );
 
-927 
+933 
 sm¬tThšg
 .
 	`£tTimeFšishD–iv”yVm
 (-1.0);
 
-928 
+934 
 sm¬tThšg
 .
 	`£tAbÜtMig¿tiÚ
@@ -145019,7 +145189,7 @@ sm¬tThšg
 Œue
 );
 
-932 
+938 
 	`£ndNow
 (
 sm¬tThšg
@@ -145033,11 +145203,11 @@ MobeEv’ts
 ABORT_MIGRATION
 ,smartThing);
 
-934 
+940 
 	}
 }
 
-935 
+941 
 ´iv©e
  
 	$migStusToLiveMig¿tiÚ
@@ -145047,7 +145217,7 @@ SimEv’t
 ev
 ) {
 
-937 
+943 
 MobeDeviû
  
 sm¬tThšg
@@ -145057,7 +145227,7 @@ ev
 	`g‘D©a
 ();
 
-938 
+944 
 	`£ndNow
 (
 sm¬tThšg
@@ -145071,11 +145241,11 @@ MobeEv’ts
 START_MIGRATION
 , smartThing);
 
-939 
+945 
 	}
 }
 
-941 
+947 
 ´iv©e
  
 	$švokeDecisiÚMig¿tiÚ
@@ -145085,7 +145255,7 @@ SimEv’t
 ev
 ) {
 
-943 
+949 
 MobeDeviû
  
 ¡
@@ -145093,7 +145263,7 @@ MobeDeviû
 	`g‘Sm¬tThšgs
 ()){
 
-944 if(
+950 if(
 ¡
 .
 	`g‘SourûAp
@@ -145103,7 +145273,7 @@ nuÎ
 	`isLockedToMig¿tiÚ
 ())){
 
-945 if(
+951 if(
 ¡
 .
 	`g‘VmLoÿlS”v”CloudËt
@@ -145113,7 +145283,7 @@ nuÎ
 	`shouldMig¿‹
 (st)){
 
-946 if(!
+952 if(!
 ¡
 .
 	`g‘VmLoÿlS”v”CloudËt
@@ -145123,7 +145293,7 @@ nuÎ
 	`g‘De¡š©iÚS”v”CloudËt
 ())){
 
-947 
+953 
 Sy¡em
 .
 out
@@ -145137,7 +145307,7 @@ out
 	`g‘Id
 ());
 
-948 
+954 
 LogMobe
 .
 	`debug
@@ -145149,7 +145319,7 @@ LogMobe
 	`g‘SourûAp
 ().getName()+": "+
 
-949 
+955 
 Di¡ªûs
 .
 	`checkDi¡ªû
@@ -145161,7 +145331,7 @@ Di¡ªûs
 	`g‘SourûAp
 ().getCoord()));
 
-950 
+956 
 Sy¡em
 .
 out
@@ -145173,7 +145343,7 @@ out
 	`g‘MigTime
 ());
 
-951 
+957 
 LogMobe
 .
 	`debug
@@ -145183,7 +145353,7 @@ LogMobe
 	`g‘Name
 ());
 
-952 
+958 
 LogMobe
 .
 	`debug
@@ -145197,7 +145367,7 @@ LogMobe
 	`g‘De¡š©iÚS”v”CloudËt
 ().getName()+
 
-953 " -> CÚÃùed by: "+
+959 " -> CÚÃùed by: "+
 ¡
 .
 	`g‘SourûS”v”CloudËt
@@ -145205,7 +145375,7 @@ LogMobe
 	`g‘Name
 ());
 
-954 
+960 
 	`£ndNow
 (
 ¡
@@ -145219,7 +145389,7 @@ MobeEv’ts
 TO_MIGRATION
 ,st);
 
-955 
+961 
 MySti¡ics
 .
 	`g‘In¡ªû
@@ -145233,7 +145403,7 @@ MySti¡ics
 	`g‘MyId
 ());
 
-956 
+962 
 MySti¡ics
 .
 	`g‘In¡ªû
@@ -145247,7 +145417,7 @@ MySti¡ics
 	`g‘MyId
 ());
 
-957 
+963 
 MySti¡ics
 .
 	`g‘In¡ªû
@@ -145261,7 +145431,7 @@ MySti¡ics
 	`g‘MyId
 ());
 
-958 
+964 
 ¡
 .
 	`£tLockedToMig¿tiÚ
@@ -145269,25 +145439,19 @@ MySti¡ics
 Œue
 );
 
-959 
+965 
 ¡
 .
 	`£tTimeFšishD–iv”yVm
 (-1.0);
 
-962 
-	`£ndNow
-(
-	`g‘Id
-(),
-MobeEv’ts
-.
-NO_MIGRATION
-,
-¡
-);
-
 966 
+	`§veMig¿tiÚ
+(
+¡
+);
+
+969 
 	`£ndNow
 (
 	`g‘Id
@@ -145299,7 +145463,7 @@ NO_MIGRATION
 ¡
 );
 
-970 
+973 
 	`£ndNow
 (
 	`g‘Id
@@ -145311,11 +145475,163 @@ NO_MIGRATION
 ¡
 );
 
-974 
+977 
+	`£ndNow
+(
+	`g‘Id
+(),
+MobeEv’ts
+.
+NO_MIGRATION
+,
+¡
+);
+
+981 
 	}
 }
 
-981 
+984 
+´iv©e
+ 
+	$§veMig¿tiÚ
+(
+MobeDeviû
+ 
+¡
+){
+
+985 
+Sy¡em
+.
+out
+.
+	`´šn
+("MIGRATION " +
+¡
+.
+	`g‘MyId
+(è+ " Pos™iÚ: " + st.
+	`g‘CoÜd
+().
+	`g‘CoÜdX
+(è+ ", " + st.g‘CoÜd().
+	`g‘CoÜdY
+(è+ " DœeùiÚ: " + st.
+	`g‘DœeùiÚ
+(è+ " S³ed: " + st.
+	`g‘S³ed
+());
+
+986 
+	`Œy
+(
+FeWr™”
+ 
+fw
+ = 
+Ãw
+ 
+	`FeWr™”
+(
+¡
+.
+	`g‘MyId
+()+"mig¿tiÚ.txt", 
+Œue
+);
+
+987 
+Bufã»dWr™”
+ 
+bw
+ = 
+Ãw
+ 
+	`Bufã»dWr™”
+(
+fw
+);
+
+988 
+PrštWr™”
+ 
+out
+ = 
+Ãw
+ 
+	`PrštWr™”
+(
+bw
+))
+
+990 
+out
+.
+	`´šn
+(
+¡
+.
+	`g‘MyId
+(è+ "\t" + st.
+	`g‘CoÜd
+().
+	`g‘CoÜdX
+(è+ "\t" + st.g‘CoÜd().
+	`g‘CoÜdY
+(è+ "\t" + st.
+	`g‘DœeùiÚ
+(è+ "\t" + st.
+	`g‘S³ed
+());
+
+992 
+	`ÿtch
+ (
+UnsuµÜ‹dEncodšgExû±iÚ
+ 
+e
+) {
+
+994 
+e
+.
+	`´štSckT¿û
+();
+
+996 
+	`ÿtch
+ (
+FeNÙFoundExû±iÚ
+ 
+e
+) {
+
+998 
+e
+.
+	`´štSckT¿û
+();
+
+1000 
+	`ÿtch
+ (
+IOExû±iÚ
+ 
+e
+) {
+
+1002 
+e
+.
+	`´štSckT¿û
+();
+
+1004 
+	}
+}
+
+1011 
 ´iv©e
  
 	$mªageResourûs
@@ -145325,11 +145641,11 @@ SimEv’t
 ev
 ) {
 
-982 
+1012 
 	`upd©eEÃrgyCÚsum±iÚ
 ();
 
-983 
+1013 
 	`£nd
 (
 	`g‘Id
@@ -145343,11 +145659,11 @@ FogEv’ts
 RESOURCE_MGMT
 );
 
-984 
+1014 
 	}
 }
 
-990 
+1020 
 ´iv©e
  
 	$upd©eModuËIn¡ªûCouÁ
@@ -145357,7 +145673,7 @@ SimEv’t
 ev
 ) {
 
-991 
+1021 
 ModuËLaunchCÚfig
  
 cÚfig
@@ -145367,7 +145683,7 @@ ev
 	`g‘D©a
 ();
 
-992 
+1022 
 SŒšg
  
 ­pId
@@ -145379,7 +145695,7 @@ cÚfig
 	`g‘AµId
 ();
 
-993 if(!
+1023 if(!
 moduËIn¡ªûCouÁ
 .
 	`cÚšsKey
@@ -145387,7 +145703,7 @@ moduËIn¡ªûCouÁ
 ­pId
 ))
 
-994 
+1024 
 moduËIn¡ªûCouÁ
 .
 	`put
@@ -145403,7 +145719,7 @@ SŒšg
 IÁeg”
 >());
 
-995 
+1025 
 moduËIn¡ªûCouÁ
 .
 	`g‘
@@ -145421,7 +145737,7 @@ cÚfig
 	`g‘In¡ªûCouÁ
 ());
 
-996 
+1026 
 Sy¡em
 .
 out
@@ -145437,11 +145753,11 @@ cÚfig
 	`g‘ModuË
 ().getName());
 
-997 
+1027 
 	}
 }
 
-1003 
+1033 
 ´iv©e
  
 	$£ndP”iodicTu¶e
@@ -145451,7 +145767,7 @@ SimEv’t
 ev
 ) {
 
-1004 
+1034 
 AµEdge
  
 edge
@@ -145461,7 +145777,7 @@ ev
 	`g‘D©a
 ();
 
-1005 
+1035 
 SŒšg
  
 ¤cModuË
@@ -145471,7 +145787,7 @@ edge
 	`g‘Sourû
 ();
 
-1006 
+1036 
 AµModuË
  
 moduË
@@ -145479,7 +145795,7 @@ moduË
 nuÎ
 ;
 
-1007 
+1037 
 Vm
  
 vm
@@ -145489,7 +145805,7 @@ vm
 	`g‘VmLi¡
 ()){
 
-1009 if(((
+1039 if(((
 AµModuË
 )
 vm
@@ -145501,7 +145817,7 @@ vm
 ¤cModuË
 )){
 
-1010 
+1040 
 moduË
 =(
 AµModuË
@@ -145509,13 +145825,13 @@ AµModuË
 vm
 ;
 
-1015 if(
+1045 if(
 moduË
  =ğ
 nuÎ
 )
 
-1018 
+1048 
 š¡ªûCouÁ
  = 
 	`g‘ModuËIn¡ªûCouÁ
@@ -145529,7 +145845,7 @@ moduË
 ¤cModuË
 );
 
-1023 
+1053 
 i
  = 0;i<((
 edge
@@ -145543,13 +145859,13 @@ UP
 š¡ªûCouÁ
 :1);i++){
 
-1024 if(
+1054 if(
 ­¶iÿtiÚM­
 .
 	`isEm±y
 ()){
 
-1028 
+1058 
 AµliÿtiÚ
  
 ­p
@@ -145563,13 +145879,13 @@ moduË
 	`g‘AµId
 ());
 
-1029 if(
+1059 if(
 ­p
  =ğ
 nuÎ
 ){
 
-1047 
+1077 
 Tu¶e
  
 tu¶e
@@ -145589,25 +145905,25 @@ edge
 	`g‘Id
 ());
 
-1048 
+1078 
 	`upd©eTimšgsOnS’dšg
 (
 tu¶e
 );
 
-1049 
+1079 
 	`£ndToS–f
 (
 tu¶e
 );
 
-1052 if(
+1082 if(
 ­¶iÿtiÚM­
 .
 	`isEm±y
 ()){
 
-1056 
+1086 
 	`£nd
 (
 	`g‘Id
@@ -145621,11 +145937,11 @@ FogEv’ts
 SEND_PERIODIC_TUPLE
 ,ƒdge);
 
-1058 
+1088 
 	}
 }
 
-1060 
+1090 
 ´Ùeùed
  
 	$´oûssAùu©ÜJošed
@@ -145635,7 +145951,7 @@ SimEv’t
 ev
 ) {
 
-1061 
+1091 
 aùu©ÜId
  = 
 ev
@@ -145643,7 +145959,7 @@ ev
 	`g‘Sourû
 ();
 
-1062 
+1092 
 d–ay
  = ()
 ev
@@ -145651,7 +145967,7 @@ ev
 	`g‘D©a
 ();
 
-1063 
+1093 
 	`g‘AssocŸ‹dAùu©ÜIds
 ().
 	`add
@@ -145669,11 +145985,11 @@ aùu©ÜId
 d–ay
 ));
 
-1064 
+1094 
 	}
 }
 
-1066 
+1096 
 ´Ùeùed
  
 	$upd©eAùiveAµliÿtiÚs
@@ -145683,7 +145999,7 @@ SimEv’t
 ev
 ) {
 
-1067 
+1097 
 AµliÿtiÚ
  
 ­p
@@ -145693,7 +146009,7 @@ ev
 	`g‘D©a
 ();
 
-1068 
+1098 
 	`g‘AùiveAµliÿtiÚs
 ().
 	`add
@@ -145703,11 +146019,11 @@ ev
 	`g‘AµId
 ());
 
-1069 
+1099 
 	}
 }
 
-1072 
+1102 
 public
  
 SŒšg
@@ -145717,7 +146033,7 @@ SŒšg
 vmId
 ){
 
-1073 
+1103 
 Vm
  
 vm
@@ -145729,7 +146045,7 @@ this
 	`g‘VmLi¡
 ()){
 
-1074 if(
+1104 if(
 vm
 .
 	`g‘Id
@@ -145737,7 +146053,7 @@ vm
 vmId
 )
 
-1075  ((
+1105  ((
 AµModuË
 )
 vm
@@ -145745,21 +146061,21 @@ vm
 	`g‘Name
 ();
 
-1077  
+1107  
 nuÎ
 ;
 
-1078 
+1108 
 	}
 }
 
-1085 
+1115 
 ´Ùeùed
  
 	$upd©eCloud‘ProûssšgW™houtSchedulšgFutu»Ev’tsFÜû
 () {
 
-1086 
+1116 
 cu¼’tTime
  = 
 CloudSim
@@ -145767,7 +146083,7 @@ CloudSim
 	`şock
 ();
 
-1087 
+1117 
 mšTime
  = 
 DoubË
@@ -145775,7 +146091,7 @@ DoubË
 MAX_VALUE
 ;
 
-1088 
+1118 
 timeDiff
  = 
 cu¼’tTime
@@ -145783,11 +146099,11 @@ cu¼’tTime
 	`g‘La¡ProûssTime
 ();
 
-1089 
+1119 
 timeF¿meD©aûÁ”EÃrgy
  = 0.0;
 
-1091 
+1121 
 Pow”Ho¡
  
 ho¡
@@ -145797,13 +146113,13 @@ this
 	`g‘Ho¡Li¡
 ()) {
 
-1092 
+1122 
 Log
 .
 	`´štLše
 ();
 
-1094 
+1124 
 time
  = 
 ho¡
@@ -145813,59 +146129,59 @@ ho¡
 cu¼’tTime
 );
 
-1095 ià(
+1125 ià(
 time
  < 
 mšTime
 ) {
 
-1096 
+1126 
 mšTime
  = 
 time
 ;
 
-1099 
+1129 
 Log
 .
 	`fÜm©Lše
 (
 
-1101 
+1131 
 cu¼’tTime
 ,
 
-1102 
+1132 
 ho¡
 .
 	`g‘Id
 (),
 
-1103 
+1133 
 ho¡
 .
 	`g‘Utiz©iÚOfCpu
 () * 100);
 
-1106 ià(
+1136 ià(
 timeDiff
  > 0) {
 
-1107 
+1137 
 Log
 .
 	`fÜm©Lše
 (
 
-1109 
+1139 
 	`g‘La¡ProûssTime
 (),
 
-1110 
+1140 
 cu¼’tTime
 );
 
-1112 
+1142 
 Pow”Ho¡
  
 ho¡
@@ -145875,7 +146191,7 @@ this
 	`g‘Ho¡Li¡
 ()) {
 
-1113 
+1143 
 ´eviousUtiz©iÚOfCpu
  = 
 ho¡
@@ -145883,7 +146199,7 @@ ho¡
 	`g‘P»viousUtiz©iÚOfCpu
 ();
 
-1114 
+1144 
 utiz©iÚOfCpu
  = 
 ho¡
@@ -145891,11 +146207,11 @@ ho¡
 	`g‘Utiz©iÚOfCpu
 ();
 
-1115 ià(
+1145 ià(
 utiz©iÚOfCpu
  < 0 || utilizationOfCpu > 1) {
 
-1116 
+1146 
 Sy¡em
 .
 out
@@ -145905,7 +146221,7 @@ out
 utiz©iÚOfCpu
 );
 
-1118 
+1148 
 timeF¿meHo¡EÃrgy
  = 
 ho¡
@@ -145913,93 +146229,93 @@ ho¡
 	`g‘EÃrgyLš—rIÁ”pŞ©iÚ
 (
 
-1119 
+1149 
 ´eviousUtiz©iÚOfCpu
 ,
 
-1120 
+1150 
 utiz©iÚOfCpu
 ,
 
-1121 
+1151 
 timeDiff
 );
 
-1122 
+1152 
 timeF¿meD©aûÁ”EÃrgy
  +ğ
 timeF¿meHo¡EÃrgy
 ;
 
-1124 
+1154 
 Log
 .
 	`´štLše
 ();
 
-1125 
+1155 
 Log
 .
 	`fÜm©Lše
 (
 
-1127 
+1157 
 cu¼’tTime
 ,
 
-1128 
+1158 
 ho¡
 .
 	`g‘Id
 (),
 
-1129 
+1159 
 	`g‘La¡ProûssTime
 (),
 
-1130 
+1160 
 ´eviousUtiz©iÚOfCpu
  * 100,
 
-1131 
+1161 
 utiz©iÚOfCpu
  * 100);
 
-1132 
+1162 
 Log
 .
 	`fÜm©Lše
 (
 
-1134 
+1164 
 cu¼’tTime
 ,
 
-1135 
+1165 
 ho¡
 .
 	`g‘Id
 (),
 
-1136 
+1166 
 timeF¿meHo¡EÃrgy
 );
 
-1139 
+1169 
 Log
 .
 	`fÜm©Lše
 (
 
-1141 
+1171 
 cu¼’tTime
 ,
 
-1142 
+1172 
 timeF¿meD©aûÁ”EÃrgy
 );
 
-1145 
+1175 
 	`£tPow”
 (
 	`g‘Pow”
@@ -146007,37 +146323,37 @@ timeF¿meD©aûÁ”EÃrgy
 timeF¿meD©aûÁ”EÃrgy
 );
 
-1147 
+1177 
 	`checkCloudËtCom¶‘iÚ
 ();
 
-1161 
+1191 
 Log
 .
 	`´štLše
 ();
 
-1163 
+1193 
 	`£tLa¡ProûssTime
 (
 cu¼’tTime
 );
 
-1164  
+1194  
 mšTime
 ;
 
-1165 
+1195 
 	}
 }
 
-1168 
+1198 
 ´Ùeùed
  
 	$checkCloudËtCom¶‘iÚ
 () {
 
-1169 
+1199 
 boŞ—n
  
 şoudËtCom¶‘ed
@@ -146045,7 +146361,7 @@ boŞ—n
 çl£
 ;
 
-1170 
+1200 
 Li¡
 <
 Vm
@@ -146057,7 +146373,7 @@ Vm
 A¼ayLi¡
 <>();
 
-1171 
+1201 
 Li¡
 <? 
 ex‹nds
@@ -146071,7 +146387,7 @@ li¡
 	`g‘Ho¡Li¡
 ();
 
-1172 
+1202 
 i
  = 0; i < 
 li¡
@@ -146079,7 +146395,7 @@ li¡
 	`size
 (); i++) {
 
-1173 
+1203 
 Ho¡
  
 ho¡
@@ -146091,7 +146407,7 @@ li¡
 i
 );
 
-1174 
+1204 
 Vm
  
 vm
@@ -146101,7 +146417,7 @@ ho¡
 	`g‘VmLi¡
 ()) {
 
-1175 
+1205 
 vm
 .
 	`g‘CloudËtScheduËr
@@ -146109,7 +146425,7 @@ vm
 	`isFšishedCloudËts
 ()) {
 
-1176 
+1206 
 CloudËt
  
 ş
@@ -146121,19 +146437,19 @@ vm
 	`g‘NextFšishedCloudËt
 ();
 
-1177 ià(
+1207 ià(
 ş
  !ğ
 nuÎ
 ) {
 
-1178 
+1208 
 şoudËtCom¶‘ed
  = 
 Œue
 ;
 
-1179 
+1209 
 Tu¶e
  
 tu¶e
@@ -146141,7 +146457,7 @@ tu¶e
 ş
 ;
 
-1180 
+1210 
 TimeK“³r
 .
 	`g‘In¡ªû
@@ -146151,7 +146467,7 @@ TimeK“³r
 tu¶e
 );
 
-1181 
+1211 
 AµliÿtiÚ
  
 ­¶iÿtiÚ
@@ -146165,13 +146481,13 @@ tu¶e
 	`g‘AµId
 ());
 
-1182 if(
+1212 if(
 ­¶iÿtiÚ
 ==
 nuÎ
 ){
 
-1188 
+1218 
 »moveVmLi¡
 .
 	`add
@@ -146179,7 +146495,7 @@ nuÎ
 vm
 );
 
-1214 
+1244 
 Logg”
 .
 	`debug
@@ -146193,7 +146509,7 @@ tu¶e
 	`g‘De¡ModuËName
 ());
 
-1217 
+1247 
 Li¡
 <
 Tu¶e
@@ -146211,7 +146527,7 @@ tu¶e
 	`g‘Id
 ());
 
-1218 
+1248 
 Tu¶e
  
 »sTu¶e
@@ -146219,7 +146535,7 @@ Tu¶e
 »suÉªtTu¶es
 ){
 
-1219 
+1249 
 »sTu¶e
 .
 	`£tModuËCİyM­
@@ -146237,7 +146553,7 @@ tu¶e
 	`g‘ModuËCİyM­
 ()));
 
-1220 
+1250 
 »sTu¶e
 .
 	`g‘ModuËCİyM­
@@ -146253,19 +146569,19 @@ vm
 	`g‘Id
 ());
 
-1221 
+1251 
 	`upd©eTimšgsOnS’dšg
 (
 »sTu¶e
 );
 
-1222 
+1252 
 	`£ndToS–f
 (
 »sTu¶e
 );
 
-1224 
+1254 
 	`£ndNow
 (
 ş
@@ -146277,7 +146593,7 @@ CloudSimTags
 CLOUDLET_RETURN
 , cl);
 
-1228 
+1258 
 Vm
  
 vm
@@ -146285,7 +146601,7 @@ vm
 »moveVmLi¡
 ){
 
-1229 
+1259 
 ho¡
 .
 	`g‘VmLi¡
@@ -146295,27 +146611,27 @@ ho¡
 vm
 );
 
-1231 
+1261 
 »moveVmLi¡
 .
 	`ş—r
 ();
 
-1236 if(
+1266 if(
 şoudËtCom¶‘ed
 )
 
-1237 
+1267 
 	`upd©eAÎoÿ‹dMs
 (
 nuÎ
 );
 
-1240 
+1270 
 	}
 }
 
-1242 
+1272 
 ´Ùeùed
  
 	$upd©eTimšgsOnS’dšg
@@ -146325,7 +146641,7 @@ Tu¶e
 »sTu¶e
 ) {
 
-1245 
+1275 
 SŒšg
  
 ¤cModuË
@@ -146335,7 +146651,7 @@ SŒšg
 	`g‘SrcModuËName
 ();
 
-1246 
+1276 
 SŒšg
  
 de¡ModuË
@@ -146345,7 +146661,7 @@ de¡ModuË
 	`g‘De¡ModuËName
 ();
 
-1247 
+1277 
 AµLoİ
  
 loİ
@@ -146361,7 +146677,7 @@ loİ
 	`g‘Loİs
 ()){
 
-1248 if(
+1278 if(
 loİ
 .
 	`hasEdge
@@ -146373,7 +146689,7 @@ de¡ModuË
 	`isS¹ModuË
 (srcModule)){
 
-1249 
+1279 
 tu¶eId
  = 
 TimeK“³r
@@ -146383,7 +146699,7 @@ TimeK“³r
 	`g‘UniqueId
 ();
 
-1250 
+1280 
 »sTu¶e
 .
 	`£tAùu®Tu¶eId
@@ -146391,7 +146707,7 @@ TimeK“³r
 tu¶eId
 );
 
-1251 if(!
+1281 if(!
 TimeK“³r
 .
 	`g‘In¡ªû
@@ -146405,7 +146721,7 @@ loİ
 	`g‘LoİId
 ()))
 
-1252 
+1282 
 TimeK“³r
 .
 	`g‘In¡ªû
@@ -146425,7 +146741,7 @@ A¼ayLi¡
 IÁeg”
 >());
 
-1253 
+1283 
 TimeK“³r
 .
 	`g‘In¡ªû
@@ -146443,7 +146759,7 @@ loİ
 tu¶eId
 );
 
-1254 
+1284 
 TimeK“³r
 .
 	`g‘In¡ªû
@@ -146459,11 +146775,11 @@ CloudSim
 	`şock
 ());
 
-1260 
+1290 
 	}
 }
 
-1262 
+1292 
 ´Ùeùed
  
 	$g‘ChdIdW™hRou‹To
@@ -146471,7 +146787,7 @@ CloudSim
 rg‘DeviûId
 ){
 
-1263 
+1293 
 IÁeg”
  
 chdId
@@ -146479,17 +146795,17 @@ chdId
 	`g‘Chd»nIds
 ()){
 
-1264 if(
+1294 if(
 rg‘DeviûId
  =ğ
 chdId
 )
 
-1265  
+1295  
 chdId
 ;
 
-1266 if(((
+1296 if(((
 FogDeviû
 )
 CloudSim
@@ -146503,15 +146819,15 @@ chdId
 rg‘DeviûId
 ) != -1)
 
-1267  
+1297  
 chdId
 ;
 
-1270 
+1300 
 	}
 }
 
-1272 
+1302 
 ´Ùeùed
  
 	$g‘ChdIdFÜTu¶e
@@ -146521,7 +146837,7 @@ Tu¶e
 tu¶e
 ){
 
-1273 if(
+1303 if(
 tu¶e
 .
 	`g‘DœeùiÚ
@@ -146531,7 +146847,7 @@ Tu¶e
 ACTUATOR
 ){
 
-1274 
+1304 
 g©ewayId
  = ((
 Aùu©Ü
@@ -146547,17 +146863,17 @@ tu¶e
 	`g‘G©ewayDeviûId
 ();
 
-1275  
+1305  
 	`g‘ChdIdW™hRou‹To
 (
 g©ewayId
 );
 
-1278 
+1308 
 	}
 }
 
-1280 
+1310 
 ´Ùeùed
  
 	$upd©eAÎoÿ‹dMs
@@ -146567,7 +146883,7 @@ SŒšg
 šcomšgO³¿tÜ
 ){
 
-1281 
+1311 
 	`g‘Ho¡
 ().
 	`g‘VmScheduËr
@@ -146575,7 +146891,7 @@ SŒšg
 	`d—Îoÿ‹PesFÜAÎVms
 ();
 
-1282 
+1312 
 fš®
  
 Vm
@@ -146587,7 +146903,7 @@ vm
 	`g‘VmLi¡
 ()){
 
-1284 if(
+1314 if(
 vm
 .
 	`g‘CloudËtScheduËr
@@ -146603,7 +146919,7 @@ AµModuË
 šcomšgO³¿tÜ
 )){
 
-1285 
+1315 
 	`g‘Ho¡
 ().
 	`g‘VmScheduËr
@@ -146619,7 +146935,7 @@ A¼ayLi¡
 DoubË
 >(){
 
-1286 
+1316 
 ´Ùeùed
  
 fš®
@@ -146627,7 +146943,7 @@ fš®
 £rŸlV”siÚUID
  = 1L;
 
-1287 {
+1317 {
 	`add
 ((è
 	`g‘Ho¡
@@ -146635,7 +146951,7 @@ fš®
 	`g‘TÙ®Ms
 ());}});
 
-1289 
+1319 
 	`g‘Ho¡
 ().
 	`g‘VmScheduËr
@@ -146651,7 +146967,7 @@ A¼ayLi¡
 DoubË
 >(){
 
-1290 
+1320 
 ´Ùeùed
  
 fš®
@@ -146659,29 +146975,29 @@ fš®
 £rŸlV”siÚUID
  = 1L;
 
-1291 {
+1321 {
 	`add
 (0.0);}});
 
-1296 
+1326 
 	`upd©eEÃrgyCÚsum±iÚ
 ();
 
-1298 
+1328 
 	}
 }
 
-1300 
+1330 
 ´iv©e
  
 	$upd©eEÃrgyCÚsum±iÚ
 () {
 
-1301 
+1331 
 tÙ®MsAÎoÿ‹d
  = 0;
 
-1302 
+1332 
 fš®
  
 Vm
@@ -146693,7 +147009,7 @@ vm
 	`g‘VmLi¡
 ()){
 
-1306 
+1336 
 tÙ®MsAÎoÿ‹d
  +ğ
 	`g‘Ho¡
@@ -146703,7 +147019,7 @@ tÙ®MsAÎoÿ‹d
 vm
 );
 
-1309 
+1339 
 timeNow
  = 
 CloudSim
@@ -146711,13 +147027,13 @@ CloudSim
 	`şock
 ();
 
-1310 
+1340 
 cu¼’tEÃrgyCÚsum±iÚ
  = 
 	`g‘EÃrgyCÚsum±iÚ
 ();
 
-1311 
+1341 
 ÃwEÃrgyCÚsum±iÚ
  = 
 cu¼’tEÃrgyCÚsum±iÚ
@@ -146735,19 +147051,19 @@ timeNow
 Ï¡Utiz©iÚ
 );
 
-1312 
+1342 
 	`£tEÃrgyCÚsum±iÚ
 (
 ÃwEÃrgyCÚsum±iÚ
 );
 
-1321 
+1351 
 cu¼’tCo¡
  = 
 	`g‘TÙ®Co¡
 ();
 
-1322 
+1352 
 Ãwco¡
  = 
 cu¼’tCo¡
@@ -146765,13 +147081,13 @@ timeNow
 	`g‘TÙ®Ms
 ();
 
-1323 
+1353 
 	`£tTÙ®Co¡
 (
 Ãwco¡
 );
 
-1325 
+1355 
 Ï¡Utiz©iÚ
  = 
 M©h
@@ -146785,17 +147101,17 @@ tÙ®MsAÎoÿ‹d
 	`g‘TÙ®Ms
 ());
 
-1326 
+1356 
 Ï¡Utiz©iÚUpd©eTime
  = 
 timeNow
 ;
 
-1327 
+1357 
 	}
 }
 
-1329 
+1359 
 ´Ùeùed
  
 	$´oûssAµSubm™
@@ -146805,7 +147121,7 @@ SimEv’t
 ev
 ) {
 
-1330 
+1360 
 AµliÿtiÚ
  
 ­p
@@ -146815,7 +147131,7 @@ ev
 	`g‘D©a
 ();
 
-1332 
+1362 
 ­¶iÿtiÚM­
 .
 	`put
@@ -146825,11 +147141,11 @@ ev
 	`g‘AµId
 (),‡pp);
 
-1333 
+1363 
 	}
 }
 
-1335 
+1365 
 ´Ùeùed
  
 	$addChd
@@ -146837,7 +147153,7 @@ ev
 chdId
 ){
 
-1336 if(
+1366 if(
 CloudSim
 .
 	`g‘EÁ™yName
@@ -146849,7 +147165,7 @@ chdId
 	`cÚšs
 ("sensor"))
 
-1338 if(!
+1368 if(!
 	`g‘Chd»nIds
 ().
 	`cÚšs
@@ -146859,7 +147175,7 @@ chdId
 	`g‘Id
 ())
 
-1339 
+1369 
 	`g‘Chd»nIds
 ().
 	`add
@@ -146867,7 +147183,7 @@ chdId
 chdId
 );
 
-1340 if(!
+1370 if(!
 	`g‘ChdToO³¿tÜsM­
 ().
 	`cÚšsKey
@@ -146875,7 +147191,7 @@ chdId
 chdId
 ))
 
-1341 
+1371 
 	`g‘ChdToO³¿tÜsM­
 ().
 	`put
@@ -146889,11 +147205,11 @@ A¼ayLi¡
 SŒšg
 >());
 
-1342 
+1372 
 	}
 }
 
-1344 
+1374 
 ´Ùeùed
  
 	$»moveChd
@@ -146901,7 +147217,7 @@ SŒšg
 chdId
 ){
 
-1345 
+1375 
 	`g‘Chd»nIds
 ().
 	`»move
@@ -146913,7 +147229,7 @@ CloudSim
 chdId
 ));
 
-1346 
+1376 
 	`g‘ChdToO³¿tÜsM­
 ().
 	`»move
@@ -146921,17 +147237,17 @@ chdId
 chdId
 );
 
-1347 
+1377 
 	}
 }
 
-1350 
+1380 
 ´Ùeùed
  
 	$upd©eCloudT¿ffic
 (){
 
-1351 
+1381 
 time
  = ()
 CloudSim
@@ -146939,7 +147255,7 @@ CloudSim
 	`şock
 ()/1000;
 
-1352 if(!
+1382 if(!
 şoudT¿fficM­
 .
 	`cÚšsKey
@@ -146947,7 +147263,7 @@ CloudSim
 time
 ))
 
-1353 
+1383 
 şoudT¿fficM­
 .
 	`put
@@ -146955,7 +147271,7 @@ time
 time
 , 0);
 
-1354 
+1384 
 şoudT¿fficM­
 .
 	`put
@@ -146965,11 +147281,11 @@ time
 	`g‘
 (time)+1);
 
-1355 
+1385 
 	}
 }
 
-1357 
+1387 
 ´Ùeùed
  
 	$£ndTu¶eToAùu©Ü
@@ -146979,7 +147295,7 @@ Tu¶e
 tu¶e
 ){
 
-1369 
+1399 
 Paœ
 <
 IÁeg”
@@ -146991,7 +147307,7 @@ aùu©ÜAssocŸtiÚ
 	`g‘AssocŸ‹dAùu©ÜIds
 ()){
 
-1370 
+1400 
 aùu©ÜId
  = 
 aùu©ÜAssocŸtiÚ
@@ -146999,7 +147315,7 @@ aùu©ÜAssocŸtiÚ
 	`g‘Fœ¡
 ();
 
-1371 
+1401 
 d–ay
  = 
 aùu©ÜAssocŸtiÚ
@@ -147007,7 +147323,7 @@ aùu©ÜAssocŸtiÚ
 	`g‘SecÚd
 ();
 
-1372 
+1402 
 SŒšg
  
 aùu©ÜTy³
@@ -147023,7 +147339,7 @@ aùu©ÜId
 	`g‘Aùu©ÜTy³
 ();
 
-1373 if(
+1403 if(
 tu¶e
 .
 	`g‘De¡ModuËName
@@ -147033,7 +147349,7 @@ tu¶e
 aùu©ÜTy³
 )){
 
-1374 
+1404 
 	`£nd
 (
 aùu©ÜId
@@ -147047,13 +147363,13 @@ TUPLE_ARRIVAL
 tu¶e
 );
 
-1378 
+1408 
 chdId
  : 
 	`g‘Chd»nIds
 ()){
 
-1379 
+1409 
 	`£ndDown
 (
 tu¶e
@@ -147061,15 +147377,15 @@ tu¶e
 chdId
 );
 
-1381 
+1411 
 	}
 }
 
-1382 
+1412 
 	gnumCl›Ás
 =0;
 
-1384 
+1414 
 ´Ùeùed
  
 	$´oûssTu¶eA¼iv®
@@ -147079,7 +147395,7 @@ SimEv’t
 ev
 ){
 
-1385 
+1415 
 Tu¶e
  
 tu¶e
@@ -147089,7 +147405,7 @@ ev
 	`g‘D©a
 ();
 
-1386 
+1416 
 MySti¡ics
 .
 	`g‘In¡ªû
@@ -147097,7 +147413,7 @@ MySti¡ics
 	`£tMyCouÁTÙ®Tu¶e
 (1);
 
-1388 
+1418 
 boŞ—n
  
 æagCÚtšue
@@ -147105,7 +147421,7 @@ boŞ—n
 çl£
 ;
 
-1389 
+1419 
 MobeDeviû
  
 ¡
@@ -147115,7 +147431,7 @@ MobeCÚŒŞËr
 	`g‘Sm¬tThšgs
 ()){
 
-1390 
+1420 
 S’sÜ
  
 s
@@ -147125,7 +147441,7 @@ s
 	`g‘S’sÜs
 ()){
 
-1391 if(
+1421 if(
 tu¶e
 .
 	`g‘AµId
@@ -147135,23 +147451,23 @@ tu¶e
 s
 .getAppId())){
 
-1392 
+1422 
 æagCÚtšue
 =
 Œue
 ;
 
-1397 if(!
+1427 if(!
 æagCÚtšue
 ){
 
-1401 if(
+1431 if(
 tu¶e
 .
 	`g‘In™ŸlTime
 ()==-1){
 
-1403 
+1433 
 MySti¡ics
 .
 	`g‘In¡ªû
@@ -147171,7 +147487,7 @@ CloudSim
 	`g‘U¶škL©’cy
 ());
 
-1404 
+1434 
 tu¶e
 .
 	`£tIn™ŸlTime
@@ -147183,7 +147499,7 @@ CloudSim
 	`g‘U¶škL©’cy
 ());
 
-1408 
+1438 
 MobeDeviû
  
 ¡
@@ -147191,7 +147507,7 @@ MobeDeviû
 	`g‘Sm¬tThšgs
 ()){
 
-1409 if(
+1439 if(
 ¡
 .
 	`g‘Id
@@ -147201,7 +147517,7 @@ ev
 	`g‘Sourû
 ()){
 
-1410 if((!
+1440 if((!
 ¡
 .
 	`isHªdoffStus
@@ -147209,7 +147525,7 @@ ev
 	`isMigStus
 ())){
 
-1419 
+1449 
 MySti¡ics
 .
 	`g‘In¡ªû
@@ -147217,13 +147533,13 @@ MySti¡ics
 	`£tMyCouÁLo¡Tu¶e
 (1);
 
-1420 if(
+1450 if(
 ¡
 .
 	`isMigStus
 ()){
 
-1426 
+1456 
 LogMobe
 .
 	`debug
@@ -147233,17 +147549,17 @@ LogMobe
 	`g‘Name
 ()+" is in Migration");
 
-1449 if(
+1479 if(
 	`g‘Name
 ().
 	`equ®s
 ("cloud")){
 
-1450 
+1480 
 	`upd©eCloudT¿ffic
 ();
 
-1456 
+1486 
 Logg”
 .
 	`debug
@@ -147257,7 +147573,7 @@ tu¶e
 	`g‘Tu¶eTy³
 ()+"\t| Source : "+
 
-1457 
+1487 
 CloudSim
 .
 	`g‘EÁ™yName
@@ -147269,7 +147585,7 @@ ev
 	`g‘De¡š©iÚ
 ()));
 
-1464 
+1494 
 	`£nd
 (
 ev
@@ -147285,7 +147601,7 @@ FogEv’ts
 TUPLE_ACK
 );
 
-1466 if(
+1496 if(
 FogUts
 .
 ­pIdToGeoCov”ageM­
@@ -147297,7 +147613,7 @@ tu¶e
 	`g‘AµId
 ())){
 
-1469 if(
+1499 if(
 tu¶e
 .
 	`g‘DœeùiÚ
@@ -147307,13 +147623,13 @@ Tu¶e
 ACTUATOR
 ){
 
-1470 
+1500 
 	`£ndTu¶eToAùu©Ü
 (
 tu¶e
 );
 
-1474 if(
+1504 if(
 	`g‘Ho¡
 ().
 	`g‘VmLi¡
@@ -147321,7 +147637,7 @@ tu¶e
 	`size
 () > 0){
 
-1475 
+1505 
 Vm
  
 vm
@@ -147331,7 +147647,7 @@ vm
 	`g‘VmLi¡
 ()){
 
-1477 
+1507 
 fš®
  
 AµModuË
@@ -147341,13 +147657,13 @@ AµModuË
 vm
 ;
 
-1478 if(
+1508 if(
 CloudSim
 .
 	`şock
 () > 0){
 
-1479 
+1509 
 	`g‘Ho¡
 ().
 	`g‘VmScheduËr
@@ -147357,7 +147673,7 @@ CloudSim
 İ”©Ü
 );
 
-1480 
+1510 
 	`g‘Ho¡
 ().
 	`g‘VmScheduËr
@@ -147373,7 +147689,7 @@ A¼ayLi¡
 DoubË
 >(){
 
-1481 
+1511 
 ´Ùeùed
  
 fš®
@@ -147381,7 +147697,7 @@ fš®
 £rŸlV”siÚUID
  = 1L;
 
-1482 {
+1512 {
 	`add
 ((è
 	`g‘Ho¡
@@ -147389,7 +147705,7 @@ fš®
 	`g‘TÙ®Ms
 ());}});
 
-1492 if(
+1522 if(
 	`g‘Name
 ().
 	`equ®s
@@ -147401,7 +147717,7 @@ tu¶e
 nuÎ
 ){
 
-1493 
+1523 
 	`£ndNow
 (
 	`g‘CÚŒŞËrId
@@ -147413,7 +147729,7 @@ TUPLE_FINISHED
 nuÎ
 );
 
-1496 if(
+1526 if(
 ­pToModuËsM­
 .
 	`cÚšsKey
@@ -147423,7 +147739,7 @@ tu¶e
 	`g‘AµId
 ())){
 
-1497 if(
+1527 if(
 ­pToModuËsM­
 .
 	`g‘
@@ -147437,11 +147753,11 @@ tu¶e
 	`g‘De¡ModuËName
 ())){
 
-1498 
+1528 
 vmId
  = -1;
 
-1499 
+1529 
 Vm
  
 vm
@@ -147451,7 +147767,7 @@ vm
 	`g‘VmLi¡
 ()){
 
-1501 if(((
+1531 if(((
 AµModuË
 )
 vm
@@ -147465,7 +147781,7 @@ tu¶e
 	`g‘De¡ModuËName
 ()))
 
-1502 
+1532 
 vmId
  = 
 vm
@@ -147473,11 +147789,11 @@ vm
 	`g‘Id
 ();
 
-1505 if(
+1535 if(
 vmId
  < 0
 
-1506 || (
+1536 || (
 tu¶e
 .
 	`g‘ModuËCİyM­
@@ -147487,7 +147803,7 @@ tu¶e
 	`g‘De¡ModuËName
 ()) &&
 
-1507 
+1537 
 tu¶e
 .
 	`g‘ModuËCİyM­
@@ -147499,7 +147815,7 @@ tu¶e
 vmId
  )){
 
-1510 
+1540 
 tu¶e
 .
 	`£tVmId
@@ -147507,13 +147823,13 @@ tu¶e
 vmId
 );
 
-1513 
+1543 
 	`upd©eTimšgsOnReût
 (
 tu¶e
 );
 
-1515 
+1545 
 	`execu‹Tu¶e
 (
 ev
@@ -147523,7 +147839,7 @@ tu¶e
 	`g‘De¡ModuËName
 ());
 
-1517 if(
+1547 if(
 tu¶e
 .
 	`g‘De¡ModuËName
@@ -147531,7 +147847,7 @@ tu¶e
 nuÎ
 ){
 
-1518 if(
+1548 if(
 tu¶e
 .
 	`g‘DœeùiÚ
@@ -147541,13 +147857,13 @@ Tu¶e
 UP
 )
 
-1519 
+1549 
 	`£ndUp
 (
 tu¶e
 );
 
-1520 if(
+1550 if(
 tu¶e
 .
 	`g‘DœeùiÚ
@@ -147557,13 +147873,13 @@ Tu¶e
 DOWN
 ){
 
-1521 
+1551 
 chdId
  : 
 	`g‘Chd»nIds
 ()){
 
-1522 
+1552 
 MobeDeviû
  
 ‹mpSt
@@ -147575,7 +147891,7 @@ CloudSim
 chdId
 );
 
-1523 if(
+1553 if(
 tu¶e
 .
 	`g‘AµId
@@ -147589,7 +147905,7 @@ AµModuË
 	`g‘VmMobeDeviû
 ()).getAppId())){
 
-1525 
+1555 
 	`£ndDown
 (
 tu¶e
@@ -147597,13 +147913,13 @@ tu¶e
 chdId
 );
 
-1531 
+1561 
 	`£ndUp
 (
 tu¶e
 );
 
-1535 if(
+1565 if(
 tu¶e
 .
 	`g‘DœeùiÚ
@@ -147613,13 +147929,13 @@ Tu¶e
 UP
 )
 
-1536 
+1566 
 	`£ndUp
 (
 tu¶e
 );
 
-1537 if(
+1567 if(
 tu¶e
 .
 	`g‘DœeùiÚ
@@ -147629,13 +147945,13 @@ Tu¶e
 DOWN
 ){
 
-1538 
+1568 
 chdId
  : 
 	`g‘Chd»nIds
 ()){
 
-1539 
+1569 
 MobeDeviû
  
 ‹mpSt
@@ -147647,7 +147963,7 @@ CloudSim
 chdId
 );
 
-1540 if(
+1570 if(
 tu¶e
 .
 	`g‘AµId
@@ -147661,7 +147977,7 @@ AµModuË
 	`g‘VmMobeDeviû
 ()).getAppId())){
 
-1542 
+1572 
 	`£ndDown
 (
 tu¶e
@@ -147669,11 +147985,11 @@ tu¶e
 chdId
 );
 
-1548 
+1578 
 	}
 }
 
-1550 
+1580 
 ´Ùeùed
  
 	$upd©eTimšgsOnReût
@@ -147683,7 +147999,7 @@ Tu¶e
 tu¶e
 ) {
 
-1551 
+1581 
 AµliÿtiÚ
  
 ­p
@@ -147697,13 +148013,13 @@ tu¶e
 	`g‘AµId
 ());
 
-1552 if(
+1582 if(
 ­p
  =ğ
 nuÎ
 ){
 
-1567 
+1597 
 SŒšg
  
 ¤cModuË
@@ -147713,7 +148029,7 @@ tu¶e
 	`g‘SrcModuËName
 ();
 
-1568 
+1598 
 SŒšg
  
 de¡ModuË
@@ -147723,7 +148039,7 @@ tu¶e
 	`g‘De¡ModuËName
 ();
 
-1569 
+1599 
 Li¡
 <
 AµLoİ
@@ -147735,7 +148051,7 @@ loİs
 	`g‘Loİs
 ();
 
-1570 
+1600 
 AµLoİ
  
 loİ
@@ -147743,7 +148059,7 @@ loİ
 loİs
 ){
 
-1580 if(
+1610 if(
 loİ
 .
 	`hasEdge
@@ -147755,7 +148071,7 @@ de¡ModuË
 	`isEndModuË
 (destModule)){
 
-1581 
+1611 
 DoubË
  
 ¡¬tTime
@@ -147773,13 +148089,13 @@ tu¶e
 	`g‘Aùu®Tu¶eId
 ());
 
-1582 if(
+1612 if(
 ¡¬tTime
 ==
 nuÎ
 )
 
-1584 if(!
+1614 if(!
 TimeK“³r
 .
 	`g‘In¡ªû
@@ -147793,7 +148109,7 @@ loİ
 	`g‘LoİId
 ())){
 
-1585 
+1615 
 TimeK“³r
 .
 	`g‘In¡ªû
@@ -147807,7 +148123,7 @@ loİ
 	`g‘LoİId
 (), 0.0);
 
-1586 
+1616 
 TimeK“³r
 .
 	`g‘In¡ªû
@@ -147821,7 +148137,7 @@ loİ
 	`g‘LoİId
 (), 0);
 
-1587 
+1617 
 TimeK“³r
 .
 	`g‘In¡ªû
@@ -147835,7 +148151,7 @@ loİ
 	`g‘LoİId
 (), 0.0);
 
-1589 
+1619 
 cu¼’tAv”age
  = 
 TimeK“³r
@@ -147851,7 +148167,7 @@ loİ
 	`g‘LoİId
 ());
 
-1590 
+1620 
 cu¼’tCouÁ
  = 
 TimeK“³r
@@ -147867,7 +148183,7 @@ loİ
 	`g‘LoİId
 ());
 
-1591 
+1621 
 d–ay
  = 
 CloudSim
@@ -147887,7 +148203,7 @@ tu¶e
 	`g‘Aùu®Tu¶eId
 ());
 
-1592 if(
+1622 if(
 d–ay
 >
 TimeK“³r
@@ -147903,7 +148219,7 @@ loİ
 	`g‘LoİId
 ())){
 
-1593 
+1623 
 TimeK“³r
 .
 	`g‘In¡ªû
@@ -147919,7 +148235,7 @@ loİ
 d–ay
 );
 
-1595 
+1625 
 TimeK“³r
 .
 	`g‘In¡ªû
@@ -147933,7 +148249,7 @@ tu¶e
 	`g‘Aùu®Tu¶eId
 ());
 
-1596 
+1626 
 ÃwAv”age
  = (
 cu¼’tAv”age
@@ -147943,7 +148259,7 @@ cu¼’tCouÁ
 d–ay
 )/(currentCount+1);
 
-1597 
+1627 
 TimeK“³r
 .
 	`g‘In¡ªû
@@ -147959,7 +148275,7 @@ loİ
 ÃwAv”age
 );
 
-1598 
+1628 
 TimeK“³r
 .
 	`g‘In¡ªû
@@ -147975,11 +148291,11 @@ loİ
 cu¼’tCouÁ
 +1);
 
-1602 
+1632 
 	}
 }
 
-1604 
+1634 
 ´Ùeùed
  
 	$´oûssS’sÜJoššg
@@ -147989,7 +148305,7 @@ SimEv’t
 ev
 ){
 
-1605 
+1635 
 	`£nd
 (
 ev
@@ -148005,11 +148321,11 @@ FogEv’ts
 TUPLE_ACK
 );
 
-1606 
+1636 
 	}
 }
 
-1608 
+1638 
 ´Ùeùed
  
 	$execu‹Tu¶e
@@ -148023,7 +148339,7 @@ SŒšg
 İ”©ÜId
 ){
 
-1610 
+1640 
 Tu¶e
  
 tu¶e
@@ -148033,7 +148349,7 @@ ev
 	`g‘D©a
 ();
 
-1612 
+1642 
 boŞ—n
  
 æagCÚtšue
@@ -148041,7 +148357,7 @@ boŞ—n
 çl£
 ;
 
-1613 
+1643 
 MobeDeviû
  
 ¡
@@ -148051,7 +148367,7 @@ MobeCÚŒŞËr
 	`g‘Sm¬tThšgs
 ()){
 
-1614 
+1644 
 S’sÜ
  
 s
@@ -148061,7 +148377,7 @@ s
 	`g‘S’sÜs
 ()){
 
-1615 if(
+1645 if(
 tu¶e
 .
 	`g‘AµId
@@ -148071,17 +148387,17 @@ tu¶e
 s
 .getAppId())){
 
-1616 
+1646 
 æagCÚtšue
 =
 Œue
 ;
 
-1621 if(!
+1651 if(!
 æagCÚtšue
 ){
 
-1626 
+1656 
 Logg”
 .
 	`debug
@@ -148095,7 +148411,7 @@ tu¶e
 İ”©ÜId
 );
 
-1628 if(
+1658 if(
 MySti¡ics
 .
 	`g‘In¡ªû
@@ -148111,7 +148427,7 @@ tu¶e
 nuÎ
 ){
 
-1629 
+1659 
 tu¶e
 .
 	`£tFš®Time
@@ -148123,7 +148439,7 @@ CloudSim
 	`g‘U¶škL©’cy
 ());
 
-1634 
+1664 
 AµliÿtiÚ
  
 ­p
@@ -148137,13 +148453,13 @@ tu¶e
 	`g‘AµId
 ());
 
-1635 if(
+1665 if(
 ­p
  =ğ
 nuÎ
 ){
 
-1651 
+1681 
 TimeK“³r
 .
 	`g‘In¡ªû
@@ -148153,13 +148469,13 @@ TimeK“³r
 tu¶e
 );
 
-1652 
+1682 
 	`upd©eAÎoÿ‹dMs
 (
 İ”©ÜId
 );
 
-1653 
+1683 
 	`´oûssCloudËtSubm™
 (
 ev
@@ -148167,17 +148483,17 @@ ev
 çl£
 );
 
-1654 
+1684 
 	`upd©eAÎoÿ‹dMs
 (
 İ”©ÜId
 );
 
-1658 
+1688 
 	}
 }
 
-1660 
+1690 
 ´Ùeùed
  
 	$´oûssModuËA¼iv®
@@ -148187,7 +148503,7 @@ SimEv’t
 ev
 ){
 
-1661 
+1691 
 AµModuË
  
 moduË
@@ -148197,7 +148513,7 @@ ev
 	`g‘D©a
 ();
 
-1662 
+1692 
 SŒšg
  
 ­pId
@@ -148207,7 +148523,7 @@ moduË
 	`g‘AµId
 ();
 
-1663 if(!
+1693 if(!
 ­pToModuËsM­
 .
 	`cÚšsKey
@@ -148215,7 +148531,7 @@ moduË
 ­pId
 )){
 
-1664 
+1694 
 ­pToModuËsM­
 .
 	`put
@@ -148229,7 +148545,7 @@ A¼ayLi¡
 SŒšg
 >());
 
-1666 
+1696 
 ­pToModuËsM­
 .
 	`g‘
@@ -148243,7 +148559,7 @@ moduË
 	`g‘Name
 ());
 
-1667 
+1697 
 	`´oûssVmC»©e
 (
 ev
@@ -148251,13 +148567,13 @@ ev
 çl£
 );
 
-1668 ià(
+1698 ià(
 moduË
 .
 	`isBešgIn¡ªtŸ‹d
 ()) {
 
-1669 
+1699 
 moduË
 .
 	`£tBešgIn¡ªtŸ‹d
@@ -148265,13 +148581,13 @@ moduË
 çl£
 );
 
-1672 
+1702 
 	`š™ŸlizeP”iodicTu¶es
 (
 moduË
 );
 
-1674 
+1704 
 moduË
 .
 	`upd©eVmProûssšg
@@ -148287,17 +148603,17 @@ CloudSim
 	`g‘VmScheduËr
 ()
 
-1675 .
+1705 .
 	`g‘AÎoÿ‹dMsFÜVm
 (
 moduË
 ));
 
-1676 
+1706 
 	}
 }
 
-1678 
+1708 
 ´iv©e
  
 	$š™ŸlizeP”iodicTu¶es
@@ -148307,7 +148623,7 @@ AµModuË
 moduË
 ) {
 
-1679 
+1709 
 SŒšg
  
 ­pId
@@ -148317,7 +148633,7 @@ moduË
 	`g‘AµId
 ();
 
-1680 
+1710 
 AµliÿtiÚ
  
 ­p
@@ -148329,7 +148645,7 @@ AµliÿtiÚ
 ­pId
 );
 
-1681 
+1711 
 Li¡
 <
 AµEdge
@@ -148345,7 +148661,7 @@ moduË
 	`g‘Name
 ());
 
-1682 
+1712 
 AµEdge
  
 edge
@@ -148353,7 +148669,7 @@ edge
 ³riodicEdges
 ){
 
-1683 
+1713 
 	`£nd
 (
 	`g‘Id
@@ -148367,11 +148683,11 @@ FogEv’ts
 SEND_PERIODIC_TUPLE
 ,ƒdge);
 
-1685 
+1715 
 	}
 }
 
-1687 
+1717 
 ´Ùeùed
  
 	$´oûssO³¿tÜR–—£
@@ -148381,7 +148697,7 @@ SimEv’t
 ev
 ){
 
-1688 
+1718 
 this
 .
 	`´oûssVmMig¿‹
@@ -148391,23 +148707,23 @@ ev
 çl£
 );
 
-1689 
+1719 
 	}
 }
 
-1692 
+1722 
 ´Ùeùed
  
 	$upd©eNÜthTu¶eQueue
 (){
 
-1693 if(!
+1723 if(!
 	`g‘NÜthTu¶eQueue
 ().
 	`isEm±y
 ()){
 
-1694 
+1724 
 Tu¶e
  
 tu¶e
@@ -148417,23 +148733,23 @@ tu¶e
 	`pŞl
 ();
 
-1695 
+1725 
 	`£ndUpF»eLšk
 (
 tu¶e
 );
 
-1697 
+1727 
 	`£tNÜthLškBusy
 (
 çl£
 );
 
-1699 
+1729 
 	}
 }
 
-1701 
+1731 
 ´Ùeùed
  
 	$£ndUpF»eLšk
@@ -148443,7 +148759,7 @@ Tu¶e
 tu¶e
 ){
 
-1702 
+1732 
 ÃtwÜkD–ay
  = 
 tu¶e
@@ -148453,13 +148769,13 @@ tu¶e
 	`g‘U¶škBªdwidth
 ();
 
-1703 
+1733 
 	`£tNÜthLškBusy
 (
 Œue
 );
 
-1704 
+1734 
 	`£nd
 (
 	`g‘Id
@@ -148471,7 +148787,7 @@ FogEv’ts
 UPDATE_NORTH_TUPLE_QUEUE
 );
 
-1705 
+1735 
 	`£nd
 (
 ·»ÁId
@@ -148487,7 +148803,7 @@ TUPLE_ARRIVAL
 tu¶e
 );
 
-1706 
+1736 
 N‘wÜkU§geMÚ™Ü
 .
 	`£ndšgTu¶e
@@ -148499,11 +148815,11 @@ tu¶e
 	`g‘CloudËtFeSize
 ());
 
-1707 
+1737 
 	}
 }
 
-1709 
+1739 
 ´Ùeùed
  
 	$£ndUp
@@ -148513,21 +148829,21 @@ Tu¶e
 tu¶e
 ){
 
-1710 if(
+1740 if(
 ·»ÁId
  > 0){
 
-1711 if(!
+1741 if(!
 	`isNÜthLškBusy
 ()){
 
-1712 
+1742 
 	`£ndUpF»eLšk
 (
 tu¶e
 );
 
-1714 
+1744 
 nÜthTu¶eQueue
 .
 	`add
@@ -148535,23 +148851,23 @@ nÜthTu¶eQueue
 tu¶e
 );
 
-1717 
+1747 
 	}
 }
 
-1719 
+1749 
 ´Ùeùed
  
 	$upd©eSouthTu¶eQueue
 (){
 
-1720 if(!
+1750 if(!
 	`g‘SouthTu¶eQueue
 ().
 	`isEm±y
 ()){
 
-1721 
+1751 
 Paœ
 <
 Tu¶e
@@ -148565,7 +148881,7 @@ IÁeg”
 	`pŞl
 ();
 
-1722 
+1752 
 	`£ndDownF»eLšk
 (
 ·œ
@@ -148575,17 +148891,17 @@ IÁeg”
 	`g‘SecÚd
 ());
 
-1724 
+1754 
 	`£tSouthLškBusy
 (
 çl£
 );
 
-1726 
+1756 
 	}
 }
 
-1728 
+1758 
 ´Ùeùed
  
 	$£ndDownF»eLšk
@@ -148597,7 +148913,7 @@ tu¶e
 chdId
 ){
 
-1729 
+1759 
 ÃtwÜkD–ay
  = 
 tu¶e
@@ -148607,13 +148923,13 @@ tu¶e
 	`g‘DowÆškBªdwidth
 ();
 
-1731 
+1761 
 	`£tSouthLškBusy
 (
 Œue
 );
 
-1732 
+1762 
 Ï‹ncy
  = 
 	`g‘ChdToL©’cyM­
@@ -148623,7 +148939,7 @@ tu¶e
 chdId
 );
 
-1733 
+1763 
 	`£nd
 (
 	`g‘Id
@@ -148635,7 +148951,7 @@ FogEv’ts
 UPDATE_SOUTH_TUPLE_QUEUE
 );
 
-1734 
+1764 
 	`£nd
 (
 chdId
@@ -148651,7 +148967,7 @@ TUPLE_ARRIVAL
 tu¶e
 );
 
-1735 
+1765 
 N‘wÜkU§geMÚ™Ü
 .
 	`£ndšgTu¶e
@@ -148663,11 +148979,11 @@ tu¶e
 	`g‘CloudËtFeSize
 ());
 
-1736 
+1766 
 	}
 }
 
-1738 
+1768 
 ´Ùeùed
  
 	$£ndDown
@@ -148679,7 +148995,7 @@ tu¶e
 chdId
 ){
 
-1739 if(
+1769 if(
 	`g‘Chd»nIds
 ().
 	`cÚšs
@@ -148687,11 +149003,11 @@ chdId
 chdId
 )){
 
-1740 if(!
+1770 if(!
 	`isSouthLškBusy
 ()){
 
-1741 
+1771 
 	`£ndDownF»eLšk
 (
 tu¶e
@@ -148699,7 +149015,7 @@ tu¶e
 chdId
 );
 
-1743 
+1773 
 southTu¶eQueue
 .
 	`add
@@ -148717,11 +149033,11 @@ tu¶e
 chdId
 ));
 
-1746 
+1776 
 	}
 }
 
-1749 
+1779 
 ´Ùeùed
  
 	$£ndToS–f
@@ -148731,7 +149047,7 @@ Tu¶e
 tu¶e
 ){
 
-1750 
+1780 
 	`£nd
 (
 	`g‘Id
@@ -148747,11 +149063,11 @@ TUPLE_ARRIVAL
 tu¶e
 );
 
-1751 
+1781 
 	}
 }
 
-1752 
+1782 
 public
  
 Pow”Ho¡
@@ -148759,7 +149075,7 @@ Pow”Ho¡
 	$g‘Ho¡
 (){
 
-1753  (
+1783  (
 Pow”Ho¡
 è
 	`g‘Ho¡Li¡
@@ -148767,25 +149083,25 @@ Pow”Ho¡
 	`g‘
 (0);
 
-1754 
+1784 
 	}
 }
 
-1755 
+1785 
 public
  
 	$g‘P¬’tId
 () {
 
-1756  
+1786  
 ·»ÁId
 ;
 
-1757 
+1787 
 	}
 }
 
-1758 
+1788 
 public
  
 	$£tP¬’tId
@@ -148793,17 +149109,17 @@ public
 ·»ÁId
 ) {
 
-1759 
+1789 
 this
 .
 ·»ÁId
  =…arentId;
 
-1760 
+1790 
 	}
 }
 
-1761 
+1791 
 public
  
 	gLi¡
@@ -148813,15 +149129,15 @@ public
 	$g‘Chd»nIds
 () {
 
-1762  
+1792  
 chd»nIds
 ;
 
-1763 
+1793 
 	}
 }
 
-1764 
+1794 
 public
  
 £tChd»nIds
@@ -148833,7 +149149,7 @@ IÁeg”
 chd»nIds
 ) {
 
-1765 
+1795 
 	gthis
 .
 	gchd»nIds
@@ -148841,21 +149157,21 @@ chd»nIds
 chd»nIds
 ;
 
-1767 
+1797 
 public
  
 	$g‘U¶škBªdwidth
 () {
 
-1768  
+1798  
 u¶škBªdwidth
 ;
 
-1769 
+1799 
 	}
 }
 
-1770 
+1800 
 public
  
 	$£tU¶škBªdwidth
@@ -148863,31 +149179,31 @@ public
 u¶škBªdwidth
 ) {
 
-1771 
+1801 
 this
 .
 u¶škBªdwidth
  = uplinkBandwidth;
 
-1772 
+1802 
 	}
 }
 
-1773 
+1803 
 public
  
 	$g‘U¶škL©’cy
 () {
 
-1774  
+1804  
 u¶škL©’cy
 ;
 
-1775 
+1805 
 	}
 }
 
-1776 
+1806 
 public
  
 	$£tU¶škL©’cy
@@ -148895,17 +149211,17 @@ public
 u¶škL©’cy
 ) {
 
-1777 
+1807 
 this
 .
 u¶škL©’cy
  = uplinkLatency;
 
-1778 
+1808 
 	}
 }
 
-1779 
+1809 
 public
  
 boŞ—n
@@ -148913,15 +149229,15 @@ boŞ—n
 	$isSouthLškBusy
 () {
 
-1780  
+1810  
 isSouthLškBusy
 ;
 
-1781 
+1811 
 	}
 }
 
-1782 
+1812 
 public
  
 boŞ—n
@@ -148929,15 +149245,15 @@ boŞ—n
 	$isNÜthLškBusy
 () {
 
-1783  
+1813  
 isNÜthLškBusy
 ;
 
-1784 
+1814 
 	}
 }
 
-1785 
+1815 
 public
  
 	$£tSouthLškBusy
@@ -148947,17 +149263,17 @@ boŞ—n
 isSouthLškBusy
 ) {
 
-1786 
+1816 
 this
 .
 isSouthLškBusy
  = isSouthLinkBusy;
 
-1787 
+1817 
 	}
 }
 
-1788 
+1818 
 public
  
 	$£tNÜthLškBusy
@@ -148967,31 +149283,31 @@ boŞ—n
 isNÜthLškBusy
 ) {
 
-1789 
+1819 
 this
 .
 isNÜthLškBusy
  = isNorthLinkBusy;
 
-1790 
+1820 
 	}
 }
 
-1791 
+1821 
 public
  
 	$g‘CÚŒŞËrId
 () {
 
-1792  
+1822  
 cÚŒŞËrId
 ;
 
-1793 
+1823 
 	}
 }
 
-1794 
+1824 
 public
  
 	$£tCÚŒŞËrId
@@ -148999,17 +149315,17 @@ public
 cÚŒŞËrId
 ) {
 
-1795 
+1825 
 this
 .
 cÚŒŞËrId
  = controllerId;
 
-1796 
+1826 
 	}
 }
 
-1797 
+1827 
 public
  
 	gLi¡
@@ -149019,15 +149335,15 @@ public
 	$g‘AùiveAµliÿtiÚs
 () {
 
-1798  
+1828  
 aùiveAµliÿtiÚs
 ;
 
-1799 
+1829 
 	}
 }
 
-1800 
+1830 
 public
  
 £tAùiveAµliÿtiÚs
@@ -149039,7 +149355,7 @@ SŒšg
 aùiveAµliÿtiÚs
 ) {
 
-1801 
+1831 
 	gthis
 .
 	gaùiveAµliÿtiÚs
@@ -149047,7 +149363,7 @@ aùiveAµliÿtiÚs
 aùiveAµliÿtiÚs
 ;
 
-1803 
+1833 
 public
  
 	gM­
@@ -149061,15 +149377,15 @@ public
 	$g‘ChdToO³¿tÜsM­
 () {
 
-1804  
+1834  
 chdToO³¿tÜsM­
 ;
 
-1805 
+1835 
 	}
 }
 
-1806 
+1836 
 public
  
 £tChdToO³¿tÜsM­
@@ -149085,7 +149401,7 @@ SŒšg
 chdToO³¿tÜsM­
 ) {
 
-1807 
+1837 
 	gthis
 .
 	gchdToO³¿tÜsM­
@@ -149093,7 +149409,7 @@ chdToO³¿tÜsM­
 chdToO³¿tÜsM­
 ;
 
-1810 
+1840 
 public
  
 	gM­
@@ -149105,15 +149421,15 @@ public
 	$g‘AµliÿtiÚM­
 () {
 
-1811  
+1841  
 ­¶iÿtiÚM­
 ;
 
-1812 
+1842 
 	}
 }
 
-1814 
+1844 
 public
  
 £tAµliÿtiÚM­
@@ -149127,7 +149443,7 @@ AµliÿtiÚ
 ­¶iÿtiÚM­
 ) {
 
-1815 
+1845 
 	gthis
 .
 	g­¶iÿtiÚM­
@@ -149135,7 +149451,7 @@ AµliÿtiÚ
 ­¶iÿtiÚM­
 ;
 
-1818 
+1848 
 public
  
 	gQueue
@@ -149145,15 +149461,15 @@ public
 	$g‘NÜthTu¶eQueue
 () {
 
-1819  
+1849  
 nÜthTu¶eQueue
 ;
 
-1820 
+1850 
 	}
 }
 
-1822 
+1852 
 public
  
 £tNÜthTu¶eQueue
@@ -149165,7 +149481,7 @@ Tu¶e
 nÜthTu¶eQueue
 ) {
 
-1823 
+1853 
 	gthis
 .
 	gnÜthTu¶eQueue
@@ -149173,7 +149489,7 @@ nÜthTu¶eQueue
 nÜthTu¶eQueue
 ;
 
-1826 
+1856 
 public
  
 	gQueue
@@ -149187,15 +149503,15 @@ public
 	$g‘SouthTu¶eQueue
 () {
 
-1827  
+1857  
 southTu¶eQueue
 ;
 
-1828 
+1858 
 	}
 }
 
-1830 
+1860 
 public
  
 £tSouthTu¶eQueue
@@ -149211,7 +149527,7 @@ IÁeg”
 southTu¶eQueue
 ) {
 
-1831 
+1861 
 	gthis
 .
 	gsouthTu¶eQueue
@@ -149219,21 +149535,21 @@ southTu¶eQueue
 southTu¶eQueue
 ;
 
-1834 
+1864 
 public
  
 	$g‘DowÆškBªdwidth
 () {
 
-1835  
+1865  
 dowÆškBªdwidth
 ;
 
-1836 
+1866 
 	}
 }
 
-1838 
+1868 
 public
  
 	$£tDowÆškBªdwidth
@@ -149241,17 +149557,17 @@ public
 dowÆškBªdwidth
 ) {
 
-1839 
+1869 
 this
 .
 dowÆškBªdwidth
  = downlinkBandwidth;
 
-1840 
+1870 
 	}
 }
 
-1842 
+1872 
 public
  
 	gLi¡
@@ -149265,15 +149581,15 @@ public
 	$g‘AssocŸ‹dAùu©ÜIds
 () {
 
-1843  
+1873  
 assocŸ‹dAùu©ÜIds
 ;
 
-1844 
+1874 
 	}
 }
 
-1846 
+1876 
 public
  
 £tAssocŸ‹dAùu©ÜIds
@@ -149289,7 +149605,7 @@ DoubË
 assocŸ‹dAùu©ÜIds
 ) {
 
-1847 
+1877 
 	gthis
 .
 	gassocŸ‹dAùu©ÜIds
@@ -149297,21 +149613,21 @@ assocŸ‹dAùu©ÜIds
 assocŸ‹dAùu©ÜIds
 ;
 
-1850 
+1880 
 public
  
 	$g‘EÃrgyCÚsum±iÚ
 () {
 
-1851  
+1881  
 ’”gyCÚsum±iÚ
 ;
 
-1852 
+1882 
 	}
 }
 
-1854 
+1884 
 public
  
 	$£tEÃrgyCÚsum±iÚ
@@ -149319,17 +149635,17 @@ public
 ’”gyCÚsum±iÚ
 ) {
 
-1855 
+1885 
 this
 .
 ’”gyCÚsum±iÚ
  =ƒnergyConsumption;
 
-1856 
+1886 
 	}
 }
 
-1857 
+1887 
 public
  
 	gM­
@@ -149341,15 +149657,15 @@ public
 	$g‘ChdToL©’cyM­
 () {
 
-1858  
+1888  
 chdToL©’cyM­
 ;
 
-1859 
+1889 
 	}
 }
 
-1861 
+1891 
 public
  
 £tChdToL©’cyM­
@@ -149363,7 +149679,7 @@ DoubË
 chdToL©’cyM­
 ) {
 
-1862 
+1892 
 	gthis
 .
 	gchdToL©’cyM­
@@ -149371,21 +149687,21 @@ chdToL©’cyM­
 chdToL©’cyM­
 ;
 
-1865 
+1895 
 public
  
 	$g‘Lev–
 () {
 
-1866  
+1896  
 Ëv–
 ;
 
-1867 
+1897 
 	}
 }
 
-1869 
+1899 
 public
  
 	$£tLev–
@@ -149393,31 +149709,31 @@ public
 Ëv–
 ) {
 
-1870 
+1900 
 this
 .
 Ëv–
  =†evel;
 
-1871 
+1901 
 	}
 }
 
-1873 
+1903 
 public
  
 	$g‘R©eP”Ms
 () {
 
-1874  
+1904  
 ¿‹P”Ms
 ;
 
-1875 
+1905 
 	}
 }
 
-1877 
+1907 
 public
  
 	$£tR©eP”Ms
@@ -149425,31 +149741,31 @@ public
 ¿‹P”Ms
 ) {
 
-1878 
+1908 
 this
 .
 ¿‹P”Ms
  =„atePerMips;
 
-1879 
+1909 
 	}
 }
 
-1880 
+1910 
 public
  
 	$g‘TÙ®Co¡
 () {
 
-1881  
+1911  
 tÙ®Co¡
 ;
 
-1882 
+1912 
 	}
 }
 
-1884 
+1914 
 public
  
 	$£tTÙ®Co¡
@@ -149457,17 +149773,17 @@ public
 tÙ®Co¡
 ) {
 
-1885 
+1915 
 this
 .
 tÙ®Co¡
  =otalCost;
 
-1886 
+1916 
 	}
 }
 
-1888 
+1918 
 public
  
 	gM­
@@ -149479,21 +149795,21 @@ public
 	$g‘ModuËIn¡ªûCouÁ
 () {
 
-1889  
+1919  
 moduËIn¡ªûCouÁ
 ;
 
-1890 
+1920 
 	}
 }
 
-1892 
+1922 
 public
  
 £tModuËIn¡ªûCouÁ
 (
 
-1893 
+1923 
 M­
 <
 SŒšg
@@ -149503,7 +149819,7 @@ IÁeg”
 moduËIn¡ªûCouÁ
 ) {
 
-1894 
+1924 
 	gthis
 .
 	gmoduËIn¡ªûCouÁ
@@ -149511,7 +149827,7 @@ moduËIn¡ªûCouÁ
 moduËIn¡ªûCouÁ
 ;
 
-1897 
+1927 
 public
  
 DecisiÚMig¿tiÚ
@@ -149519,15 +149835,15 @@ DecisiÚMig¿tiÚ
 	$g‘Mig¿tiÚSŒ©egy
 () {
 
-1898  
+1928  
 mig¿tiÚSŒ©egy
 ;
 
-1899 
+1929 
 	}
 }
 
-1901 
+1931 
 public
  
 	$£tMig¿tiÚSŒ©egy
@@ -149537,31 +149853,31 @@ DecisiÚMig¿tiÚ
 mig¿tiÚSŒ©egy
 ) {
 
-1902 
+1932 
 this
 .
 mig¿tiÚSŒ©egy
  = migrationStrategy;
 
-1903 
+1933 
 	}
 }
 
-1905 
+1935 
 public
  
 	$g‘PŞicyR•liÿVM
 () {
 
-1906  
+1936  
 pŞicyR•liÿVM
 ;
 
-1907 
+1937 
 	}
 }
 
-1909 
+1939 
 public
  
 	$£tPŞicyR•liÿVM
@@ -149569,17 +149885,17 @@ public
 pŞicyR•liÿVM
 ) {
 
-1910 
+1940 
 this
 .
 pŞicyR•liÿVM
  =…olicyReplicaVM;
 
-1911 
+1941 
 	}
 }
 
-1913 
+1943 
 public
  
 	gS‘
@@ -149589,15 +149905,15 @@ public
 	$g‘S”v”CloudËts
 () {
 
-1914  
+1944  
 £rv”CloudËts
 ;
 
-1915 
+1945 
 	}
 }
 
-1917 
+1947 
 public
  
 	$£tS”v”CloudËts
@@ -149609,7 +149925,7 @@ sc
 aùiÚ
 ) {
 
-1918 if(
+1948 if(
 aùiÚ
  =ğ
 PŞic›s
@@ -149617,7 +149933,7 @@ PŞic›s
 ADD
 ){
 
-1919 
+1949 
 this
 .
 £rv”CloudËts
@@ -149627,7 +149943,7 @@ this
 sc
 );
 
-1922 
+1952 
 this
 .
 £rv”CloudËts
@@ -149637,11 +149953,11 @@ this
 sc
 );
 
-1924 
+1954 
 	}
 }
 
-1926 
+1956 
 public
  
 FogDeviû
@@ -149649,15 +149965,15 @@ FogDeviû
 	$g‘S”v”CloudËtToVmMig¿‹
 () {
 
-1927  
+1957  
 £rv”CloudËtToVmMig¿‹
 ;
 
-1928 
+1958 
 	}
 }
 
-1930 
+1960 
 public
  
 	$£tS”v”CloudËtToVmMig¿‹
@@ -149667,17 +149983,17 @@ FogDeviû
 £rv”CloudËtToVmMig¿‹
 ) {
 
-1931 
+1961 
 this
 .
 £rv”CloudËtToVmMig¿‹
  = serverCloudletToVmMigrate;
 
-1932 
+1962 
 	}
 }
 
-1934 
+1964 
 public
  
 	gS‘
@@ -149687,15 +150003,15 @@ public
 	$g‘Sm¬tThšgsW™hVm
 () {
 
-1935  
+1965  
 sm¬tThšgsW™hVm
 ;
 
-1936 
+1966 
 	}
 }
 
-1938 
+1968 
 public
  
 	$£tSm¬tThšgsW™hVm
@@ -149707,7 +150023,7 @@ MobeDeviû
 aùiÚ
 ) {
 
-1939 if(
+1969 if(
 aùiÚ
  =ğ
 PŞic›s
@@ -149715,7 +150031,7 @@ PŞic›s
 ADD
 ){
 
-1940 
+1970 
 this
 .
 sm¬tThšgsW™hVm
@@ -149725,7 +150041,7 @@ sm¬tThšgsW™hVm
 ¡
 );
 
-1943 
+1973 
 this
 .
 sm¬tThšgsW™hVm
@@ -149735,25 +150051,25 @@ sm¬tThšgsW™hVm
 ¡
 );
 
-1945 
+1975 
 	}
 }
 
-1947 
+1977 
 public
  
 	$g‘VŞ©P¬’tId
 () {
 
-1948  
+1978  
 vŞ©P¬’tId
 ;
 
-1949 
+1979 
 	}
 }
 
-1951 
+1981 
 public
  
 	$£tVŞ©P¬’tId
@@ -149761,17 +150077,17 @@ public
 vŞ©P¬’tId
 ) {
 
-1952 
+1982 
 this
 .
 vŞ©P¬’tId
  = volatilParentId;
 
-1953 
+1983 
 	}
 }
 
-1955 
+1985 
 public
  
 BefÜeMig¿tiÚ
@@ -149779,15 +150095,15 @@ BefÜeMig¿tiÚ
 	$g‘BefÜeMig¿‹
 () {
 
-1956  
+1986  
 befÜeMig¿tiÚ
 ;
 
-1957 
+1987 
 	}
 }
 
-1959 
+1989 
 public
  
 	$£tBefÜeMig¿‹
@@ -149797,13 +150113,13 @@ BefÜeMig¿tiÚ
 befÜeMig¿tiÚ
 ) {
 
-1960 
+1990 
 this
 .
 befÜeMig¿tiÚ
  = beforeMigration;
 
-1961 
+1991 
 	}
 }
 
@@ -190919,7 +191235,17 @@ impÜt
 	gA¼ays
 ;
 
-5 
+4 
+impÜt
+ 
+	gjava
+.
+	gut
+.
+	gQueue
+;
+
+6 
 impÜt
  
 	gÜg
@@ -190929,7 +191255,7 @@ impÜt
 	g’t™›s
 .*;
 
-6 
+7 
 impÜt
  
 	gÜg
@@ -190941,31 +191267,45 @@ impÜt
 	gcÚ¡ªts
 .*;
 
-9 
+8 
+impÜt
+ 
+	gÜg
+.
+	gfog
+.
+	gvmmobe
+.
+	gcÚ¡ªts
+.
+	gDœeùiÚs
+;
+
+11 
 public
  cÏs 
 	cCoÜdš©e
  {
 
-11 
+13 
 ´iv©e
  
 	mcoÜdX
 ;
 
-12 
+14 
 ´iv©e
  
 	mcoÜdY
 ;
 
-22 
+24 
 public
  
 	$CoÜdš©e
 (){
 
-26 
+28 
 public
  
 boŞ—n
@@ -190977,7 +191317,7 @@ CoÜdš©e
 c
 ){
 
-27 ià(
+29 ià(
 c
 .
 	`g‘CoÜdX
@@ -190987,13 +191327,13 @@ MaxAndMš
 MAX_X
 ||
 
-28 
+30 
 c
 .
 	`g‘CoÜdX
 ()<0||
 
-29 
+31 
 c
 .
 	`g‘CoÜdY
@@ -191003,25 +191343,25 @@ MaxAndMš
 MAX_Y
 ||
 
-30 
+32 
 c
 .
 	`g‘CoÜdY
 ()<0)
 
-31  
+33  
 çl£
 ;
 
-33  
+35  
 Œue
 ;
 
-34 
+36 
 	}
 }
 
-35 
+37 
 public
  
 	$de§bËSm¬tThšg
@@ -191031,17 +191371,287 @@ MobeDeviû
 sm¬tThšg
 ){
 
-37 
+39 
 sm¬tThšg
 .
 	`£tCoÜd
 (() -1, ()-1);
 
-38 
+40 
 	}
 }
 
-39 
+42 
+public
+ 
+	$¿dŸnsToDeg»e
+ (
+DoubË
+ 
+dœeùiÚ
+){
+
+44 
+deg»e
+ = 
+dœeùiÚ
+*(180/
+M©h
+.
+PI
+);
+
+46 ià(
+deg»e
+ < 0)
+
+47 
+deg»e
+ += 360;
+
+49  
+deg»e
+;
+
+50 
+	}
+}
+
+52 
+public
+ 
+	$cÚv”tDœeùiÚ
+(
+DoubË
+ 
+dœeùiÚ
+){
+
+54 
+deg»e
+ = 
+	`¿dŸnsToDeg»e
+(
+dœeùiÚ
+);
+
+56 ià(
+deg»e
+ > 337.5 && degree <= 22.5)
+
+57  
+DœeùiÚs
+.
+EAST
+;
+
+58 ià(
+deg»e
+ > 22.5 && degree <= 67.5)
+
+59  
+DœeùiÚs
+.
+NORTHEAST
+;
+
+60 ià(
+deg»e
+ > 67.5 && degree <= 112.5)
+
+61  
+DœeùiÚs
+.
+NORTH
+;
+
+62 ià(
+deg»e
+ > 112.5 && degree <= 157.5)
+
+63  
+DœeùiÚs
+.
+NORTHWEST
+;
+
+64 ià(
+deg»e
+ > 157.5 && degree <= 202.5)
+
+65  
+DœeùiÚs
+.
+NORTHWEST
+;
+
+66 ià(
+deg»e
+ > 202.5 && degree <= 247.5)
+
+67  
+DœeùiÚs
+.
+SOUTHWEST
+;
+
+68 ià(
+deg»e
+ > 247.5 && degree <= 292.5)
+
+69  
+DœeùiÚs
+.
+SOUTH
+;
+
+71  
+DœeùiÚs
+.
+SOUTHEAST
+;
+
+72 
+	}
+}
+
+74 
+public
+ 
+ÃwCoÜdš©e
+(
+MobeDeviû
+ 
+sm¬tThšg
+, 
+Queue
+<
+SŒšg
+[]>
+q
+){
+
+76 if(!
+	gq
+.
+isEm±y
+()){
+
+77 
+	gSŒšg
+[] 
+	gcoodš©es
+ = 
+q
+.
+pŞl
+();
+
+79 
+	gdœeùiÚ
+ = 
+cÚv”tDœeùiÚ
+(
+DoubË
+.
+·r£DoubË
+(
+coodš©es
+[0]));
+
+80 
+	gx
+ = (è
+DoubË
+.
+·r£DoubË
+(
+coodš©es
+[1]);
+
+81 
+	gy
+ = (è
+DoubË
+.
+·r£DoubË
+(
+coodš©es
+[2]);
+
+82 
+	g¥“d
+ = (è
+DoubË
+.
+·r£DoubË
+(
+coodš©es
+[3]);
+
+87 if(
+	gx
+<0||
+	gy
+<0||x>=
+MaxAndMš
+.
+MAX_X
+||
+y
+>=MaxAndMš.
+MAX_Y
+){
+
+88 
+de§bËSm¬tThšg
+(
+sm¬tThšg
+);
+
+93 
+	gsm¬tThšg
+.
+£tDœeùiÚ
+(
+dœeùiÚ
+);
+
+94 
+	gsm¬tThšg
+.
+g‘CoÜd
+().
+£tCoÜdX
+(
+x
+);
+
+95 
+	gsm¬tThšg
+.
+g‘CoÜd
+().
+£tCoÜdY
+(
+y
+);
+
+96 
+	gsm¬tThšg
+.
+£tS³ed
+(
+¥“d
+);
+
+100 
+de§bËSm¬tThšg
+(
+sm¬tThšg
+);
+
+104 
 public
  
 	$ÃwCoÜdš©e
@@ -191057,13 +191667,13 @@ CoÜdš©e
 coÜdDeviûs
 ){
 
-41 if(
+106 if(
 sm¬tThšg
 .
 	`g‘S³ed
 ()!=0){
 
-42 
+107 
 šü—£X
 ğ(
 sm¬tThšg
@@ -191077,7 +191687,7 @@ sm¬tThšg
 add
 ));
 
-43 
+108 
 šü—£Y
 ğ(
 sm¬tThšg
@@ -191091,7 +191701,7 @@ sm¬tThšg
 add
 ));
 
-44 
+109 
 deü—£X
 ğ(
 sm¬tThšg
@@ -191105,7 +191715,7 @@ sm¬tThšg
 add
 ));
 
-45 
+110 
 deü—£Y
 ğ(
 sm¬tThšg
@@ -191119,7 +191729,7 @@ sm¬tThšg
 add
 ));
 
-46 
+111 
 dœeùiÚ
 ğ
 sm¬tThšg
@@ -191127,7 +191737,7 @@ sm¬tThšg
 	`g‘DœeùiÚ
 ();
 
-47 
+112 
 ŞdCoÜdX
  = 
 sm¬tThšg
@@ -191137,7 +191747,7 @@ sm¬tThšg
 	`g‘CoÜdX
 ();
 
-48 
+113 
 ŞdCoÜdY
  = 
 sm¬tThšg
@@ -191147,7 +191757,7 @@ sm¬tThšg
 	`g‘CoÜdY
 ();
 
-52 if(
+117 if(
 deü—£X
 <0||
 deü—£Y
@@ -191163,13 +191773,13 @@ MAX_X
 MAX_Y
 ){
 
-53 
+118 
 	`de§bËSm¬tThšg
 (
 sm¬tThšg
 );
 
-59 if(
+124 if(
 dœeùiÚ
 ==
 DœeùiÚs
@@ -191177,7 +191787,7 @@ DœeùiÚs
 EAST
 ){
 
-62 
+127 
 sm¬tThšg
 .
 	`g‘CoÜd
@@ -191187,7 +191797,7 @@ sm¬tThšg
 šü—£X
 );
 
-69 if(
+134 if(
 dœeùiÚ
 ==
 DœeùiÚs
@@ -191195,7 +191805,7 @@ DœeùiÚs
 WEST
 ){
 
-72 
+137 
 sm¬tThšg
 .
 	`g‘CoÜd
@@ -191203,126 +191813,6 @@ sm¬tThšg
 	`£tCoÜdX
 (
 deü—£X
-);
-
-79 if(
-dœeùiÚ
-==
-DœeùiÚs
-.
-SOUTH
-){
-
-82 
-sm¬tThšg
-.
-	`g‘CoÜd
-().
-	`£tCoÜdY
-(
-šü—£Y
-);
-
-89 if(
-dœeùiÚ
-==
-DœeùiÚs
-.
-NORTH
-){
-
-92 
-sm¬tThšg
-.
-	`g‘CoÜd
-().
-	`£tCoÜdY
-(
-deü—£Y
-);
-
-99 if(
-dœeùiÚ
-==
-DœeùiÚs
-.
-SOUTHEAST
-){
-
-102 
-sm¬tThšg
-.
-	`g‘CoÜd
-().
-	`£tCoÜdX
-(
-šü—£X
-);
-
-103 
-sm¬tThšg
-.
-	`g‘CoÜd
-().
-	`£tCoÜdY
-(
-šü—£Y
-);
-
-114 if(
-dœeùiÚ
-==
-DœeùiÚs
-.
-NORTHWEST
-){
-
-117 
-sm¬tThšg
-.
-	`g‘CoÜd
-().
-	`£tCoÜdX
-(
-deü—£X
-);
-
-118 
-sm¬tThšg
-.
-	`g‘CoÜd
-().
-	`£tCoÜdY
-(
-deü—£Y
-);
-
-129 if(
-dœeùiÚ
-==
-DœeùiÚs
-.
-SOUTHWEST
-){
-
-132 
-sm¬tThšg
-.
-	`g‘CoÜd
-().
-	`£tCoÜdX
-(
-deü—£X
-);
-
-133 
-sm¬tThšg
-.
-	`g‘CoÜd
-().
-	`£tCoÜdY
-(
-šü—£Y
 );
 
 144 if(
@@ -191330,7 +191820,7 @@ dœeùiÚ
 ==
 DœeùiÚs
 .
-NORTHEAST
+SOUTH
 ){
 
 147 
@@ -191338,12 +191828,20 @@ sm¬tThšg
 .
 	`g‘CoÜd
 ().
-	`£tCoÜdX
+	`£tCoÜdY
 (
-šü—£X
+šü—£Y
 );
 
-148 
+154 if(
+dœeùiÚ
+==
+DœeùiÚs
+.
+NORTH
+){
+
+157 
 sm¬tThšg
 .
 	`g‘CoÜd
@@ -191353,25 +191851,137 @@ sm¬tThšg
 deü—£Y
 );
 
-160 
+164 if(
+dœeùiÚ
+==
+DœeùiÚs
+.
+SOUTHEAST
+){
+
+167 
+sm¬tThšg
+.
+	`g‘CoÜd
+().
+	`£tCoÜdX
+(
+šü—£X
+);
+
+168 
+sm¬tThšg
+.
+	`g‘CoÜd
+().
+	`£tCoÜdY
+(
+šü—£Y
+);
+
+179 if(
+dœeùiÚ
+==
+DœeùiÚs
+.
+NORTHWEST
+){
+
+182 
+sm¬tThšg
+.
+	`g‘CoÜd
+().
+	`£tCoÜdX
+(
+deü—£X
+);
+
+183 
+sm¬tThšg
+.
+	`g‘CoÜd
+().
+	`£tCoÜdY
+(
+deü—£Y
+);
+
+194 if(
+dœeùiÚ
+==
+DœeùiÚs
+.
+SOUTHWEST
+){
+
+197 
+sm¬tThšg
+.
+	`g‘CoÜd
+().
+	`£tCoÜdX
+(
+deü—£X
+);
+
+198 
+sm¬tThšg
+.
+	`g‘CoÜd
+().
+	`£tCoÜdY
+(
+šü—£Y
+);
+
+209 if(
+dœeùiÚ
+==
+DœeùiÚs
+.
+NORTHEAST
+){
+
+212 
+sm¬tThšg
+.
+	`g‘CoÜd
+().
+	`£tCoÜdX
+(
+šü—£X
+);
+
+213 
+sm¬tThšg
+.
+	`g‘CoÜd
+().
+	`£tCoÜdY
+(
+deü—£Y
+);
+
+225 
 	}
 }
 
-166 
+231 
 public
  
 	$g‘CoÜdX
 () {
 
-167  
+232  
 coÜdX
 ;
 
-168 
+233 
 	}
 }
 
-170 
+235 
 public
  
 	$£tCoÜdX
@@ -191379,31 +191989,31 @@ public
 coÜdX
 ) {
 
-171 
+236 
 this
 .
 coÜdX
  = coordX;
 
-172 
+237 
 	}
 }
 
-174 
+239 
 public
  
 	$g‘CoÜdY
 () {
 
-175  
+240  
 coÜdY
 ;
 
-176 
+241 
 	}
 }
 
-178 
+243 
 public
  
 	$£tCoÜdY
@@ -191411,13 +192021,13 @@ public
 coÜdY
 ) {
 
-179 
+244 
 this
 .
 coÜdY
  = coordY;
 
-180 
+245 
 	}
 }
 
@@ -194548,12 +195158,72 @@ impÜt
  
 	gjava
 .
+	gio
+.
+	gBufã»dWr™”
+;
+
+4 
+impÜt
+ 
+	gjava
+.
+	gio
+.
+	gFeNÙFoundExû±iÚ
+;
+
+5 
+impÜt
+ 
+	gjava
+.
+	gio
+.
+	gFeWr™”
+;
+
+6 
+impÜt
+ 
+	gjava
+.
+	gio
+.
+	gIOExû±iÚ
+;
+
+7 
+impÜt
+ 
+	gjava
+.
+	gio
+.
+	gPrštWr™”
+;
+
+8 
+impÜt
+ 
+	gjava
+.
+	gio
+.
+	gUnsuµÜ‹dEncodšgExû±iÚ
+;
+
+9 
+impÜt
+ 
+	gjava
+.
 	gut
 .
 	gA¼ayLi¡
 ;
 
-4 
+10 
 impÜt
  
 	gjava
@@ -194563,7 +195233,7 @@ impÜt
 	gC®’d¬
 ;
 
-5 
+11 
 impÜt
  
 	gjava
@@ -194573,7 +195243,17 @@ impÜt
 	gHashM­
 ;
 
-6 
+12 
+impÜt
+ 
+	gjava
+.
+	gut
+.
+	gLškedLi¡
+;
+
+13 
 impÜt
  
 	gjava
@@ -194583,7 +195263,7 @@ impÜt
 	gLi¡
 ;
 
-7 
+14 
 impÜt
  
 	gjava
@@ -194593,7 +195273,17 @@ impÜt
 	gM­
 ;
 
-8 
+15 
+impÜt
+ 
+	gjava
+.
+	gut
+.
+	gQueue
+;
+
+16 
 impÜt
  
 	gjava
@@ -194605,7 +195295,7 @@ impÜt
 	gEÁry
 ;
 
-9 
+17 
 impÜt
  
 	gjava
@@ -194615,7 +195305,7 @@ impÜt
 	gRªdom
 ;
 
-10 
+18 
 impÜt
  
 	gjava
@@ -194625,7 +195315,7 @@ impÜt
 	gS‘
 ;
 
-12 
+20 
 impÜt
  
 	gÜg
@@ -194641,7 +195331,7 @@ impÜt
 	gPaœ
 ;
 
-13 
+21 
 impÜt
  
 	gÜg
@@ -194653,7 +195343,7 @@ impÜt
 	gCloudËtScheduËr
 ;
 
-14 
+22 
 impÜt
  
 	gÜg
@@ -194665,7 +195355,7 @@ impÜt
 	gCloudËtScheduËrTimeSh¬ed
 ;
 
-15 
+23 
 impÜt
  
 	gÜg
@@ -194677,7 +195367,7 @@ impÜt
 	gN‘wÜkTİŞogy
 ;
 
-16 
+24 
 impÜt
  
 	gÜg
@@ -194691,7 +195381,7 @@ impÜt
 	gCloudSim
 ;
 
-17 
+25 
 impÜt
  
 	gÜg
@@ -194705,7 +195395,7 @@ impÜt
 	gSimEÁ™y
 ;
 
-18 
+26 
 impÜt
  
 	gÜg
@@ -194719,7 +195409,7 @@ impÜt
 	gSimEv’t
 ;
 
-19 
+27 
 impÜt
  
 	gÜg
@@ -194731,7 +195421,7 @@ impÜt
 	gAµEdge
 ;
 
-20 
+28 
 impÜt
  
 	gÜg
@@ -194743,7 +195433,7 @@ impÜt
 	gAµLoİ
 ;
 
-21 
+29 
 impÜt
  
 	gÜg
@@ -194755,7 +195445,7 @@ impÜt
 	gAµModuË
 ;
 
-22 
+30 
 impÜt
  
 	gÜg
@@ -194767,7 +195457,7 @@ impÜt
 	gAµliÿtiÚ
 ;
 
-23 
+31 
 impÜt
  
 	gÜg
@@ -194781,7 +195471,7 @@ impÜt
 	gS–eùiv™yMod–
 ;
 
-24 
+32 
 impÜt
  
 	gÜg
@@ -194791,7 +195481,7 @@ impÜt
 	g’t™›s
 .*;
 
-25 
+33 
 impÜt
  
 	gÜg
@@ -194803,7 +195493,7 @@ impÜt
 	gCoÜdš©e
 ;
 
-26 
+34 
 impÜt
  
 	gÜg
@@ -194815,7 +195505,7 @@ impÜt
 	gDi¡ªûs
 ;
 
-27 
+35 
 impÜt
  
 	gÜg
@@ -194827,7 +195517,7 @@ impÜt
 	gCÚfig
 ;
 
-28 
+36 
 impÜt
  
 	gÜg
@@ -194839,7 +195529,7 @@ impÜt
 	gFogEv’ts
 ;
 
-29 
+37 
 impÜt
  
 	gÜg
@@ -194851,7 +195541,7 @@ impÜt
 	gFogUts
 ;
 
-30 
+38 
 impÜt
  
 	gÜg
@@ -194863,7 +195553,7 @@ impÜt
 	gModuËLaunchCÚfig
 ;
 
-31 
+39 
 impÜt
  
 	gÜg
@@ -194875,7 +195565,7 @@ impÜt
 	gN‘wÜkU§geMÚ™Ü
 ;
 
-32 
+40 
 impÜt
  
 	gÜg
@@ -194887,7 +195577,7 @@ impÜt
 	gTimeK“³r
 ;
 
-33 
+41 
 impÜt
  
 	gÜg
@@ -194899,7 +195589,7 @@ impÜt
 	gMig¿tiÚ
 ;
 
-34 
+42 
 impÜt
  
 	gÜg
@@ -194911,7 +195601,7 @@ impÜt
 	gMySti¡ics
 ;
 
-35 
+43 
 impÜt
  
 	gÜg
@@ -194923,7 +195613,7 @@ impÜt
 	gNextS‹p
 ;
 
-36 
+44 
 impÜt
  
 	gÜg
@@ -194935,7 +195625,7 @@ impÜt
 	gLogMobe
 ;
 
-37 
+45 
 impÜt
  
 	gÜg
@@ -194949,7 +195639,7 @@ impÜt
 	gMaxAndMš
 ;
 
-38 
+46 
 impÜt
  
 	gÜg
@@ -194963,7 +195653,7 @@ impÜt
 	gMobeEv’ts
 ;
 
-40 
+48 
 public
  cÏs 
 	cMobeCÚŒŞËr
@@ -194973,7 +195663,7 @@ ex‹nds
 	mSimEÁ™y
  {
 
-41 
+49 
 ´iv©e
  
 boŞ—n
@@ -194981,19 +195671,19 @@ boŞ—n
 	mmig¿tiÚAbË
 ;
 
-42 
+50 
 ´iv©e
  
 	mmigPoštPŞicy
 ;
 
-44 
+52 
 ´iv©e
  
 	m¡•PŞicy
 ;
 
-45 
+53 
 ´iv©e
  
 CoÜdš©e
@@ -195001,19 +195691,19 @@ CoÜdš©e
 	mcoÜdDeviûs
 ;
 
-47 
+55 
 ´iv©e
  
 	mmigSŒ©egyPŞicy
 ;
 
-48 
+56 
 ´iv©e
  
 	m£ed
 ;
 
-50 
+58 
 ´iv©e
  
 	mLi¡
@@ -195023,7 +195713,7 @@ CoÜdš©e
 	m£rv”CloudËts
 ;
 
-51 
+59 
 ´iv©e
  
 	mLi¡
@@ -195033,7 +195723,7 @@ CoÜdš©e
 	msm¬tThšgs
 ;
 
-52 
+60 
 ´iv©e
  
 	mLi¡
@@ -195043,7 +195733,7 @@ CoÜdš©e
 	m­Deviûs
 ;
 
-53 
+61 
 ´iv©e
  
 	mLi¡
@@ -195053,7 +195743,17 @@ CoÜdš©e
 	mbrok”Li¡
 ;
 
-55 
+62 
+´iv©e
+ 
+	mQueue
+<
+	mSŒšg
+[]> 
+	mq
+;
+
+65 
 ´iv©e
  
 	mM­
@@ -195065,7 +195765,7 @@ CoÜdš©e
 	m­¶iÿtiÚs
 ;
 
-56 
+66 
 ´iv©e
  
 	mM­
@@ -195077,7 +195777,7 @@ CoÜdš©e
 	m­pLaunchD–ays
 ;
 
-57 
+67 
 ´iv©e
  
 ModuËM­pšg
@@ -195085,7 +195785,7 @@ ModuËM­pšg
 	mmoduËM­pšg
 ;
 
-58 
+68 
 ´iv©e
  
 	mM­
@@ -195097,19 +195797,19 @@ ModuËM­pšg
 	mglob®Cu¼’tCpuLßd
 ;
 
-60 
+70 
 fš®
  
 	mnumOfD•ts
  = 1;
 
-61 
+71 
 fš®
  
 	mnumOfMobesP”D•t
  = 4;
 
-62 
+72 
 ´iv©e
  
 Rªdom
@@ -195117,13 +195817,13 @@ Rªdom
 	m¿nd
 ;
 
-63 
+73 
 public
  
 	$MobeCÚŒŞËr
 (){
 
-66 
+76 
 public
  
 	`MobeCÚŒŞËr
@@ -195150,12 +195850,16 @@ FogBrok”
 > 
 brok”s
 , 
+Queue
+<SŒšg[]> 
+q
+, 
 ModuËM­pšg
  
 moduËM­pšg
 
 
-67 , 
+77 , 
 migPoštPŞicy
 , 
 migSŒ©egyPŞicy
@@ -195173,13 +195877,13 @@ boŞ—n
 mig¿tiÚAbË
 ) {
 
-69 
+79 
 	`su³r
 (
 Çme
 );
 
-70 
+80 
 this
 .
 ­¶iÿtiÚs
@@ -195193,7 +195897,7 @@ SŒšg
 AµliÿtiÚ
 >();
 
-71 
+81 
 this
 .
 glob®Cu¼’tCpuLßd
@@ -195207,7 +195911,7 @@ IÁeg”
 DoubË
 >();
 
-72 
+82 
 	`£tAµLaunchD–ays
 (
 Ãw
@@ -195219,13 +195923,13 @@ SŒšg
 IÁeg”
 >());
 
-73 
+83 
 	`£tModuËM­pšg
 (
 moduËM­pšg
 );
 
-74 
+84 
 FogDeviû
  
 sc
@@ -195233,7 +195937,7 @@ sc
 £rv”CloudËts
 ){
 
-75 
+85 
 sc
 .
 	`£tCÚŒŞËrId
@@ -195241,69 +195945,75 @@ sc
 	`g‘Id
 ());
 
-77 
+87 
 	`£tS“d
 (
 £ed
 );
 
-78 
+88 
 	`£tS”v”CloudËts
 (
 £rv”CloudËts
 );
 
-79 
+89 
 	`£tApDeviûs
 (
 ­Deviûs
 );
 
-80 
+90 
 	`£tSm¬tThšgs
 (
 sm¬tThšgs
 );
 
-81 
+91 
 	`£tBrok”Li¡
 (
 brok”s
 );
 
-82 
+92 
+	`£tQueue
+(
+q
+);
+
+93 
 	`£tMigPoštPŞicy
 (
 migPoštPŞicy
 );
 
-83 
+94 
 	`£tMigSŒ©egyPŞicy
 (
 migSŒ©egyPŞicy
 );
 
-84 
+95 
 	`£tS‹pPŞicy
 (
 ¡•PŞicy
 );
 
-85 
+96 
 	`£tCoÜdDeviûs
 (
 coÜdDeviûs
 );
 
-86 
+97 
 	`cÚÃùW™hL©’c›s
 ();
 
-87 
+98 
 	`š™ŸlizeCPULßds
 ();
 
-88 
+99 
 	`£tRªd
 (
 Ãw
@@ -195317,17 +196027,17 @@ LÚg
 MAX_VALUE
 ));
 
-89 
+100 
 	`£tMig¿tiÚAbË
 (
 mig¿tiÚAbË
 );
 
-90 
+101 
 	}
 }
 
-91 
+102 
 public
  
 MobeCÚŒŞËr
@@ -195343,7 +196053,7 @@ FogDeviû
 £rv”CloudËts
 ,
 
-92 
+103 
 Li¡
 <
 ApDeviû
@@ -195355,7 +196065,7 @@ MobeDeviû
 sm¬tThšgs
 ,
 
-93 
+104 
 migPoštPŞicy
 , 
 migSŒ©egyPŞicy
@@ -195363,7 +196073,7 @@ migSŒ©egyPŞicy
 ¡•PŞicy
 ,
 
-94 
+105 
 CoÜdš©e
  
 coÜdDeviûs
@@ -195371,13 +196081,13 @@ coÜdDeviûs
 £ed
 ) {
 
-96 
+107 
 su³r
 (
 Çme
 );
 
-97 
+108 
 	gthis
 .
 	g­¶iÿtiÚs
@@ -195391,7 +196101,7 @@ SŒšg
 	gAµliÿtiÚ
 >();
 
-98 
+109 
 	gthis
 .
 	gglob®Cu¼’tCpuLßd
@@ -195405,7 +196115,7 @@ IÁeg”
 	gDoubË
 >();
 
-99 
+110 
 £tAµLaunchD–ays
 (
 Ãw
@@ -195417,13 +196127,13 @@ SŒšg
 IÁeg”
 >());
 
-100 
+111 
 £tModuËM­pšg
 (
 moduËM­pšg
 );
 
-101 
+112 
 FogDeviû
  
 	gsc
@@ -195431,7 +196141,7 @@ FogDeviû
 £rv”CloudËts
 ){
 
-102 
+113 
 sc
 .
 £tCÚŒŞËrId
@@ -195439,63 +196149,63 @@ sc
 g‘Id
 ());
 
-104 
+115 
 £tS“d
 (
 £ed
 );
 
-105 
+116 
 £tS”v”CloudËts
 (
 £rv”CloudËts
 );
 
-106 
+117 
 £tApDeviûs
 (
 ­Deviûs
 );
 
-107 
+118 
 £tSm¬tThšgs
 (
 sm¬tThšgs
 );
 
-108 
+119 
 £tMigPoštPŞicy
 (
 migPoštPŞicy
 );
 
-109 
+120 
 £tMigSŒ©egyPŞicy
 (
 migSŒ©egyPŞicy
 );
 
-110 
+121 
 £tS‹pPŞicy
 (
 ¡•PŞicy
 );
 
-111 
+122 
 £tCoÜdDeviûs
 (
 coÜdDeviûs
 );
 
-112 
+123 
 cÚÃùW™hL©’c›s
 ();
 
-113 
+124 
 š™ŸlizeCPULßds
 ();
 
-114 
+125 
 £tRªd
 (
 Ãw
@@ -195509,13 +196219,13 @@ LÚg
 MAX_VALUE
 ));
 
-117 
+128 
 ´iv©e
  
 	$cÚÃùW™hL©’c›s
 (){
 
-118 
+129 
 FogDeviû
  
 ¡
@@ -195523,7 +196233,7 @@ FogDeviû
 	`g‘Sm¬tThšgs
 ()){
 
-119 
+130 
 FogDeviû
  
 ·»Á
@@ -195535,13 +196245,13 @@ FogDeviû
 	`g‘P¬’tId
 ());
 
-120 if(
+131 if(
 ·»Á
  =ğ
 nuÎ
 ){
 
-123 
+134 
 Ï‹ncy
  = 
 ¡
@@ -195549,7 +196259,7 @@ nuÎ
 	`g‘U¶škL©’cy
 ();
 
-124 
+135 
 ·»Á
 .
 	`g‘ChdToL©’cyM­
@@ -195563,7 +196273,7 @@ nuÎ
 Ï‹ncy
 );
 
-125 
+136 
 ·»Á
 .
 	`g‘Chd»nIds
@@ -195575,11 +196285,11 @@ nuÎ
 	`g‘Id
 ());
 
-127 
+138 
 	}
 }
 
-128 
+139 
 ´iv©e
  
 FogDeviû
@@ -195589,7 +196299,7 @@ FogDeviû
 id
 ){
 
-129 
+140 
 FogDeviû
  
 sc
@@ -195597,7 +196307,7 @@ sc
 	`g‘S”v”CloudËts
 ()){
 
-130 if(
+141 if(
 id
 ==
 sc
@@ -195605,25 +196315,25 @@ sc
 	`g‘Id
 ())
 
-131  
+142  
 sc
 ;
 
-133  
+144  
 nuÎ
 ;
 
-134 
+145 
 	}
 }
 
-136 
+147 
 ´iv©e
  
 	$š™ŸlizeCPULßds
 () {
 
-148 
+159 
 FogDeviû
  
 sc
@@ -195631,7 +196341,7 @@ sc
 	`g‘S”v”CloudËts
 ()){
 
-149 
+160 
 this
 .
 glob®Cu¼’tCpuLßd
@@ -195643,7 +196353,7 @@ sc
 	`g‘Id
 (), 0.0);
 
-151 
+162 
 MobeDeviû
  
 ¡
@@ -195651,7 +196361,7 @@ MobeDeviû
 	`g‘Sm¬tThšgs
 ()){
 
-152 
+163 
 this
 .
 glob®Cu¼’tCpuLßd
@@ -195663,21 +196373,21 @@ glob®Cu¼’tCpuLßd
 	`g‘Id
 (), 0.0);
 
-154 
+165 
 	}
 }
 
-155 @
+166 @
 Ov”ride
 
 
-156 
+167 
 public
  
 	$¡¬tEÁ™y
 () {
 
-158 
+169 
 SŒšg
  
 ­pId
@@ -195687,7 +196397,7 @@ SŒšg
 	`keyS‘
 ()){
 
-159 
+170 
 LogMobe
 .
 	`debug
@@ -195699,7 +196409,7 @@ LogMobe
 	`g‘
 (appId));
 
-160 if(
+171 if(
 	`g‘AµLaunchD–ays
 ().
 	`g‘
@@ -195707,7 +196417,7 @@ LogMobe
 ­pId
 )==0)
 
-161 
+172 
 	`´oûssAµSubm™
 (
 ­¶iÿtiÚs
@@ -195717,7 +196427,7 @@ LogMobe
 ­pId
 ));
 
-163 
+174 
 	`£nd
 (
 	`g‘Id
@@ -195735,7 +196445,7 @@ APP_SUBMIT
 ­¶iÿtiÚs
 .get(appId));
 
-165 
+176 
 i
  = 0; i<
 MaxAndMš
@@ -195743,43 +196453,43 @@ MaxAndMš
 MAX_SIMULATION_TIME
 ; i+=1000){
 
-166 
+177 
 	`£nd
 (
 	`g‘Id
 ()
 
-167 , 
+178 , 
 i
 
 
-168 , 
+179 , 
 MobeEv’ts
 .
 NEXT_STEP
 
 
-170 
+181 
 	`£nd
 (
 	`g‘Id
 ()
 
-171 ,
+182 ,
 i
 
 
-172 ,
+183 ,
 MobeEv’ts
 .
 CHECK_NEW_STEP
 );
 
-175 if(
+186 if(
 	`isMig¿tiÚAbË
 ()){
 
-176 
+187 
 FogDeviû
  
 sc
@@ -195787,7 +196497,7 @@ sc
 	`g‘S”v”CloudËts
 ()){
 
-177 
+188 
 i
  = 0; i<
 MaxAndMš
@@ -195795,7 +196505,7 @@ MaxAndMš
 MAX_SIMULATION_TIME
 ; i+=1000){
 
-178 
+189 
 	`£nd
 (
 sc
@@ -195803,23 +196513,23 @@ sc
 	`g‘Id
 ()
 
-179 , 
+190 , 
 i
 
 
-180 , 
+191 , 
 MobeEv’ts
 .
 MAKE_DECISION_MIGRATION
 
 
-181 , 
+192 , 
 sc
 .
 	`g‘Sm¬tThšgs
 ());
 
-188 
+199 
 	`£nd
 (
 	`g‘Id
@@ -195833,7 +196543,7 @@ FogEv’ts
 CONTROLLER_RESOURCE_MANAGE
 );
 
-190 
+201 
 FogDeviû
  
 dev
@@ -195841,7 +196551,7 @@ dev
 	`g‘S”v”CloudËts
 ())
 
-191 
+202 
 	`£ndNow
 (
 dev
@@ -195853,7 +196563,7 @@ FogEv’ts
 RESOURCE_MGMT
 );
 
-193 
+204 
 	`£nd
 (
 	`g‘Id
@@ -195867,11 +196577,11 @@ MobeEv’ts
 STOP_SIMULATION
 );
 
-194 
+205 
 	}
 }
 
-195 
+206 
 ´iv©e
  
 	$´oûssAµSubm™
@@ -195881,7 +196591,7 @@ SimEv’t
 ev
 ){
 
-196 
+207 
 AµliÿtiÚ
  
 ­p
@@ -195891,17 +196601,17 @@ ev
 	`g‘D©a
 ();
 
-197 
+208 
 	`´oûssAµSubm™
 (
 ­p
 );
 
-198 
+209 
 	}
 }
 
-199 
+210 
 ´iv©e
  
 	$´oûssAµSubm™
@@ -195911,7 +196621,7 @@ AµliÿtiÚ
 ­¶iÿtiÚ
 ){
 
-200 
+211 
 Sy¡em
 .
 out
@@ -195927,7 +196637,7 @@ CloudSim
 	`g‘AµId
 ());
 
-201 
+212 
 FogUts
 .
 ­pIdToGeoCov”ageM­
@@ -195941,7 +196651,7 @@ FogUts
 	`g‘GeoCov”age
 ());
 
-202 
+213 
 	`g‘AµliÿtiÚs
 ().
 	`put
@@ -195951,7 +196661,7 @@ FogUts
 	`g‘AµId
 (),‡pplication);
 
-203 
+214 
 Li¡
 <
 FogDeviû
@@ -195963,7 +196673,7 @@ FogDeviû
 A¼ayLi¡
 <>();
 
-204 
+215 
 FogDeviû
  
 sc
@@ -195971,7 +196681,7 @@ sc
 	`g‘S”v”CloudËts
 ()){
 
-205 
+216 
 ‹mpAÎDeviûs
 .
 	`add
@@ -195979,7 +196689,7 @@ sc
 sc
 );
 
-208 
+219 
 MobeDeviû
  
 ¡
@@ -195987,7 +196697,7 @@ MobeDeviû
 	`g‘Sm¬tThšgs
 ()){
 
-209 
+220 
 ‹mpAÎDeviûs
 .
 	`add
@@ -195995,7 +196705,7 @@ MobeDeviû
 ¡
 );
 
-212 
+223 
 ModuËPÏûm’t
  
 moduËPÏûm’t
@@ -196007,7 +196717,7 @@ moduËPÏûm’t
 ‹mpAÎDeviûs
 
 
-213 , 
+224 , 
 ­¶iÿtiÚ
 , 
 	`g‘ModuËM­pšg
@@ -196015,7 +196725,7 @@ moduËPÏûm’t
 glob®Cu¼’tCpuLßd
 );
 
-216 
+227 
 FogDeviû
  
 fogDeviû
@@ -196023,7 +196733,7 @@ fogDeviû
 	`g‘S”v”CloudËts
 ()){
 
-217 
+228 
 	`£ndNow
 (
 fogDeviû
@@ -196037,7 +196747,7 @@ ACTIVE_APP_UPDATE
 ­¶iÿtiÚ
 );
 
-219 
+230 
 MobeDeviû
  
 ¡
@@ -196045,7 +196755,7 @@ MobeDeviû
 	`g‘Sm¬tThšgs
 ()){
 
-220 
+231 
 	`£ndNow
 (
 ¡
@@ -196059,7 +196769,7 @@ ACTIVE_APP_UPDATE
 ­¶iÿtiÚ
 );
 
-223 
+234 
 M­
 <
 IÁeg”
@@ -196075,7 +196785,7 @@ moduËPÏûm’t
 	`g‘DeviûToModuËM­
 ();
 
-224 
+235 
 M­
 <
 IÁeg”
@@ -196089,7 +196799,7 @@ moduËPÏûm’t
 	`g‘ModuËIn¡ªûCouÁM­
 ();
 
-225 
+236 
 IÁeg”
  
 deviûId
@@ -196099,7 +196809,7 @@ deviûToModuËM­
 	`keyS‘
 ()){
 
-226 
+237 
 AµModuË
  
 moduË
@@ -196111,7 +196821,7 @@ deviûToModuËM­
 deviûId
 )){
 
-227 
+238 
 	`£ndNow
 (
 deviûId
@@ -196123,7 +196833,7 @@ APP_SUBMIT
 ­¶iÿtiÚ
 );
 
-228 
+239 
 	`£ndNow
 (
 deviûId
@@ -196135,7 +196845,7 @@ LAUNCH_MODULE
 moduË
 );
 
-229 
+240 
 	`£ndNow
 (
 deviûId
@@ -196145,7 +196855,7 @@ FogEv’ts
 LAUNCH_MODULE_INSTANCE
 ,
 
-230 
+241 
 Ãw
  
 	`ModuËLaunchCÚfig
@@ -196161,11 +196871,11 @@ deviûId
 	`g‘Name
 ())));
 
-234 
+245 
 	}
 }
 
-235 
+246 
 ´iv©e
  
 	$´oûssAµSubm™Mig¿tiÚ
@@ -196175,7 +196885,7 @@ SimEv’t
 ev
 ){
 
-236 
+247 
 AµliÿtiÚ
  
 ­¶iÿtiÚ
@@ -196185,7 +196895,7 @@ ev
 	`g‘D©a
 ();
 
-237 
+248 
 Sy¡em
 .
 out
@@ -196201,7 +196911,7 @@ CloudSim
 	`g‘AµId
 ());
 
-238 
+249 
 FogUts
 .
 ­pIdToGeoCov”ageM­
@@ -196215,7 +196925,7 @@ FogUts
 	`g‘GeoCov”age
 ());
 
-239 
+250 
 	`g‘AµliÿtiÚs
 ().
 	`put
@@ -196225,7 +196935,7 @@ FogUts
 	`g‘AµId
 (),‡pplication);
 
-240 
+251 
 FogDeviû
  
 sc
@@ -196239,7 +196949,7 @@ ev
 	`g‘Sourû
 ());
 
-241 
+252 
 Li¡
 <
 FogDeviû
@@ -196251,7 +196961,7 @@ FogDeviû
 A¼ayLi¡
 <>();
 
-242 
+253 
 ‹mpLi¡
 .
 	`add
@@ -196259,7 +196969,7 @@ A¼ayLi¡
 sc
 );
 
-243 
+254 
 ModuËPÏûm’t
  
 moduËPÏûm’t
@@ -196271,7 +196981,7 @@ moduËPÏûm’t
 ‹mpLi¡
 
 
-244 , 
+255 , 
 ­¶iÿtiÚ
 , 
 	`g‘ModuËM­pšg
@@ -196281,7 +196991,7 @@ glob®Cu¼’tCpuLßd
 Œue
 );
 
-247 
+258 
 	`£ndNow
 (
 sc
@@ -196295,7 +197005,7 @@ ACTIVE_APP_UPDATE
 ­¶iÿtiÚ
 );
 
-250 
+261 
 M­
 <
 IÁeg”
@@ -196311,7 +197021,7 @@ moduËPÏûm’t
 	`g‘DeviûToModuËM­
 ();
 
-251 
+262 
 M­
 <
 IÁeg”
@@ -196325,7 +197035,7 @@ moduËPÏûm’t
 	`g‘ModuËIn¡ªûCouÁM­
 ();
 
-253 
+264 
 AµModuË
  
 moduË
@@ -196339,7 +197049,7 @@ sc
 	`g‘Id
 ())){
 
-254 
+265 
 	`£ndNow
 (
 sc
@@ -196353,7 +197063,7 @@ APP_SUBMIT
 ­¶iÿtiÚ
 );
 
-255 
+266 
 	`£ndNow
 (
 sc
@@ -196367,7 +197077,7 @@ LAUNCH_MODULE
 moduË
 );
 
-256 
+267 
 	`£ndNow
 (
 sc
@@ -196379,7 +197089,7 @@ FogEv’ts
 LAUNCH_MODULE_INSTANCE
 ,
 
-257 
+268 
 Ãw
  
 	`ModuËLaunchCÚfig
@@ -196397,11 +197107,11 @@ sc
 	`g‘Name
 ())));
 
-261 
+272 
 	}
 }
 
-263 
+274 
 ´iv©e
  
 	$´oûssTu¶eFšished
@@ -196411,17 +197121,17 @@ SimEv’t
 ev
 ) {
 
-264 
+275 
 	}
 }
 
-265 
+276 
 ´Ùeùed
  
 	$mªageResourûs
 (){
 
-266 
+277 
 	`£nd
 (
 	`g‘Id
@@ -196435,15 +197145,15 @@ FogEv’ts
 CONTROLLER_RESOURCE_MANAGE
 );
 
-267 
+278 
 	}
 }
 
-270 @
+281 @
 Ov”ride
 
 
-271 
+282 
 public
  
 	$´oûssEv’t
@@ -196453,19 +197163,19 @@ SimEv’t
 ev
 ) {
 
-273 
+284 
 ev
 .
 	`g‘Tag
 ()){
 
-274 
+285 
 FogEv’ts
 .
 APP_SUBMIT
 :
 
-275 
+286 
 Sy¡em
 .
 out
@@ -196473,31 +197183,31 @@ out
 	`´šn
 ("APP_SUBMIT");
 
-276 
+287 
 	`´oûssAµSubm™
 (
 ev
 );
 
-278 
+289 
 MobeEv’ts
 .
 APP_SUBMIT_MIGRATE
 :
 
-279 
+290 
 	`´oûssAµSubm™Mig¿tiÚ
 (
 ev
 );
 
-282 
+293 
 FogEv’ts
 .
 TUPLE_FINISHED
 :
 
-283 
+294 
 Sy¡em
 .
 out
@@ -196505,29 +197215,29 @@ out
 	`´šn
 ("TUPLE_FINISHED");
 
-284 
+295 
 	`´oûssTu¶eFšished
 (
 ev
 );
 
-286 
+297 
 FogEv’ts
 .
 CONTROLLER_RESOURCE_MANAGE
 :
 
-287 
+298 
 	`mªageResourûs
 ();
 
-289 
+300 
 MobeEv’ts
 .
 NEXT_STEP
 :
 
-290 
+301 
 NextS‹p
 .
 	`ÃxtS‹p
@@ -196535,47 +197245,51 @@ NextS‹p
 	`g‘S”v”CloudËts
 ()
 
-291 , 
+302 , 
 	`g‘ApDeviûs
 ()
 
-292 , 
+303 , 
 	`g‘Sm¬tThšgs
 ()
 
-293 , 
+304 , 
+	`g‘Queue
+()
+
+305 , 
 	`g‘CoÜdDeviûs
 ()
 
-294 , 
+306 , 
 	`g‘S‹pPŞicy
 ()
 
-295 , 
+307 , 
 	`g‘S“d
 ());
 
-298 
+310 
 MobeEv’ts
 .
 CREATE_NEW_SMARTTHING
 :
 
-299 
+311 
 	`ü—‹NewSm¬tThšg
 ();
 
-301 
+313 
 MobeEv’ts
 .
 CHECK_NEW_STEP
 :
 
-302 
+314 
 	`checkNewS‹p
 ();
 
-303 
+315 
 Sy¡em
 .
 out
@@ -196587,13 +197301,13 @@ out
 	`size
 ());
 
-304 if(
+316 if(
 	`g‘Sm¬tThšgs
 ().
 	`isEm±y
 ())
 
-305 
+317 
 	`£ndNow
 (
 	`g‘Id
@@ -196603,13 +197317,13 @@ MobeEv’ts
 STOP_SIMULATION
 );
 
-307 
+319 
 MobeEv’ts
 .
 STOP_SIMULATION
 :
 
-308 
+320 
 Sy¡em
 .
 out
@@ -196617,7 +197331,7 @@ out
 	`´šn
 ("*********************myStopSimulation MobilieController 149 ***********");
 
-309 
+321 
 Sy¡em
 .
 out
@@ -196629,7 +197343,7 @@ CloudSim
 	`şock
 ());
 
-310 
+322 
 Sy¡em
 .
 out
@@ -196641,49 +197355,49 @@ out
 	`size
 ());
 
-311 
+323 
 CloudSim
 .
 	`¡İSimuÏtiÚ
 ();
 
-312 
+324 
 	`´štTimeD‘as
 ();
 
-313 
+325 
 	`´štPow”D‘as
 ();
 
-314 
+326 
 	`´štCo¡D‘as
 ();
 
-315 
+327 
 	`´štN‘wÜkU§geD‘as
 ();
 
-316 
+328 
 	`´štMig¿tiÚsD‘®is
 ();
 
-317 
+329 
 Sy¡em
 .
 	`ex™
 (0);
 
-321 
+333 
 	}
 }
 
-324 
+336 
 ´iv©e
  
 	$ü—‹NewSm¬tThšg
 () {
 
-326 
+338 
 i
 ğ
 	`g‘Sm¬tThšgs
@@ -196691,7 +197405,7 @@ i
 	`size
 ();
 
-329 
+341 
 Sy¡em
 .
 out
@@ -196699,7 +197413,7 @@ out
 	`´šn
 ("criado...");
 
-330 if(
+342 if(
 ApDeviû
 .
 	`cÚÃùApSm¬tThšg
@@ -196717,7 +197431,7 @@ i
 	`ÃxtDoubË
 ())){
 
-331 
+343 
 	`g‘Sm¬tThšgs
 ().
 	`g‘
@@ -196731,7 +197445,7 @@ i
 	`cÚÃùS”v”CloudËtSm¬tThšg
 (getSmartThings().get(i));
 
-332 
+344 
 Sy¡em
 .
 out
@@ -196749,11 +197463,11 @@ i
 	`g‘Name
 ());
 
-335 
+347 
 	}
 }
 
-381 
+393 
 ´iv©e
  
 	$mig¿tiÚTimeToLiveMig¿tiÚ
@@ -196763,7 +197477,7 @@ MobeDeviû
 sm¬tThšg
 ) {
 
-383 
+395 
 runTime
  = 
 CloudSim
@@ -196775,7 +197489,7 @@ sm¬tThšg
 	`g‘TimeS¹LiveMig¿tiÚ
 ();
 
-384 if(
+396 if(
 sm¬tThšg
 .
 	`g‘MigTime
@@ -196783,7 +197497,7 @@ sm¬tThšg
 runTime
 ){
 
-385 
+397 
 runTime
  = 
 sm¬tThšg
@@ -196791,25 +197505,25 @@ sm¬tThšg
 	`g‘MigTime
 ()-runTime;
 
-386  
+398  
 runTime
 ;
 
-392 
+404 
 	}
 }
 
-394 
+406 
 ´iv©e
  
 	$checkNewS‹p
 () {
 
-396 
+408 
 šdex
 =0;
 
-399 
+411 
 MobeDeviû
  
 ¡
@@ -196817,7 +197531,7 @@ MobeDeviû
 	`g‘Sm¬tThšgs
 ()){
 
-400 
+412 
 MySti¡ics
 .
 	`g‘In¡ªû
@@ -196833,7 +197547,7 @@ MySti¡ics
 	`g‘EÃrgyCÚsum±iÚ
 ());
 
-401 
+413 
 MySti¡ics
 .
 	`g‘In¡ªû
@@ -196851,7 +197565,7 @@ MySti¡ics
 	`g‘Pow”
 ());
 
-402 if(
+414 if(
 ¡
 .
 	`g‘SourûAp
@@ -196859,13 +197573,13 @@ MySti¡ics
 nuÎ
 ){
 
-403 if(!
+415 if(!
 ¡
 .
 	`isLockedToHªdoff
 ()){
 
-404 
+416 
 di¡ªû
 =
 Di¡ªûs
@@ -196879,7 +197593,7 @@ Di¡ªûs
 	`g‘SourûAp
 ().getCoord());
 
-408 if(
+420 if(
 di¡ªû
 >=
 MaxAndMš
@@ -196889,7 +197603,7 @@ MAX_DISTANCE
 MAX_DISTANCE_TO_HANDOFF
  && distance<MaxAndMin.MAX_DISTANCE){
 
-409 
+421 
 šdex
 =
 Mig¿tiÚ
@@ -196901,11 +197615,11 @@ Mig¿tiÚ
 ¡
 );
 
-410 if(
+422 if(
 šdex
  >= 0){
 
-411 
+423 
 ¡
 .
 	`£tDe¡š©iÚAp
@@ -196917,7 +197631,7 @@ Mig¿tiÚ
 šdex
 ));
 
-412 
+424 
 ¡
 .
 	`£tHªdoffStus
@@ -196925,7 +197639,7 @@ Mig¿tiÚ
 Œue
 );
 
-413 
+425 
 ¡
 .
 	`£tLockedToHªdoff
@@ -196933,7 +197647,7 @@ Mig¿tiÚ
 Œue
 );
 
-414 
+426 
 hªdoffLocked
  = (è((
 MaxAndMš
@@ -196945,7 +197659,7 @@ MAX_DISTANCE_TO_HANDOFF
 	`g‘S³ed
 ()+1))*2000);
 
-416 
+428 
 hªdoffTime
  = 
 MaxAndMš
@@ -196959,11 +197673,11 @@ MAX_HANDOFF_TIME
 	`ÃxtDoubË
 ();
 
-417 
+429 
 d–ayCÚÃùiÚ
  = 100;
 
-420 if(!
+432 if(!
 ¡
 .
 	`g‘De¡š©iÚAp
@@ -196975,11 +197689,11 @@ d–ayCÚÃùiÚ
 	`g‘SourûS”v”CloudËt
 ())){
 
-423 if(
+435 if(
 	`isMig¿tiÚAbË
 ()){
 
-424 
+436 
 LogMobe
 .
 	`debug
@@ -196989,7 +197703,7 @@ LogMobe
 	`g‘Name
 ()+" will be desconnected from "+
 
-425 
+437 
 ¡
 .
 	`g‘SourûS”v”CloudËt
@@ -196997,7 +197711,7 @@ LogMobe
 	`g‘Name
 ()+" by handoff");
 
-426 
+438 
 	`£ndNow
 (
 ¡
@@ -197011,7 +197725,7 @@ MobeEv’ts
 MAKE_DECISION_MIGRATION
 ,st);
 
-427 
+439 
 	`£ndNow
 (
 ¡
@@ -197025,7 +197739,7 @@ MobeEv’ts
 DESCONNECT_ST_TO_SC
 ,st);
 
-428 
+440 
 	`£nd
 (
 ¡
@@ -197045,13 +197759,13 @@ MobeEv’ts
 CONNECT_ST_TO_SC
 ,st);
 
-432 if(
+444 if(
 ¡
 .
 	`isPo¡CİyStus
 ()){
 
-433 
+445 
 ÃwMigTime
  = 
 	`mig¿tiÚTimeToLiveMig¿tiÚ
@@ -197059,11 +197773,11 @@ CONNECT_ST_TO_SC
 ¡
 );
 
-434 if(
+446 if(
 ÃwMigTime
 ==0){
 
-435 
+447 
 ÃwMigTime
 =((
 ¡
@@ -197081,7 +197795,7 @@ CONNECT_ST_TO_SC
 	`g‘U¶škBªdwidth
 ())*1000.0;
 
-437 
+449 
 d–ayProûss
  = 
 ¡
@@ -197091,7 +197805,7 @@ d–ayProûss
 	`g‘Ch¬aù”i¡ics
 ().
 
-438 
+450 
 	`g‘CpuTime
 ((
 ¡
@@ -197101,13 +197815,13 @@ d–ayProûss
 	`g‘Size
 ()*1024*1024*8)*0.7, 0.0)
 
-440 
+452 
 ¡
 .
 	`£tTimeFšishD–iv”yVm
 (-1.0);
 
-441 
+453 
 ¡
 .
 	`£tMigStus
@@ -197115,7 +197829,7 @@ d–ayProûss
 Œue
 );
 
-442 
+454 
 MySti¡ics
 .
 	`g‘In¡ªû
@@ -197131,7 +197845,7 @@ CloudSim
 	`şock
 ());
 
-443 
+455 
 	`£nd
 (
 ¡
@@ -197149,7 +197863,7 @@ MobeEv’ts
 SET_MIG_STATUS_TRUE
 , st);
 
-448 
+460 
 	`£nd
 (
 ¡
@@ -197165,7 +197879,7 @@ MobeEv’ts
 START_HANDOFF
 ,st);
 
-449 
+461 
 	`£nd
 (
 ¡
@@ -197181,7 +197895,7 @@ MobeEv’ts
 UNLOCKED_HANDOFF
 ,st);
 
-450 
+462 
 MySti¡ics
 .
 	`g‘In¡ªû
@@ -197189,7 +197903,13 @@ MySti¡ics
 	`£tTÙ®Hªdoff
 (1);
 
-452 
+464 
+	`§veHªdOff
+(
+¡
+);
+
+466 
 LogMobe
 .
 	`debug
@@ -197201,7 +197921,7 @@ LogMobe
 	`g‘SourûAp
 ().getName()
 
-453 +" NextAp: "+
+467 +" NextAp: "+
 ¡
 .
 	`g‘De¡š©iÚAp
@@ -197209,7 +197929,7 @@ LogMobe
 	`g‘Name
 ()+"\n");
 
-454 
+468 
 LogMobe
 .
 	`debug
@@ -197221,7 +197941,7 @@ LogMobe
 	`g‘SourûAp
 ().getName()+": "+
 
-455 
+469 
 Di¡ªûs
 .
 	`checkDi¡ªû
@@ -197233,7 +197953,7 @@ Di¡ªûs
 	`g‘SourûAp
 ().getCoord()));
 
-458 
+472 
 LogMobe
 .
 	`debug
@@ -197243,7 +197963,7 @@ LogMobe
 	`g‘Name
 ()+" can't make handoff because don'tƒxist closest‚extAp");
 
-461 if(
+475 if(
 di¡ªû
 >=
 MaxAndMš
@@ -197251,7 +197971,7 @@ MaxAndMš
 MAX_DISTANCE
 ) {
 
-462 
+476 
 ¡
 .
 	`g‘SourûAp
@@ -197259,7 +197979,7 @@ MAX_DISTANCE
 	`descÚÃùApSm¬tThšg
 (st);
 
-463 
+477 
 ¡
 .
 	`g‘SourûS”v”CloudËt
@@ -197267,7 +197987,7 @@ MAX_DISTANCE
 	`descÚÃùS”v”CloudËtSm¬tThšg
 (st);
 
-464 if(
+478 if(
 ¡
 .
 	`isLockedToMig¿tiÚ
@@ -197275,7 +197995,7 @@ MAX_DISTANCE
 	`isMigStus
 ()){
 
-465 
+479 
 	`£ndNow
 (
 ¡
@@ -197289,7 +198009,7 @@ MobeEv’ts
 ABORT_MIGRATION
 ,st);
 
-467 
+481 
 LogMobe
 .
 	`debug
@@ -197301,7 +198021,7 @@ LogMobe
 di¡ªû
 );
 
-468 
+482 
 LogMobe
 .
 	`debug
@@ -197317,7 +198037,7 @@ LogMobe
 	`g‘CoÜdY
 ());
 
-473 if(
+487 if(
 ApDeviû
 .
 	`cÚÃùApSm¬tThšg
@@ -197331,7 +198051,7 @@ ApDeviû
 	`ÃxtDoubË
 ())){
 
-474 
+488 
 ¡
 .
 	`g‘SourûAp
@@ -197341,7 +198061,7 @@ ApDeviû
 	`cÚÃùS”v”CloudËtSm¬tThšg
 (st);
 
-475 
+489 
 LogMobe
 .
 	`debug
@@ -197353,7 +198073,7 @@ LogMobe
 	`g‘SourûAp
 ().getName()+
 
-476 " SourûS”v”CouldËt: "+
+490 " SourûS”v”CouldËt: "+
 ¡
 .
 	`g‘SourûS”v”CloudËt
@@ -197361,7 +198081,7 @@ LogMobe
 	`g‘Name
 ());
 
-478 
+492 
 CloudËtScheduËr
  
 şoudËtScheduËr
@@ -197371,7 +198091,7 @@ CloudËtScheduËr
 	`CloudËtScheduËrTimeSh¬ed
 ();
 
-480 
+494 
 sizeVm
  = (
 MaxAndMš
@@ -197385,7 +198105,7 @@ MAX_VM_SIZE
 	`ÃxtDoubË
 ())));
 
-481 
+495 
 AµModuË
  
 vmSm¬tThšg
@@ -197401,13 +198121,13 @@ vmSm¬tThšg
 	`g‘Name
 ()
 
-482 , "MyAµ_vr_game"+
+496 , "MyAµ_vr_game"+
 ¡
 .
 	`g‘MyId
 ()
 
-483 , 
+497 , 
 	`g‘Brok”Li¡
 ().
 	`g‘
@@ -197419,21 +198139,21 @@ vmSm¬tThšg
 	`g‘Id
 ()
 
-487 , 
+501 , 
 sizeVm
 
 
-488 , "Vm_"+
+502 , "Vm_"+
 ¡
 .
 	`g‘Name
 ()
 
-489 , 
+503 , 
 şoudËtScheduËr
 
 
-490 , 
+504 , 
 Ãw
  
 HashM­
@@ -197445,7 +198165,7 @@ SŒšg
 S–eùiv™yMod–
 >());
 
-492 
+506 
 ¡
 .
 	`£tVmMobeDeviû
@@ -197453,7 +198173,7 @@ S–eùiv™yMod–
 vmSm¬tThšg
 );
 
-493 
+507 
 ¡
 .
 	`g‘SourûS”v”CloudËt
@@ -197465,7 +198185,7 @@ vmSm¬tThšg
 vmSm¬tThšg
 );
 
-494 
+508 
 ¡
 .
 	`£tVmLoÿlS”v”CloudËt
@@ -197473,7 +198193,7 @@ vmSm¬tThšg
 	`g‘SourûS”v”CloudËt
 ());
 
-495 
+509 
 ¡
 .
 	`£tLockedToMig¿tiÚ
@@ -197481,7 +198201,7 @@ vmSm¬tThšg
 çl£
 );
 
-498 
+512 
 brok”Id
 =
 	`g‘Brok”Li¡
@@ -197495,7 +198215,7 @@ brok”Id
 	`g‘Id
 ();
 
-499 
+513 
 MobeS’sÜ
  
 s
@@ -197505,7 +198225,7 @@ s
 	`g‘S’sÜs
 ()){
 
-500 
+514 
 s
 .
 	`£tAµId
@@ -197515,7 +198235,7 @@ s
 	`g‘MyId
 ());
 
-501 
+515 
 s
 .
 	`£tU£rId
@@ -197523,7 +198243,7 @@ s
 brok”Id
 );
 
-502 
+516 
 s
 .
 	`£tG©ewayDeviûId
@@ -197533,13 +198253,13 @@ s
 	`g‘Id
 ());
 
-503 
+517 
 s
 .
 	`£tL©’cy
 (6.0);
 
-506 
+520 
 MobeAùu©Ü
  
 a
@@ -197549,7 +198269,7 @@ a
 	`g‘Aùu©Üs
 ()){
 
-507 
+521 
 a
 .
 	`£tU£rId
@@ -197557,7 +198277,7 @@ a
 brok”Id
 );
 
-508 
+522 
 a
 .
 	`£tAµId
@@ -197567,7 +198287,7 @@ a
 	`g‘MyId
 ());
 
-509 
+523 
 a
 .
 	`£tG©ewayDeviûId
@@ -197577,13 +198297,13 @@ a
 	`g‘Id
 ());
 
-510 
+524 
 a
 .
 	`£tL©’cy
 (1.0);
 
-511 
+525 
 a
 .
 	`£tAùu©ÜTy³
@@ -197593,7 +198313,7 @@ a
 	`g‘MyId
 ());
 
-514 
+528 
 ModuËM­pšg
  
 moduËM­pšg
@@ -197601,7 +198321,7 @@ moduËM­pšg
 	`ü—‹ModuËM­pšg
 ();
 
-515 
+529 
 moduËM­pšg
 .
 	`addModuËToDeviû
@@ -197617,7 +198337,7 @@ AµModuË
 	`g‘SourûS”v”CloudËt
 ().getName(), 1);
 
-516 
+530 
 moduËM­pšg
 .
 	`addModuËToDeviû
@@ -197629,7 +198349,7 @@ moduËM­pšg
 	`g‘Name
 (), 1);
 
-519 
+533 
 	`´oûssAµSubm™
 (
 	`g‘AµliÿtiÚs
@@ -197641,35 +198361,175 @@ moduËM­pšg
 	`g‘MyId
 ()));
 
-526 
+540 
 	}
 }
 
-529 @
+542 
+´iv©e
+ 
+	$§veHªdOff
+(
+MobeDeviû
+ 
+¡
+){
+
+543 
+Sy¡em
+.
+out
+.
+	`´šn
+("HANDOFF "+
+¡
+.
+	`g‘MyId
+(è+ " Pos™iÚ: " + st.
+	`g‘CoÜd
+().
+	`g‘CoÜdX
+(è+ ", " + st.g‘CoÜd().
+	`g‘CoÜdY
+(è+ " DœeùiÚ: " + st.
+	`g‘DœeùiÚ
+(è+ " S³ed: " + st.
+	`g‘S³ed
+());
+
+544 
+	`Œy
+(
+FeWr™”
+ 
+fw
+ = 
+Ãw
+ 
+	`FeWr™”
+(
+¡
+.
+	`g‘MyId
+()+"hªdoff.txt", 
+Œue
+);
+
+545 
+Bufã»dWr™”
+ 
+bw
+ = 
+Ãw
+ 
+	`Bufã»dWr™”
+(
+fw
+);
+
+546 
+PrštWr™”
+ 
+out
+ = 
+Ãw
+ 
+	`PrštWr™”
+(
+bw
+))
+
+548 
+out
+.
+	`´šn
+(
+¡
+.
+	`g‘MyId
+(è+ "\t" + st.
+	`g‘CoÜd
+().
+	`g‘CoÜdX
+(è+ "\t" + st.g‘CoÜd().
+	`g‘CoÜdY
+(è+ "\t" + st.
+	`g‘DœeùiÚ
+(è+ "\t" + st.
+	`g‘S³ed
+());
+
+550 
+	`ÿtch
+ (
+UnsuµÜ‹dEncodšgExû±iÚ
+ 
+e
+) {
+
+552 
+e
+.
+	`´štSckT¿û
+();
+
+554 
+	`ÿtch
+ (
+FeNÙFoundExû±iÚ
+ 
+e
+) {
+
+556 
+e
+.
+	`´štSckT¿û
+();
+
+558 
+	`ÿtch
+ (
+IOExû±iÚ
+ 
+e
+) {
+
+560 
+e
+.
+	`´štSckT¿û
+();
+
+562 
+	}
+}
+
+565 @
 Ov”ride
 
 
-530 
+566 
 public
  
 	$shutdownEÁ™y
 () {
 
-533 
+569 
 	}
 }
 
-535 
+571 
 ´iv©e
  
 	$´štCo¡D‘as
 (){
 
-537 
+573 
 	}
 }
 
-538 
+574 
 ´iv©e
  
 FogDeviû
@@ -197677,7 +198537,7 @@ FogDeviû
 	$g‘Cloud
 (){
 
-539 
+575 
 FogDeviû
  
 dev
@@ -197685,7 +198545,7 @@ dev
 	`g‘S”v”CloudËts
 ())
 
-540 if(
+576 if(
 dev
 .
 	`g‘Name
@@ -197693,25 +198553,25 @@ dev
 	`equ®s
 ("cloud"))
 
-541  
+577  
 dev
 ;
 
-542  
+578  
 nuÎ
 ;
 
-543 
+579 
 	}
 }
 
-544 
+580 
 ´iv©e
  
 	$´štPow”D‘as
 () {
 
-546 
+582 
 FogDeviû
  
 fogDeviû
@@ -197719,7 +198579,7 @@ fogDeviû
 	`g‘S”v”CloudËts
 ()){
 
-547 
+583 
 Sy¡em
 .
 out
@@ -197735,7 +198595,7 @@ fogDeviû
 	`g‘Pow”
 ());
 
-548 
+584 
 Sy¡em
 .
 out
@@ -197749,7 +198609,7 @@ fogDeviû
 	`g‘EÃrgyCÚsum±iÚ
 ());
 
-550 
+586 
 i
 =0;i<
 MySti¡ics
@@ -197761,7 +198621,7 @@ MySti¡ics
 	`size
 ();i++){
 
-551 
+587 
 Sy¡em
 .
 out
@@ -197779,7 +198639,7 @@ MySti¡ics
 	`g‘
 (i));
 
-554 
+590 
 i
 =0;i<
 MySti¡ics
@@ -197791,7 +198651,7 @@ MySti¡ics
 	`size
 ();i++){
 
-555 
+591 
 Sy¡em
 .
 out
@@ -197809,11 +198669,11 @@ MySti¡ics
 	`g‘
 (i));
 
-560 
+596 
 	}
 }
 
-561 
+597 
 ´iv©e
  
 SŒšg
@@ -197823,7 +198683,7 @@ SŒšg
 loİId
 ){
 
-562 
+598 
 SŒšg
  
 ­pId
@@ -197833,7 +198693,7 @@ SŒšg
 	`keyS‘
 ()){
 
-563 
+599 
 AµliÿtiÚ
  
 ­p
@@ -197845,7 +198705,7 @@ AµliÿtiÚ
 ­pId
 );
 
-564 
+600 
 AµLoİ
  
 loİ
@@ -197855,7 +198715,7 @@ loİ
 	`g‘Loİs
 ()){
 
-565 if(
+601 if(
 loİ
 .
 	`g‘LoİId
@@ -197863,7 +198723,7 @@ loİ
 loİId
 )
 
-566  
+602  
 loİ
 .
 	`g‘ModuËs
@@ -197871,21 +198731,21 @@ loİ
 	`toSŒšg
 ();
 
-569  
+605  
 nuÎ
 ;
 
-570 
+606 
 	}
 }
 
-571 
+607 
 ´iv©e
  
 	$´štTimeD‘as
 () {
 
-573 
+609 
 Sy¡em
 .
 out
@@ -197893,7 +198753,7 @@ out
 	`´šn
 ("=========================================");
 
-574 
+610 
 Sy¡em
 .
 out
@@ -197901,7 +198761,7 @@ out
 	`´šn
 ("============== RESULTS ==================");
 
-575 
+611 
 Sy¡em
 .
 out
@@ -197909,7 +198769,7 @@ out
 	`´šn
 ("=========================================");
 
-576 
+612 
 Sy¡em
 .
 out
@@ -197927,7 +198787,7 @@ TimeK“³r
 	`g‘SimuÏtiÚS¹Time
 ()));
 
-577 
+613 
 Sy¡em
 .
 out
@@ -197935,7 +198795,7 @@ out
 	`´šn
 ("=========================================");
 
-578 
+614 
 Sy¡em
 .
 out
@@ -197943,7 +198803,7 @@ out
 	`´šn
 ("APPLICATION LOOP DELAYS");
 
-579 
+615 
 Sy¡em
 .
 out
@@ -197951,7 +198811,7 @@ out
 	`´šn
 ("=========================================");
 
-580 
+616 
 IÁeg”
  
 loİId
@@ -197965,7 +198825,7 @@ TimeK“³r
 	`keyS‘
 ()){
 
-591 
+627 
 Sy¡em
 .
 out
@@ -197987,7 +198847,7 @@ TimeK“³r
 	`g‘MaxLoİExecutiÚTime
 ().get(loopId));
 
-594 
+630 
 Sy¡em
 .
 out
@@ -197995,7 +198855,7 @@ out
 	`´šn
 ("=========================================");
 
-595 
+631 
 Sy¡em
 .
 out
@@ -198003,7 +198863,7 @@ out
 	`´šn
 ("TUPLE CPU EXECUTION DELAY");
 
-596 
+632 
 Sy¡em
 .
 out
@@ -198011,7 +198871,7 @@ out
 	`´šn
 ("=========================================");
 
-598 
+634 
 SŒšg
  
 tu¶eTy³
@@ -198025,7 +198885,7 @@ TimeK“³r
 	`keyS‘
 ()){
 
-599 
+635 
 Sy¡em
 .
 out
@@ -198043,7 +198903,7 @@ TimeK“³r
 	`g‘
 (tupleType));
 
-602 
+638 
 Sy¡em
 .
 out
@@ -198051,17 +198911,17 @@ out
 	`´šn
 ("=========================================");
 
-603 
+639 
 	}
 }
 
-604 
+640 
 ´iv©e
  
 	$´štN‘wÜkU§geD‘as
 () {
 
-605 
+641 
 Sy¡em
 .
 out
@@ -198077,17 +198937,17 @@ CloudSim
 	`şock
 ());
 
-606 
+642 
 	}
 }
 
-607 
+643 
 ´iv©e
  
 	$´štMig¿tiÚsD‘®is
 (){
 
-608 
+644 
 Sy¡em
 .
 out
@@ -198095,7 +198955,7 @@ out
 	`´šn
 ("=========================================");
 
-609 
+645 
 Sy¡em
 .
 out
@@ -198103,7 +198963,7 @@ out
 	`´šn
 ("==============MIGRATIONS=================");
 
-610 
+646 
 Sy¡em
 .
 out
@@ -198111,7 +198971,7 @@ out
 	`´šn
 ("=========================================");
 
-611 
+647 
 Sy¡em
 .
 out
@@ -198125,7 +198985,7 @@ MySti¡ics
 	`g‘TÙ®Mig¿tiÚs
 ());
 
-612 
+648 
 Sy¡em
 .
 out
@@ -198139,7 +198999,7 @@ MySti¡ics
 	`g‘TÙ®Hªdoff
 ());
 
-613 
+649 
 Sy¡em
 .
 out
@@ -198153,7 +199013,7 @@ MySti¡ics
 	`g‘MyCouÁLowe¡L©’cy
 ());
 
-615 
+651 
 MySti¡ics
 .
 	`g‘In¡ªû
@@ -198161,7 +199021,7 @@ MySti¡ics
 	`´štResuÉs
 ();
 
-616 
+652 
 Sy¡em
 .
 out
@@ -198169,7 +199029,7 @@ out
 	`´šn
 ("***Lastime without connection***");
 
-618 
+654 
 EÁry
 <
 IÁeg”
@@ -198187,7 +199047,7 @@ MySti¡ics
 	`’ŒyS‘
 ()){
 
-619 
+655 
 Sy¡em
 .
 out
@@ -198209,7 +199069,7 @@ MySti¡ics
 	`g‘MaxW™houtCÚÃùiÚTime
 ().get(test.getKey()));
 
-622 
+658 
 Sy¡em
 .
 out
@@ -198223,7 +199083,7 @@ MySti¡ics
 	`g‘Av”ageW™houtCÚÃùiÚ
 ());
 
-624 
+660 
 Sy¡em
 .
 out
@@ -198231,7 +199091,7 @@ out
 	`´šn
 ("***Lastime without Vm***");
 
-626 
+662 
 EÁry
 <
 IÁeg”
@@ -198249,7 +199109,7 @@ MySti¡ics
 	`’ŒyS‘
 ()){
 
-627 
+663 
 Sy¡em
 .
 out
@@ -198271,7 +199131,7 @@ MySti¡ics
 	`g‘MaxW™houtVmTime
 ().get(test.getKey()));
 
-630 
+666 
 Sy¡em
 .
 out
@@ -198285,7 +199145,7 @@ MySti¡ics
 	`g‘Av”ageW™houtVmTime
 ());
 
-632 
+668 
 Sy¡em
 .
 out
@@ -198293,7 +199153,7 @@ out
 	`´šn
 ("===Last delay‡fter connection===");
 
-633 
+669 
 EÁry
 <
 IÁeg”
@@ -198311,7 +199171,7 @@ MySti¡ics
 	`’ŒyS‘
 ()){
 
-634 
+670 
 Sy¡em
 .
 out
@@ -198333,7 +199193,7 @@ MySti¡ics
 	`g‘MaxD–ayAá”NewCÚÃùiÚ
 ().get(test.getKey()));
 
-636 
+672 
 Sy¡em
 .
 out
@@ -198347,7 +199207,7 @@ MySti¡ics
 	`g‘Av”ageD–ayAá”NewCÚÃùiÚ
 ());
 
-639 
+675 
 Sy¡em
 .
 out
@@ -198355,7 +199215,7 @@ out
 	`´šn
 ("---Average of Time of Migrations---");
 
-640 
+676 
 EÁry
 <
 IÁeg”
@@ -198373,7 +199233,7 @@ MySti¡ics
 	`’ŒyS‘
 ()){
 
-641 
+677 
 Sy¡em
 .
 out
@@ -198395,7 +199255,7 @@ MySti¡ics
 	`g‘MaxMig¿tiÚTime
 ().get(test.getKey()));
 
-643 
+679 
 Sy¡em
 .
 out
@@ -198409,7 +199269,7 @@ MySti¡ics
 	`g‘Av”ageMig¿tiÚTime
 ());
 
-644 
+680 
 Sy¡em
 .
 out
@@ -198425,7 +199285,7 @@ MySti¡ics
 	`g‘MyCouÁTÙ®Tu¶e
 ()))*100+"%");
 
-645 
+681 
 Sy¡em
 .
 out
@@ -198439,7 +199299,7 @@ MySti¡ics
 	`g‘MyCouÁLo¡Tu¶e
 ());
 
-646 
+682 
 Sy¡em
 .
 out
@@ -198453,11 +199313,11 @@ MySti¡ics
 	`g‘MyCouÁTÙ®Tu¶e
 ());
 
-648 
+684 
 	}
 }
 
-650 
+686 
 public
  
 	$subm™AµliÿtiÚ
@@ -198469,7 +199329,7 @@ AµliÿtiÚ
 d–ay
 ){
 
-651 
+687 
 FogUts
 .
 ­pIdToGeoCov”ageM­
@@ -198483,7 +199343,7 @@ FogUts
 	`g‘GeoCov”age
 ());
 
-652 
+688 
 	`g‘AµliÿtiÚs
 ().
 	`put
@@ -198493,7 +199353,7 @@ FogUts
 	`g‘AµId
 (),‡pplication);
 
-653 
+689 
 	`g‘AµLaunchD–ays
 ().
 	`put
@@ -198505,7 +199365,7 @@ FogUts
 d–ay
 );
 
-654 
+690 
 MobeDeviû
  
 ¡
@@ -198513,7 +199373,7 @@ MobeDeviû
 	`g‘Sm¬tThšgs
 ()){
 
-655 
+691 
 S’sÜ
  
 s
@@ -198523,7 +199383,7 @@ s
 	`g‘S’sÜs
 ()){
 
-656 if(
+692 if(
 s
 .
 	`g‘AµId
@@ -198533,7 +199393,7 @@ s
 ­¶iÿtiÚ
 .getAppId()))
 
-657 
+693 
 s
 .
 	`£tAµ
@@ -198541,7 +199401,7 @@ s
 ­¶iÿtiÚ
 );
 
-659 
+695 
 Aùu©Ü
  
 a
@@ -198551,7 +199411,7 @@ a
 	`g‘Aùu©Üs
 ()){
 
-660 if(
+696 if(
 a
 .
 	`g‘AµId
@@ -198561,7 +199421,7 @@ a
 ­¶iÿtiÚ
 .getAppId()))
 
-661 
+697 
 a
 .
 	`£tAµ
@@ -198569,7 +199429,7 @@ a
 ­¶iÿtiÚ
 );
 
-664 
+700 
 AµEdge
  
 edge
@@ -198579,7 +199439,7 @@ edge
 	`g‘Edges
 ()){
 
-665 if(
+701 if(
 edge
 .
 	`g‘EdgeTy³
@@ -198589,7 +199449,7 @@ AµEdge
 ACTUATOR
 ){
 
-666 
+702 
 SŒšg
  
 moduËName
@@ -198599,7 +199459,7 @@ edge
 	`g‘Sourû
 ();
 
-667 
+703 
 MobeDeviû
  
 ¡
@@ -198607,7 +199467,7 @@ MobeDeviû
 	`g‘Sm¬tThšgs
 ()){
 
-668 
+704 
 Aùu©Ü
  
 aùu©Ü
@@ -198617,7 +199477,7 @@ aùu©Ü
 	`g‘Aùu©Üs
 ()){
 
-669 if(
+705 if(
 aùu©Ü
 .
 	`g‘Aùu©ÜTy³
@@ -198629,7 +199489,7 @@ edge
 	`g‘De¡š©iÚ
 ()))
 
-670 
+706 
 ­¶iÿtiÚ
 .
 	`g‘ModuËByName
@@ -198647,11 +199507,11 @@ edge
 	`g‘Tu¶eTy³
 ());
 
-676 
+712 
 	}
 }
 
-677 
+713 
 public
  
 	$subm™AµliÿtiÚMig¿tiÚ
@@ -198667,7 +199527,7 @@ AµliÿtiÚ
 d–ay
 ){
 
-678 
+714 
 FogUts
 .
 ­pIdToGeoCov”ageM­
@@ -198681,7 +199541,7 @@ FogUts
 	`g‘GeoCov”age
 ());
 
-679 
+715 
 	`g‘AµliÿtiÚs
 ().
 	`put
@@ -198691,7 +199551,7 @@ FogUts
 	`g‘AµId
 (),‡pplication);
 
-680 
+716 
 	`g‘AµLaunchD–ays
 ().
 	`put
@@ -198703,7 +199563,7 @@ FogUts
 d–ay
 );
 
-691 
+727 
 AµEdge
  
 edge
@@ -198713,7 +199573,7 @@ edge
 	`g‘Edges
 ()){
 
-692 if(
+728 if(
 edge
 .
 	`g‘EdgeTy³
@@ -198723,7 +199583,7 @@ AµEdge
 ACTUATOR
 ){
 
-693 
+729 
 SŒšg
  
 moduËName
@@ -198733,7 +199593,7 @@ edge
 	`g‘Sourû
 ();
 
-694 
+730 
 MobeDeviû
  
 ¡
@@ -198741,7 +199601,7 @@ MobeDeviû
 	`g‘Sm¬tThšgs
 ()){
 
-695 
+731 
 Aùu©Ü
  
 aùu©Ü
@@ -198751,7 +199611,7 @@ aùu©Ü
 	`g‘Aùu©Üs
 ()){
 
-696 if(
+732 if(
 aùu©Ü
 .
 	`g‘Aùu©ÜTy³
@@ -198763,7 +199623,7 @@ edge
 	`g‘De¡š©iÚ
 ()))
 
-697 
+733 
 ­¶iÿtiÚ
 .
 	`g‘ModuËByName
@@ -198781,11 +199641,11 @@ edge
 	`g‘Tu¶eTy³
 ());
 
-703 
+739 
 	}
 }
 
-705 
+741 
 public
  
 	gM­
@@ -198797,15 +199657,15 @@ public
 	$g‘AµliÿtiÚs
 () {
 
-706  
+742  
 ­¶iÿtiÚs
 ;
 
-707 
+743 
 	}
 }
 
-709 
+745 
 public
  
 £tAµliÿtiÚs
@@ -198819,7 +199679,7 @@ AµliÿtiÚ
 ­¶iÿtiÚs
 ) {
 
-710 
+746 
 	gthis
 .
 	g­¶iÿtiÚs
@@ -198827,7 +199687,7 @@ AµliÿtiÚ
 ­¶iÿtiÚs
 ;
 
-713 
+749 
 public
  
 	gM­
@@ -198839,15 +199699,15 @@ public
 	$g‘AµLaunchD–ays
 () {
 
-714  
+750  
 ­pLaunchD–ays
 ;
 
-715 
+751 
 	}
 }
 
-717 
+753 
 public
  
 £tAµLaunchD–ays
@@ -198861,7 +199721,7 @@ IÁeg”
 ­pLaunchD–ays
 ) {
 
-718 
+754 
 	gthis
 .
 	g­pLaunchD–ays
@@ -198869,7 +199729,7 @@ IÁeg”
 ­pLaunchD–ays
 ;
 
-721 
+757 
 public
  
 ModuËM­pšg
@@ -198877,15 +199737,15 @@ ModuËM­pšg
 	$g‘ModuËM­pšg
 () {
 
-722  
+758  
 moduËM­pšg
 ;
 
-723 
+759 
 	}
 }
 
-725 
+761 
 public
  
 	$£tModuËM­pšg
@@ -198895,17 +199755,17 @@ ModuËM­pšg
 moduËM­pšg
 ) {
 
-726 
+762 
 this
 .
 moduËM­pšg
  = moduleMapping;
 
-727 
+763 
 	}
 }
 
-729 
+765 
 public
  
 	gM­
@@ -198917,15 +199777,15 @@ public
 	$g‘Glob®Cu¼’tCpuLßd
 () {
 
-730  
+766  
 glob®Cu¼’tCpuLßd
 ;
 
-731 
+767 
 	}
 }
 
-733 
+769 
 public
  
 £tGlob®Cu¼’tCpuLßd
@@ -198939,7 +199799,7 @@ DoubË
 glob®Cu¼’tCpuLßd
 ) {
 
-734 
+770 
 	gthis
 .
 	gglob®Cu¼’tCpuLßd
@@ -198947,7 +199807,7 @@ glob®Cu¼’tCpuLßd
 glob®Cu¼’tCpuLßd
 ;
 
-736 
+772 
 public
  
 £tGlob®CPULßd
@@ -198961,7 +199821,7 @@ DoubË
 cu¼’tCpuLßd
 ) {
 
-737 
+773 
 FogDeviû
  
 	gdeviû
@@ -198969,7 +199829,7 @@ FogDeviû
 g‘S”v”CloudËts
 ()){
 
-738 
+774 
 this
 .
 glob®Cu¼’tCpuLßd
@@ -198985,21 +199845,21 @@ cu¼’tCpuLßd
 g‘
 (device.getId()));
 
-742 
+778 
 public
  
 	$g‘MigPoštPŞicy
 () {
 
-743  
+779  
 migPoštPŞicy
 ;
 
-744 
+780 
 	}
 }
 
-745 
+781 
 public
  
 	$£tMigPoštPŞicy
@@ -199007,31 +199867,31 @@ public
 migPoštPŞicy
 ) {
 
-746 
+782 
 MobeCÚŒŞËr
 .
 migPoštPŞicy
  = migPointPolicy;
 
-747 
+783 
 	}
 }
 
-748 
+784 
 public
  
 	$g‘MigSŒ©egyPŞicy
 () {
 
-749  
+785  
 migSŒ©egyPŞicy
 ;
 
-750 
+786 
 	}
 }
 
-751 
+787 
 public
  
 	$£tMigSŒ©egyPŞicy
@@ -199039,31 +199899,31 @@ public
 migSŒ©egyPŞicy
 ) {
 
-752 
+788 
 MobeCÚŒŞËr
 .
 migSŒ©egyPŞicy
  = migStrategyPolicy;
 
-753 
+789 
 	}
 }
 
-754 
+790 
 public
  
 	$g‘S‹pPŞicy
 () {
 
-755  
+791  
 ¡•PŞicy
 ;
 
-756 
+792 
 	}
 }
 
-757 
+793 
 public
  
 	$£tS‹pPŞicy
@@ -199071,17 +199931,17 @@ public
 ¡•PŞicy
 ) {
 
-758 
+794 
 MobeCÚŒŞËr
 .
 ¡•PŞicy
  = stepPolicy;
 
-759 
+795 
 	}
 }
 
-760 
+796 
 public
  
 CoÜdš©e
@@ -199089,15 +199949,15 @@ CoÜdš©e
 	$g‘CoÜdDeviûs
 () {
 
-761  
+797  
 coÜdDeviûs
 ;
 
-762 
+798 
 	}
 }
 
-763 
+799 
 public
  
 	$£tCoÜdDeviûs
@@ -199107,17 +199967,17 @@ CoÜdš©e
 coÜdDeviûs
 ) {
 
-764 
+800 
 MobeCÚŒŞËr
 .
 coÜdDeviûs
  = coordDevices;
 
-765 
+801 
 	}
 }
 
-766 
+802 
 public
  
 	gLi¡
@@ -199127,15 +199987,15 @@ public
 	$g‘Brok”Li¡
 () {
 
-767  
+803  
 brok”Li¡
 ;
 
-768 
+804 
 	}
 }
 
-769 
+805 
 public
  
 £tBrok”Li¡
@@ -199147,7 +200007,7 @@ FogBrok”
 brok”Li¡
 ) {
 
-770 
+806 
 	gthis
 .
 	gbrok”Li¡
@@ -199155,21 +200015,21 @@ brok”Li¡
 brok”Li¡
 ;
 
-772 
+808 
 public
  
 	$g‘S“d
 () {
 
-773  
+809  
 £ed
 ;
 
-774 
+810 
 	}
 }
 
-775 
+811 
 public
  
 	$£tS“d
@@ -199177,17 +200037,17 @@ public
 £ed
 ) {
 
-776 
+812 
 MobeCÚŒŞËr
 .
 £ed
  = seed;
 
-777 
+813 
 	}
 }
 
-778 
+814 
 public
  
 	gLi¡
@@ -199197,15 +200057,15 @@ public
 	$g‘S”v”CloudËts
 () {
 
-779  
+815  
 £rv”CloudËts
 ;
 
-780 
+816 
 	}
 }
 
-781 
+817 
 public
  
 £tS”v”CloudËts
@@ -199217,7 +200077,7 @@ FogDeviû
 £rv”CloudËts
 ) {
 
-782 
+818 
 	gMobeCÚŒŞËr
 .
 	g£rv”CloudËts
@@ -199225,7 +200085,7 @@ FogDeviû
 £rv”CloudËts
 ;
 
-784 
+820 
 public
  
 	gLi¡
@@ -199235,15 +200095,15 @@ public
 	$g‘Sm¬tThšgs
 () {
 
-785  
+821  
 sm¬tThšgs
 ;
 
-786 
+822 
 	}
 }
 
-787 
+823 
 public
  
 £tSm¬tThšgs
@@ -199255,7 +200115,7 @@ MobeDeviû
 sm¬tThšgs
 ) {
 
-788 
+824 
 	gMobeCÚŒŞËr
 .
 	gsm¬tThšgs
@@ -199263,7 +200123,7 @@ sm¬tThšgs
 sm¬tThšgs
 ;
 
-790 
+826 
 public
  
 	gLi¡
@@ -199273,15 +200133,15 @@ public
 	$g‘ApDeviûs
 () {
 
-791  
+827  
 ­Deviûs
 ;
 
-792 
+828 
 	}
 }
 
-793 
+829 
 public
  
 £tApDeviûs
@@ -199293,7 +200153,7 @@ ApDeviû
 ­Deviûs
 ) {
 
-794 
+830 
 	gMobeCÚŒŞËr
 .
 	g­Deviûs
@@ -199301,7 +200161,45 @@ ApDeviû
 ­Deviûs
 ;
 
-796 
+832 
+public
+ 
+	gQueue
+<
+	gSŒšg
+[]> 
+	$g‘Queue
+() {
+
+833  
+q
+;
+
+834 
+	}
+}
+
+835 
+public
+ 
+£tQueue
+(
+Queue
+<
+SŒšg
+[]> 
+q
+) {
+
+836 
+	gMobeCÚŒŞËr
+.
+	gq
+ = 
+q
+;
+
+838 
 public
  
 Rªdom
@@ -199309,15 +200207,15 @@ Rªdom
 	$g‘Rªd
 () {
 
-797  
+839  
 ¿nd
 ;
 
-798 
+840 
 	}
 }
 
-799 
+841 
 public
  
 	$£tRªd
@@ -199327,17 +200225,17 @@ Rªdom
 ¿nd
 ) {
 
-800 
+842 
 MobeCÚŒŞËr
 .
 ¿nd
  =„and;
 
-801 
+843 
 	}
 }
 
-802 
+844 
 public
  
 boŞ—n
@@ -199345,15 +200243,15 @@ boŞ—n
 	$isMig¿tiÚAbË
 () {
 
-803  
+845  
 mig¿tiÚAbË
 ;
 
-804 
+846 
 	}
 }
 
-805 
+847 
 public
  
 	$£tMig¿tiÚAbË
@@ -199363,13 +200261,13 @@ boŞ—n
 mig¿tiÚAbË
 ) {
 
-806 
+848 
 MobeCÚŒŞËr
 .
 mig¿tiÚAbË
  = migrationAble;
 
-807 
+849 
 	}
 }
 
@@ -223174,12 +224072,112 @@ impÜt
  
 	gjava
 .
+	gio
+.
+	gBufã»dWr™”
+;
+
+4 
+impÜt
+ 
+	gjava
+.
+	gio
+.
+	gFeNÙFoundExû±iÚ
+;
+
+5 
+impÜt
+ 
+	gjava
+.
+	gio
+.
+	gFeOuutSŒ—m
+;
+
+6 
+impÜt
+ 
+	gjava
+.
+	gio
+.
+	gFeWr™”
+;
+
+7 
+impÜt
+ 
+	gjava
+.
+	gio
+.
+	gIOExû±iÚ
+;
+
+8 
+impÜt
+ 
+	gjava
+.
+	gio
+.
+	gOuutSŒ—mWr™”
+;
+
+9 
+impÜt
+ 
+	gjava
+.
+	gio
+.
+	gPrštWr™”
+;
+
+10 
+impÜt
+ 
+	gjava
+.
+	gio
+.
+	gUnsuµÜ‹dEncodšgExû±iÚ
+;
+
+11 
+impÜt
+ 
+	gjava
+.
+	gio
+.
+	gWr™”
+;
+
+12 
+impÜt
+ 
+	gjava
+.
 	gut
 .
 	gLi¡
 ;
 
-4 
+13 
+impÜt
+ 
+	gjava
+.
+	gut
+.
+	gQueue
+;
+
+14 
 impÜt
  
 	gjava
@@ -223189,7 +224187,7 @@ impÜt
 	gRªdom
 ;
 
-6 
+16 
 impÜt
  
 	gÜg
@@ -223203,7 +224201,7 @@ impÜt
 	gCloudSim
 ;
 
-7 
+17 
 impÜt
  
 	gÜg
@@ -223213,7 +224211,7 @@ impÜt
 	g’t™›s
 .*;
 
-8 
+18 
 impÜt
  
 	gÜg
@@ -223225,7 +224223,7 @@ impÜt
 	gCoÜdš©e
 ;
 
-9 
+19 
 impÜt
  
 	gÜg
@@ -223237,7 +224235,7 @@ impÜt
 	gAµExem¶o2
 ;
 
-10 
+20 
 impÜt
  
 	gÜg
@@ -223249,7 +224247,7 @@ impÜt
 	gLogMobe
 ;
 
-11 
+21 
 impÜt
  
 	gÜg
@@ -223263,7 +224261,7 @@ impÜt
 	gDœeùiÚs
 ;
 
-12 
+22 
 impÜt
  
 	gÜg
@@ -223277,7 +224275,7 @@ impÜt
 	gMaxAndMš
 ;
 
-13 
+23 
 impÜt
  
 	gÜg
@@ -223291,16 +224289,170 @@ impÜt
 	gPŞic›s
 ;
 
-15 
+25 
 public
  cÏs 
 	cNextS‹p
  {
 
-26 
+36 
+´iv©e
+ 
+	$§veMob™y
+(
+MobeDeviû
+ 
+¡
+){
+
+37 
+Sy¡em
+.
+out
+.
+	`´šn
+(
+¡
+.
+	`g‘MyId
+(è+ " Pos™iÚ: " + st.
+	`g‘CoÜd
+().
+	`g‘CoÜdX
+(è+ ", " + st.g‘CoÜd().
+	`g‘CoÜdY
+(è+ " DœeùiÚ: " + st.
+	`g‘DœeùiÚ
+(è+ " S³ed: " + st.
+	`g‘S³ed
+());
+
+38 
+Sy¡em
+.
+out
+.
+	`´šn
+("Sourû AP: " + 
+¡
+.
+	`g‘SourûAp
+(è+ " De¡ AP: " + st.
+	`g‘De¡š©iÚAp
+(è+ " Ho¡: " + st.
+	`g‘Ho¡
+().
+	`g‘Id
+());
+
+39 
+	`Œy
+(
+FeWr™”
+ 
+fw
+ = 
+Ãw
+ 
+	`FeWr™”
+(
+¡
+.
+	`g‘MyId
+()+"rou‹.txt", 
+Œue
+);
+
+40 
+Bufã»dWr™”
+ 
+bw
+ = 
+Ãw
+ 
+	`Bufã»dWr™”
+(
+fw
+);
+
+41 
+PrštWr™”
+ 
+out
+ = 
+Ãw
+ 
+	`PrštWr™”
+(
+bw
+))
+
+43 
+out
+.
+	`´šn
+(
+¡
+.
+	`g‘MyId
+(è+ "\t" + st.
+	`g‘CoÜd
+().
+	`g‘CoÜdX
+(è+ "\t" + st.g‘CoÜd().
+	`g‘CoÜdY
+(è+ "\t" + st.
+	`g‘DœeùiÚ
+(è+ "\t" + st.
+	`g‘S³ed
+());
+
+45 
+	`ÿtch
+ (
+UnsuµÜ‹dEncodšgExû±iÚ
+ 
+e
+) {
+
+47 
+e
+.
+	`´štSckT¿û
+();
+
+49 
+	`ÿtch
+ (
+FeNÙFoundExû±iÚ
+ 
+e
+) {
+
+51 
+e
+.
+	`´štSckT¿û
+();
+
+53 
+	`ÿtch
+ (
+IOExû±iÚ
+ 
+e
+) {
+
+55 
+e
+.
+	`´štSckT¿û
+();
+
+59 
 public
  
-ÃxtS‹p
+	`ÃxtS‹p
 (
 Li¡
 <
@@ -223317,7 +224469,13 @@ MobeDeviû
 sm¬tThšgs
 ,
 
-27 
+60 
+Queue
+<
+SŒšg
+[]> 
+q
+, 
 CoÜdš©e
  
 coÜdDeviûs
@@ -223327,293 +224485,277 @@ coÜdDeviûs
 £ed
 ) {
 
-28 
+61 
 MobeDeviû
  
-	m¡
+¡
 =
 nuÎ
 ;
 
-29 
+62 
 CoÜdš©e
  
-	mcoÜdš©e
+coÜdš©e
  = 
 Ãw
- Coordinate();
+ 
+	`CoÜdš©e
+();
 
-30 
-	mi
+63 
+i
  = 0;i<
-	msm¬tThšgs
+sm¬tThšgs
 .
-size
+	`size
 ();i++){
 
-31 
-	m¡
+64 
+¡
 =
 sm¬tThšgs
 .
-g‘
+	`g‘
 (
 i
 );
 
-34 if((
-	m¡
+69 if((
+¡
 .
-g‘DœeùiÚ
+	`g‘DœeùiÚ
 ()!=
 DœeùiÚs
 .
 NONE
-))
+)){
 
-35 
+70 
 coÜdš©e
 .
-ÃwCoÜdš©e
+	`ÃwCoÜdš©e
 (
 ¡
 , 
-¡•PŞicy
-, 
-coÜdDeviûs
+q
 );
 
-36 if(
-	m¡
-.
-g‘CoÜd
-().
-g‘CoÜdX
-()==-1){
-
-38 if(
+73 if(
 ¡
 .
-g‘SourûS”v”CloudËt
+	`g‘CoÜd
+().
+	`g‘CoÜdX
+()==-1){
+
+75 if(
+¡
+.
+	`g‘SourûS”v”CloudËt
 ()!=
 nuÎ
 ){
 
-39 
+76 
 j
 =0,
-	mšdexCloud
+šdexCloud
 =0;
 
-40 
+77 
 FogDeviû
  
-	msc
+sc
 :
 £rv”CloudËts
 ){
 
-41 if(
+78 if(
 ¡
 .
-g‘SourûS”v”CloudËt
+	`g‘SourûS”v”CloudËt
 ().
-equ®s
+	`equ®s
 (
 sc
 )){
 
-42 
+79 
 šdexCloud
 =
 j
 ;
 
-45 
-	mj
+82 
+j
 ++;
 
-48 
-	m£rv”CloudËts
+85 
+£rv”CloudËts
 .
-g‘
+	`g‘
 (
 šdexCloud
 ).
-g‘Sm¬tThšgs
+	`g‘Sm¬tThšgs
 ().
-»move
+	`»move
 (
 ¡
 );
 
-50 
-	mj
+87 
+j
 =0;
 
-51 
-	mšdexAp
+88 
+šdexAp
 =0;
 
-52 
+89 
 ApDeviû
  
-	m­
+­
 :
 ­Deviûs
 ){
 
-53 if(
+90 if(
 ¡
 .
-g‘SourûAp
+	`g‘SourûAp
 ().
-equ®s
+	`equ®s
 (
 ­
 )){
 
-54 
+91 
 šdexAp
 =
 j
 ;
 
-57 
-	mj
+94 
+j
 ++;
 
-60 
-	m­Deviûs
+97 
+­Deviûs
 .
-g‘
+	`g‘
 (
 šdexAp
 ).
-g‘Sm¬tThšgs
+	`g‘Sm¬tThšgs
 ().
-»move
+	`»move
 (
 ¡
 );
 
-62 
-	m¡
+99 
+¡
 .
-£tSourûAp
+	`£tSourûAp
 (
 nuÎ
 );
 
-63 
-	m¡
+100 
+¡
 .
-£tSourûS”v”CloudËt
+	`£tSourûS”v”CloudËt
 (
 nuÎ
 );
 
-65 
-	m¡
+102 
+¡
 .
-£tMigStus
+	`£tMigStus
 (
 çl£
 );
 
-72 if(
-	m¡
+109 if(
+¡
 .
-g‘SourûAp
+	`g‘SourûAp
 ()==
 nuÎ
 ){
 
-73 
+110 
 sm¬tThšgs
 .
-»move
+	`»move
 (
 ¡
 );
 
-74 
-	mLogMobe
+111 
+LogMobe
 .
-debug
+	`debug
 ("NextS‹p.java", 
 ¡
 .
-g‘Name
+	`g‘Name
 ()+" was„emoved!");
 
-77 
-	m¡
-.
-g‘SourûS”v”CloudËt
-().
-£tSm¬tThšgs
-(
+114 
 ¡
-, 
+.
+	`g‘SourûS”v”CloudËt
+().
+	`£tSm¬tThšgs
+(¡, 
 PŞic›s
 .
 REMOVE
 );
 
-78 
-	m¡
-.
-g‘SourûAp
-().
-£tSm¬tThšgs
-(
+115 
 ¡
-, 
+.
+	`g‘SourûAp
+().
+	`£tSm¬tThšgs
+(¡, 
 PŞic›s
 .
 REMOVE
 );
 
-79 
-	mLogMobe
+116 
+LogMobe
 .
-debug
+	`debug
 ("NextS‹p.java", 
 ¡
 .
-g‘Name
+	`g‘Name
 ()+" was„emoved!");
 
-80 
-	msm¬tThšgs
+117 
+sm¬tThšgs
 .
-»move
+	`»move
 (
 ¡
 );
 
-85 
-Rªdom
- 
-	m¿nd
- = 
-Ãw
- Rªdom(()(
-CloudSim
-.
-şock
-())*
-£ed
+121 
+	`§veMob™y
+(
+¡
 );
 
-86 
-	mdœeùiÚ
-=0, 
-	m¥“d
-=0,
-	mexchªge
-=0;
+156 
+	}
+}
 
 	@src/org/fog/vmmigration/PrepareCompleteVM.java
 
@@ -224918,9 +226060,9 @@ impÜt
  
 	gjava
 .
-	gut
+	gio
 .
-	gA¼ayLi¡
+	gBufã»dR—d”
 ;
 
 4 
@@ -224928,9 +226070,9 @@ impÜt
  
 	gjava
 .
-	gut
+	gio
 .
-	gC®’d¬
+	gFeR—d”
 ;
 
 5 
@@ -224938,9 +226080,9 @@ impÜt
  
 	gjava
 .
-	gut
+	gio
 .
-	gHashM­
+	gIOExû±iÚ
 ;
 
 6 
@@ -224950,7 +226092,7 @@ impÜt
 .
 	gut
 .
-	gHashS‘
+	gA¼ayLi¡
 ;
 
 7 
@@ -224960,7 +226102,7 @@ impÜt
 .
 	gut
 .
-	gLškedLi¡
+	gC®’d¬
 ;
 
 8 
@@ -224970,7 +226112,7 @@ impÜt
 .
 	gut
 .
-	gLi¡
+	gHashM­
 ;
 
 9 
@@ -224980,7 +226122,7 @@ impÜt
 .
 	gut
 .
-	gRªdom
+	gHashS‘
 ;
 
 10 
@@ -224990,10 +226132,66 @@ impÜt
 .
 	gut
 .
-	gS‘
+	gLškedLi¡
+;
+
+11 
+impÜt
+ 
+	gjava
+.
+	gut
+.
+	gLi¡
 ;
 
 12 
+impÜt
+ 
+	gjava
+.
+	gut
+.
+	gQueue
+;
+
+13 
+impÜt
+ 
+	gjava
+.
+	gut
+.
+	gRªdom
+;
+
+14 
+impÜt
+ 
+	gjava
+.
+	gut
+.
+	gS‘
+;
+
+16 
+impÜt
+ 
+	gjavax
+.
+	gswšg
+.
+	g‹xt
+.
+	ghtml
+.
+	gHTMLDocum’t
+.
+	gI‹¿tÜ
+;
+
+18 
 impÜt
  
 	gÜg
@@ -225009,7 +226207,7 @@ impÜt
 	gPaœ
 ;
 
-13 
+19 
 impÜt
  
 	gÜg
@@ -225021,7 +226219,7 @@ impÜt
 	gCloudËt
 ;
 
-14 
+20 
 impÜt
  
 	gÜg
@@ -225033,7 +226231,7 @@ impÜt
 	gCloudËtScheduËr
 ;
 
-15 
+21 
 impÜt
  
 	gÜg
@@ -225045,7 +226243,7 @@ impÜt
 	gCloudËtScheduËrDyÇmicWÜklßd
 ;
 
-16 
+22 
 impÜt
  
 	gÜg
@@ -225057,7 +226255,7 @@ impÜt
 	gCloudËtScheduËrTimeSh¬ed
 ;
 
-17 
+23 
 impÜt
  
 	gÜg
@@ -225069,7 +226267,7 @@ impÜt
 	gHo¡
 ;
 
-18 
+24 
 impÜt
  
 	gÜg
@@ -225081,7 +226279,7 @@ impÜt
 	gLog
 ;
 
-19 
+25 
 impÜt
  
 	gÜg
@@ -225093,7 +226291,7 @@ impÜt
 	gN‘wÜkTİŞogy
 ;
 
-20 
+26 
 impÜt
  
 	gÜg
@@ -225105,7 +226303,7 @@ impÜt
 	gPe
 ;
 
-21 
+27 
 impÜt
  
 	gÜg
@@ -225117,7 +226315,7 @@ impÜt
 	gStÜage
 ;
 
-22 
+28 
 impÜt
  
 	gÜg
@@ -225129,7 +226327,7 @@ impÜt
 	gUtiz©iÚMod–
 ;
 
-23 
+29 
 impÜt
  
 	gÜg
@@ -225141,7 +226339,7 @@ impÜt
 	gUtiz©iÚMod–FuÎ
 ;
 
-24 
+30 
 impÜt
  
 	gÜg
@@ -225153,7 +226351,7 @@ impÜt
 	gVm
 ;
 
-25 
+31 
 impÜt
  
 	gÜg
@@ -225165,7 +226363,7 @@ impÜt
 	gVmAÎoÿtiÚPŞicySim¶e
 ;
 
-26 
+32 
 impÜt
  
 	gÜg
@@ -225179,7 +226377,7 @@ impÜt
 	gCloudSim
 ;
 
-27 
+33 
 impÜt
  
 	gÜg
@@ -225193,7 +226391,7 @@ impÜt
 	gD–ayM©rix_Flßt
 ;
 
-28 
+34 
 impÜt
  
 	gÜg
@@ -225207,7 +226405,7 @@ impÜt
 	gTİŞogiÿlG¿ph
 ;
 
-29 
+35 
 impÜt
  
 	gÜg
@@ -225221,7 +226419,7 @@ impÜt
 	gTİŞogiÿlLšk
 ;
 
-30 
+36 
 impÜt
  
 	gÜg
@@ -225235,7 +226433,7 @@ impÜt
 	gPow”Ho¡
 ;
 
-31 
+37 
 impÜt
  
 	gÜg
@@ -225249,7 +226447,7 @@ impÜt
 	gRamProvisiÚ”Sim¶e
 ;
 
-32 
+38 
 impÜt
  
 	gÜg
@@ -225265,7 +226463,7 @@ impÜt
 	gBwProvisiÚ”Ov”bookšg
 ;
 
-33 
+39 
 impÜt
  
 	gÜg
@@ -225281,7 +226479,7 @@ impÜt
 	gPeProvisiÚ”Ov”bookšg
 ;
 
-34 
+40 
 impÜt
  
 	gÜg
@@ -225293,7 +226491,7 @@ impÜt
 	gAµEdge
 ;
 
-35 
+41 
 impÜt
  
 	gÜg
@@ -225305,7 +226503,7 @@ impÜt
 	gAµLoİ
 ;
 
-36 
+42 
 impÜt
  
 	gÜg
@@ -225317,7 +226515,7 @@ impÜt
 	gAµModuË
 ;
 
-37 
+43 
 impÜt
  
 	gÜg
@@ -225329,7 +226527,7 @@ impÜt
 	gAµliÿtiÚ
 ;
 
-38 
+44 
 impÜt
  
 	gÜg
@@ -225343,7 +226541,7 @@ impÜt
 	gF¿ùiÚ®S–eùiv™y
 ;
 
-39 
+45 
 impÜt
  
 	gÜg
@@ -225357,7 +226555,7 @@ impÜt
 	gS–eùiv™yMod–
 ;
 
-40 
+46 
 impÜt
  
 	gÜg
@@ -225367,7 +226565,7 @@ impÜt
 	g’t™›s
 .*;
 
-41 
+47 
 impÜt
  
 	gÜg
@@ -225377,7 +226575,7 @@ impÜt
 	gloÿliz©iÚ
 .*;
 
-42 
+48 
 impÜt
  
 	gÜg
@@ -225389,7 +226587,7 @@ impÜt
 	gMobeCÚŒŞËr
 ;
 
-43 
+49 
 impÜt
  
 	gÜg
@@ -225401,7 +226599,7 @@ impÜt
 	gModuËM­pšg
 ;
 
-44 
+50 
 impÜt
  
 	gÜg
@@ -225413,7 +226611,7 @@ impÜt
 	gAµModuËAÎoÿtiÚPŞicy
 ;
 
-45 
+51 
 impÜt
  
 	gÜg
@@ -225425,7 +226623,7 @@ impÜt
 	gSŒ—mO³¿tÜScheduËr
 ;
 
-46 
+52 
 impÜt
  
 	gÜg
@@ -225437,7 +226635,7 @@ impÜt
 	gTu¶eScheduËr
 ;
 
-47 
+53 
 impÜt
  
 	gÜg
@@ -225449,7 +226647,7 @@ impÜt
 	gFogLš—rPow”Mod–
 ;
 
-48 
+54 
 impÜt
  
 	gÜg
@@ -225461,7 +226659,7 @@ impÜt
 	gFogUts
 ;
 
-49 
+55 
 impÜt
  
 	gÜg
@@ -225473,7 +226671,7 @@ impÜt
 	gGeoLoÿtiÚ
 ;
 
-50 
+56 
 impÜt
  
 	gÜg
@@ -225485,7 +226683,7 @@ impÜt
 	gLogg”
 ;
 
-51 
+57 
 impÜt
  
 	gÜg
@@ -225497,7 +226695,7 @@ impÜt
 	gTimeK“³r
 ;
 
-52 
+58 
 impÜt
  
 	gÜg
@@ -225511,7 +226709,7 @@ impÜt
 	gD‘”mši¡icDi¡ributiÚ
 ;
 
-53 
+59 
 impÜt
  
 	gÜg
@@ -225525,7 +226723,7 @@ impÜt
 	gDi¡ributiÚ
 ;
 
-54 
+60 
 impÜt
  
 	gÜg
@@ -225537,7 +226735,7 @@ impÜt
 	gBefÜeMig¿tiÚ
 ;
 
-55 
+61 
 impÜt
  
 	gÜg
@@ -225549,7 +226747,7 @@ impÜt
 	gBefÜeMig¿tiÚ_OLD
 ;
 
-56 
+62 
 impÜt
  
 	gÜg
@@ -225561,7 +226759,7 @@ impÜt
 	gCom¶‘eVM
 ;
 
-57 
+63 
 impÜt
  
 	gÜg
@@ -225573,7 +226771,7 @@ impÜt
 	gCÚš”VM
 ;
 
-58 
+64 
 impÜt
  
 	gÜg
@@ -225585,7 +226783,7 @@ impÜt
 	gDecisiÚMig¿tiÚ_OLD
 ;
 
-59 
+65 
 impÜt
  
 	gÜg
@@ -225597,7 +226795,7 @@ impÜt
 	gDecisiÚMig¿tiÚ
 ;
 
-60 
+66 
 impÜt
  
 	gÜg
@@ -225609,7 +226807,7 @@ impÜt
 	gLiveMig¿tiÚ
 ;
 
-61 
+67 
 impÜt
  
 	gÜg
@@ -225621,7 +226819,7 @@ impÜt
 	gLowe¡Di¡BwSm¬tThšgAP
 ;
 
-62 
+68 
 impÜt
  
 	gÜg
@@ -225633,7 +226831,7 @@ impÜt
 	gLowe¡Di¡BwSm¬tThšgS”v”CloudËt
 ;
 
-63 
+69 
 impÜt
  
 	gÜg
@@ -225645,7 +226843,7 @@ impÜt
 	gLowe¡L©’cy
 ;
 
-64 
+70 
 impÜt
  
 	gÜg
@@ -225657,7 +226855,7 @@ impÜt
 	gMySti¡ics
 ;
 
-65 
+71 
 impÜt
  
 	gÜg
@@ -225669,7 +226867,7 @@ impÜt
 	gNextS‹p
 ;
 
-66 
+72 
 impÜt
  
 	gÜg
@@ -225681,7 +226879,7 @@ impÜt
 	gP»·»Com¶‘eVM
 ;
 
-67 
+73 
 impÜt
  
 	gÜg
@@ -225693,7 +226891,7 @@ impÜt
 	gP»·»CÚš”VM
 ;
 
-68 
+74 
 impÜt
  
 	gÜg
@@ -225705,7 +226903,7 @@ impÜt
 	gP»·»LiveMig¿tiÚ
 ;
 
-69 
+75 
 impÜt
  
 	gÜg
@@ -225717,7 +226915,7 @@ impÜt
 	gS”viû
 ;
 
-70 
+76 
 impÜt
  
 	gÜg
@@ -225729,7 +226927,7 @@ impÜt
 	gVmMig¿tiÚTechnique
 ;
 
-71 
+77 
 impÜt
  
 	gÜg
@@ -225741,7 +226939,7 @@ impÜt
 	gcÚ¡ªts
 .*;
 
-73 
+79 
 impÜt
  
 	gsun
@@ -225753,7 +226951,7 @@ impÜt
 	gG‘ReæeùiÚFaùÜyAùiÚ
 ;
 
-74 
+80 
 impÜt
  
 	gsun
@@ -225765,19 +226963,19 @@ impÜt
 	gTimeZÚeNames_’_CA
 ;
 
-77 
+83 
 public
  cÏs 
 	cAµExem¶o2
  {
 
-78 
+84 
 ´iv©e
  
 	m¡•PŞicy
 ;
 
-79 
+85 
 ´iv©e
  
 	mLi¡
@@ -225793,7 +226991,7 @@ A¼ayLi¡
 MobeDeviû
 >();
 
-80 
+86 
 ´iv©e
  
 	mLi¡
@@ -225807,7 +227005,7 @@ MobeDeviû
 A¼ayLi¡
 <>();
 
-81 
+87 
 ´iv©e
  
 	mLi¡
@@ -225821,7 +227019,7 @@ A¼ayLi¡
 A¼ayLi¡
 <>();
 
-82 
+88 
 ´iv©e
  
 	mLi¡
@@ -225835,7 +227033,7 @@ A¼ayLi¡
 A¼ayLi¡
 <>();
 
-83 
+89 
 ´iv©e
  
 	mLi¡
@@ -225849,7 +227047,7 @@ A¼ayLi¡
 A¼ayLi¡
 <>();
 
-84 
+90 
 ´iv©e
  
 	mLi¡
@@ -225863,7 +227061,23 @@ A¼ayLi¡
 A¼ayLi¡
 <>();
 
-85 
+91 
+´iv©e
+ 
+	mQueue
+<
+	mSŒšg
+[]> 
+	mq
+ = 
+Ãw
+ 
+LškedLi¡
+<
+SŒšg
+[]>();
+
+93 
 ´iv©e
  
 boŞ—n
@@ -225871,49 +227085,49 @@ boŞ—n
 	mmig¿tiÚAbË
 ;
 
-87 
+95 
 ´iv©e
  
 	mmigPoštPŞicy
 ;
 
-88 
+96 
 ´iv©e
  
 	mmigSŒ©egyPŞicy
 ;
 
-89 
+97 
 ´iv©e
  
 	mpos™iÚApPŞicy
 ;
 
-90 
+98 
 ´iv©e
  
 	mpos™iÚScPŞicy
 ;
 
-91 
+99 
 ´iv©e
  
 	mpŞicyR•liÿVM
 ;
 
-92 
+100 
 ´iv©e
  
 	mmaxBªdwidth
 ;
 
-93 
+101 
 ´iv©e
  
 	mmaxSm¬tThšgs
 ;
 
-94 
+102 
 ´iv©e
  
 CoÜdš©e
@@ -225921,13 +227135,13 @@ CoÜdš©e
 	mcoÜdDeviûs
 ;
 
-95 
+103 
 ´iv©e
  
 	m£ed
 ;
 
-96 
+104 
 ´iv©e
  
 Rªdom
@@ -225935,7 +227149,7 @@ Rªdom
 	m¿nd
 ;
 
-97 
+105 
 fš®
  
 boŞ—n
@@ -225945,25 +227159,25 @@ boŞ—n
 Œue
 ;
 
-100 
+108 
 fš®
  
 	mnumOfD•ts
  = 1;
 
-101 
+109 
 fš®
  
 	mnumOfMobesP”D•t
  = 4;
 
-102 
+110 
 fš®
  
 	mEEG_TRANSMISSION_TIME
  = 10;
 
-108 
+116 
 public
  
 	$maš
@@ -225977,17 +227191,17 @@ throws
 Exû±iÚ
  {
 
-133 
+141 
 Log
 .
 	`di§bË
 ();
 
-137 
+145 
 numU£r
  = 1;
 
-138 
+146 
 C®’d¬
  
 ÿËnd¬
@@ -225995,7 +227209,7 @@ C®’d¬
 	`g‘In¡ªû
 ();
 
-139 
+147 
 boŞ—n
  
 ŒaûFÏg
@@ -226003,7 +227217,7 @@ boŞ—n
 çl£
 ;
 
-140 
+148 
 CloudSim
 .
 	`š™
@@ -226015,7 +227229,7 @@ numU£r
 ŒaûFÏg
 );
 
-157 
+165 
 	`£tPos™iÚApPŞicy
 (
 PŞic›s
@@ -226023,7 +227237,7 @@ PŞic›s
 FIXED_AP_LOCATION
 );
 
-160 
+168 
 	`£tPos™iÚScPŞicy
 (
 PŞic›s
@@ -226031,7 +227245,59 @@ PŞic›s
 FIXED_SC_LOCATION
 );
 
-163 
+172 
+	`£tS‹pPŞicy
+(1);
+
+173 if(
+IÁeg”
+.
+	`·r£IÁ
+(
+¬gs
+[0])==0){
+
+174 
+	`£tMig¿tiÚAbË
+(
+çl£
+);
+
+177 
+	`£tMig¿tiÚAbË
+(
+Œue
+);
+
+179 
+	`£tS“d
+(
+IÁeg”
+.
+	`·r£IÁ
+(
+¬gs
+[1]));
+
+180 if(
+	`g‘S“d
+()<1){
+
+181 
+Sy¡em
+.
+out
+.
+	`´šn
+("Seed cannot be†esshan 1");
+
+182 
+Sy¡em
+.
+	`ex™
+(0);
+
+184 
 	`£tRªd
 (
 Ãw
@@ -226045,59 +227311,7 @@ IÁeg”
 MAX_VALUE
 ));
 
-165 
-	`£tS‹pPŞicy
-(1);
-
-166 if(
-IÁeg”
-.
-	`·r£IÁ
-(
-¬gs
-[0])==0){
-
-167 
-	`£tMig¿tiÚAbË
-(
-çl£
-);
-
-170 
-	`£tMig¿tiÚAbË
-(
-Œue
-);
-
-172 
-	`£tS“d
-(
-IÁeg”
-.
-	`·r£IÁ
-(
-¬gs
-[1]));
-
-173 if(
-	`g‘S“d
-()<1){
-
-174 
-Sy¡em
-.
-out
-.
-	`´šn
-("Seed cannot be†esshan 1");
-
-175 
-Sy¡em
-.
-	`ex™
-(0);
-
-177 
+185 
 	`£tMigPoštPŞicy
 (
 IÁeg”
@@ -226107,7 +227321,7 @@ IÁeg”
 ¬gs
 [2]));
 
-178 
+186 
 	`£tMigSŒ©egyPŞicy
 (
 IÁeg”
@@ -226117,7 +227331,7 @@ IÁeg”
 ¬gs
 [3]));
 
-179 
+187 
 	`£tMaxSm¬tThšgs
 (
 IÁeg”
@@ -226127,7 +227341,7 @@ IÁeg”
 ¬gs
 [4]));
 
-180 
+188 
 	`£tMaxBªdwidth
 (
 IÁeg”
@@ -226137,7 +227351,7 @@ IÁeg”
 ¬gs
 [5]));
 
-181 
+189 
 	`£tPŞicyR•liÿVM
 (
 IÁeg”
@@ -226147,7 +227361,7 @@ IÁeg”
 ¬gs
 [6]));
 
-187 if(
+195 if(
 pos™iÚApPŞicy
 ==
 PŞic›s
@@ -226155,7 +227369,7 @@ PŞic›s
 FIXED_AP_LOCATION
 ){
 
-188 
+196 
 	`addApDeviûsFixed
 (
 ­Deviûs
@@ -226163,7 +227377,7 @@ FIXED_AP_LOCATION
 coÜdDeviûs
 );
 
-191 
+199 
 i
 =0; i< 
 MaxAndMš
@@ -226171,7 +227385,7 @@ MaxAndMš
 MAX_AP_DEVICE
 ;i++){
 
-192 
+200 
 	`addApDeviûsRªdÚ
 (
 ­Deviûs
@@ -226181,7 +227395,7 @@ coÜdDeviûs
 i
 );
 
-197 if(
+205 if(
 	`g‘Pos™iÚScPŞicy
 ()==
 PŞic›s
@@ -226189,7 +227403,7 @@ PŞic›s
 FIXED_SC_LOCATION
 ){
 
-198 
+206 
 	`addS”v”CloudËt
 (
 £rv”CloudËts
@@ -226197,7 +227411,7 @@ FIXED_SC_LOCATION
 coÜdDeviûs
 );
 
-201 
+209 
 i
 =0;i<
 MaxAndMš
@@ -226205,7 +227419,7 @@ MaxAndMš
 MAX_SERVER_CLOUDLET
 ;i++){
 
-202 
+210 
 	`addS”v”CloudËt
 (
 £rv”CloudËts
@@ -226215,13 +227429,13 @@ coÜdDeviûs
 i
 );
 
-205 
+213 
 	`ü—‹S”v”CloudËtsN‘wÜk
 (
 	`g‘S”v”CloudËts
 ());
 
-206 
+214 
 FogDeviû
  
 sc
@@ -226229,7 +227443,7 @@ sc
 	`g‘S”v”CloudËts
 ()){
 
-207 
+215 
 FogDeviû
  
 sc1
@@ -226237,7 +227451,7 @@ sc1
 	`g‘S”v”CloudËts
 ()){
 
-208 if(
+216 if(
 sc
 .
 	`equ®s
@@ -226245,7 +227459,7 @@ sc
 sc1
 )){
 
-211 
+219 
 Sy¡em
 .
 out
@@ -226265,7 +227479,7 @@ N‘wÜkTİŞogy
 	`g‘Id
 (), sc1.getId()));
 
-212 
+220 
 Sy¡em
 .
 out
@@ -226279,13 +227493,13 @@ sc
 	`g‘DowÆškBªdwidth
 ());
 
-219 
+227 
 i
 =0; i< 
 	`g‘MaxSm¬tThšgs
 ();i++){
 
-220 
+228 
 	`addSm¬tThšg
 (
 sm¬tThšgs
@@ -226295,15 +227509,21 @@ coÜdDeviûs
 i
 );
 
-223 
+231 
+	`»adMobl™yD©a
+(
+q
+, 2260);
+
+235 
 šdex
 ;
 
-224 
+236 
 myCouÁ
 =0;
 
-226 
+238 
 MobeDeviû
  
 ¡
@@ -226311,7 +227531,7 @@ MobeDeviû
 	`g‘Sm¬tThšgs
 ()){
 
-227 if(!
+239 if(!
 ApDeviû
 .
 	`cÚÃùApSm¬tThšg
@@ -226325,11 +227545,11 @@ ApDeviû
 	`ÃxtDoubË
 ())){
 
-228 
+240 
 myCouÁ
 ++;
 
-229 
+241 
 LogMobe
 .
 	`debug
@@ -226339,7 +227559,7 @@ LogMobe
 	`g‘Name
 ()+" isn't connected");
 
-232 
+244 
 LogMobe
 .
 	`debug
@@ -226347,7 +227567,7 @@ LogMobe
 myCouÁ
 );
 
-234 
+246 
 ApDeviû
  
 ­
@@ -226355,7 +227575,7 @@ ApDeviû
 	`g‘ApDeviûs
 ()){
 
-235 
+247 
 šdex
  = 
 Di¡ªûs
@@ -226367,7 +227587,7 @@ Di¡ªûs
 ­
 );
 
-236 
+248 
 ­
 .
 	`£tS”v”CloudËt
@@ -226379,7 +227599,7 @@ Di¡ªûs
 šdex
 ));
 
-237 
+249 
 ­
 .
 	`£tP¬’tId
@@ -226393,7 +227613,7 @@ Di¡ªûs
 	`g‘Id
 ());
 
-238 
+250 
 	`g‘S”v”CloudËts
 ().
 	`g‘
@@ -226409,7 +227629,7 @@ PŞic›s
 ADD
 );
 
-239 
+251 
 N‘wÜkTİŞogy
 .
 	`addLšk
@@ -226431,7 +227651,7 @@ N‘wÜkTİŞogy
 	`ÃxtDoubË
 ());
 
-241 
+253 
 MobeDeviû
  
 ¡
@@ -226441,7 +227661,7 @@ MobeDeviû
 	`g‘Sm¬tThšgs
 ()){
 
-242 
+254 
 	`g‘S”v”CloudËts
 ().
 	`g‘
@@ -226453,7 +227673,7 @@ MobeDeviû
 ¡
 );
 
-243 
+255 
 	`g‘S”v”CloudËts
 ().
 	`g‘
@@ -226469,7 +227689,7 @@ PŞic›s
 ADD
 );
 
-249 
+261 
 MobeDeviû
  
 ¡
@@ -226477,7 +227697,7 @@ MobeDeviû
 	`g‘Sm¬tThšgs
 ()){
 
-250 
+262 
 	`g‘Brok”Li¡
 ().
 	`add
@@ -226495,7 +227715,7 @@ IÁeg”
 	`g‘MyId
 ())));
 
-255 
+267 
 MobeDeviû
  
 ¡
@@ -226503,7 +227723,7 @@ MobeDeviû
 	`g‘Sm¬tThšgs
 ()){
 
-256 if(
+268 if(
 ¡
 .
 	`g‘SourûAp
@@ -226511,7 +227731,7 @@ MobeDeviû
 nuÎ
 ){
 
-257 
+269 
 CloudËtScheduËr
  
 şoudËtScheduËr
@@ -226521,7 +227741,7 @@ CloudËtScheduËr
 	`Tu¶eScheduËr
 (500,1);
 
-258 
+270 
 sizeVm
  = (
 MaxAndMš
@@ -226535,7 +227755,7 @@ MAX_VM_SIZE
 	`ÃxtDoubË
 ())));
 
-259 
+271 
 AµModuË
  
 vmSm¬tThšgTe¡
@@ -226549,19 +227769,19 @@ vmSm¬tThšgTe¡
 	`g‘MyId
 ()
 
-260 , "AµModuËVm_"+
+272 , "AµModuËVm_"+
 ¡
 .
 	`g‘Name
 ()
 
-261 , "MyAµ_vr_game"+
+273 , "MyAµ_vr_game"+
 ¡
 .
 	`g‘MyId
 ()
 
-262 , 
+274 , 
 	`g‘Brok”Li¡
 ().
 	`g‘
@@ -226573,21 +227793,21 @@ vmSm¬tThšgTe¡
 	`g‘Id
 ()
 
-266 , 
+278 , 
 sizeVm
 
 
-267 , "Vm_"+
+279 , "Vm_"+
 ¡
 .
 	`g‘Name
 ()
 
-268 , 
+280 , 
 şoudËtScheduËr
 
 
-269 , 
+281 , 
 Ãw
  
 HashM­
@@ -226599,7 +227819,7 @@ SŒšg
 S–eùiv™yMod–
 >());
 
-280 
+292 
 ¡
 .
 	`£tVmMobeDeviû
@@ -226607,7 +227827,7 @@ S–eùiv™yMod–
 vmSm¬tThšgTe¡
 );
 
-281 
+293 
 ¡
 .
 	`g‘SourûS”v”CloudËt
@@ -226619,7 +227839,7 @@ vmSm¬tThšgTe¡
 vmSm¬tThšgTe¡
 );
 
-282 
+294 
 ¡
 .
 	`£tVmLoÿlS”v”CloudËt
@@ -226627,11 +227847,11 @@ vmSm¬tThšgTe¡
 	`g‘SourûS”v”CloudËt
 ());
 
-285 
+297 
 i
 =0;
 
-286 
+298 
 FogBrok”
  
 br
@@ -226639,7 +227859,7 @@ br
 	`g‘Brok”Li¡
 ()){
 
-287 
+299 
 Li¡
 <
 Vm
@@ -226651,7 +227871,7 @@ Vm
 A¼ayLi¡
 <>();
 
-288 
+300 
 ‹mpVmLi¡
 .
 	`add
@@ -226665,7 +227885,7 @@ i
 	`g‘VmMobeDeviû
 ());
 
-289 
+301 
 br
 .
 	`subm™VmLi¡
@@ -226673,11 +227893,11 @@ br
 ‹mpVmLi¡
 );
 
-294 
+306 
 i
 =0;
 
-296 
+308 
 FogBrok”
  
 br
@@ -226685,7 +227905,7 @@ br
 	`g‘Brok”Li¡
 ()){
 
-297 
+309 
 	`g‘AµIdLi¡
 ().
 	`add
@@ -226697,7 +227917,7 @@ IÁeg”
 i
 ));
 
-299 
+311 
 AµliÿtiÚ
  
 myAµ
@@ -226721,7 +227941,7 @@ AµModuË
 	`g‘VmMobeDeviû
 ());
 
-300 
+312 
 	`g‘AµliÿtiÚLi¡
 ().
 	`add
@@ -226729,11 +227949,11 @@ AµModuË
 myAµ
 );
 
-302 
+314 
 i
 ++;
 
-305 
+317 
 MobeDeviû
  
 ¡
@@ -226741,7 +227961,7 @@ MobeDeviû
 	`g‘Sm¬tThšgs
 ()){
 
-306 
+318 
 brok”Id
 =
 	`g‘Brok”Li¡
@@ -226755,7 +227975,7 @@ brok”Id
 	`g‘Id
 ();
 
-307 
+319 
 SŒšg
  
 ­pId
@@ -226769,7 +227989,7 @@ SŒšg
 	`g‘MyId
 ());
 
-308 if(
+320 if(
 ¡
 .
 	`g‘SourûAp
@@ -226777,7 +227997,7 @@ SŒšg
 nuÎ
 ){
 
-309 
+321 
 MobeS’sÜ
  
 s
@@ -226787,7 +228007,7 @@ s
 	`g‘S’sÜs
 ()){
 
-310 
+322 
 s
 .
 	`£tAµId
@@ -226795,7 +228015,7 @@ s
 ­pId
 );
 
-311 
+323 
 s
 .
 	`£tU£rId
@@ -226803,7 +228023,7 @@ s
 brok”Id
 );
 
-312 
+324 
 s
 .
 	`£tG©ewayDeviûId
@@ -226813,13 +228033,13 @@ s
 	`g‘Id
 ());
 
-313 
+325 
 s
 .
 	`£tL©’cy
 (6.0);
 
-316 
+328 
 MobeAùu©Ü
  
 a
@@ -226829,7 +228049,7 @@ a
 	`g‘Aùu©Üs
 ()){
 
-317 
+329 
 a
 .
 	`£tU£rId
@@ -226837,7 +228057,7 @@ a
 brok”Id
 );
 
-318 
+330 
 a
 .
 	`£tAµId
@@ -226845,7 +228065,7 @@ a
 ­pId
 );
 
-319 
+331 
 a
 .
 	`£tG©ewayDeviûId
@@ -226855,13 +228075,13 @@ a
 	`g‘Id
 ());
 
-320 
+332 
 a
 .
 	`£tL©’cy
 (1.0);
 
-321 
+333 
 a
 .
 	`£tAùu©ÜTy³
@@ -226871,7 +228091,7 @@ a
 	`g‘MyId
 ());
 
-329 
+341 
 MobeCÚŒŞËr
  
 mobeCÚŒŞËr
@@ -226879,7 +228099,7 @@ mobeCÚŒŞËr
 nuÎ
 ;
 
-330 
+342 
 ModuËM­pšg
  
 moduËM­pšg
@@ -226887,7 +228107,7 @@ moduËM­pšg
 	`ü—‹ModuËM­pšg
 ();
 
-332 
+344 
 AµliÿtiÚ
  
 ­p
@@ -226895,17 +228115,17 @@ AµliÿtiÚ
 	`g‘AµliÿtiÚLi¡
 ()){
 
-333 
+345 
 ­p
 .
 	`£tPÏûm’tSŒ©egy
 ("Mapping");
 
-335 
+347 
 i
 =0;
 
-336 
+348 
 FogDeviû
  
 sc
@@ -226913,11 +228133,11 @@ sc
 	`g‘S”v”CloudËts
 ()){
 
-337 
+349 
 i
 =0;
 
-338 
+350 
 MobeDeviû
  
 ¡
@@ -226925,7 +228145,7 @@ MobeDeviû
 	`g‘Sm¬tThšgs
 ()){
 
-339 if(
+351 if(
 ¡
 .
 	`g‘ApDeviûs
@@ -226933,7 +228153,7 @@ MobeDeviû
 nuÎ
 ){
 
-340 if(
+352 if(
 sc
 .
 	`equ®s
@@ -226943,7 +228163,7 @@ sc
 	`g‘SourûS”v”CloudËt
 ())){
 
-344 
+356 
 moduËM­pšg
 .
 	`addModuËToDeviû
@@ -226959,7 +228179,7 @@ AµModuË
 sc
 .getName(),1);
 
-345 
+357 
 moduËM­pšg
 .
 	`addModuËToDeviû
@@ -226971,11 +228191,11 @@ moduËM­pšg
 	`g‘Name
 (), 1);
 
-349 
+361 
 i
 ++;
 
-352 
+365 
 mobeCÚŒŞËr
  = 
 Ãw
@@ -226983,55 +228203,59 @@ mobeCÚŒŞËr
 	`MobeCÚŒŞËr
 ("MobileController"
 
-353 , 
+366 , 
 	`g‘S”v”CloudËts
 ()
 
-354 , 
+367 , 
 	`g‘ApDeviûs
 ()
 
-355 , 
+368 , 
 	`g‘Sm¬tThšgs
 ()
 
-356 , 
+369 , 
 	`g‘Brok”Li¡
 ()
 
-357 , 
+370 , 
+	`g‘Queue
+()
+
+371 , 
 moduËM­pšg
 
 
-358 , 
+372 , 
 	`g‘MigPoštPŞicy
 ()
 
-359 , 
+373 , 
 	`g‘MigSŒ©egyPŞicy
 ()
 
-360 , 
+374 , 
 	`g‘S‹pPŞicy
 ()
 
-361 , 
+375 , 
 	`g‘CoÜdDeviûs
 ()
 
-362 , 
+376 , 
 	`g‘S“d
 ()
 
-363 , 
+377 , 
 	`isMig¿tiÚAbË
 ());
 
-364 
+378 
 i
 =0;
 
-365 
+379 
 AµliÿtiÚ
  
 ­p
@@ -227039,7 +228263,7 @@ AµliÿtiÚ
 ­¶iÿtiÚLi¡
 ){
 
-366 
+380 
 mobeCÚŒŞËr
 .
 	`subm™AµliÿtiÚ
@@ -227047,7 +228271,7 @@ mobeCÚŒŞËr
 ­p
 ,1);
 
-368 
+382 
 TimeK“³r
 .
 	`g‘In¡ªû
@@ -227059,7 +228283,7 @@ C®’d¬
 	`g‘TimeInMlis
 ());
 
-369 
+383 
 MySti¡ics
 .
 	`g‘In¡ªû
@@ -227069,7 +228293,7 @@ MySti¡ics
 	`g‘S“d
 ());
 
-370 
+384 
 MobeDeviû
  
 ¡
@@ -227077,7 +228301,7 @@ MobeDeviû
 	`g‘Sm¬tThšgs
 ()){
 
-371 if(
+385 if(
 	`g‘MigPoštPŞicy
 ()==
 PŞic›s
@@ -227085,7 +228309,7 @@ PŞic›s
 FIXED_MIGRATION_POINT
 ){
 
-372 if(
+386 if(
 	`g‘MigSŒ©egyPŞicy
 ()==
 PŞic›s
@@ -227093,7 +228317,7 @@ PŞic›s
 LOWEST_LATENCY
 ){
 
-374 
+388 
 MySti¡ics
 .
 	`g‘In¡ªû
@@ -227107,7 +228331,7 @@ MySti¡ics
 	`g‘S“d
 ()+"_st_"+st.getMyId()+".txt",st.getMyId());
 
-375 
+389 
 MySti¡ics
 .
 	`g‘In¡ªû
@@ -227121,7 +228345,7 @@ MySti¡ics
 	`g‘MyId
 (),st.getMyId());
 
-376 
+390 
 MySti¡ics
 .
 	`g‘In¡ªû
@@ -227129,7 +228353,7 @@ MySti¡ics
 	`£tToPršt
 ("FIXED_MIGRATION_POINT_with_LOWEST_LATENCY");
 
-378 if(
+392 if(
 	`g‘MigSŒ©egyPŞicy
 ()==
 PŞic›s
@@ -227137,7 +228361,7 @@ PŞic›s
 LOWEST_DIST_BW_SMARTTING_AP
 ){
 
-379 
+393 
 MySti¡ics
 .
 	`g‘In¡ªû
@@ -227151,7 +228375,7 @@ MySti¡ics
 	`g‘S“d
 ()+"_st_"+st.getMyId()+".txt",st.getMyId());
 
-380 
+394 
 MySti¡ics
 .
 	`g‘In¡ªû
@@ -227165,7 +228389,7 @@ MySti¡ics
 	`g‘MyId
 (),st.getMyId());
 
-381 
+395 
 MySti¡ics
 .
 	`g‘In¡ªû
@@ -227173,7 +228397,7 @@ MySti¡ics
 	`£tToPršt
 ("FIXED_MIGRATION_POINT_with_LOWEST_DIST_BW_SMARTTING_AP");
 
-385 if(
+399 if(
 	`g‘MigSŒ©egyPŞicy
 ()==
 PŞic›s
@@ -227181,7 +228405,7 @@ PŞic›s
 LOWEST_DIST_BW_SMARTTING_SERVERCLOUDLET
 ){
 
-386 
+400 
 MySti¡ics
 .
 	`g‘In¡ªû
@@ -227195,7 +228419,7 @@ MySti¡ics
 	`g‘S“d
 ()+"_st_"+st.getMyId()+".txt",st.getMyId());
 
-387 
+401 
 MySti¡ics
 .
 	`g‘In¡ªû
@@ -227209,7 +228433,7 @@ MySti¡ics
 	`g‘MyId
 (),st.getMyId());
 
-388 
+402 
 MySti¡ics
 .
 	`g‘In¡ªû
@@ -227217,7 +228441,7 @@ MySti¡ics
 	`£tToPršt
 ("FIXED_MIGRATION_POINT_with_LOWEST_DIST_BW_SMARTTING_SERVERCLOUDLET");
 
-392 if(
+406 if(
 	`g‘MigPoštPŞicy
 ()==
 PŞic›s
@@ -227225,7 +228449,7 @@ PŞic›s
 SPEED_MIGRATION_POINT
 ){
 
-393 if(
+407 if(
 	`g‘MigSŒ©egyPŞicy
 ()==
 PŞic›s
@@ -227233,7 +228457,7 @@ PŞic›s
 LOWEST_LATENCY
 ){
 
-394 
+408 
 MySti¡ics
 .
 	`g‘In¡ªû
@@ -227247,7 +228471,7 @@ MySti¡ics
 	`g‘S“d
 ()+"_st_"+st.getMyId()+".txt",st.getMyId());
 
-395 
+409 
 MySti¡ics
 .
 	`g‘In¡ªû
@@ -227261,7 +228485,7 @@ MySti¡ics
 	`g‘MyId
 (),st.getMyId());
 
-396 
+410 
 MySti¡ics
 .
 	`g‘In¡ªû
@@ -227269,7 +228493,7 @@ MySti¡ics
 	`£tToPršt
 ("SPEED_MIGRATION_POINT_with_LOWEST_LATENCY");
 
-399 if(
+413 if(
 	`g‘MigSŒ©egyPŞicy
 ()==
 PŞic›s
@@ -227277,7 +228501,7 @@ PŞic›s
 LOWEST_DIST_BW_SMARTTING_AP
 ){
 
-400 
+414 
 MySti¡ics
 .
 	`g‘In¡ªû
@@ -227291,7 +228515,7 @@ MySti¡ics
 	`g‘S“d
 ()+"_st_"+st.getMyId()+".txt",st.getMyId());
 
-401 
+415 
 MySti¡ics
 .
 	`g‘In¡ªû
@@ -227305,7 +228529,7 @@ MySti¡ics
 	`g‘MyId
 (),st.getMyId());
 
-402 
+416 
 MySti¡ics
 .
 	`g‘In¡ªû
@@ -227313,7 +228537,7 @@ MySti¡ics
 	`£tToPršt
 ("SPEED_MIGRATION_POINT_with_LOWEST_DIST_BW_SMARTTING_AP");
 
-405 if(
+419 if(
 	`g‘MigSŒ©egyPŞicy
 ()==
 PŞic›s
@@ -227321,7 +228545,7 @@ PŞic›s
 LOWEST_DIST_BW_SMARTTING_SERVERCLOUDLET
 ){
 
-406 
+420 
 MySti¡ics
 .
 	`g‘In¡ªû
@@ -227335,7 +228559,7 @@ MySti¡ics
 	`g‘S“d
 ()+"_st_"+st.getMyId()+".txt",st.getMyId());
 
-407 
+421 
 MySti¡ics
 .
 	`g‘In¡ªû
@@ -227349,7 +228573,7 @@ MySti¡ics
 	`g‘MyId
 (),st.getMyId());
 
-408 
+422 
 MySti¡ics
 .
 	`g‘In¡ªû
@@ -227357,7 +228581,7 @@ MySti¡ics
 	`£tToPršt
 ("SPEED_MIGRATION_POINT_with_LOWEST_DIST_BW_SMARTTING_SERVERCLOUDLET");
 
-413 
+427 
 MySti¡ics
 .
 	`g‘In¡ªû
@@ -227369,7 +228593,7 @@ MySti¡ics
 	`g‘MyId
 ());
 
-414 
+428 
 MySti¡ics
 .
 	`g‘In¡ªû
@@ -227383,11 +228607,11 @@ MySti¡ics
 	`g‘MyId
 (), 0);
 
-418 
+432 
 myCouÁ
 =0;
 
-420 
+434 
 MobeDeviû
  
 ¡
@@ -227395,7 +228619,7 @@ MobeDeviû
 	`g‘Sm¬tThšgs
 ()){
 
-421 if(
+435 if(
 ¡
 .
 	`g‘SourûAp
@@ -227403,7 +228627,7 @@ MobeDeviû
 nuÎ
 ){
 
-422 
+436 
 Sy¡em
 .
 out
@@ -227417,7 +228641,7 @@ out
 	`g‘SourûAp
 ().getName()+": "+
 
-423 
+437 
 Di¡ªûs
 .
 	`checkDi¡ªû
@@ -227429,7 +228653,7 @@ Di¡ªûs
 	`g‘SourûAp
 ().getCoord()));
 
-426 
+440 
 MobeDeviû
  
 ¡
@@ -227437,7 +228661,7 @@ MobeDeviû
 	`g‘Sm¬tThšgs
 ()){
 
-427 
+441 
 Sy¡em
 .
 out
@@ -227463,7 +228687,7 @@ out
 	`g‘Size
 ());
 
-429 
+443 
 Sy¡em
 .
 out
@@ -227471,7 +228695,7 @@ out
 	`´šn
 ("_+_+_+_+_+_+_+_+_+_+_+_+_+_+_+_+_+_+_+_+_+_+_+_+_+_");
 
-430 
+444 
 FogDeviû
  
 sc
@@ -227479,7 +228703,7 @@ sc
 	`g‘S”v”CloudËts
 ()){
 
-431 
+445 
 Sy¡em
 .
 out
@@ -227499,7 +228723,7 @@ sc
 	`g‘U¶škL©’cy
 ());
 
-433 
+447 
 Sy¡em
 .
 out
@@ -227507,7 +228731,7 @@ out
 	`´šn
 ("_+_+_+_+_+_+_+_+_+_+_+_+_+_+_+_+_+_+_+_+_+_+_+_+_+_");
 
-434 
+448 
 ApDeviû
  
 ­
@@ -227515,7 +228739,7 @@ ApDeviû
 	`g‘ApDeviûs
 ()){
 
-435 
+449 
 Sy¡em
 .
 out
@@ -227535,13 +228759,13 @@ out
 	`g‘S”v”CloudËt
 ().getName());
 
-438 
+452 
 CloudSim
 .
 	`¡¬tSimuÏtiÚ
 ();
 
-439 
+453 
 Sy¡em
 .
 out
@@ -227549,16 +228773,132 @@ out
 	`´šn
 ("Simulation over");
 
-440 
+454 
 CloudSim
 .
 	`¡İSimuÏtiÚ
 ();
 
-444 
+458 
 ´iv©e
  
-	`addApDeviûsFixed
+	`»adMobl™yD©a
+(
+Queue
+<
+SŒšg
+[]> 
+q
+, 
+i
+){
+
+460 
+SŒšg
+ 
+csvFe
+ = 
+i
++"log.csv";
+
+461 
+SŒšg
+ 
+lše
+ = "";
+
+462 
+SŒšg
+ 
+cvsS¶™By
+ = "\t";
+
+464 
+	`Œy
+ (
+Bufã»dR—d”
+ 
+br
+ = 
+Ãw
+ 
+	`Bufã»dR—d”
+Òew 
+	`FeR—d”
+(
+csvFe
+))) {
+
+466 (
+lše
+ = 
+br
+.
+	`»adLše
+()è!ğ
+nuÎ
+) {
+
+469 
+SŒšg
+[] 
+couÁry
+ = 
+lše
+.
+	`¥l™
+(
+cvsS¶™By
+);
+
+471 
+Sy¡em
+.
+out
+.
+	`´šn
+(
+couÁry
+[0]+" "+
+DoubË
+.
+	`·r£DoubË
+(couÁry[0])*(180/
+M©h
+.
+PI
+)+" "+country[1]+" "+country[2]+" "+country[3]);
+
+473 
+q
+.
+	`add
+(
+couÁry
+);
+
+476 } 
+	`ÿtch
+ (
+IOExû±iÚ
+ 
+e
+) {
+
+477 
+e
+.
+	`´štSckT¿û
+();
+
+481 
+	}
+}
+
+483 
+´iv©e
+ 
+addApDeviûsFixed
 (
 Li¡
 <
@@ -227567,151 +228907,55 @@ ApDeviû
 ­Deviûs
 ,
 
-445 
+484 
 CoÜdš©e
  
 coÜdDeviûs
 ) {
 
-446 
-i
+485 
+	gi
 =0;
 
-447 
+486 
 boŞ—n
  
-cÚŒŞ
+	gcÚŒŞ
  = 
 Œue
 ;
 
-448 
-coÜdY
+487 
+	gcoÜdY
 =0;
 
-449 
-coÜdX
-=100; coÜdX<
-MaxAndMš
+488 
+	gcoÜdX
+=1050; coÜdX<
+	gMaxAndMš
 .
-MAX_X
--100; coordX+=6500){
+	gMAX_X
+-990; coordX+=2001){
 
-457 
-coÜdY
-=100; coÜdY<
-MaxAndMš
+489 
+Sy¡em
 .
-MAX_Y
--100; coÜdY+=6500, 
-i
+out
+.
+´šn
+("Creating Ap devices");
+
+497 
+	gcoÜdY
+=1050; coÜdY<
+	gMaxAndMš
+.
+	gMAX_Y
+-990; coÜdY+=2001, 
+	gi
 ++){
 
-460 
-ApDeviû
- 
-­
- = 
-Ãw
- 
-	`ApDeviû
-("AcûssPošt"+
-IÁeg”
-.
-	`toSŒšg
-(
-i
-),
-
-461 
-coÜdX
-,
-coÜdY
-
-
-462 ,
-i
-
-
-465 ,
-MaxAndMš
-.
-MAX_ST_IN_AP
-
-
-469 
-­Deviûs
-.
-	`add
-(
-i
-, 
-­
-);
-
-473 
-LogMobe
-.
-	`debug
-("AµExem¶o2.java", "TÙ® oàacûssPošts: "+
-i
-);
-
-475 
-	}
-}
-
-476 
-´iv©e
- 
-addApDeviûsRªdÚ
-(
-Li¡
-<
-ApDeviû
-> 
-­Deviûs
-,
-
-477 
-CoÜdš©e
- 
-coÜdDeviûs
-, 
-i
-) {
-
-479 
-	gcoÜdX
-,
-	gcoÜdY
-;
-
-481 
-	gcoÜdX
- = 
-g‘Rªd
-().
-ÃxtIÁ
-(
-MaxAndMš
-.
-MAX_X
-);
-
-482 
-	gcoÜdY
- = 
-g‘Rªd
-().
-ÃxtIÁ
-(
-MaxAndMš
-.
-MAX_Y
-);
-
-485 
+500 
 ApDeviû
  
 	g­
@@ -227725,23 +228969,121 @@ toSŒšg
 i
 ),
 
-486 
+501 
 coÜdX
 ,
 coÜdY
 
 
-487 ,
+502 ,
 i
 
 
-490 ,
+505 ,
 MaxAndMš
 .
 MAX_ST_IN_AP
 
 
-494 
+509 
+	g­Deviûs
+.
+add
+(
+i
+, 
+­
+);
+
+513 
+	gLogMobe
+.
+debug
+("AµExem¶o2.java", "TÙ® oàacûssPošts: "+
+i
+);
+
+516 
+´iv©e
+ 
+addApDeviûsRªdÚ
+(
+Li¡
+<
+ApDeviû
+> 
+­Deviûs
+,
+
+517 
+CoÜdš©e
+ 
+coÜdDeviûs
+, 
+i
+) {
+
+519 
+	gcoÜdX
+,
+	gcoÜdY
+;
+
+521 
+	gcoÜdX
+ = 
+g‘Rªd
+().
+ÃxtIÁ
+(
+MaxAndMš
+.
+MAX_X
+);
+
+522 
+	gcoÜdY
+ = 
+g‘Rªd
+().
+ÃxtIÁ
+(
+MaxAndMš
+.
+MAX_Y
+);
+
+525 
+ApDeviû
+ 
+	g­
+ = 
+Ãw
+ ApDeviû("AcûssPošt"+
+IÁeg”
+.
+toSŒšg
+(
+i
+),
+
+526 
+coÜdX
+,
+coÜdY
+
+
+527 ,
+i
+
+
+530 ,
+MaxAndMš
+.
+MAX_ST_IN_AP
+
+
+534 
 	g­Deviûs
 .
 add
@@ -227751,7 +229093,7 @@ i
 ­
 );
 
-506 
+546 
 public
  
 addSm¬tThšg
@@ -227769,19 +229111,19 @@ coÜdDeviûs
 i
 ){
 
-509 
+549 
 	gcoÜdX
 ,
 	gcoÜdY
 ;
 
-510 
+550 
 	gdœeùiÚ
 , 
 	g¥“d
 ;
 
-511 
+551 
 	gdœeùiÚ
  = 
 g‘Rªd
@@ -227793,7 +229135,7 @@ MaxAndMš
 MAX_DIRECTION
 -1)+1;
 
-512 
+552 
 	g¥“d
  = 
 g‘Rªd
@@ -227805,7 +229147,7 @@ MaxAndMš
 MAX_SPEED
 -1)+1;
 
-514 
+554 
 VmMig¿tiÚTechnique
  
 	gmig¿tiÚTechnique
@@ -227813,7 +229155,7 @@ VmMig¿tiÚTechnique
 nuÎ
 ;
 
-516 if(
+556 if(
 g‘PŞicyR•liÿVM
 ()==
 PŞic›s
@@ -227821,7 +229163,7 @@ PŞic›s
 MIGRATION_COMPLETE_VM
 ){
 
-517 
+557 
 mig¿tiÚTechnique
  = 
 Ãw
@@ -227831,7 +229173,7 @@ Com¶‘eVM
 g‘MigPoštPŞicy
 ());
 
-519 if(
+559 if(
 g‘PŞicyR•liÿVM
 ()==
 PŞic›s
@@ -227839,7 +229181,7 @@ PŞic›s
 MIGRATION_CONTAINER_VM
 ){
 
-520 
+560 
 mig¿tiÚTechnique
  = 
 Ãw
@@ -227849,7 +229191,7 @@ CÚš”VM
 g‘MigPoštPŞicy
 ());
 
-522 if(
+562 if(
 g‘PŞicyR•liÿVM
 ()==
 PŞic›s
@@ -227857,7 +229199,7 @@ PŞic›s
 LIVE_MIGRATION
 ){
 
-523 
+563 
 mig¿tiÚTechnique
  = 
 Ãw
@@ -227867,7 +229209,7 @@ LiveMig¿tiÚ
 g‘MigPoštPŞicy
 ());
 
-529 
+569 
 D‘”mši¡icDi¡ributiÚ
  
 	gdi¡ributiÚ0
@@ -227877,7 +229219,7 @@ D‘”mši¡icDi¡ributiÚ
 EEG_TRANSMISSION_TIME
 );
 
-531 
+571 
 	gS‘
 <
 	gMobeS’sÜ
@@ -227889,7 +229231,7 @@ EEG_TRANSMISSION_TIME
 HashS‘
 <>();
 
-533 
+573 
 MobeS’sÜ
  
 	g£nsÜ
@@ -227899,23 +229241,23 @@ MobeS’sÜ
 i
 
 
-534 ,"EEG"+
+574 ,"EEG"+
 i
 
 
-535 ,
+575 ,
 i
 
 
-536 , "MyAµ_vr_game"+
+576 , "MyAµ_vr_game"+
 i
 
 
-537 ,
+577 ,
 di¡ributiÚ0
  );
 
-538 
+578 
 	g£nsÜs
 .
 add
@@ -227923,7 +229265,7 @@ add
 £nsÜ
 );
 
-589 
+629 
 MobeAùu©Ü
  
 	gaùu©Ü0
@@ -227933,7 +229275,7 @@ MobeAùu©Ü
 i
 , i, "MyApp_vr_game"+i, "DISPLAY"+i);
 
-610 
+650 
 	gS‘
 <
 	gMobeAùu©Ü
@@ -227945,7 +229287,7 @@ i
 HashS‘
 <>();
 
-614 
+654 
 	gaùu©Üs
 .
 add
@@ -227953,7 +229295,7 @@ add
 aùu©Ü0
 );
 
-624 
+664 
 FogLš—rPow”Mod–
  
 	gpow”Mod–
@@ -227961,7 +229303,7 @@ FogLš—rPow”Mod–
 Ãw
  FogLinearPowerModel(87.53d, 82.44d);
 
-626 
+666 
 	gLi¡
 <
 	gPe
@@ -227973,11 +229315,11 @@ FogLš—rPow”Mod–
 A¼ayLi¡
 <>();
 
-627 
+667 
 	gms
  = 1000;
 
-629 
+669 
 	g³Li¡
 .
 add
@@ -227991,7 +229333,7 @@ PeProvisiÚ”Ov”bookšg
 ms
 )));
 
-631 
+671 
 	gho¡Id
  = 
 FogUts
@@ -227999,19 +229341,19 @@ FogUts
 g’”©eEÁ™yId
 ();
 
-632 
+672 
 	g¡Üage
  = 40000;
 
-634 
+674 
 	gbw
  = 2048;
 
-635 
+675 
 	g¿m
  = 1024;
 
-636 
+676 
 Pow”Ho¡
  
 	gho¡
@@ -228019,11 +229361,11 @@ Pow”Ho¡
 Ãw
  PowerHost(
 
-637 
+677 
 ho¡Id
 ,
 
-638 
+678 
 Ãw
  
 RamProvisiÚ”Sim¶e
@@ -228031,7 +229373,7 @@ RamProvisiÚ”Sim¶e
 ¿m
 ),
 
-639 
+679 
 Ãw
  
 BwProvisiÚ”Ov”bookšg
@@ -228039,15 +229381,15 @@ BwProvisiÚ”Ov”bookšg
 bw
 ),
 
-640 
+680 
 ¡Üage
 ,
 
-641 
+681 
 ³Li¡
 ,
 
-642 
+682 
 Ãw
  
 SŒ—mO³¿tÜScheduËr
@@ -228055,11 +229397,11 @@ SŒ—mO³¿tÜScheduËr
 ³Li¡
 ),
 
-643 
+683 
 pow”Mod–
 
 
-646 
+686 
 	gLi¡
 <
 	gHo¡
@@ -228073,7 +229415,7 @@ A¼ayLi¡
 Ho¡
 >();
 
-647 
+687 
 	gho¡Li¡
 .
 add
@@ -228081,25 +229423,25 @@ add
 ho¡
 );
 
-650 
+690 
 SŒšg
  
 	g¬ch
  = "x86";
 
-651 
+691 
 SŒšg
  
 	gos
  = "Android";
 
-652 
+692 
 SŒšg
  
 	gvmm
  = "empty";
 
-653 
+693 
 	gvmSize
  = 
 MaxAndMš
@@ -228107,27 +229449,27 @@ MaxAndMš
 MAX_VM_SIZE
 ;
 
-654 
+694 
 	gtime_zÚe
  = 10.0;
 
-655 
+695 
 	gco¡
  = 1.0;
 
-656 
+696 
 	gco¡P”Mem
  = 0.005;
 
-657 
+697 
 	gco¡P”StÜage
  = 0.0001;
 
-659 
+699 
 	gco¡P”Bw
  = 0.001;
 
-660 
+700 
 	gLškedLi¡
 <
 	gStÜage
@@ -228141,7 +229483,7 @@ LškedLi¡
 StÜage
 >();
 
-665 
+705 
 FogDeviûCh¬aù”i¡ics
  
 	gch¬aù”i¡ics
@@ -228151,39 +229493,39 @@ FogDeviûCh¬aù”i¡ics
 ¬ch
 
 
-666 , 
+706 , 
 os
 
 
-667 , 
+707 , 
 vmm
 
 
-668 , 
+708 , 
 ho¡
 
 
-669 , 
+709 , 
 time_zÚe
 
 
-670 , 
+710 , 
 co¡
 
 
-671 , 
+711 , 
 co¡P”Mem
 
 
-672 , 
+712 , 
 co¡P”StÜage
 
 
-673 , 
+713 , 
 co¡P”Bw
 );
 
-675 
+715 
 AµModuËAÎoÿtiÚPŞicy
  
 	gvmAÎoÿtiÚPŞicy
@@ -228193,7 +229535,7 @@ AµModuËAÎoÿtiÚPŞicy
 ho¡Li¡
 );
 
-677 
+717 
 MobeDeviû
  
 	g¡
@@ -228201,7 +229543,7 @@ MobeDeviû
 nuÎ
 ;
 
-679 
+719 
 	gmaxS”viûV®ue
  = 
 g‘Rªd
@@ -228209,15 +229551,15 @@ g‘Rªd
 ÃxtFlßt
 ()*100;
 
-680 
+720 
 	gŒy
  {
 
-682 
+722 
 	gŒue
 ){
 
-683 
+723 
 	gcoÜdX
  = 
 g‘Rªd
@@ -228229,7 +229571,7 @@ MaxAndMš
 MAX_X
 *0.8));
 
-684 
+724 
 	gcoÜdY
  = 
 g‘Rªd
@@ -228241,7 +229583,7 @@ MaxAndMš
 MAX_Y
 *0.8));
 
-685 if((
+725 if((
 	gcoÜdX
  < 
 	gMaxAndMš
@@ -228253,7 +229595,7 @@ MAX_Y
 	gMAX_Y
 *0.2)){
 
-690 
+730 
 	g¡
  = 
 Ãw
@@ -228267,67 +229609,67 @@ toSŒšg
 i
 )
 
-691 , 
+731 , 
 ch¬aù”i¡ics
 
 
-692 , 
+732 , 
 vmAÎoÿtiÚPŞicy
 
 
-693 , 
+733 , 
 ¡ÜageLi¡
 
 
-699 , 
+739 , 
 coÜdX
 , 
 coÜdY
 
 
-700 , 
+740 , 
 i
 
 
-701 , 
+741 , 
 dœeùiÚ
 
 
-702 , 
+742 , 
 ¥“d
 
 
-703 , 
+743 , 
 maxS”viûV®ue
 
 
-704 , 
+744 , 
 vmSize
 
 
-705 , 
+745 , 
 mig¿tiÚTechnique
 );
 
-706 
+746 
 	g¡
 .
 £tTempSimuÏtiÚ
 (0);
 
-707 
+747 
 	g¡
 .
 £tTimeFšishD–iv”yVm
 (-1);
 
-708 
+748 
 	g¡
 .
 £tTimeFšishHªdoff
 (0);
 
-709 
+749 
 	g¡
 .
 £tS’sÜs
@@ -228335,7 +229677,7 @@ mig¿tiÚTechnique
 £nsÜs
 );
 
-710 
+750 
 	g¡
 .
 £tAùu©Üs
@@ -228343,7 +229685,7 @@ mig¿tiÚTechnique
 aùu©Üs
 );
 
-712 
+752 
 	gsm¬tThšg
 .
 add
@@ -228353,7 +229695,7 @@ i
 ¡
 );
 
-720 } 
+760 } 
 ÿtch
  (
 Exû±iÚ
@@ -228361,13 +229703,13 @@ Exû±iÚ
 e
 ) {
 
-722 
+762 
 	ge
 .
 ´štSckT¿û
 ();
 
-726 
+766 
 public
  
 addS”v”CloudËt
@@ -228385,19 +229727,19 @@ coÜdDeviûs
 i
 ){
 
-729 
+769 
 	gcoÜdX
 ,
 	gcoÜdY
 ;
 
-730 
+770 
 DecisiÚMig¿tiÚ
  
 	gmig¿tiÚSŒ©egy
 ;
 
-731 if(
+771 if(
 g‘MigSŒ©egyPŞicy
 ()==
 PŞic›s
@@ -228405,7 +229747,7 @@ PŞic›s
 LOWEST_LATENCY
 ){
 
-732 
+772 
 mig¿tiÚSŒ©egy
  = 
 Ãw
@@ -228421,7 +229763,7 @@ g‘MigPoštPŞicy
 g‘PŞicyR•liÿVM
 ());
 
-734 if(
+774 if(
 g‘MigSŒ©egyPŞicy
 ()==
 PŞic›s
@@ -228429,7 +229771,7 @@ PŞic›s
 LOWEST_DIST_BW_SMARTTING_SERVERCLOUDLET
 ){
 
-735 
+775 
 mig¿tiÚSŒ©egy
  = 
 Ãw
@@ -228445,7 +229787,7 @@ g‘MigPoštPŞicy
 g‘PŞicyR•liÿVM
 ());
 
-739 
+779 
 	gmig¿tiÚSŒ©egy
  = 
 Ãw
@@ -228461,7 +229803,7 @@ g‘MigPoštPŞicy
 g‘PŞicyR•liÿVM
 ());
 
-742 
+782 
 BefÜeMig¿tiÚ
  
 	gbefÜeMig¿tiÚ
@@ -228469,7 +229811,7 @@ BefÜeMig¿tiÚ
 nuÎ
 ;
 
-743 if(
+783 if(
 g‘PŞicyR•liÿVM
 ()==
 PŞic›s
@@ -228477,7 +229819,7 @@ PŞic›s
 MIGRATION_COMPLETE_VM
 ){
 
-744 
+784 
 befÜeMig¿tiÚ
  = 
 Ãw
@@ -228485,7 +229827,7 @@ befÜeMig¿tiÚ
 P»·»Com¶‘eVM
 ();
 
-746 if(
+786 if(
 g‘PŞicyR•liÿVM
 ()==
 PŞic›s
@@ -228493,7 +229835,7 @@ PŞic›s
 MIGRATION_CONTAINER_VM
 ){
 
-747 
+787 
 befÜeMig¿tiÚ
  = 
 Ãw
@@ -228501,7 +229843,7 @@ befÜeMig¿tiÚ
 P»·»CÚš”VM
 ();
 
-749 if(
+789 if(
 g‘PŞicyR•liÿVM
 ()==
 PŞic›s
@@ -228509,7 +229851,7 @@ PŞic›s
 LIVE_MIGRATION
 ){
 
-750 
+790 
 befÜeMig¿tiÚ
  = 
 Ãw
@@ -228517,7 +229859,7 @@ befÜeMig¿tiÚ
 P»·»LiveMig¿tiÚ
 ();
 
-753 
+793 
 FogLš—rPow”Mod–
  
 	gpow”Mod–
@@ -228525,7 +229867,7 @@ FogLš—rPow”Mod–
 Ãw
  FogLinearPowerModel(107.339d, 83.433d);
 
-755 
+795 
 	gLi¡
 <
 	gPe
@@ -228537,13 +229879,13 @@ FogLš—rPow”Mod–
 A¼ayLi¡
 <>();
 
-757 
+797 
 	gms
  = 2800000*(
 i
 +1);
 
-759 
+799 
 	g³Li¡
 .
 add
@@ -228557,7 +229899,7 @@ PeProvisiÚ”Ov”bookšg
 ms
 )));
 
-761 
+801 
 	gho¡Id
  = 
 FogUts
@@ -228565,19 +229907,19 @@ FogUts
 g’”©eEÁ™yId
 ();
 
-762 
+802 
 	g¡Üage
  = 1000*1024*1024;
 
-763 
+803 
 	gbw
  = 1000 * 1024 * 1024;
 
-764 
+804 
 	g¿m
  = 25000;
 
-765 
+805 
 Pow”Ho¡
  
 	gho¡
@@ -228585,11 +229927,11 @@ Pow”Ho¡
 Ãw
  PowerHost(
 
-766 
+806 
 ho¡Id
 ,
 
-767 
+807 
 Ãw
  
 RamProvisiÚ”Sim¶e
@@ -228597,7 +229939,7 @@ RamProvisiÚ”Sim¶e
 ¿m
 ),
 
-768 
+808 
 Ãw
  
 BwProvisiÚ”Ov”bookšg
@@ -228605,15 +229947,15 @@ BwProvisiÚ”Ov”bookšg
 bw
 ),
 
-769 
+809 
 ¡Üage
 ,
 
-770 
+810 
 ³Li¡
 ,
 
-771 
+811 
 Ãw
  
 SŒ—mO³¿tÜScheduËr
@@ -228621,11 +229963,11 @@ SŒ—mO³¿tÜScheduËr
 ³Li¡
 ),
 
-772 
+812 
 pow”Mod–
 
 
-775 
+815 
 	gLi¡
 <
 	gHo¡
@@ -228639,7 +229981,7 @@ A¼ayLi¡
 Ho¡
 >();
 
-776 
+816 
 	gho¡Li¡
 .
 add
@@ -228647,45 +229989,45 @@ add
 ho¡
 );
 
-781 
+821 
 SŒšg
  
 	g¬ch
  = "x86";
 
-782 
+822 
 SŒšg
  
 	gos
  = "Linux";
 
-783 
+823 
 SŒšg
  
 	gvmm
  = "Empty";
 
-784 
+824 
 	gtime_zÚe
  = 10.0;
 
-785 
+825 
 	gco¡
  = 3.0;
 
-786 
+826 
 	gco¡P”Mem
  = 0.05;
 
-787 
+827 
 	gco¡P”StÜage
  = 0.001;
 
-789 
+829 
 	gco¡P”Bw
  = 0.0;
 
-790 
+830 
 	gLškedLi¡
 <
 	gStÜage
@@ -228699,7 +230041,7 @@ LškedLi¡
 StÜage
 >();
 
-792 
+832 
 FogDeviûCh¬aù”i¡ics
  
 	gch¬aù”i¡ics
@@ -228709,39 +230051,39 @@ FogDeviûCh¬aù”i¡ics
 ¬ch
 
 
-793 , 
+833 , 
 os
 
 
-794 , 
+834 , 
 vmm
 
 
-795 , 
+835 , 
 ho¡
 
 
-796 , 
+836 , 
 time_zÚe
 
 
-797 , 
+837 , 
 co¡
 
 
-798 , 
+838 , 
 co¡P”Mem
 
 
-799 , 
+839 , 
 co¡P”StÜage
 
 
-800 , 
+840 , 
 co¡P”Bw
 );
 
-802 
+842 
 AµModuËAÎoÿtiÚPŞicy
  
 	gvmAÎoÿtiÚPŞicy
@@ -228751,7 +230093,7 @@ AµModuËAÎoÿtiÚPŞicy
 ho¡Li¡
 );
 
-803 
+843 
 FogDeviû
  
 	gsc
@@ -228759,7 +230101,7 @@ FogDeviû
 nuÎ
 ;
 
-804 
+844 
 S”viû
  
 	g£rviûOfãr
@@ -228767,7 +230109,7 @@ S”viû
 Ãw
  Service();
 
-805 
+845 
 	g£rviûOfãr
 .
 £tTy³
@@ -228781,7 +230123,7 @@ MaxAndMš
 MAX_SERVICES
 );
 
-806 if(
+846 if(
 	g£rviûOfãr
 .
 g‘Ty³
@@ -228795,7 +230137,7 @@ HIBRID
 PUBLIC
 ){
 
-807 
+847 
 £rviûOfãr
 .
 £tV®ue
@@ -228805,17 +230147,17 @@ g‘Rªd
 ÃxtFlßt
 ()*10);
 
-810 
+850 
 	g£rviûOfãr
 .
 £tV®ue
 (0);
 
-812 
+852 
 	gŒy
  {
 
-815 
+855 
 	gcoÜdX
  = 
 g‘Rªd
@@ -228827,7 +230169,7 @@ MaxAndMš
 MAX_X
 );
 
-816 
+856 
 	gcoÜdY
  = 
 g‘Rªd
@@ -228839,19 +230181,19 @@ MaxAndMš
 MAX_X
 );
 
-818 
+858 
 	gmaxBªdwidth
  = 
 g‘MaxBªdwidth
 ()*1024*1024;
 
-819 
+859 
 	gmšBªdwidth
  = (
 g‘MaxBªdwidth
 ()-9)*1024*1024;
 
-820 
+860 
 	gupLškRªdom
  = 
 mšBªdwidth
@@ -228863,7 +230205,7 @@ g‘Rªd
 ÃxtDoubË
 ();
 
-821 
+861 
 	gdownLškRªdom
  = 
 mšBªdwidth
@@ -228875,7 +230217,7 @@ g‘Rªd
 ÃxtDoubË
 ();
 
-823 
+863 
 	gsc
  = 
 Ãw
@@ -228889,53 +230231,53 @@ toSŒšg
 i
 )
 
-824 , 
+864 , 
 ch¬aù”i¡ics
 
 
-825 , 
+865 , 
 vmAÎoÿtiÚPŞicy
 
 
-826 , 
+866 , 
 ¡ÜageLi¡
 
 
-828 , 
+868 , 
 upLškRªdom
 
 
-829 , 
+869 , 
 downLškRªdom
 
 
-832 , 
+872 , 
 coÜdX
 , 
 coÜdY
 
 
-833 , 
+873 , 
 i
 
 
-834 , 
+874 , 
 £rviûOfãr
 
 
-835 , 
+875 , 
 mig¿tiÚSŒ©egy
 
 
-836 , 
+876 , 
 g‘PŞicyR•liÿVM
 ()
 
-837 , 
+877 , 
 befÜeMig¿tiÚ
 
 
-839 
+879 
 	g£rv”CloudËts
 .
 add
@@ -228945,7 +230287,7 @@ i
 sc
 );
 
-850 } 
+890 } 
 ÿtch
  (
 Exû±iÚ
@@ -228953,13 +230295,13 @@ Exû±iÚ
 e
 ) {
 
-852 
+892 
 	ge
 .
 ´štSckT¿û
 ();
 
-856 
+896 
 public
  
 addS”v”CloudËt
@@ -228975,43 +230317,49 @@ CoÜdš©e
 coÜdDeviûs
 ){
 
-857 
+897 
 	gi
 =0;
 
-858 
+898 
 	gcoÜdX
 ,
 	gcoÜdY
 ;
 
-860 
+900 
 	gcoÜdX
 =1001; coÜdX<
 	gMaxAndMš
 .
 	gMAX_X
--990; coordX+=10001){
+-990; coordX+=2001){
 
-861 
-coÜdY
-=1001; 
+901 
+Sy¡em
+.
+out
+.
+´šn
+("Creating Server cloudlets");
+
+902 
 	gcoÜdY
-<
+=1001; coÜdY<
 	gMaxAndMš
 .
 	gMAX_Y
--990; coÜdY+=10001, 
+-990; coÜdY+=2001, 
 	gi
 ++){
 
-863 
+904 
 DecisiÚMig¿tiÚ
  
 	gmig¿tiÚSŒ©egy
 ;
 
-864 if(
+905 if(
 g‘MigSŒ©egyPŞicy
 ()==
 PŞic›s
@@ -229019,7 +230367,7 @@ PŞic›s
 LOWEST_LATENCY
 ){
 
-865 
+906 
 mig¿tiÚSŒ©egy
  = 
 Ãw
@@ -229035,7 +230383,7 @@ g‘MigPoštPŞicy
 g‘PŞicyR•liÿVM
 ());
 
-867 if(
+908 if(
 g‘MigSŒ©egyPŞicy
 ()==
 PŞic›s
@@ -229043,7 +230391,7 @@ PŞic›s
 LOWEST_DIST_BW_SMARTTING_SERVERCLOUDLET
 ){
 
-868 
+909 
 mig¿tiÚSŒ©egy
  = 
 Ãw
@@ -229059,7 +230407,7 @@ g‘MigPoštPŞicy
 g‘PŞicyR•liÿVM
 ());
 
-871 
+912 
 	gmig¿tiÚSŒ©egy
  = 
 Ãw
@@ -229075,7 +230423,7 @@ g‘MigPoštPŞicy
 g‘PŞicyR•liÿVM
 ());
 
-873 
+914 
 BefÜeMig¿tiÚ
  
 	gbefÜeMig¿tiÚ
@@ -229083,7 +230431,7 @@ BefÜeMig¿tiÚ
 nuÎ
 ;
 
-874 if(
+915 if(
 g‘PŞicyR•liÿVM
 ()==
 PŞic›s
@@ -229091,7 +230439,7 @@ PŞic›s
 MIGRATION_COMPLETE_VM
 ){
 
-875 
+916 
 befÜeMig¿tiÚ
  = 
 Ãw
@@ -229099,7 +230447,7 @@ befÜeMig¿tiÚ
 P»·»Com¶‘eVM
 ();
 
-877 if(
+918 if(
 g‘PŞicyR•liÿVM
 ()==
 PŞic›s
@@ -229107,7 +230455,7 @@ PŞic›s
 MIGRATION_CONTAINER_VM
 ){
 
-878 
+919 
 befÜeMig¿tiÚ
  = 
 Ãw
@@ -229115,7 +230463,7 @@ befÜeMig¿tiÚ
 P»·»CÚš”VM
 ();
 
-880 if(
+921 if(
 g‘PŞicyR•liÿVM
 ()==
 PŞic›s
@@ -229123,7 +230471,7 @@ PŞic›s
 LIVE_MIGRATION
 ){
 
-881 
+922 
 befÜeMig¿tiÚ
  = 
 Ãw
@@ -229131,7 +230479,7 @@ befÜeMig¿tiÚ
 P»·»LiveMig¿tiÚ
 ();
 
-886 
+927 
 FogLš—rPow”Mod–
  
 	gpow”Mod–
@@ -229139,7 +230487,7 @@ FogLš—rPow”Mod–
 Ãw
  FogLinearPowerModel(107.339d, 83.433d);
 
-888 
+929 
 	gLi¡
 <
 	gPe
@@ -229151,13 +230499,13 @@ FogLš—rPow”Mod–
 A¼ayLi¡
 <>();
 
-890 
+931 
 	gms
  = 2800000*(
 i
 +1);
 
-892 
+933 
 	g³Li¡
 .
 add
@@ -229171,7 +230519,7 @@ PeProvisiÚ”Ov”bookšg
 ms
 )));
 
-894 
+935 
 	gho¡Id
  = 
 FogUts
@@ -229179,19 +230527,19 @@ FogUts
 g’”©eEÁ™yId
 ();
 
-895 
+936 
 	g¡Üage
  = 1000*1024*1024;
 
-896 
+937 
 	gbw
  = 1000 * 1024 * 1024;
 
-897 
+938 
 	g¿m
  = 25000;
 
-898 
+939 
 Pow”Ho¡
  
 	gho¡
@@ -229199,11 +230547,11 @@ Pow”Ho¡
 Ãw
  PowerHost(
 
-899 
+940 
 ho¡Id
 ,
 
-900 
+941 
 Ãw
  
 RamProvisiÚ”Sim¶e
@@ -229211,7 +230559,7 @@ RamProvisiÚ”Sim¶e
 ¿m
 ),
 
-901 
+942 
 Ãw
  
 BwProvisiÚ”Ov”bookšg
@@ -229219,15 +230567,15 @@ BwProvisiÚ”Ov”bookšg
 bw
 ),
 
-902 
+943 
 ¡Üage
 ,
 
-903 
+944 
 ³Li¡
 ,
 
-904 
+945 
 Ãw
  
 SŒ—mO³¿tÜScheduËr
@@ -229235,11 +230583,11 @@ SŒ—mO³¿tÜScheduËr
 ³Li¡
 ),
 
-905 
+946 
 pow”Mod–
 
 
-908 
+949 
 	gLi¡
 <
 	gHo¡
@@ -229253,7 +230601,7 @@ A¼ayLi¡
 Ho¡
 >();
 
-909 
+950 
 	gho¡Li¡
 .
 add
@@ -229261,45 +230609,45 @@ add
 ho¡
 );
 
-911 
+952 
 SŒšg
  
 	g¬ch
  = "x86";
 
-912 
+953 
 SŒšg
  
 	gos
  = "Linux";
 
-913 
+954 
 SŒšg
  
 	gvmm
  = "Empty";
 
-914 
+955 
 	gtime_zÚe
  = 10.0;
 
-915 
+956 
 	gco¡
  = 3.0;
 
-916 
+957 
 	gco¡P”Mem
  = 0.05;
 
-917 
+958 
 	gco¡P”StÜage
  = 0.001;
 
-919 
+960 
 	gco¡P”Bw
  = 0.0;
 
-920 
+961 
 	gLškedLi¡
 <
 	gStÜage
@@ -229313,7 +230661,7 @@ LškedLi¡
 StÜage
 >();
 
-922 
+963 
 FogDeviûCh¬aù”i¡ics
  
 	gch¬aù”i¡ics
@@ -229323,39 +230671,39 @@ FogDeviûCh¬aù”i¡ics
 ¬ch
 
 
-923 , 
+964 , 
 os
 
 
-924 , 
+965 , 
 vmm
 
 
-925 , 
+966 , 
 ho¡
 
 
-926 , 
+967 , 
 time_zÚe
 
 
-927 , 
+968 , 
 co¡
 
 
-928 , 
+969 , 
 co¡P”Mem
 
 
-929 , 
+970 , 
 co¡P”StÜage
 
 
-930 , 
+971 , 
 co¡P”Bw
 );
 
-932 
+973 
 AµModuËAÎoÿtiÚPŞicy
  
 	gvmAÎoÿtiÚPŞicy
@@ -229365,7 +230713,7 @@ AµModuËAÎoÿtiÚPŞicy
 ho¡Li¡
 );
 
-933 
+974 
 FogDeviû
  
 	gsc
@@ -229373,7 +230721,7 @@ FogDeviû
 nuÎ
 ;
 
-934 
+975 
 S”viû
  
 	g£rviûOfãr
@@ -229381,7 +230729,7 @@ S”viû
 Ãw
  Service();
 
-935 
+976 
 	g£rviûOfãr
 .
 £tTy³
@@ -229395,7 +230743,7 @@ MaxAndMš
 MAX_SERVICES
 );
 
-936 if(
+977 if(
 	g£rviûOfãr
 .
 g‘Ty³
@@ -229409,7 +230757,7 @@ HIBRID
 PUBLIC
 ){
 
-937 
+978 
 £rviûOfãr
 .
 £tV®ue
@@ -229419,29 +230767,29 @@ g‘Rªd
 ÃxtFlßt
 ()*10);
 
-940 
+981 
 	g£rviûOfãr
 .
 £tV®ue
 (0);
 
-942 
+983 
 	gŒy
  {
 
-945 
+986 
 	gmaxBªdwidth
  = 
 g‘MaxBªdwidth
 ()*1024*1024;
 
-946 
+987 
 	gmšBªdwidth
  = (
 g‘MaxBªdwidth
 ()-9)*1024*1024;
 
-947 
+988 
 	gupLškRªdom
  = 
 mšBªdwidth
@@ -229453,7 +230801,7 @@ g‘Rªd
 ÃxtDoubË
 ();
 
-948 
+989 
 	gdownLškRªdom
  = 
 mšBªdwidth
@@ -229465,7 +230813,7 @@ g‘Rªd
 ÃxtDoubË
 ();
 
-949 
+990 
 	gsc
  = 
 Ãw
@@ -229479,53 +230827,53 @@ toSŒšg
 i
 )
 
-950 , 
+991 , 
 ch¬aù”i¡ics
 
 
-951 , 
+992 , 
 vmAÎoÿtiÚPŞicy
 
 
-952 , 
+993 , 
 ¡ÜageLi¡
 
 
-954 , 
+995 , 
 upLškRªdom
 
 
-955 , 
+996 , 
 downLškRªdom
 
 
-958 , 
+999 , 
 coÜdX
 , 
 coÜdY
 
 
-959 , 
+1000 , 
 i
 
 
-960 , 
+1001 , 
 £rviûOfãr
 
 
-961 , 
+1002 , 
 mig¿tiÚSŒ©egy
 
 
-962 , 
+1003 , 
 g‘PŞicyR•liÿVM
 ()
 
-963 , 
+1004 , 
 befÜeMig¿tiÚ
 
 
-965 
+1006 
 	g£rv”CloudËts
 .
 add
@@ -229535,13 +230883,13 @@ i
 sc
 );
 
-967 
+1008 
 	gsc
 .
 £tP¬’tId
 (-1);
 
-971 } 
+1012 } 
 ÿtch
  (
 Exû±iÚ
@@ -229549,13 +230897,13 @@ Exû±iÚ
 e
 ) {
 
-973 
+1014 
 	ge
 .
 ´štSckT¿û
 ();
 
-978 
+1019 
 	gLogMobe
 .
 debug
@@ -229563,7 +230911,7 @@ debug
 i
 );
 
-980 
+1021 
 ´iv©e
  
 ü—‹S”v”CloudËtsN‘wÜk
@@ -229575,7 +230923,7 @@ FogDeviû
 £rv”CloudËts
 ){
 
-982 
+1023 
 	gHashM­
 <
 	gFogDeviû
@@ -229589,7 +230937,7 @@ FogDeviû
 HashM­
 <>();
 
-984 
+1025 
 FogDeviû
  
 	gsc
@@ -229597,7 +230945,7 @@ FogDeviû
 £rv”CloudËts
 ){
 
-985 
+1026 
 FogDeviû
  
 sc1
@@ -229605,7 +230953,7 @@ sc1
 £rv”CloudËts
 ){
 
-986 if(
+1027 if(
 sc
 .
 equ®s
@@ -229613,7 +230961,7 @@ equ®s
 sc1
 )){
 
-993 if(
+1034 if(
 	gsc
 .
 g‘U¶škBªdwidth
@@ -229623,7 +230971,7 @@ g‘U¶škBªdwidth
 g‘DowÆškBªdwidth
 ()){
 
-994 
+1035 
 	gÃt
 .
 put
@@ -229635,7 +230983,7 @@ sc
 g‘U¶škBªdwidth
 ());
 
-995 
+1036 
 	gN‘wÜkTİŞogy
 .
 addLšk
@@ -229653,7 +231001,7 @@ g‘Rªd
 ÃxtDoubË
 ());
 
-998 
+1039 
 	gÃt
 .
 put
@@ -229663,7 +231011,7 @@ sc1
 g‘DowÆškBªdwidth
 ());
 
-999 
+1040 
 	gN‘wÜkTİŞogy
 .
 addLšk
@@ -229681,7 +231029,7 @@ g‘Rªd
 ÃxtDoubË
 ());
 
-1002 
+1043 
 	gsc
 .
 £tN‘S”v”CloudËts
@@ -229689,11 +231037,11 @@ g‘Rªd
 Ãt
 );
 
-1006 @
+1047 @
 Suµ»ssW¬nšgs
 ("unused")
 
-1007 
+1048 
 ´iv©e
  
 AµliÿtiÚ
@@ -229713,7 +231061,7 @@ AµModuË
 u£rVm
 ){
 
-1009 
+1050 
 AµliÿtiÚ
  
 ­¶iÿtiÚ
@@ -229725,7 +231073,7 @@ AµliÿtiÚ
 u£rId
 );
 
-1010 
+1051 
 ­¶iÿtiÚ
 .
 	`addAµModuË
@@ -229733,7 +231081,7 @@ u£rId
 u£rVm
 );
 
-1011 
+1052 
 ­¶iÿtiÚ
 .
 	`addAµModuË
@@ -229741,11 +231089,11 @@ u£rVm
 myId
 ,"appModuleClient"+myId, 10);
 
-1017 if(
+1058 if(
 EEG_TRANSMISSION_TIME
 >=10)
 
-1018 
+1059 
 ­¶iÿtiÚ
 .
 	`addAµEdge
@@ -229761,7 +231109,7 @@ AµEdge
 SENSOR
 );
 
-1020 
+1061 
 ­¶iÿtiÚ
 .
 	`addAµEdge
@@ -229777,7 +231125,7 @@ AµEdge
 SENSOR
 );
 
-1023 
+1064 
 ­¶iÿtiÚ
 .
 	`addAµEdge
@@ -229797,7 +231145,7 @@ AµEdge
 MODULE
 );
 
-1026 
+1067 
 ­¶iÿtiÚ
 .
 	`addAµEdge
@@ -229817,7 +231165,7 @@ AµEdge
 MODULE
 );
 
-1027 
+1068 
 ­¶iÿtiÚ
 .
 	`addAµEdge
@@ -229837,7 +231185,7 @@ AµEdge
 MODULE
 );
 
-1028 
+1069 
 ­¶iÿtiÚ
 .
 	`addAµEdge
@@ -229857,7 +231205,7 @@ AµEdge
 MODULE
 );
 
-1029 
+1070 
 ­¶iÿtiÚ
 .
 	`addAµEdge
@@ -229873,7 +231221,7 @@ AµEdge
 ACTUATOR
 );
 
-1030 
+1071 
 ­¶iÿtiÚ
 .
 	`addAµEdge
@@ -229889,7 +231237,7 @@ AµEdge
 ACTUATOR
 );
 
-1037 
+1078 
 ­¶iÿtiÚ
 .
 	`addTu¶eM­pšg
@@ -229901,7 +231249,7 @@ myId
 	`F¿ùiÚ®S–eùiv™y
 (0.9));
 
-1038 
+1079 
 ­¶iÿtiÚ
 .
 	`addTu¶eM­pšg
@@ -229913,7 +231261,7 @@ myId
 	`F¿ùiÚ®S–eùiv™y
 (1.0));
 
-1039 
+1080 
 ­¶iÿtiÚ
 .
 	`addTu¶eM­pšg
@@ -229929,7 +231277,7 @@ myId
 	`F¿ùiÚ®S–eùiv™y
 (1.0));
 
-1040 
+1081 
 ­¶iÿtiÚ
 .
 	`addTu¶eM­pšg
@@ -229941,7 +231289,7 @@ myId
 	`F¿ùiÚ®S–eùiv™y
 (1.0));
 
-1047 
+1088 
 fš®
  
 SŒšg
@@ -229951,7 +231299,7 @@ SŒšg
 myId
 ;
 
-1048 
+1089 
 fš®
  
 SŒšg
@@ -229963,7 +231311,7 @@ u£rVm
 	`g‘Name
 ();
 
-1049 
+1090 
 fš®
  
 SŒšg
@@ -229973,7 +231321,7 @@ SŒšg
 myId
 ;
 
-1050 
+1091 
 fš®
  
 SŒšg
@@ -229983,7 +231331,7 @@ di¥Ïy
 myId
 ;
 
-1051 
+1092 
 fš®
  
 AµLoİ
@@ -230009,7 +231357,7 @@ cÚûÁ¿tiÚ
 di¥Ïy
 );}});
 
-1052 
+1093 
 Li¡
 <
 AµLoİ
@@ -230025,7 +231373,7 @@ A¼ayLi¡
 loİ1
 );}};
 
-1053 
+1094 
 ­¶iÿtiÚ
 .
 	`£tLoİs
@@ -230033,19 +231381,19 @@ loİ1
 loİs
 );
 
-1055  
+1096  
 ­¶iÿtiÚ
 ;
 
-1056 
+1097 
 	}
 }
 
-1058 @
+1099 @
 Suµ»ssW¬nšgs
 ("unused")
 
-1059 
+1100 
 ´iv©e
  
 AµliÿtiÚ
@@ -230061,7 +231409,7 @@ u£rId
 myId
 ){
 
-1061 
+1102 
 AµliÿtiÚ
  
 ­¶iÿtiÚ
@@ -230073,7 +231421,7 @@ AµliÿtiÚ
 u£rId
 );
 
-1064 
+1105 
 ­¶iÿtiÚ
 .
 	`addAµModuË
@@ -230081,7 +231429,7 @@ u£rId
 myId
 , 10);
 
-1065 
+1106 
 ­¶iÿtiÚ
 .
 	`addAµModuË
@@ -230089,7 +231437,7 @@ myId
 myId
 , 10);
 
-1066 
+1107 
 ­¶iÿtiÚ
 .
 	`addAµModuË
@@ -230097,11 +231445,11 @@ myId
 myId
 , 10);
 
-1071 if(
+1112 if(
 EEG_TRANSMISSION_TIME
 ==10)
 
-1072 
+1113 
 ­¶iÿtiÚ
 .
 	`addAµEdge
@@ -230117,7 +231465,7 @@ AµEdge
 SENSOR
 );
 
-1074 
+1115 
 ­¶iÿtiÚ
 .
 	`addAµEdge
@@ -230133,7 +231481,7 @@ AµEdge
 SENSOR
 );
 
-1077 
+1118 
 ­¶iÿtiÚ
 .
 	`addAµEdge
@@ -230149,7 +231497,7 @@ AµEdge
 MODULE
 );
 
-1079 
+1120 
 ­¶iÿtiÚ
 .
 	`addAµEdge
@@ -230165,7 +231513,7 @@ AµEdge
 MODULE
 );
 
-1081 
+1122 
 ­¶iÿtiÚ
 .
 	`addAµEdge
@@ -230181,7 +231529,7 @@ AµEdge
 MODULE
 );
 
-1082 
+1123 
 ­¶iÿtiÚ
 .
 	`addAµEdge
@@ -230197,7 +231545,7 @@ AµEdge
 MODULE
 );
 
-1083 
+1124 
 ­¶iÿtiÚ
 .
 	`addAµEdge
@@ -230213,7 +231561,7 @@ AµEdge
 ACTUATOR
 );
 
-1084 
+1125 
 ­¶iÿtiÚ
 .
 	`addAµEdge
@@ -230229,7 +231577,7 @@ AµEdge
 ACTUATOR
 );
 
-1089 
+1130 
 ­¶iÿtiÚ
 .
 	`addTu¶eM­pšg
@@ -230241,7 +231589,7 @@ myId
 	`F¿ùiÚ®S–eùiv™y
 (0.9));
 
-1090 
+1131 
 ­¶iÿtiÚ
 .
 	`addTu¶eM­pšg
@@ -230253,7 +231601,7 @@ myId
 	`F¿ùiÚ®S–eùiv™y
 (1.0));
 
-1091 
+1132 
 ­¶iÿtiÚ
 .
 	`addTu¶eM­pšg
@@ -230265,7 +231613,7 @@ myId
 	`F¿ùiÚ®S–eùiv™y
 (1.0));
 
-1092 
+1133 
 ­¶iÿtiÚ
 .
 	`addTu¶eM­pšg
@@ -230277,7 +231625,7 @@ myId
 	`F¿ùiÚ®S–eùiv™y
 (1.0));
 
-1100 
+1141 
 fš®
  
 SŒšg
@@ -230287,7 +231635,7 @@ SŒšg
 myId
 ;
 
-1101 
+1142 
 fš®
  
 SŒšg
@@ -230297,7 +231645,7 @@ cÚûÁ¿tiÚ
 myId
 ;
 
-1102 
+1143 
 fš®
  
 SŒšg
@@ -230307,7 +231655,7 @@ SŒšg
 myId
 ;
 
-1103 
+1144 
 fš®
  
 SŒšg
@@ -230317,7 +231665,7 @@ di¥Ïy
 myId
 ;
 
-1104 
+1145 
 fš®
  
 AµLoİ
@@ -230343,7 +231691,7 @@ cÚûÁ¿tiÚ
 di¥Ïy
 );}});
 
-1105 
+1146 
 Li¡
 <
 AµLoİ
@@ -230359,7 +231707,7 @@ A¼ayLi¡
 loİ1
 );}};
 
-1106 
+1147 
 ­¶iÿtiÚ
 .
 	`£tLoİs
@@ -230367,29 +231715,29 @@ loİ1
 loİs
 );
 
-1108  
+1149  
 ­¶iÿtiÚ
 ;
 
-1109 
+1150 
 	}
 }
 
-1114 
+1155 
 public
  
 	$g‘PŞicyR•liÿVM
 () {
 
-1115  
+1156  
 pŞicyR•liÿVM
 ;
 
-1116 
+1157 
 	}
 }
 
-1118 
+1159 
 public
  
 	$£tPŞicyR•liÿVM
@@ -230397,31 +231745,31 @@ public
 pŞicyR•liÿVM
 ) {
 
-1119 
+1160 
 AµExem¶o2
 .
 pŞicyR•liÿVM
  =…olicyReplicaVM;
 
-1120 
+1161 
 	}
 }
 
-1122 
+1163 
 public
  
 	$g‘S‹pPŞicy
 () {
 
-1123  
+1164  
 ¡•PŞicy
 ;
 
-1124 
+1165 
 	}
 }
 
-1126 
+1167 
 public
  
 	$£tS‹pPŞicy
@@ -230429,17 +231777,17 @@ public
 ¡•PŞicy
 ) {
 
-1127 
+1168 
 AµExem¶o2
 .
 ¡•PŞicy
  = stepPolicy;
 
-1128 
+1169 
 	}
 }
 
-1130 
+1171 
 public
  
 	gLi¡
@@ -230449,15 +231797,15 @@ public
 	$g‘Sm¬tThšgs
 () {
 
-1131  
+1172  
 sm¬tThšgs
 ;
 
-1132 
+1173 
 	}
 }
 
-1133 
+1174 
 public
  
 £tSm¬tThšgs
@@ -230469,7 +231817,7 @@ MobeDeviû
 sm¬tThšgs
 ) {
 
-1134 
+1175 
 	gAµExem¶o2
 .
 	gsm¬tThšgs
@@ -230477,7 +231825,7 @@ sm¬tThšgs
 sm¬tThšgs
 ;
 
-1136 
+1177 
 public
  
 	gLi¡
@@ -230487,15 +231835,15 @@ public
 	$g‘S”v”CloudËts
 () {
 
-1137  
+1178  
 £rv”CloudËts
 ;
 
-1138 
+1179 
 	}
 }
 
-1139 
+1180 
 public
  
 £tS”v”CloudËts
@@ -230507,7 +231855,7 @@ FogDeviû
 £rv”CloudËts
 ) {
 
-1140 
+1181 
 	gAµExem¶o2
 .
 	g£rv”CloudËts
@@ -230515,7 +231863,7 @@ FogDeviû
 £rv”CloudËts
 ;
 
-1142 
+1183 
 public
  
 	gLi¡
@@ -230525,15 +231873,15 @@ public
 	$g‘ApDeviûs
 () {
 
-1143  
+1184  
 ­Deviûs
 ;
 
-1144 
+1185 
 	}
 }
 
-1145 
+1186 
 public
  
 £tApDeviûs
@@ -230545,7 +231893,7 @@ ApDeviû
 ­Deviûs
 ) {
 
-1146 
+1187 
 	gAµExem¶o2
 .
 	g­Deviûs
@@ -230553,21 +231901,21 @@ ApDeviû
 ­Deviûs
 ;
 
-1148 
+1189 
 public
  
 	$g‘MigPoštPŞicy
 () {
 
-1149  
+1190  
 migPoštPŞicy
 ;
 
-1150 
+1191 
 	}
 }
 
-1152 
+1193 
 public
  
 	$£tMigPoštPŞicy
@@ -230575,31 +231923,31 @@ public
 migPoštPŞicy
 ) {
 
-1153 
+1194 
 AµExem¶o2
 .
 migPoštPŞicy
  = migPointPolicy;
 
-1154 
+1195 
 	}
 }
 
-1156 
+1197 
 public
  
 	$g‘MigSŒ©egyPŞicy
 () {
 
-1157  
+1198  
 migSŒ©egyPŞicy
 ;
 
-1158 
+1199 
 	}
 }
 
-1160 
+1201 
 public
  
 	$£tMigSŒ©egyPŞicy
@@ -230607,31 +231955,31 @@ public
 migSŒ©egyPŞicy
 ) {
 
-1161 
+1202 
 AµExem¶o2
 .
 migSŒ©egyPŞicy
  = migStrategyPolicy;
 
-1162 
+1203 
 	}
 }
 
-1164 
+1205 
 public
  
 	$g‘Pos™iÚApPŞicy
 () {
 
-1165  
+1206  
 pos™iÚApPŞicy
 ;
 
-1166 
+1207 
 	}
 }
 
-1168 
+1209 
 public
  
 	$£tPos™iÚApPŞicy
@@ -230639,17 +231987,17 @@ public
 pos™iÚApPŞicy
 ) {
 
-1169 
+1210 
 AµExem¶o2
 .
 pos™iÚApPŞicy
  =…ositionApPolicy;
 
-1170 
+1211 
 	}
 }
 
-1172 
+1213 
 public
  
 CoÜdš©e
@@ -230657,15 +232005,15 @@ CoÜdš©e
 	$g‘CoÜdDeviûs
 () {
 
-1173  
+1214  
 coÜdDeviûs
 ;
 
-1174 
+1215 
 	}
 }
 
-1176 
+1217 
 public
  
 	$£tCoÜdDeviûs
@@ -230675,17 +232023,17 @@ CoÜdš©e
 coÜdDeviûs
 ) {
 
-1177 
+1218 
 AµExem¶o2
 .
 coÜdDeviûs
  = coordDevices;
 
-1178 
+1219 
 	}
 }
 
-1183 
+1224 
 public
  
 	gLi¡
@@ -230695,15 +232043,15 @@ public
 	$g‘Brok”Li¡
 () {
 
-1184  
+1225  
 brok”Li¡
 ;
 
-1185 
+1226 
 	}
 }
 
-1190 
+1231 
 public
  
 £tBrok”Li¡
@@ -230715,7 +232063,7 @@ FogBrok”
 brok”Li¡
 ) {
 
-1191 
+1232 
 	gAµExem¶o2
 .
 	gbrok”Li¡
@@ -230723,7 +232071,7 @@ brok”Li¡
 brok”Li¡
 ;
 
-1197 
+1238 
 public
  
 	gLi¡
@@ -230733,15 +232081,15 @@ public
 	$g‘AµIdLi¡
 () {
 
-1198  
+1239  
 ­pIdLi¡
 ;
 
-1199 
+1240 
 	}
 }
 
-1204 
+1245 
 public
  
 £tAµIdLi¡
@@ -230753,7 +232101,7 @@ SŒšg
 ­pIdLi¡
 ) {
 
-1205 
+1246 
 	gAµExem¶o2
 .
 	g­pIdLi¡
@@ -230761,7 +232109,7 @@ SŒšg
 ­pIdLi¡
 ;
 
-1211 
+1252 
 public
  
 	gLi¡
@@ -230771,15 +232119,15 @@ public
 	$g‘AµliÿtiÚLi¡
 () {
 
-1212  
+1253  
 ­¶iÿtiÚLi¡
 ;
 
-1213 
+1254 
 	}
 }
 
-1218 
+1259 
 public
  
 £tAµliÿtiÚLi¡
@@ -230791,7 +232139,7 @@ AµliÿtiÚ
 ­¶iÿtiÚLi¡
 ) {
 
-1219 
+1260 
 	gAµExem¶o2
 .
 	g­¶iÿtiÚLi¡
@@ -230799,112 +232147,18 @@ AµliÿtiÚ
 ­¶iÿtiÚLi¡
 ;
 
-1225 
-public
- 
-	$g‘S“d
-() {
-
-1226  
-£ed
-;
-
-1227 
-	}
-}
-
-1232 
-public
- 
-	$£tS“d
-(
-£ed
-) {
-
-1233 
-AµExem¶o2
-.
-£ed
- = seed;
-
-1234 
-	}
-}
-
-1239 
-public
- 
-	$g‘Pos™iÚScPŞicy
-() {
-
-1240  
-pos™iÚScPŞicy
-;
-
-1241 
-	}
-}
-
-1246 
-public
- 
-	$£tPos™iÚScPŞicy
-(
-pos™iÚScPŞicy
-) {
-
-1247 
-AµExem¶o2
-.
-pos™iÚScPŞicy
- =…ositionScPolicy;
-
-1248 
-	}
-}
-
-1253 
-public
- 
-	$g‘MaxSm¬tThšgs
-() {
-
-1254  
-maxSm¬tThšgs
-;
-
-1255 
-	}
-}
-
-1260 
-public
- 
-	$£tMaxSm¬tThšgs
-(
-maxSm¬tThšgs
-) {
-
-1261 
-AµExem¶o2
-.
-maxSm¬tThšgs
- = maxSmartThings;
-
-1262 
-	}
-}
-
 1264 
 public
  
-Rªdom
- 
-	$g‘Rªd
+	gQueue
+<
+	gSŒšg
+[]> 
+	$g‘Queue
 () {
 
 1265  
-¿nd
+q
 ;
 
 1266 
@@ -230914,6 +232168,138 @@ Rªdom
 1268 
 public
  
+£tQueue
+(
+Queue
+<
+SŒšg
+[]> 
+q
+) {
+
+1269 
+	gAµExem¶o2
+.
+	gq
+ = 
+q
+;
+
+1273 
+public
+ 
+	$g‘S“d
+() {
+
+1274  
+£ed
+;
+
+1275 
+	}
+}
+
+1280 
+public
+ 
+	$£tS“d
+(
+£ed
+) {
+
+1281 
+AµExem¶o2
+.
+£ed
+ = seed;
+
+1282 
+	}
+}
+
+1287 
+public
+ 
+	$g‘Pos™iÚScPŞicy
+() {
+
+1288  
+pos™iÚScPŞicy
+;
+
+1289 
+	}
+}
+
+1294 
+public
+ 
+	$£tPos™iÚScPŞicy
+(
+pos™iÚScPŞicy
+) {
+
+1295 
+AµExem¶o2
+.
+pos™iÚScPŞicy
+ =…ositionScPolicy;
+
+1296 
+	}
+}
+
+1301 
+public
+ 
+	$g‘MaxSm¬tThšgs
+() {
+
+1302  
+maxSm¬tThšgs
+;
+
+1303 
+	}
+}
+
+1308 
+public
+ 
+	$£tMaxSm¬tThšgs
+(
+maxSm¬tThšgs
+) {
+
+1309 
+AµExem¶o2
+.
+maxSm¬tThšgs
+ = maxSmartThings;
+
+1310 
+	}
+}
+
+1312 
+public
+ 
+Rªdom
+ 
+	$g‘Rªd
+() {
+
+1313  
+¿nd
+;
+
+1314 
+	}
+}
+
+1316 
+public
+ 
 	$£tRªd
 (
 Rªdom
@@ -230921,31 +232307,31 @@ Rªdom
 ¿nd
 ) {
 
-1269 
+1317 
 AµExem¶o2
 .
 ¿nd
  =„and;
 
-1270 
+1318 
 	}
 }
 
-1272 
+1320 
 public
  
 	$g‘MaxBªdwidth
 () {
 
-1273  
+1321  
 maxBªdwidth
 ;
 
-1274 
+1322 
 	}
 }
 
-1276 
+1324 
 public
  
 	$£tMaxBªdwidth
@@ -230953,17 +232339,17 @@ public
 maxBªdwidth
 ) {
 
-1277 
+1325 
 AµExem¶o2
 .
 maxBªdwidth
  = maxBandwidth;
 
-1278 
+1326 
 	}
 }
 
-1280 
+1328 
 public
  
 boŞ—n
@@ -230971,15 +232357,15 @@ boŞ—n
 	$isMig¿tiÚAbË
 () {
 
-1281  
+1329  
 mig¿tiÚAbË
 ;
 
-1282 
+1330 
 	}
 }
 
-1284 
+1332 
 public
  
 	$£tMig¿tiÚAbË
@@ -230989,13 +232375,13 @@ boŞ—n
 mig¿tiÚAbË
 ) {
 
-1285 
+1333 
 AµExem¶o2
 .
 mig¿tiÚAbË
  = migrationAble;
 
-1286 
+1334 
 	}
 }
 
@@ -233015,7 +234401,7 @@ public
 fš®
  
 	mMAX_DISTANCE
- = 5000;
+ = 2000;
 
 6 
 public
@@ -233089,7 +234475,7 @@ public
 fš®
  
 	mMAX_X
- = 40000;
+ = 16000;
 
 15 
 public
@@ -233097,7 +234483,7 @@ public
 fš®
  
 	mMAX_Y
- = 40000;
+ = 16000;
 
 16 
 public
@@ -233153,7 +234539,7 @@ public
 fš®
  
 	mMAX_SIMULATION_TIME
- = ()(1000*60*30);
+ = ()(1000*60*180);
 
 23 
 public

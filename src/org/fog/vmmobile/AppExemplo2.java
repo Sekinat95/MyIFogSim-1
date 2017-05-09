@@ -1,13 +1,19 @@
 package org.fog.vmmobile;
 
+import java.io.BufferedReader;
+import java.io.FileReader;
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.HashMap;
 import java.util.HashSet;
 import java.util.LinkedList;
 import java.util.List;
+import java.util.Queue;
 import java.util.Random;
 import java.util.Set;
+
+import javax.swing.text.html.HTMLDocument.Iterator;
 
 import org.apache.commons.math3.util.Pair;
 import org.cloudbus.cloudsim.Cloudlet;
@@ -82,6 +88,8 @@ public class AppExemplo2 {
 	private static List<FogBroker> brokerList = new ArrayList<>();
 	private static List<String> appIdList = new ArrayList<>();
 	private static List<Application> applicationList= new ArrayList<>();
+    private static Queue<String[]> q = new LinkedList<String[]>();
+
 	private static boolean migrationAble;
 
 	private static int migPointPolicy;
@@ -160,7 +168,6 @@ public class AppExemplo2 {
 				setPositionScPolicy(Policies.FIXED_SC_LOCATION);
 //						setPositionScPolicy(Policies.RANDOM_SC_LOCATION);
 
-		setRand(new Random(getSeed()*Integer.MAX_VALUE));
 
 		setStepPolicy(1);
 		if(Integer.parseInt(args[0])==0){
@@ -174,6 +181,7 @@ public class AppExemplo2 {
 			System.out.println("Seed cannot be less than 1");
 			System.exit(0);
 		}
+		setRand(new Random(getSeed()*Integer.MAX_VALUE));
 		setMigPointPolicy(Integer.parseInt(args[2])); 
 		setMigStrategyPolicy(Integer.parseInt(args[3])); 
 		setMaxSmartThings(Integer.parseInt(args[4]));
@@ -219,6 +227,10 @@ public class AppExemplo2 {
 		for(int i=0; i< getMaxSmartThings();i++){//it creates the SmartThings - initial parameter? -> in runtime, schedule events to add or remove items
 			addSmartThing(smartThings,coordDevices, i);
 		}
+		
+		readMoblityData(q, 2260);
+
+		
 
 		int index;//Auxiliary  
 		int myCount=0;
@@ -349,11 +361,13 @@ public class AppExemplo2 {
 				i++;
 			}
 		}
+		
 		mobileController = new MobileController("MobileController"
 				, getServerCloudlets()
 				, getApDevices()
 				, getSmartThings()
 				, getBrokerList()
+				, getQueue()
 				, moduleMapping
 				, getMigPointPolicy()
 				, getMigStrategyPolicy()
@@ -441,12 +455,39 @@ public class AppExemplo2 {
 
 	}
 
+	private static void readMoblityData(Queue<String[]> q, int i){
+		
+        String csvFile = i+"log.csv";
+        String line = "";
+        String cvsSplitBy = "\t";
+
+        try (BufferedReader br = new BufferedReader(new FileReader(csvFile))) {
+
+            while ((line = br.readLine()) != null) {
+
+                // use comma as separator
+                String[] country = line.split(cvsSplitBy);
+
+                //System.out.println(country[0]+" "+Double.parseDouble(country[0])*(180/Math.PI)+" "+country[1]+" "+country[2]+" "+country[3]);
+                
+                q.add(country);
+            }
+
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+
+		
+	}
+	
 	private static void addApDevicesFixed(List<ApDevice> apDevices,
 			Coordinate coordDevices) {
 		int i=0;
 		boolean control = true;
 		int coordY=0;
-		for(int coordX=100; coordX<MaxAndMin.MAX_X-100; coordX+=6500){ /*evenly distributed*/
+		for(int coordX=1050; coordX<MaxAndMin.MAX_X-990; coordX+=2001){
+		//for(int coordX=0; coordX<MaxAndMin.MAX_X; coordX+=(2*MaxAndMin.MAX_DISTANCE-(2*MaxAndMin.MAX_DISTANCE/3))){ /*evenly distributed*/
+			System.out.println("Creating Ap devices");
 //			if(control){
 //				coordY=4000;
 //			}
@@ -454,7 +495,8 @@ public class AppExemplo2 {
 //				coordY = 10500;
 //			}
 //			control=!control;
-			for(coordY=100; coordY<MaxAndMin.MAX_Y-100; coordY+=6500, i++){
+			for(coordY=1050; coordY<MaxAndMin.MAX_Y-990; coordY+=2001, i++){
+			//for(coordY=0; coordY<MaxAndMin.MAX_Y; coordY+=(2*MaxAndMin.MAX_DISTANCE-(2*MaxAndMin.MAX_DISTANCE/3)), i++){
 //				if(coordDevices.getPositions(coordX, coordY)==-1){
 					//ApDevice ap = new ApDevice("AccessPoint"+Integer.toString(i),coordX,coordY,i);//my construction
 					ApDevice ap = new ApDevice("AccessPoint"+Integer.toString(i),//name
@@ -857,8 +899,11 @@ public class AppExemplo2 {
 		int i=0;
 		int coordX,coordY;
 
-		for(coordX=1001; coordX<MaxAndMin.MAX_X-990; coordX+=10001){ /*evenly distributed*/
-			for(coordY=1001; coordY<MaxAndMin.MAX_Y-990; coordY+=10001, i++){
+		for(coordX=1001; coordX<MaxAndMin.MAX_X-990; coordX+=2001){ /*evenly distributed*/
+//		for(coordX=0; coordX<MaxAndMin.MAX_X; coordX+=(2*MaxAndMin.MAX_DISTANCE-(2*MaxAndMin.MAX_DISTANCE/3))){ /*evenly distributed*/
+			System.out.println("Creating Server cloudlets");
+			for(coordY=1001; coordY<MaxAndMin.MAX_Y-990; coordY+=2001, i++){ /*evenly distributed*/
+//			for(coordY=0; coordY<MaxAndMin.MAX_X; coordY+=(2*MaxAndMin.MAX_DISTANCE-(2*MaxAndMin.MAX_DISTANCE/3)), i++){ /*evenly distributed*/
 //				Random rand = new Random(getSeed()*(i+1));//((Long.MAX_VALUE/getSeed())/(i+1))*2);
 				DecisionMigration migrationStrategy;
 				if(getMigStrategyPolicy()==Policies.LOWEST_LATENCY){
@@ -1219,7 +1264,14 @@ public class AppExemplo2 {
 		AppExemplo2.applicationList = applicationList;
 	}
 
-
+	
+	public static Queue<String[]> getQueue() {
+		return q;
+	}
+	
+	public static void setQueue(Queue<String[]> q) {
+		AppExemplo2.q = q;
+	}
 
 
 	public static int getSeed() {
