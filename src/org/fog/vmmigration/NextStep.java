@@ -36,12 +36,40 @@ public class NextStep {
 	private static void saveMobility(MobileDevice st){
 		System.out.println(st.getMyId() + " Position: " + st.getCoord().getCoordX() + ", " + st.getCoord().getCoordY() + " Direction: " + st.getDirection() + " Speed: " + st.getSpeed());
 		System.out.println("Source AP: " + st.getSourceAp() + " Dest AP: " + st.getDestinationAp() + " Host: " + st.getHost().getId());
+		System.out.println("Local server: " + st.getVmLocalServerCloudlet().getName() + " Apps " + st.getVmLocalServerCloudlet().getActiveApplications() + " Map " + st.getVmLocalServerCloudlet().getApplicationMap());
 		if(st.getDestinationServerCloudlet() == null){
-			System.out.print("Local server: " + st.getVmLocalServerCloudlet().getName() + " dest server: " + st.getDestinationServerCloudlet());		
+			System.out.println("Dest server: null Apps: null Map: null");
 		}
 		else{
-			System.out.print("Local server: " + st.getVmLocalServerCloudlet().getName() + " dest server: " + st.getDestinationServerCloudlet().getName());
+			System.out.println("Dest server: " + st.getDestinationServerCloudlet().getName() + " Apps: " + st.getDestinationServerCloudlet().getActiveApplications() +  " Map " + st.getDestinationServerCloudlet().getApplicationMap());
 		}
+		try(FileWriter fw1 = new FileWriter(st.getMyId()+"out.txt", true);
+			    BufferedWriter bw1 = new BufferedWriter(fw1);
+			    PrintWriter out1 = new PrintWriter(bw1))
+		{
+			out1.println(st.getMyId() + " Position: " + st.getCoord().getCoordX() + ", " + st.getCoord().getCoordY() + " Direction: " + st.getDirection() + " Speed: " + st.getSpeed());
+			out1.println("Source AP: " + st.getSourceAp() + " Dest AP: " + st.getDestinationAp() + " Host: " + st.getHost().getId());
+			out1.println("Local server: " + st.getVmLocalServerCloudlet().getName() + " Apps " + st.getVmLocalServerCloudlet().getActiveApplications() + " Map " + st.getVmLocalServerCloudlet().getApplicationMap());
+			if(st.getDestinationServerCloudlet() == null){
+				out1.println("Dest server: null Apps: null Map: null");
+			}
+			else{
+				out1.println("Dest server: " + st.getDestinationServerCloudlet().getName() + " Apps: " + st.getDestinationServerCloudlet().getActiveApplications() +  " Map " + st.getDestinationServerCloudlet().getApplicationMap());
+			}
+		}
+		catch (UnsupportedEncodingException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		catch (FileNotFoundException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+
 		try(FileWriter fw = new FileWriter(st.getMyId()+"route.txt", true);
 			    BufferedWriter bw = new BufferedWriter(fw);
 			    PrintWriter out = new PrintWriter(bw))
