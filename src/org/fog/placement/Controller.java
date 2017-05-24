@@ -85,8 +85,10 @@ public class Controller extends SimEntity{
 		for(String appId : applications.keySet()){
 			if(getAppLaunchDelays().get(appId)==0)
 				processAppSubmit(applications.get(appId));
-			else
+			else{
+				System.out.println("startEntity");
 				send(getId(), getAppLaunchDelays().get(appId), FogEvents.APP_SUBMIT, applications.get(appId));
+			}
 		}
 
 		send(getId(), Config.RESOURCE_MANAGE_INTERVAL, FogEvents.CONTROLLER_RESOURCE_MANAGE);
@@ -231,7 +233,7 @@ public class Controller extends SimEntity{
 	}
 	
 	private void processAppSubmit(Application application){
-		System.out.println(CloudSim.clock()+" Submitted application "+ application.getAppId());
+		System.out.println("Controller "+CloudSim.clock()+" Submitted application "+ application.getAppId());
 		FogUtils.appIdToGeoCoverageMap.put(application.getAppId(), application.getGeoCoverage());
 		getApplications().put(application.getAppId(), application);
 		
@@ -245,6 +247,7 @@ public class Controller extends SimEntity{
 		Map<Integer, Map<String, Integer>> instanceCountMap = modulePlacement.getModuleInstanceCountMap();
 		for(Integer deviceId : deviceToModuleMap.keySet()){
 			for(AppModule module : deviceToModuleMap.get(deviceId)){
+				System.out.println("processAppSubmit");
 				sendNow(deviceId, FogEvents.APP_SUBMIT, application);
 				sendNow(deviceId, FogEvents.LAUNCH_MODULE, module);
 				sendNow(deviceId, FogEvents.LAUNCH_MODULE_INSTANCE, 
