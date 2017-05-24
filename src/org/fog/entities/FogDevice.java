@@ -49,13 +49,10 @@ import org.fog.utils.ModuleLaunchConfig;
 import org.fog.utils.NetworkUsageMonitor;
 import org.fog.utils.TimeKeeper;
 import org.fog.vmmigration.BeforeMigration;
-import org.fog.vmmigration.BeforeMigration_OLD;
 import org.fog.vmmigration.DecisionMigration;
 import org.fog.vmmigration.MyStatistics;
 import org.fog.vmmigration.Service;
-
 import org.fog.vmmobile.LogMobile;
-import org.fog.vmmobile.constants.MaxAndMin;
 import org.fog.vmmobile.constants.MobileEvents;
 import org.fog.vmmobile.constants.Policies;
 
@@ -64,6 +61,7 @@ public class FogDevice extends PowerDatacenter {
 	protected Queue<Pair<Tuple, Integer>> southTupleQueue;
 
 	protected List<String> activeApplications;
+	protected LinkedList<String[]> path;
 
 	protected Map<String, Application> applicationMap;
 	protected Map<String, List<String>> appToModulesMap;
@@ -74,7 +72,7 @@ public class FogDevice extends PowerDatacenter {
 
 	protected double lockTime;
 
-	/**	
+	/**
 	 * ID of the parent Fog Device
 	 */
 	protected int parentId;
@@ -203,11 +201,11 @@ public class FogDevice extends PowerDatacenter {
 
 	public FogDevice(){//myiFogSim
 
-	} 
+	}
 
 
 	public FogDevice(String name, int coordX, int coordY, int id) { //myiFogSim
-		//	public FogDevice(String name, Coordinate coord, int coordX, int coordY, int id) { //myiFogSim 
+		//	public FogDevice(String name, Coordinate coord, int coordX, int coordY, int id) { //myiFogSim
 		// TODO Auto-generated constructor stub
 		super(name);
 		this.coord=new Coordinate();
@@ -230,7 +228,7 @@ public class FogDevice extends PowerDatacenter {
 
 
 	public FogDevice( //myiFogSim - for ServerCloulet -> it addition Service in the Construction
-			String name, 
+			String name,
 			FogDeviceCharacteristics characteristics,
 			VmAllocationPolicy vmAllocationPolicy,
 			List<Storage> storageList,
@@ -276,6 +274,7 @@ public class FogDevice extends PowerDatacenter {
 			host.setDatacenter(this);
 		}
 		setActiveApplications(new ArrayList<String>());
+		setPath(new LinkedList<String[]>());
 		// If this resource doesn't have any PEs then no useful at all
 		if (getCharacteristics().getNumberOfPes() == 0) {
 			throw new Exception(super.getName()
@@ -307,7 +306,7 @@ public class FogDevice extends PowerDatacenter {
 	}
 
 	public FogDevice( //myiFogSim - for MobileDevice
-			String name, 
+			String name,
 			FogDeviceCharacteristics characteristics,
 			VmAllocationPolicy vmAllocationPolicy,
 			List<Storage> storageList,
@@ -349,6 +348,8 @@ public class FogDevice extends PowerDatacenter {
 			host.setDatacenter(this);
 		}
 		setActiveApplications(new ArrayList<String>());
+		setPath(new LinkedList<String[]>());
+
 		// If this resource doesn't have any PEs then no useful at all
 		if (getCharacteristics().getNumberOfPes() == 0) {
 			throw new Exception(super.getName()
@@ -380,7 +381,7 @@ public class FogDevice extends PowerDatacenter {
 	}
 
 	public FogDevice(
-			String name, 
+			String name,
 			FogDeviceCharacteristics characteristics,
 			VmAllocationPolicy vmAllocationPolicy,
 			List<Storage> storageList,
@@ -404,6 +405,8 @@ public class FogDevice extends PowerDatacenter {
 			host.setDatacenter(this);
 		}
 		setActiveApplications(new ArrayList<String>());
+		setPath(new LinkedList<String[]>());
+
 		// If this resource doesn't have any PEs then no useful at all
 		if (getCharacteristics().getNumberOfPes() == 0) {
 			throw new Exception(super.getName()
@@ -435,7 +438,7 @@ public class FogDevice extends PowerDatacenter {
 	}
 
 	public FogDevice(
-			String name, long mips, int ram, 
+			String name, long mips, int ram,
 			double uplinkBandwidth, double downlinkBandwidth, double ratePerMips, PowerModel powerModel) throws Exception {
 		super(name, null, null, new LinkedList<Storage>(), 0);
 
@@ -463,11 +466,11 @@ public class FogDevice extends PowerDatacenter {
 
 		setVmAllocationPolicy(new AppModuleAllocationPolicy(hostList));
 
-		String arch = Config.FOG_DEVICE_ARCH; 
-		String os = Config.FOG_DEVICE_OS; 
+		String arch = Config.FOG_DEVICE_ARCH;
+		String os = Config.FOG_DEVICE_OS;
 		String vmm = Config.FOG_DEVICE_VMM;
 		double time_zone = Config.FOG_DEVICE_TIMEZONE;
-		double cost = Config.FOG_DEVICE_COST; 
+		double cost = Config.FOG_DEVICE_COST;
 		double costPerMem = Config.FOG_DEVICE_COST_PER_MEMORY;
 		double costPerStorage = Config.FOG_DEVICE_COST_PER_STORAGE;
 		double costPerBw = Config.FOG_DEVICE_COST_PER_BW;
@@ -488,6 +491,8 @@ public class FogDevice extends PowerDatacenter {
 			host1.setDatacenter(this);
 		}
 		setActiveApplications(new ArrayList<String>());
+		setPath(new LinkedList<String[]>());
+
 		if (getCharacteristics().getNumberOfPes() == 0) {
 			throw new Exception(super.getName()
 					+ " : Error - this entity has no PEs. Therefore, can't process any Cloudlets.");
@@ -523,10 +528,11 @@ public class FogDevice extends PowerDatacenter {
 	/**
 	 * Overrides this method when making a new and different type of resource. <br>
 	 * <b>NOTE:</b> You do not need to override {@link #body()} method, if you use this method.
-	 * 
+	 *
 	 * @pre $none
 	 * @post $none
 	 */
+	@Override
 	protected void registerOtherEntity() {
 
 	}
@@ -591,19 +597,19 @@ public class FogDevice extends PowerDatacenter {
 		case MobileEvents.ADD_VM_NEW_CLOUDLET:
 			addVmNewServerCloudlet(ev);
 			break;
-		case MobileEvents.DELIVERY_VM: 
+		case MobileEvents.DELIVERY_VM:
 			deliveryVM(ev);
 			break;
-		case MobileEvents.CONNECT_ST_TO_SC: 
+		case MobileEvents.CONNECT_ST_TO_SC:
 			connectServerCloudletSmartThing(ev);
 			break;
-		case MobileEvents.DESCONNECT_ST_TO_SC: 
+		case MobileEvents.DESCONNECT_ST_TO_SC:
 			desconnectServerCloudletSmartThing(ev);
 			break;
-		case MobileEvents.UNLOCKED_MIGRATION: 
+		case MobileEvents.UNLOCKED_MIGRATION:
 			unLockedMigration(ev);
 			break;
-		case MobileEvents.VM_MIGRATE: 
+		case MobileEvents.VM_MIGRATE:
 			myVmMigrate(ev);
 			break;
 		case MobileEvents.SET_MIG_STATUS_TRUE:
@@ -615,7 +621,7 @@ public class FogDevice extends PowerDatacenter {
 		}
 	}
 
-	
+
 
 	private void myVmMigrate(SimEvent ev) {
 		// TODO Auto-generated method stub
@@ -775,7 +781,7 @@ public class FogDevice extends PowerDatacenter {
 		//		}
 		//		for(MobileActuator a: st.getActuators()){
 		//			st.getSourceServerCloudlet().getChildrenIds().remove((Integer)a.getId());
-		//		}		
+		//		}
 		setSmartThings(st, Policies.REMOVE); //it'll remove the smartThing from serverCloudlets-smartThing's set
 		st.setSourceServerCloudlet(null);
 //		NetworkTopology.addLink(this.getId(), st.getId(), 0.0, 0.0);
@@ -847,7 +853,7 @@ public class FogDevice extends PowerDatacenter {
 	}
 
 
-	private void deliveryVM(SimEvent ev){// pode ser um bom ponto de medição 
+	private void deliveryVM(SimEvent ev){// pode ser um bom ponto de medição
 		MobileDevice smartThing = (MobileDevice) ev.getData();
 		if (MobileController.getSmartThings().contains(smartThing)){
 
@@ -879,10 +885,10 @@ public class FogDevice extends PowerDatacenter {
 				}
 			}
 			else{
-				//	MyStatistics.getInstance().startDelayAfterNewConnection(smartThing.getMyId(),CloudSim.clock());//handoff hasn't been occurred yet	
+				//	MyStatistics.getInstance().startDelayAfterNewConnection(smartThing.getMyId(),CloudSim.clock());//handoff hasn't been occurred yet
 			}
 
-			float migrationLocked = (float) ((smartThing.getVmMobileDevice().getSize()*(smartThing.getSpeed()+1))+20000);
+			float migrationLocked = (smartThing.getVmMobileDevice().getSize()*(smartThing.getSpeed()+1))+20000;
 			send(smartThing.getVmLocalServerCloudlet().getId(),migrationLocked,MobileEvents.UNLOCKED_MIGRATION,smartThing);
 			MyStatistics.getInstance().countMigration();
 			MyStatistics.getInstance().historyMigrationTime(smartThing.getMyId(), smartThing.getMigTime());
@@ -916,11 +922,11 @@ public class FogDevice extends PowerDatacenter {
 				if(smartThing.getSourceAp()!=null&&!smartThing.isMigStatus()){//the smartThing isn't connected in any ap right now
 					double delayProcess = getBeforeMigrate().dataprepare(smartThing);
 					if(delayProcess>=0){
-						
+
 						if(getPolicyReplicaVM()==Policies.LIVE_MIGRATION){
 							smartThing.setPostCopyStatus(true);
 							smartThing.setTimeStartLiveMigration(CloudSim.clock());
-							
+
 						}
 						else{
 							smartThing.setMigStatus(true);
@@ -928,8 +934,8 @@ public class FogDevice extends PowerDatacenter {
 							smartThing.setTimeFinishDeliveryVm(-1.0);
 							send(smartThing.getVmLocalServerCloudlet().getId(), smartThing.getMigTime()+delayProcess,MobileEvents.START_MIGRATION, smartThing);//It'll happen according the Migration Time
 						}
-						smartThing.setLockedToMigration(true);	
-	
+						smartThing.setLockedToMigration(true);
+
 				}
 			}
 			else{
@@ -951,23 +957,23 @@ public class FogDevice extends PowerDatacenter {
 	private void migStatusToLiveMigration(SimEvent ev) {
 		// TODO Auto-generated method stub
 		MobileDevice smartThing =(MobileDevice) ev.getData();
-		sendNow(smartThing.getVmLocalServerCloudlet().getId(),MobileEvents.START_MIGRATION, smartThing);//It'll happen according the Migration Time		
+		sendNow(smartThing.getVmLocalServerCloudlet().getId(),MobileEvents.START_MIGRATION, smartThing);//It'll happen according the Migration Time
 	}
 
 	private void invokeDecisionMigration(SimEvent ev) {
 		// TODO Auto-generated method stub
 		for(MobileDevice st:getSmartThings()){
-			if(st.getSourceAp()!=null && (!st.isLockedToMigration())){// (!st.isMigStatus())){//Only the connected smartThings 
+			if(st.getSourceAp()!=null && (!st.isLockedToMigration())){// (!st.isMigStatus())){//Only the connected smartThings
 				if(st.getVmLocalServerCloudlet().getMigrationStrategy().shouldMigrate(st)){
-					if(!st.getVmLocalServerCloudlet().equals(st.getDestinationServerCloudlet())){					
+					if(!st.getVmLocalServerCloudlet().equals(st.getDestinationServerCloudlet())){
 						System.out.println("====================ToMigrate================== "+st.getName()+" "+st.getId());// to do something
 						LogMobile.debug("FogDevice.java", "Distance between "+ st.getName()+" and "+st.getSourceAp().getName()+": "+
 								Distances.checkDistance(st.getCoord(), st.getSourceAp().getCoord()));
 						System.out.println("Migration time: "+st.getMigTime());
 						LogMobile.debug("FogDevice.java", "Made the decisionMigration for "+st.getName());
-						LogMobile.debug("FogDevice.java", "from "+st.getVmLocalServerCloudlet().getName()+" to "+st.getDestinationServerCloudlet().getName()+ 
+						LogMobile.debug("FogDevice.java", "from "+st.getVmLocalServerCloudlet().getName()+" to "+st.getDestinationServerCloudlet().getName()+
 								" -> Connected by: "+st.getSourceServerCloudlet().getName());
-						sendNow(st.getVmLocalServerCloudlet().getId(), MobileEvents.TO_MIGRATION,st); 
+						sendNow(st.getVmLocalServerCloudlet().getId(), MobileEvents.TO_MIGRATION,st);
 						MyStatistics.getInstance().getInitialWithoutVmTime().remove(st.getMyId());
 						MyStatistics.getInstance().getInitialTimeDelayAfterNewConnection().remove(st.getMyId());
 						MyStatistics.getInstance().getInitialTimeWithoutConnection().remove(st.getMyId());
@@ -990,7 +996,7 @@ public class FogDevice extends PowerDatacenter {
 		}
 	}
 
-	
+
 	private static void saveMigration(MobileDevice st){
 		System.out.println("MIGRATION " +st.getMyId() + " Position: " + st.getCoord().getCoordX() + ", " + st.getCoord().getCoordY() + " Direction: " + st.getDirection() + " Speed: " + st.getSpeed());
 		try(FileWriter fw = new FileWriter(st.getMyId()+"migration.txt", true);
@@ -1012,7 +1018,7 @@ public class FogDevice extends PowerDatacenter {
 			e.printStackTrace();
 		}
 	}
-	
+
 
 	/**
 	 * Perform miscellaneous resource management tasks
@@ -1025,7 +1031,7 @@ public class FogDevice extends PowerDatacenter {
 
 	/**
 	 * Updating the number of modules of an application module on this device
-	 * @param ev instance of SimEvent containing the module and no of instances 
+	 * @param ev instance of SimEvent containing the module and no of instances
 	 */
 	private void updateModuleInstanceCount(SimEvent ev) {
 		ModuleLaunchConfig config = (ModuleLaunchConfig)ev.getData();
@@ -1119,9 +1125,10 @@ public class FogDevice extends PowerDatacenter {
 
 	/**
 	 * Update cloudet processing without scheduling future events.
-	 * 
+	 *
 	 * @return the double
 	 */
+	@Override
 	protected double updateCloudetProcessingWithoutSchedulingFutureEventsForce() {
 		double currentTime = CloudSim.clock();
 		double minTime = Double.MAX_VALUE;
@@ -1205,6 +1212,7 @@ public class FogDevice extends PowerDatacenter {
 	}
 
 
+	@Override
 	protected void checkCloudletCompletion() {
 		boolean cloudletCompleted = false;
 		List<Vm> removeVmList = new ArrayList<>();
@@ -1247,17 +1255,17 @@ public class FogDevice extends PowerDatacenter {
 //								}
 //							}
 							continue;
-						}	
-						//	Logger.ENABLED=true;  
+						}
+						//	Logger.ENABLED=true;
 						//						System.out.println("FogDevice.java - tuple.getAppId: "+tuple.getAppId());
 
 						Logger.debug(getName(), "Completed execution of tuple "+tuple.getCloudletId()+" on "+tuple.getDestModuleName());
-						//	Logger.ENABLED=false;  
+						//	Logger.ENABLED=false;
 
 						List<Tuple> resultantTuples = application.getResultantTuples(tuple.getDestModuleName(), tuple, getId());
 						for(Tuple resTuple : resultantTuples){
 							resTuple.setModuleCopyMap(new HashMap<String, Integer>(tuple.getModuleCopyMap()));
-							resTuple.getModuleCopyMap().put(((AppModule)vm).getName(), vm.getId());							
+							resTuple.getModuleCopyMap().put(((AppModule)vm).getName(), vm.getId());
 							updateTimingsOnSending(resTuple);
 							sendToSelf(resTuple);
 						}
@@ -1280,7 +1288,7 @@ public class FogDevice extends PowerDatacenter {
 	}
 
 	protected void updateTimingsOnSending(Tuple resTuple) {
-		// TODO ADD CODE FOR UPDATING TIMINGS WHEN A TUPLE IS GENERATED FROM A PREVIOUSLY RECIEVED TUPLE. 
+		// TODO ADD CODE FOR UPDATING TIMINGS WHEN A TUPLE IS GENERATED FROM A PREVIOUSLY RECIEVED TUPLE.
 		// WILL NEED TO CHECK IF A NEW LOOP STARTS AND INSERT A UNIQUE TUPLE ID TO IT.
 		String srcModule = resTuple.getSrcModuleName();
 		String destModule = resTuple.getDestModuleName();
@@ -1422,9 +1430,9 @@ public class FogDevice extends PowerDatacenter {
 	int numClients=0;
 
 	protected void processTupleArrival(SimEvent ev){
-		Tuple tuple = (Tuple)ev.getData();		
+		Tuple tuple = (Tuple)ev.getData();
 		MyStatistics.getInstance().setMyCountTotalTuple(1);
-		
+
 		boolean flagContinue=false;
 		for(MobileDevice st: MobileController.getSmartThings()){// verifica se o smartthing ainda esta na lista
 			for(Sensor s: st.getSensors()){
@@ -1452,7 +1460,7 @@ public class FogDevice extends PowerDatacenter {
 //						MyStatistics.getInstance().finalWithoutVmTime(st.getMyId(), CloudSim.clock());
 //						MyStatistics.getInstance().getInitialWithoutVmTime().remove(st.getMyId());
 //					}
-					
+
 					break;
 				}
 				else{
@@ -1462,7 +1470,7 @@ public class FogDevice extends PowerDatacenter {
 //						if(MyStatistics.getInstance().getInitialWithoutVmTime().get(st.getMyId())==null){
 //							MyStatistics.getInstance().startWithoutVmTime(st.getMyId(), CloudSim.clock());
 //						}
-						
+
 						LogMobile.debug("FogDevice.java", st.getName()+" is in Migration");
 						//						System.out.println("Clock: "+CloudSim.clock()+" - FogDevice.java - Destination: "+CloudSim.getEntityName(ev.getDestination())+": Tuple "+tuple.getCloudletId());
 						//						System.out.println("Clock: "+CloudSim.clock()+" - FogDevice.java - Source: "+CloudSim.getEntityName(ev.getSource()));
@@ -1471,7 +1479,7 @@ public class FogDevice extends PowerDatacenter {
 //						if(delay < 1){
 //							delay = 100;
 //						}
-//						send(st.getDestinationServerCloudlet().getId(),1000, FogEvents.TUPLE_ARRIVAL, tuple);			
+//						send(st.getDestinationServerCloudlet().getId(),1000, FogEvents.TUPLE_ARRIVAL, tuple);
 						return;
 					}
 					else{//send again
@@ -1496,10 +1504,10 @@ public class FogDevice extends PowerDatacenter {
 		Logger.debug(getName(), "Received tuple "+tuple.getCloudletId()+" with tupleType = "+tuple.getTupleType()+"\t| Source : "+
 				CloudSim.getEntityName(ev.getSource())+"|Dest : "+CloudSim.getEntityName(ev.getDestination()));
 		//		if(tuple.getTupleType().contains("EEG")){
-		//			Logger.ENABLED=true;  
+		//			Logger.ENABLED=true;
 		//			Logger.debug(getName(), "Received tuple "+tuple.getMyTupleId()+" with tupleType = "+tuple.getTupleType()+"\t| Source : "+
 		//				CloudSim.getEntityName(ev.getSource())+"|Dest : "+CloudSim.getEntityName(ev.getDestination()));
-		//			Logger.ENABLED=false;  
+		//			Logger.ENABLED=false;
 		//		}
 		send(ev.getSource(), CloudSim.getMinTimeBetweenEvents(), FogEvents.TUPLE_ACK);
 
@@ -1543,7 +1551,7 @@ public class FogDevice extends PowerDatacenter {
 					//}
 				}
 				if(vmId < 0
-						|| (tuple.getModuleCopyMap().containsKey(tuple.getDestModuleName()) && 
+						|| (tuple.getModuleCopyMap().containsKey(tuple.getDestModuleName()) &&
 								tuple.getModuleCopyMap().get(tuple.getDestModuleName())!=vmId )){
 					return;
 				}
@@ -1617,7 +1625,7 @@ public class FogDevice extends PowerDatacenter {
 			//					}
 			//				}
 			//			}
-			if(loop.hasEdge(srcModule, destModule) && loop.isEndModule(destModule)){				
+			if(loop.hasEdge(srcModule, destModule) && loop.isEndModule(destModule)){
 				Double startTime = TimeKeeper.getInstance().getEmitTimes().get(tuple.getActualTupleId());
 				if(startTime==null)
 					break;
@@ -1758,7 +1766,7 @@ public class FogDevice extends PowerDatacenter {
 
 	protected void updateSouthTupleQueue(){
 		if(!getSouthTupleQueue().isEmpty()){
-			Pair<Tuple, Integer> pair = getSouthTupleQueue().poll(); 
+			Pair<Tuple, Integer> pair = getSouthTupleQueue().poll();
 			sendDownFreeLink(pair.getFirst(), pair.getSecond());
 		}else{
 			setSouthLinkBusy(false);
@@ -1839,6 +1847,12 @@ public class FogDevice extends PowerDatacenter {
 	}
 	public void setActiveApplications(List<String> activeApplications) {
 		this.activeApplications = activeApplications;
+	}
+	public LinkedList<String[]> getPath() {
+		return path;
+	}
+	public void setPath(LinkedList<String[]> path) {
+		this.path = path;
 	}
 	public Map<Integer, List<String>> getChildToOperatorsMap() {
 		return childToOperatorsMap;

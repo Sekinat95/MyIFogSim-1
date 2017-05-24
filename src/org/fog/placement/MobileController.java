@@ -9,18 +9,14 @@ import java.io.UnsupportedEncodingException;
 import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.HashMap;
-import java.util.LinkedList;
 import java.util.List;
 import java.util.Map;
-import java.util.Queue;
 import java.util.Map.Entry;
 import java.util.Random;
-import java.util.Set;
 
 import org.apache.commons.math3.util.Pair;
 import org.cloudbus.cloudsim.CloudletScheduler;
 import org.cloudbus.cloudsim.CloudletSchedulerTimeShared;
-import org.cloudbus.cloudsim.NetworkTopology;
 import org.cloudbus.cloudsim.core.CloudSim;
 import org.cloudbus.cloudsim.core.SimEntity;
 import org.cloudbus.cloudsim.core.SimEvent;
@@ -29,7 +25,14 @@ import org.fog.application.AppLoop;
 import org.fog.application.AppModule;
 import org.fog.application.Application;
 import org.fog.application.selectivity.SelectivityModel;
-import org.fog.entities.*;
+import org.fog.entities.Actuator;
+import org.fog.entities.ApDevice;
+import org.fog.entities.FogBroker;
+import org.fog.entities.FogDevice;
+import org.fog.entities.MobileActuator;
+import org.fog.entities.MobileDevice;
+import org.fog.entities.MobileSensor;
+import org.fog.entities.Sensor;
 import org.fog.localization.Coordinate;
 import org.fog.localization.Distances;
 import org.fog.utils.Config;
@@ -50,7 +53,7 @@ public class MobileController extends SimEntity {
 	private static int migPointPolicy;
 
 	private static int stepPolicy; //Quantity of steps in the nextStep Function
-	private static Coordinate coordDevices;//=new Coordinate(MaxAndMin.MAX_X, MaxAndMin.MAX_Y);//Grid/Map 
+	private static Coordinate coordDevices;//=new Coordinate(MaxAndMin.MAX_X, MaxAndMin.MAX_Y);//Grid/Map
 
 	private static int migStrategyPolicy;
 	private static int seed;
@@ -59,7 +62,6 @@ public class MobileController extends SimEntity {
 	private static List<MobileDevice> smartThings;
 	private static List<ApDevice> apDevices;
 	private static List<FogBroker> brokerList;
-    private static Queue<String[]> q;
 
 
 	private Map<String, Application> applications;
@@ -73,7 +75,7 @@ public class MobileController extends SimEntity {
 	public MobileController(){
 
 	}
-	public MobileController(String name, List<FogDevice> serverCloudlets, List<ApDevice> apDevices, List<MobileDevice> smartThings,List<FogBroker> brokers, Queue<String[]> q, ModuleMapping moduleMapping
+	public MobileController(String name, List<FogDevice> serverCloudlets, List<ApDevice> apDevices, List<MobileDevice> smartThings,List<FogBroker> brokers, ModuleMapping moduleMapping
 			, int migPointPolicy, int migStrategyPolicy, int stepPolicy, Coordinate coordDevices, int seed, boolean migrationAble) {
 		// TODO Auto-generated constructor stub
 		super(name);
@@ -89,7 +91,6 @@ public class MobileController extends SimEntity {
 		setApDevices(apDevices);
 		setSmartThings(smartThings);
 		setBrokerList(brokers);
-		setQueue(q);
 		setMigPointPolicy(migPointPolicy);
 		setMigStrategyPolicy(migStrategyPolicy);
 		setStepPolicy(stepPolicy);
@@ -149,7 +150,7 @@ public class MobileController extends SimEntity {
 		//		for(String deviceName : mapping.keySet()){
 		//			FogDevice device = getDeviceByName(deviceName);
 		//			for(String moduleName : mapping.get(deviceName).keySet()){
-		//				
+		//
 		//				AppModule module = getApplication().getModuleByName(moduleName);
 		//				if(module == null)
 		//					continue;
@@ -170,30 +171,32 @@ public class MobileController extends SimEntity {
 			LogMobile.debug("MobileController.java",appId +" - "+getAppLaunchDelays().get(appId));
 			if(getAppLaunchDelays().get(appId)==0)
 				processAppSubmit(applications.get(appId));
-			else
+			else{
+				System.out.println("MobileController 174 startEntity");
 				send(getId(), getAppLaunchDelays().get(appId), FogEvents.APP_SUBMIT, applications.get(appId));
+			}
 		}
 		for(int i = 0; i<MaxAndMin.MAX_SIMULATION_TIME; i+=1000){
 			send(getId()//Application
-					, i //delay -> When the event will occur 
+					, i //delay -> When the event will occur
 					, MobileEvents.NEXT_STEP
-					);//, getSmartThings());	
+					);//, getSmartThings());
 			send(getId()
 					,i
 					,MobileEvents.CHECK_NEW_STEP);
 		}
-		
+
 		if(isMigrationAble()){
 			for(FogDevice sc: getServerCloudlets()){
 				for(int i = 0; i<MaxAndMin.MAX_SIMULATION_TIME; i+=1000){
 					send(sc.getId()//serverCloudlet
-							, i //delay -> When the event will occur 
+							, i //delay -> When the event will occur
 							, MobileEvents.MAKE_DECISION_MIGRATION
 							, sc.getSmartThings());
 				}
 			}
 		}
-		
+
 
 
 		send(getId(), Config.RESOURCE_MANAGE_INTERVAL, FogEvents.CONTROLLER_RESOURCE_MANAGE);
@@ -208,7 +211,7 @@ public class MobileController extends SimEntity {
 		processAppSubmit(app);
 	}
 	private void processAppSubmit(Application application){
-		System.out.println(CloudSim.clock()+" Submitted application "+ application.getAppId());
+		System.out.println("MobileController 213 processAppSubmit "+CloudSim.clock()+" Submitted application "+ application.getAppId());
 		FogUtils.appIdToGeoCoverageMap.put(application.getAppId(), application.getGeoCoverage());
 		getApplications().put(application.getAppId(), application);
 		List<FogDevice> tempAllDevices = new ArrayList<>();
@@ -235,6 +238,7 @@ public class MobileController extends SimEntity {
 		Map<Integer, Map<String, Integer>> instanceCountMap = modulePlacement.getModuleInstanceCountMap();
 		for(Integer deviceId : deviceToModuleMap.keySet()){
 			for(AppModule module : deviceToModuleMap.get(deviceId)){
+				System.out.println("MobileController 240 ProcessAppSubmit");
 				sendNow(deviceId, FogEvents.APP_SUBMIT, application);
 				sendNow(deviceId, FogEvents.LAUNCH_MODULE, module);
 				sendNow(deviceId, FogEvents.LAUNCH_MODULE_INSTANCE,
@@ -262,6 +266,7 @@ public class MobileController extends SimEntity {
 		Map<Integer, Map<String, Integer>> instanceCountMap = modulePlacement.getModuleInstanceCountMap();
 		//		for(Integer deviceId : deviceToModuleMap.keySet()){
 		for(AppModule module : deviceToModuleMap.get(sc.getId())){
+			System.out.println("MobileController 268 processAppSubmitMigration");
 			sendNow(sc.getId(), FogEvents.APP_SUBMIT, application);
 			sendNow(sc.getId(), FogEvents.LAUNCH_MODULE, module);
 			sendNow(sc.getId(), FogEvents.LAUNCH_MODULE_INSTANCE,
@@ -301,7 +306,6 @@ public class MobileController extends SimEntity {
 			NextStep.nextStep(getServerCloudlets()
 					, getApDevices()
 					, getSmartThings()
-					, getQueue()
 					, getCoordDevices()
 					, getStepPolicy()
 					, getSeed());
@@ -349,7 +353,7 @@ public class MobileController extends SimEntity {
 	////
 	////		int create=0;
 	////		create = rand.nextInt(2);//2 -> 50%, 4 -> 25%, 5 -> 20%, 10 -> 10%, 20 -> 5%, 50 -> 2% and 100 -> 1%
-	//		
+	//
 	////		if(create == 0){//(!smartThing.isStatus()){
 	//			int i=AppExemplo2.getServerCloudlets().get(1).getSmartThings().size();
 	//			//rand = new Random(i);
@@ -392,7 +396,7 @@ public class MobileController extends SimEntity {
 	//	}
 	private double migrationTimeToLiveMigration(MobileDevice smartThing) {
 		// TODO Auto-generated method stub
-		double runTime = CloudSim.clock()-smartThing.getTimeStartLiveMigration(); 		
+		double runTime = CloudSim.clock()-smartThing.getTimeStartLiveMigration();
 		if(smartThing.getMigTime()>runTime){
 			runTime = smartThing.getMigTime()-runTime;
 			return runTime;
@@ -400,7 +404,7 @@ public class MobileController extends SimEntity {
 		else{
 			return 0;
 		}
-		
+
 	}
 
 	private void checkNewStep() {
@@ -411,29 +415,33 @@ public class MobileController extends SimEntity {
 		for(MobileDevice st: getSmartThings()){
 			MyStatistics.getInstance().getEnergyHistory().put(st.getMyId(), st.getEnergyConsumption());
 			MyStatistics.getInstance().getPowerHistory().put(st.getMyId(),st.getHost().getPower());
+
 			if(st.getSourceAp()!=null){
+				System.out.println(st.getName()+"\t"+ st.getCoord().getCoordX()+"\t"+st.getCoord().getCoordY());
+				System.out.println(st.getSourceAp().getName()+ "\t"+st.getSourceAp().getCoord().getCoordX()+"\t"+st.getSourceAp().getCoord().getCoordY());
+				System.out.println(Distances.checkDistance(st.getCoord(), st.getSourceAp().getCoord()));
 				if(!st.isLockedToHandoff()){//(!st.isHandoffStatus()){
 					double distance=Distances.checkDistance(st.getCoord(), st.getSourceAp().getCoord());
 					//					List<ApDevice> tempApList=new ArrayList<>();
 
-
+					System.out.println("Diff "+ (MaxAndMin.MAX_DISTANCE-MaxAndMin.MAX_DISTANCE_TO_HANDOFF) + " max " + MaxAndMin.MAX_DISTANCE);
 					if(distance>=MaxAndMin.MAX_DISTANCE-MaxAndMin.MAX_DISTANCE_TO_HANDOFF && distance<MaxAndMin.MAX_DISTANCE){ //Handoff Zone
 						index=Migration.nextAp(getApDevices(), st);
-						if(index >= 0){//index isn't negative 
-							st.setDestinationAp(getApDevices().get(index));	
+						if(index >= 0){//index isn't negative
+							st.setDestinationAp(getApDevices().get(index));
 							st.setHandoffStatus(true);
 							st.setLockedToHandoff(true);
-							float handoffLocked = (float) ((MaxAndMin.MAX_DISTANCE_TO_HANDOFF/(st.getSpeed()+1))*2000);
-		
+							float handoffLocked = (MaxAndMin.MAX_DISTANCE_TO_HANDOFF/(st.getSpeed()+1))*2000;
+
 							double handoffTime = MaxAndMin.MIN_HANDOFF_TIME + (MaxAndMin.MAX_HANDOFF_TIME - MaxAndMin.MIN_HANDOFF_TIME) * getRand().nextDouble(); //"Maximo" tempo para handoff
 							int delayConnection = 100; //connection between SmartT and ServerCloudlet
-									
-							
-							if(!st.getDestinationAp().getServerCloudlet().equals(st.getSourceServerCloudlet())){	
-								
+
+
+							if(!st.getDestinationAp().getServerCloudlet().equals(st.getSourceServerCloudlet())){
+
 								//send(st.getDestinationAp().getServerCloulet().getId(), handoffTime+delayConnection+10,MobileEvents.MAKE_DECISION_MIGRATION,st);
 								if(isMigrationAble()){
-									LogMobile.debug("MobileController.java", st.getName()+" will be desconnected from "+ 
+									LogMobile.debug("MobileController.java", st.getName()+" will be desconnected from "+
 												st.getSourceServerCloudlet().getName()+" by handoff");
 									sendNow(st.getSourceServerCloudlet().getId(),MobileEvents.MAKE_DECISION_MIGRATION,st);
 									sendNow(st.getSourceServerCloudlet().getId(),MobileEvents.DESCONNECT_ST_TO_SC,st);
@@ -448,19 +456,19 @@ public class MobileController extends SimEntity {
 								}
 								double delayProcess = st.getVmLocalServerCloudlet().getCharacteristics().
 										getCpuTime((st.getVmMobileDevice().getSize()*1024*1024*8)*0.7, 0.0)
-										;//the connection already is opened 
+										;//the connection already is opened
 								st.setTimeFinishDeliveryVm(-1.0);
 								st.setMigStatus(true);
 								MyStatistics.getInstance().startWithoutVmTime(st.getMyId(), CloudSim.clock());
 								send(st.getVmLocalServerCloudlet().getId(),newMigTime+delayProcess,MobileEvents.SET_MIG_STATUS_TRUE, st);
 							}
-							
-							
-							
+
+
+
 							send(st.getSourceAp().getId(),handoffTime,MobileEvents.START_HANDOFF,st);
 							send(st.getDestinationAp().getId(),handoffLocked,MobileEvents.UNLOCKED_HANDOFF,st);
 							MyStatistics.getInstance().setTotalHandoff(1);
-							
+
 							saveHandOff(st);
 
 							LogMobile.debug("MobileController.java", st.getName()+" handoff was scheduled! "+"SourceAp: "+st.getSourceAp().getName()
@@ -477,14 +485,14 @@ public class MobileController extends SimEntity {
 						st.getSourceServerCloudlet().desconnectServerCloudletSmartThing(st);
 						if(st.isLockedToMigration()||st.isMigStatus()){
 							sendNow(st.getVmLocalServerCloudlet().getId(), MobileEvents.ABORT_MIGRATION,st);
-						} 
+						}
 						LogMobile.debug("MobileController.java", st.getName()+" desconnected by MAX_DISTANCE - Distance: "+distance);
 						LogMobile.debug("MobileController.java", st.getName()+" X: "+st.getCoord().getCoordX()+ " Y: "+st.getCoord().getCoordY());
 					}
 				}
 			}
 			else{
-				if(ApDevice.connectApSmartThing(getApDevices(), st, getRand().nextDouble())){ 
+				if(ApDevice.connectApSmartThing(getApDevices(), st, getRand().nextDouble())){
 					st.getSourceAp().getServerCloudlet().connectServerCloudletSmartThing(st);
 					LogMobile.debug("MobileController.java", st.getName() +" has a new connection - SourceAp: "+st.getSourceAp().getName()+
 							" SourceServerCouldlet: "+st.getSourceServerCloudlet().getName());
@@ -502,11 +510,16 @@ public class MobileController extends SimEntity {
 							, "Vm_"+st.getName()
 							, cloudletScheduler
 							, new HashMap<Pair<String, String>, SelectivityModel>());
-
+					System.out.println("before: "+st.getVmLocalServerCloudlet().getName());
 					st.setVmMobileDevice(vmSmartThing);
 					st.getSourceServerCloudlet().getHost().vmCreate(vmSmartThing);
 					st.setVmLocalServerCloudlet(st.getSourceServerCloudlet());
 					st.setLockedToMigration(false);
+					System.out.println("after: " +st.getVmLocalServerCloudlet().getName());
+
+					System.out.println(st.getName()+"\t"+ st.getCoord().getCoordX()+"\t"+st.getCoord().getCoordY());
+					System.out.println(st.getSourceAp().getName()+ "\t"+st.getSourceAp().getCoord().getCoordX()+"\t"+st.getSourceAp().getCoord().getCoordY());
+					System.out.println(Distances.checkDistance(st.getCoord(), st.getSourceAp().getCoord()));
 
 					//					System.out.println("Vm allocated to "+st.getName());
 					int brokerId=getBrokerList().get(st.getMyId()).getId();
@@ -514,7 +527,7 @@ public class MobileController extends SimEntity {
 						s.setAppId("MyApp_vr_game"+st.getMyId());
 						s.setUserId(brokerId);
 						s.setGatewayDeviceId(st.getId());
-						s.setLatency(6.0);	
+						s.setLatency(6.0);
 
 					}
 					for(MobileActuator a: st.getActuators()){
@@ -538,7 +551,7 @@ public class MobileController extends SimEntity {
 			}
 		}
 	}
-	
+
 	private static void saveHandOff(MobileDevice st){
 		System.out.println("HANDOFF "+st.getMyId() + " Position: " + st.getCoord().getCoordX() + ", " + st.getCoord().getCoordY() + " Direction: " + st.getDirection() + " Speed: " + st.getSpeed());
 		try(FileWriter fw = new FileWriter(st.getMyId()+"handoff.txt", true);
@@ -560,8 +573,8 @@ public class MobileController extends SimEntity {
 			e.printStackTrace();
 		}
 	}
-	
-	
+
+
 	@Override
 	public void shutdownEntity() {
 		// TODO Auto-generated method stub
@@ -700,7 +713,7 @@ public class MobileController extends SimEntity {
 		for(AppEdge edge : application.getEdges()){
 			if(edge.getEdgeType() == AppEdge.ACTUATOR){
 				String moduleName = edge.getSource();
-				for(MobileDevice st: getSmartThings()){		
+				for(MobileDevice st: getSmartThings()){
 					for(Actuator actuator : st.getActuators()){
 						if(actuator.getActuatorType().equalsIgnoreCase(edge.getDestination()))
 							application.getModuleByName(moduleName).subscribeActuator(actuator.getId(), edge.getTupleType());
@@ -723,11 +736,11 @@ public class MobileController extends SimEntity {
 		////				if(a.getAppId().equals(application.getAppId()))
 		//					a.setApp(application);
 		//			}
-		//		
+		//
 		for(AppEdge edge : application.getEdges()){
 			if(edge.getEdgeType() == AppEdge.ACTUATOR){
 				String moduleName = edge.getSource();
-				for(MobileDevice st: getSmartThings()){		
+				for(MobileDevice st: getSmartThings()){
 					for(Actuator actuator : st.getActuators()){
 						if(actuator.getActuatorType().equalsIgnoreCase(edge.getDestination()))
 							application.getModuleByName(moduleName).subscribeActuator(actuator.getId(), edge.getTupleType());
@@ -828,12 +841,6 @@ public class MobileController extends SimEntity {
 	}
 	public static void setApDevices(List<ApDevice> apDevices) {
 		MobileController.apDevices = apDevices;
-	}
-	public static Queue<String[]> getQueue() {
-		return q;
-	}
-	public static void setQueue(Queue<String[]> q) {
-		MobileController.q = q;
 	}
 	public static Random getRand() {
 		return rand;
