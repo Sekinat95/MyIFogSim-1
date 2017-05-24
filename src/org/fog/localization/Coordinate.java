@@ -1,11 +1,10 @@
 package org.fog.localization;
 
-import java.util.Arrays;
-import java.util.Queue;
+import java.util.List;
 
-import org.fog.entities.*;
-import org.fog.vmmobile.constants.*;
+import org.fog.entities.MobileDevice;
 import org.fog.vmmobile.constants.Directions;
+import org.fog.vmmobile.constants.MaxAndMin;
 
 
 public class Coordinate { //extends Map {
@@ -36,23 +35,23 @@ public class Coordinate { //extends Map {
 	}
 	public  void desableSmartThing(MobileDevice smartThing){
 		//	System.out.println("Removing SmartThing: "+smartThing.getId());
-		smartThing.setCoord((int) -1, (int)-1);
+		smartThing.setCoord(-1, -1);
 	}
-	
+
 	public double radiansToDegree (Double direction){
-		
+
 		double degree = direction*(180/Math.PI);
-		
+
 		if (degree < 0)
 			degree += 360;
-	
+
 		return degree;
 	}
-	
+
 	public int convertDirection(Double direction){
-		
+
 		double degree = radiansToDegree(direction);
-		
+
 		if (degree > 337.5 && degree <= 22.5)
 			return Directions.EAST;
 		else if (degree > 22.5 && degree <= 67.5)
@@ -70,20 +69,22 @@ public class Coordinate { //extends Map {
 		else
 			return Directions.SOUTHEAST;
 	}
-	
-	public void newCoordinate(MobileDevice smartThing, Queue<String[]>q){
-		
-		if(!q.isEmpty()){
-			String[] coodinates = q.poll();
-				
+
+	public void newCoordinate(MobileDevice smartThing){
+
+		List<String[]> path = smartThing.getPath();
+		if(!path.isEmpty()){
+			String[] coodinates = path.get(0);
+			path.remove(0);
+
 			int direction = convertDirection(Double.parseDouble(coodinates[0]));
 			int x = (int) Double.parseDouble(coodinates[1]);
 			int y = (int) Double.parseDouble(coodinates[2]);
 			int speed = (int) Double.parseDouble(coodinates[3]);
-		
-				
+
+
 			//System.out.println("x: " + x+" y: "+y+"\tx: " + coodinates[1]+" y: "+coodinates[2]);
-				
+
 			if(x<0||y<0||x>=MaxAndMin.MAX_X||y>=MaxAndMin.MAX_Y){//It checks the CoordDevices limits.
 				desableSmartThing(smartThing);
 					//					coordDevices.setPositions(-1, oldCoordX, oldCoordY);
@@ -94,13 +95,13 @@ public class Coordinate { //extends Map {
 				smartThing.getCoord().setCoordX(x);
 				smartThing.getCoord().setCoordY(y);
 				smartThing.setSpeed(speed);
-			}				
+			}
 		}
 		else{
 			desableSmartThing(smartThing);
 		}
 	}
-	
+
 	public  void newCoordinate(MobileDevice smartThing, int add, Coordinate coordDevices){//(pointUSER user,float add)
 
 		if(smartThing.getSpeed()!=0){
@@ -123,7 +124,7 @@ public class Coordinate { //extends Map {
 
 			if(direction==Directions.EAST){
 				/*same Y, increase X*/
-				//					if(coordDevices.getPositions(increaseX, oldCoordY)==-1){	
+				//					if(coordDevices.getPositions(increaseX, oldCoordY)==-1){
 				smartThing.getCoord().setCoordX(increaseX);
 				//						coordDevices.setPositions(smartThing.getId(), smartThing.getCoord().getCoordX(), smartThing.getCoord().getCoordY());//new position with new value
 				//						coordDevices.setPositions(-1, oldCoordX, oldCoordY);// Disable old position
@@ -133,7 +134,7 @@ public class Coordinate { //extends Map {
 			}
 			else if(direction==Directions.WEST){
 				/*same Y, decrease X*/
-				//					if(coordDevices.getPositions(decreaseX, oldCoordY)==-1){	
+				//					if(coordDevices.getPositions(decreaseX, oldCoordY)==-1){
 				smartThing.getCoord().setCoordX(decreaseX);//next position in the same direction
 				//						coordDevices.setPositions(smartThing.getId(), smartThing.getCoord().getCoordX(), smartThing.getCoord().getCoordY());//new position with new value
 				//						coordDevices.setPositions(-1, oldCoordX, oldCoordY);// Disable old position
@@ -143,7 +144,7 @@ public class Coordinate { //extends Map {
 			}
 			else if(direction==Directions.SOUTH){//Directions.NORTH){
 				/*same X, increase Y*/
-				//					if(coordDevices.getPositions(oldCoordX, increaseY)==-1){	
+				//					if(coordDevices.getPositions(oldCoordX, increaseY)==-1){
 				smartThing.getCoord().setCoordY(increaseY);//next position in the same direction
 				//						coordDevices.setPositions(smartThing.getId(), smartThing.getCoord().getCoordX(), smartThing.getCoord().getCoordY());//new position with new value
 				//						coordDevices.setPositions(-1, oldCoordX, oldCoordY);// Disable old position
@@ -153,7 +154,7 @@ public class Coordinate { //extends Map {
 			}
 			else if(direction==Directions.NORTH){//Directions.SOUTH){
 				/*same X, decrease Y*/
-				//					if(coordDevices.getPositions(oldCoordX, decreaseY)==-1){	
+				//					if(coordDevices.getPositions(oldCoordX, decreaseY)==-1){
 				smartThing.getCoord().setCoordY(decreaseY);
 				//						coordDevices.setPositions(smartThing.getId(), smartThing.getCoord().getCoordX(), smartThing.getCoord().getCoordY());//new position with new value
 				//						coordDevices.setPositions(-1, oldCoordX, oldCoordY);// Disable old position
@@ -163,7 +164,7 @@ public class Coordinate { //extends Map {
 			}
 			else if(direction==Directions.SOUTHEAST){//Directions.NORTHEAST){
 				/*increase X and Y*/
-				//					if(coordDevices.getPositions(increaseX, increaseY)==-1){	
+				//					if(coordDevices.getPositions(increaseX, increaseY)==-1){
 				smartThing.getCoord().setCoordX(increaseX);
 				smartThing.getCoord().setCoordY(increaseY);
 				//						coordDevices.setPositions(smartThing.getId(), smartThing.getCoord().getCoordX(), smartThing.getCoord().getCoordY());//new position with new value
@@ -178,7 +179,7 @@ public class Coordinate { //extends Map {
 			}
 			else if(direction==Directions.NORTHWEST){//Directions.SOUTHWEST){
 				/*decrease X and Y*/
-				//					if(coordDevices.getPositions(decreaseX, decreaseY)==-1){	
+				//					if(coordDevices.getPositions(decreaseX, decreaseY)==-1){
 				smartThing.getCoord().setCoordX(decreaseX);
 				smartThing.getCoord().setCoordY(decreaseY);
 				//						coordDevices.setPositions(smartThing.getId(), smartThing.getCoord().getCoordX(), smartThing.getCoord().getCoordY());//new position with new value
@@ -193,7 +194,7 @@ public class Coordinate { //extends Map {
 			}
 			else if(direction==Directions.SOUTHWEST){//Directions.NORTHWEST){
 				/*decrease X increase Y*/
-				//					if(coordDevices.getPositions(decreaseX, increaseY)==-1){	
+				//					if(coordDevices.getPositions(decreaseX, increaseY)==-1){
 				smartThing.getCoord().setCoordX(decreaseX);
 				smartThing.getCoord().setCoordY(increaseY);
 				//						coordDevices.setPositions(smartThing.getId(), smartThing.getCoord().getCoordX(), smartThing.getCoord().getCoordY());//new position with new value
@@ -203,12 +204,12 @@ public class Coordinate { //extends Map {
 				//					else {
 				//						decreaseX--;//next position in the same direction
 				//						increaseY++;//next position in the same direction
-				//					}				
+				//					}
 
 			}
 			else if(direction==Directions.NORTHEAST){//Directions.SOUTHEAST){
 				/*increase X decrease Y*/
-				//					if(coordDevices.getPositions(increaseX, decreaseY)==-1){	
+				//					if(coordDevices.getPositions(increaseX, decreaseY)==-1){
 				smartThing.getCoord().setCoordX(increaseX);
 				smartThing.getCoord().setCoordY(decreaseY);
 				//						coordDevices.setPositions(smartThing.getId(), smartThing.getCoord().getCoordX(), smartThing.getCoord().getCoordY());//new position with new value
@@ -248,7 +249,7 @@ public class Coordinate { //extends Map {
 	//		return positions[x][y];
 	//	}
 	//
-	//	public void setPositions(int id, int x, int y) {		
+	//	public void setPositions(int id, int x, int y) {
 	//		this.positions[x][y] = id;
 	//
 	//	}

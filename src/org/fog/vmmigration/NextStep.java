@@ -7,7 +7,6 @@ import java.io.IOException;
 import java.io.PrintWriter;
 import java.io.UnsupportedEncodingException;
 import java.util.List;
-import java.util.Queue;
 
 import org.fog.entities.ApDevice;
 import org.fog.entities.FogDevice;
@@ -29,41 +28,41 @@ public class NextStep {
 //	public  int contNextStep = 0;
 
 	private static void saveMobility(MobileDevice st){
-		System.out.println(st.getMyId() + " Position: " + st.getCoord().getCoordX() + ", " + st.getCoord().getCoordY() + " Direction: " + st.getDirection() + " Speed: " + st.getSpeed());
-		System.out.println("Source AP: " + st.getSourceAp() + " Dest AP: " + st.getDestinationAp() + " Host: " + st.getHost().getId());
-		System.out.println("Local server: " + st.getVmLocalServerCloudlet().getName() + " Apps " + st.getVmLocalServerCloudlet().getActiveApplications() + " Map " + st.getVmLocalServerCloudlet().getApplicationMap());
-		if(st.getDestinationServerCloudlet() == null){
-			System.out.println("Dest server: null Apps: null Map: null");
+//		System.out.println(st.getMyId() + " Position: " + st.getCoord().getCoordX() + ", " + st.getCoord().getCoordY() + " Direction: " + st.getDirection() + " Speed: " + st.getSpeed());
+//		System.out.println("Source AP: " + st.getSourceAp() + " Dest AP: " + st.getDestinationAp() + " Host: " + st.getHost().getId());
+//		System.out.println("Local server: " + st.getVmLocalServerCloudlet().getName() + " Apps " + st.getVmLocalServerCloudlet().getActiveApplications() + " Map " + st.getVmLocalServerCloudlet().getApplicationMap());
+//		if(st.getDestinationServerCloudlet() == null){
+//			System.out.println("Dest server: null Apps: null Map: null");
+//		}
+//		else{
+//			System.out.println("Dest server: " + st.getDestinationServerCloudlet().getName() + " Apps: " + st.getDestinationServerCloudlet().getActiveApplications() +  " Map " + st.getDestinationServerCloudlet().getApplicationMap());
+//		}
+		try(FileWriter fw1 = new FileWriter(st.getMyId()+"out.txt", true);
+			    BufferedWriter bw1 = new BufferedWriter(fw1);
+			    PrintWriter out1 = new PrintWriter(bw1))
+		{
+			out1.println(st.getMyId() + " Position: " + st.getCoord().getCoordX() + ", " + st.getCoord().getCoordY() + " Direction: " + st.getDirection() + " Speed: " + st.getSpeed());
+			out1.println("Source AP: " + st.getSourceAp() + " Dest AP: " + st.getDestinationAp() + " Host: " + st.getHost().getId());
+			out1.println("Local server: " + st.getVmLocalServerCloudlet().getName() + " Apps " + st.getVmLocalServerCloudlet().getActiveApplications() + " Map " + st.getVmLocalServerCloudlet().getApplicationMap());
+			if(st.getDestinationServerCloudlet() == null){
+				out1.println("Dest server: null Apps: null Map: null");
+			}
+			else{
+				out1.println("Dest server: " + st.getDestinationServerCloudlet().getName() + " Apps: " + st.getDestinationServerCloudlet().getActiveApplications() +  " Map " + st.getDestinationServerCloudlet().getApplicationMap());
+			}
 		}
-		else{
-			System.out.println("Dest server: " + st.getDestinationServerCloudlet().getName() + " Apps: " + st.getDestinationServerCloudlet().getActiveApplications() +  " Map " + st.getDestinationServerCloudlet().getApplicationMap());
+		catch (UnsupportedEncodingException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
 		}
-//		try(FileWriter fw1 = new FileWriter(st.getMyId()+"out.txt", true);
-//			    BufferedWriter bw1 = new BufferedWriter(fw1);
-//			    PrintWriter out1 = new PrintWriter(bw1))
-//		{
-//			out1.println(st.getMyId() + " Position: " + st.getCoord().getCoordX() + ", " + st.getCoord().getCoordY() + " Direction: " + st.getDirection() + " Speed: " + st.getSpeed());
-//			out1.println("Source AP: " + st.getSourceAp() + " Dest AP: " + st.getDestinationAp() + " Host: " + st.getHost().getId());
-//			out1.println("Local server: " + st.getVmLocalServerCloudlet().getName() + " Apps " + st.getVmLocalServerCloudlet().getActiveApplications() + " Map " + st.getVmLocalServerCloudlet().getApplicationMap());
-//			if(st.getDestinationServerCloudlet() == null){
-//				out1.println("Dest server: null Apps: null Map: null");
-//			}
-//			else{
-//				out1.println("Dest server: " + st.getDestinationServerCloudlet().getName() + " Apps: " + st.getDestinationServerCloudlet().getActiveApplications() +  " Map " + st.getDestinationServerCloudlet().getApplicationMap());
-//			}
-//		}
-//		catch (UnsupportedEncodingException e) {
-//			// TODO Auto-generated catch block
-//			e.printStackTrace();
-//		}
-//		catch (FileNotFoundException e) {
-//			// TODO Auto-generated catch block
-//			e.printStackTrace();
-//		}
-//		catch (IOException e) {
-//			// TODO Auto-generated catch block
-//			e.printStackTrace();
-//		}
+		catch (FileNotFoundException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 
 		try(FileWriter fw = new FileWriter(st.getMyId()+"route.txt", true);
 			    BufferedWriter bw = new BufferedWriter(fw);
@@ -86,7 +85,7 @@ public class NextStep {
 	}
 
 	public static  void nextStep(List<FogDevice> serverCloudlets, List<ApDevice> apDevices, List<MobileDevice> smartThings,
-			Queue<String[]> q, Coordinate coordDevices, int stepPolicy, int seed) {
+			Coordinate coordDevices, int stepPolicy, int seed) {
 		MobileDevice st=null;
 		Coordinate coordinate = new Coordinate();
 		for(int i = 0;i<smartThings.size();i++){//It makes the new position according direction and speed
@@ -96,7 +95,7 @@ public class NextStep {
 			//	if((st.getSourceAp()!=null)&&
 //			if(st.isStatus()&&
 			if((st.getDirection()!=Directions.NONE)){
-				coordinate.newCoordinate(st, q);
+				coordinate.newCoordinate(st);
 //				coordinate.newCoordinate(st, stepPolicy, coordDevices);//1 -> It means that only one step
 			}
 			if(st.getCoord().getCoordX()==-1){

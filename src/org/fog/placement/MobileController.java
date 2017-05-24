@@ -12,7 +12,6 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 import java.util.Map.Entry;
-import java.util.Queue;
 import java.util.Random;
 
 import org.apache.commons.math3.util.Pair;
@@ -63,7 +62,6 @@ public class MobileController extends SimEntity {
 	private static List<MobileDevice> smartThings;
 	private static List<ApDevice> apDevices;
 	private static List<FogBroker> brokerList;
-    private static Queue<String[]> q;
 
 
 	private Map<String, Application> applications;
@@ -77,7 +75,7 @@ public class MobileController extends SimEntity {
 	public MobileController(){
 
 	}
-	public MobileController(String name, List<FogDevice> serverCloudlets, List<ApDevice> apDevices, List<MobileDevice> smartThings,List<FogBroker> brokers, Queue<String[]> q, ModuleMapping moduleMapping
+	public MobileController(String name, List<FogDevice> serverCloudlets, List<ApDevice> apDevices, List<MobileDevice> smartThings,List<FogBroker> brokers, ModuleMapping moduleMapping
 			, int migPointPolicy, int migStrategyPolicy, int stepPolicy, Coordinate coordDevices, int seed, boolean migrationAble) {
 		// TODO Auto-generated constructor stub
 		super(name);
@@ -93,7 +91,6 @@ public class MobileController extends SimEntity {
 		setApDevices(apDevices);
 		setSmartThings(smartThings);
 		setBrokerList(brokers);
-		setQueue(q);
 		setMigPointPolicy(migPointPolicy);
 		setMigStrategyPolicy(migStrategyPolicy);
 		setStepPolicy(stepPolicy);
@@ -309,7 +306,6 @@ public class MobileController extends SimEntity {
 			NextStep.nextStep(getServerCloudlets()
 					, getApDevices()
 					, getSmartThings()
-					, getQueue()
 					, getCoordDevices()
 					, getStepPolicy()
 					, getSeed());
@@ -845,12 +841,6 @@ public class MobileController extends SimEntity {
 	}
 	public static void setApDevices(List<ApDevice> apDevices) {
 		MobileController.apDevices = apDevices;
-	}
-	public static Queue<String[]> getQueue() {
-		return q;
-	}
-	public static void setQueue(Queue<String[]> q) {
-		MobileController.q = q;
 	}
 	public static Random getRand() {
 		return rand;

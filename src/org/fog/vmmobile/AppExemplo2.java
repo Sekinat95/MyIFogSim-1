@@ -1,16 +1,15 @@
 package org.fog.vmmobile;
 
 import java.io.BufferedReader;
+import java.io.File;
 import java.io.FileReader;
 import java.io.IOException;
-import java.io.PrintStream;
 import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.HashMap;
 import java.util.HashSet;
 import java.util.LinkedList;
 import java.util.List;
-import java.util.Queue;
 import java.util.Random;
 import java.util.Set;
 
@@ -78,7 +77,6 @@ public class AppExemplo2 {
 	private static List<FogBroker> brokerList = new ArrayList<>();
 	private static List<String> appIdList = new ArrayList<>();
 	private static List<Application> applicationList = new ArrayList<>();
-	private static Queue<String[]> q = new LinkedList<String[]>();
 
 	private static boolean migrationAble;
 
@@ -250,7 +248,6 @@ public class AppExemplo2 {
 		}
 
 		// System.exit(0);
-		readMoblityData(q, 2350);
 
 		/* It is creating Smart Things. */
 		for (int i = 0; i < getMaxSmartThings(); i++) {// it creates the
@@ -259,9 +256,10 @@ public class AppExemplo2 {
 														// runtime, schedule
 														// events to add or
 														// remove items
-			addSmartThing(smartThings, coordDevices, i, q);
+			addSmartThing(smartThings, coordDevices, i);
 		}
 
+		readMoblityData();
 
 		int index;// Auxiliary
 		int myCount = 0;
@@ -471,7 +469,7 @@ public class AppExemplo2 {
 
 		mobileController = new MobileController("MobileController",
 				getServerCloudlets(), getApDevices(), getSmartThings(),
-				getBrokerList(), getQueue(), moduleMapping, getMigPointPolicy(),
+				getBrokerList(), moduleMapping, getMigPointPolicy(),
 				getMigStrategyPolicy(), getStepPolicy(), getCoordDevices(),
 				getSeed(), isMigrationAble());
 		i = 0;
@@ -605,7 +603,7 @@ public class AppExemplo2 {
 
 		}
 
-		System.setOut(new PrintStream("0out.txt"));
+		//System.setOut(new PrintStream("0out.txt"));
 
 		CloudSim.startSimulation();
 		System.out.println("Simulation over");
@@ -613,25 +611,39 @@ public class AppExemplo2 {
 
 	}
 
-	private static void readMoblityData(Queue<String[]> q, int i) {
+	private static void readMoblityData(){
 
-		String csvFile = i + "log.csv";
+		File folder = new File("input");
+		File[] listOfFiles = folder.listFiles();
+		int i = 0;
+
+		for (MobileDevice st : getSmartThings()) {
+			readDevicePath(st, "input/"+listOfFiles[i++].getName());
+		}
+	}
+
+
+	private static void readDevicePath(MobileDevice st, String filename) {
+
 		String line = "";
 		String cvsSplitBy = "\t";
 
-		try (BufferedReader br = new BufferedReader(new FileReader(csvFile))) {
+		try (BufferedReader br = new BufferedReader(new FileReader(filename))) {
 
 			while ((line = br.readLine()) != null) {
 
 				// use comma as separator
-				String[] country = line.split(cvsSplitBy);
+				String[] position = line.split(cvsSplitBy);
 
 				// System.out.println(country[0]+"
 				// "+Double.parseDouble(country[0])*(180/Math.PI)+"
 				// "+country[1]+" "+country[2]+" "+country[3]);
 
-				q.add(country);
+				st.getPath().add(position);
 			}
+
+			Coordinate coordinate = new Coordinate();
+			coordinate.newCoordinate(st);
 
 		}
 		catch (IOException e) {
@@ -717,7 +729,7 @@ public class AppExemplo2 {
 	}
 
 	public static void addSmartThing(List<MobileDevice> smartThing,
-			Coordinate coordDevices, int i, Queue<String[]>q) {
+			Coordinate coordDevices, int i) {
 
 		// Random rand = new Random((Integer.MAX_VALUE*getSeed())/(i+1));
 		int coordX=0, coordY=0;
@@ -922,9 +934,6 @@ public class AppExemplo2 {
 				st.setTimeFinishHandoff(0);
 				st.setSensors(sensors);
 				st.setActuators(actuators);
-
-				Coordinate coordinate = new Coordinate();
-				coordinate.newCoordinate(st, q);
 
 				smartThing.add(i, st);
 				// coordDevices.setPositions(st.getId(),
@@ -1770,14 +1779,6 @@ public class AppExemplo2 {
 
 	public static void setApplicationList(List<Application> applicationList) {
 		AppExemplo2.applicationList = applicationList;
-	}
-
-	public static Queue<String[]> getQueue() {
-		return q;
-	}
-
-	public static void setQueue(Queue<String[]> q) {
-		AppExemplo2.q = q;
 	}
 
 	public static int getSeed() {
