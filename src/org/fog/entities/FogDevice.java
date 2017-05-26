@@ -61,7 +61,7 @@ public class FogDevice extends PowerDatacenter {
 	protected Queue<Pair<Tuple, Integer>> southTupleQueue;
 
 	protected List<String> activeApplications;
-	protected LinkedList<String[]> path;
+	protected ArrayList<String[]> path;
 
 	protected Map<String, Application> applicationMap;
 	protected Map<String, List<String>> appToModulesMap;
@@ -128,6 +128,8 @@ public class FogDevice extends PowerDatacenter {
 	protected int policyReplicaVM;
 	private FogDevice serverCloudletToVmMigrate;
 	protected BeforeMigration beforeMigration;
+	protected int startTravelTime;
+	protected int travelTimeId;
 
 	protected int myId;
 
@@ -197,6 +199,22 @@ public class FogDevice extends PowerDatacenter {
 	public void setCoord(int coordX, int coordY) { //myiFogSim
 		this.coord.setCoordX(coordX);
 		this.coord.setCoordY(coordY);
+	}
+
+	public int getStartTravelTime() {
+		return startTravelTime;
+	}
+
+	public void setStartTravelTime(int startTravelTime) {
+		this.startTravelTime = startTravelTime;
+	}
+
+	public int getTravelTimeId() {
+		return travelTimeId;
+	}
+
+	public void setTravelTimeId(int travelTimeId) {
+		this.travelTimeId = travelTimeId;
 	}
 
 	public FogDevice(){//myiFogSim
@@ -274,7 +292,8 @@ public class FogDevice extends PowerDatacenter {
 			host.setDatacenter(this);
 		}
 		setActiveApplications(new ArrayList<String>());
-		setPath(new LinkedList<String[]>());
+		setPath(new ArrayList<String[]>());
+		setTravelTimeId(0);
 		// If this resource doesn't have any PEs then no useful at all
 		if (getCharacteristics().getNumberOfPes() == 0) {
 			throw new Exception(super.getName()
@@ -348,7 +367,8 @@ public class FogDevice extends PowerDatacenter {
 			host.setDatacenter(this);
 		}
 		setActiveApplications(new ArrayList<String>());
-		setPath(new LinkedList<String[]>());
+		setPath(new ArrayList<String[]>());
+		setTravelTimeId(0);
 
 		// If this resource doesn't have any PEs then no useful at all
 		if (getCharacteristics().getNumberOfPes() == 0) {
@@ -405,7 +425,8 @@ public class FogDevice extends PowerDatacenter {
 			host.setDatacenter(this);
 		}
 		setActiveApplications(new ArrayList<String>());
-		setPath(new LinkedList<String[]>());
+		setPath(new ArrayList<String[]>());
+		setTravelTimeId(0);
 
 		// If this resource doesn't have any PEs then no useful at all
 		if (getCharacteristics().getNumberOfPes() == 0) {
@@ -491,7 +512,8 @@ public class FogDevice extends PowerDatacenter {
 			host1.setDatacenter(this);
 		}
 		setActiveApplications(new ArrayList<String>());
-		setPath(new LinkedList<String[]>());
+		setPath(new ArrayList<String[]>());
+		setTravelTimeId(0);
 
 		if (getCharacteristics().getNumberOfPes() == 0) {
 			throw new Exception(super.getName()
@@ -1848,10 +1870,10 @@ public class FogDevice extends PowerDatacenter {
 	public void setActiveApplications(List<String> activeApplications) {
 		this.activeApplications = activeApplications;
 	}
-	public LinkedList<String[]> getPath() {
+	public ArrayList<String[]> getPath() {
 		return path;
 	}
-	public void setPath(LinkedList<String[]> path) {
+	public void setPath(ArrayList<String[]> path) {
 		this.path = path;
 	}
 	public Map<Integer, List<String>> getChildToOperatorsMap() {

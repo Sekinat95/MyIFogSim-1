@@ -19,7 +19,7 @@ public final class MaxAndMin {
 	public static final float MAX_VALUE_SERVICE = 1.1f;
 	public static final float MAX_VALUE_AGREE = 70f;
 	public static final int MAX_ST_IN_AP = 500;
-	public static final int MAX_SIMULATION_TIME = 1000*60*360; //30 minutes
+	public static final int MAX_SIMULATION_TIME = 1000*60*1500; //30 minutes
 	public static final int MAX_VM_SIZE = 200; //200MB
 	public static final int MIN_VM_SIZE = 100; //100MB
 	public static final int MAX_BANDWIDTH = 15 * 1024 * 1024;

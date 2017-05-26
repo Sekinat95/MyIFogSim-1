@@ -1,5 +1,6 @@
 package org.fog.localization;
 
+import java.util.ArrayList;
 import java.util.List;
 
 import org.fog.entities.MobileDevice;
@@ -72,15 +73,16 @@ public class Coordinate { //extends Map {
 
 	public void newCoordinate(MobileDevice smartThing){
 
-		List<String[]> path = smartThing.getPath();
-		if(!path.isEmpty()){
-			String[] coodinates = path.get(0);
-			path.remove(0);
+		ArrayList<String[]> path = smartThing.getPath();
+		if(smartThing.getTravelTimeId() < path.size()){
+			String[] coodinates = path.get(smartThing.getTravelTimeId());
 
-			int direction = convertDirection(Double.parseDouble(coodinates[0]));
-			int x = (int) Double.parseDouble(coodinates[1]);
-			int y = (int) Double.parseDouble(coodinates[2]);
-			int speed = (int) Double.parseDouble(coodinates[3]);
+			smartThing.setTravelTimeId(smartThing.getTravelTimeId()+1);
+
+			int direction = convertDirection(Double.parseDouble(coodinates[1]));
+			int x = (int) Double.parseDouble(coodinates[2]);
+			int y = (int) Double.parseDouble(coodinates[3]);
+			int speed = (int) Double.parseDouble(coodinates[4]);
 
 
 			//System.out.println("x: " + x+" y: "+y+"\tx: " + coodinates[1]+" y: "+coodinates[2]);
@@ -91,6 +93,41 @@ public class Coordinate { //extends Map {
 		//			break;
 			}
 			else{
+				smartThing.setDirection(direction);
+				smartThing.getCoord().setCoordX(x);
+				smartThing.getCoord().setCoordY(y);
+				smartThing.setSpeed(speed);
+			}
+		}
+		else{
+			desableSmartThing(smartThing);
+		}
+	}
+
+	public void setInitialCoordinate(MobileDevice smartThing){
+
+		ArrayList<String[]> path = smartThing.getPath();
+		if(!path.isEmpty()){
+			String[] coodinates = path.get(0);
+
+			smartThing.setTravelTimeId(1);
+
+			int time = (int) Double.parseDouble(coodinates[0]);
+			int direction = convertDirection(Double.parseDouble(coodinates[1]));
+			int x = (int) Double.parseDouble(coodinates[2]);
+			int y = (int) Double.parseDouble(coodinates[3]);
+			int speed = (int) Double.parseDouble(coodinates[4]);
+
+
+			//System.out.println("x: " + x+" y: "+y+"\tx: " + coodinates[1]+" y: "+coodinates[2]);
+
+			if(x<0||y<0||x>=MaxAndMin.MAX_X||y>=MaxAndMin.MAX_Y){//It checks the CoordDevices limits.
+				desableSmartThing(smartThing);
+					//					coordDevices.setPositions(-1, oldCoordX, oldCoordY);
+		//			break;
+			}
+			else{
+				smartThing.setStartTravelTime(time);
 				smartThing.setDirection(direction);
 				smartThing.getCoord().setCoordX(x);
 				smartThing.getCoord().setCoordY(y);
