@@ -169,13 +169,14 @@ public class MobileController extends SimEntity {
 		// TODO Auto-generated method stub
 		for(String appId : applications.keySet()){
 			LogMobile.debug("MobileController.java",appId +" - "+getAppLaunchDelays().get(appId));
-			if(getAppLaunchDelays().get(appId)==0)
+//			if(getAppLaunchDelays().get(appId)==0)
 				processAppSubmit(applications.get(appId));
-			else{
-				System.out.println("MobileController 174 startEntity");
-				send(getId(), getAppLaunchDelays().get(appId), FogEvents.APP_SUBMIT, applications.get(appId));
-			}
+//			else{
+//				System.out.println("MobileController 174 startEntity "+getAppLaunchDelays().get(appId));
+//				send(getId(), getAppLaunchDelays().get(appId), FogEvents.APP_SUBMIT, applications.get(appId));
+//			}
 		}
+
 		for(int i = 0; i<MaxAndMin.MAX_SIMULATION_TIME; i+=1000){
 			send(getId()//Application
 					, i //delay -> When the event will occur
@@ -197,7 +198,15 @@ public class MobileController extends SimEntity {
 			}
 		}
 
-
+		for (MobileDevice st : getSmartThings()){
+			System.out.println(st.getStartTravelTime()*1000);
+			send(getId(), st.getStartTravelTime()*1000, MobileEvents.CREATE_NEW_SMARTTHING, st);
+			st.getSourceAp().desconnectApSmartThing(st);
+			st.getSourceServerCloudlet().desconnectServerCloudletSmartThing(st);
+			if(st.isLockedToMigration()||st.isMigStatus()){
+				sendNow(st.getVmLocalServerCloudlet().getId(), MobileEvents.ABORT_MIGRATION,st);
+			}
+		}
 
 		send(getId(), Config.RESOURCE_MANAGE_INTERVAL, FogEvents.CONTROLLER_RESOURCE_MANAGE);
 
@@ -312,7 +321,7 @@ public class MobileController extends SimEntity {
 
 			break;
 		case MobileEvents.CREATE_NEW_SMARTTHING:
-			createNewSmartThing();
+			createNewSmartThing(ev);
 			break;
 		case MobileEvents.CHECK_NEW_STEP:
 			checkNewStep();
@@ -337,16 +346,16 @@ public class MobileController extends SimEntity {
 	}
 
 
-	private void createNewSmartThing() {
+	private void createNewSmartThing(SimEvent ev) {
+		MobileDevice st = (MobileDevice) ev.getData();
 		// TODO Auto-generated method stub
-		int i= getSmartThings().size();
-
 
 		System.out.println("criado...");
-		if(ApDevice.connectApSmartThing(getApDevices(), getSmartThings().get(i),getRand().nextDouble())){
-			getSmartThings().get(i).getSourceAp().getServerCloudlet().connectServerCloudletSmartThing(getSmartThings().get(i));
-			System.out.println("conectado... "+getSmartThings().get(i).getSourceServerCloudlet().getName());
-		}
+		st.setTravelTimeId(0);
+//		if(ApDevice.connectApSmartThing(getApDevices(), st, getRand().nextDouble())){
+//			st.getSourceAp().getServerCloudlet().connectServerCloudletSmartThing(st);
+//			System.out.println("conectado... "+st.getSourceServerCloudlet().getName());
+//		}
 
 	}
 	//	{antigo createNewsmartthing
@@ -413,6 +422,9 @@ public class MobileController extends SimEntity {
 		//	Random rand = new Random((long) (getSeed()+CloudSim.clock()));
 		//		Migration migration = new Migration();
 		for(MobileDevice st: getSmartThings()){
+			if(st.getTravelTimeId()==-1){
+				continue;
+			}
 			MyStatistics.getInstance().getEnergyHistory().put(st.getMyId(), st.getEnergyConsumption());
 			MyStatistics.getInstance().getPowerHistory().put(st.getMyId(),st.getHost().getPower());
 

@@ -94,6 +94,9 @@ public class NextStep {
 				//System.out.println(q.size()+" "+s[0]+" "+ s[1]+" "+ s[2]+" "+s[3]);
 			//	if((st.getSourceAp()!=null)&&
 //			if(st.isStatus()&&
+			if(st.getTravelTimeId()==-1){
+				continue;
+			}
 			if((st.getDirection()!=Directions.NONE)){
 				coordinate.newCoordinate(st);
 //				coordinate.newCoordinate(st, stepPolicy, coordDevices);//1 -> It means that only one step

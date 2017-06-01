@@ -10,6 +10,7 @@ import java.io.IOException;
 import java.io.PrintWriter;
 import java.io.UnsupportedEncodingException;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.Calendar;
 import java.util.HashMap;
 import java.util.HashSet;
@@ -622,6 +623,7 @@ public class AppExemplo2 {
 		File[] listOfFiles = folder.listFiles();
 		int i = 0;
 
+		Arrays.sort(listOfFiles);
 		for (MobileDevice st : getSmartThings()) {
 			readDevicePath(st, "input/"+listOfFiles[i++].getName());
 		}

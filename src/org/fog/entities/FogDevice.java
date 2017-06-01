@@ -293,7 +293,7 @@ public class FogDevice extends PowerDatacenter {
 		}
 		setActiveApplications(new ArrayList<String>());
 		setPath(new ArrayList<String[]>());
-		setTravelTimeId(0);
+		setTravelTimeId(-1);
 		// If this resource doesn't have any PEs then no useful at all
 		if (getCharacteristics().getNumberOfPes() == 0) {
 			throw new Exception(super.getName()
@@ -368,7 +368,7 @@ public class FogDevice extends PowerDatacenter {
 		}
 		setActiveApplications(new ArrayList<String>());
 		setPath(new ArrayList<String[]>());
-		setTravelTimeId(0);
+		setTravelTimeId(-1);
 
 		// If this resource doesn't have any PEs then no useful at all
 		if (getCharacteristics().getNumberOfPes() == 0) {
@@ -426,7 +426,7 @@ public class FogDevice extends PowerDatacenter {
 		}
 		setActiveApplications(new ArrayList<String>());
 		setPath(new ArrayList<String[]>());
-		setTravelTimeId(0);
+		setTravelTimeId(-1);
 
 		// If this resource doesn't have any PEs then no useful at all
 		if (getCharacteristics().getNumberOfPes() == 0) {
@@ -513,7 +513,7 @@ public class FogDevice extends PowerDatacenter {
 		}
 		setActiveApplications(new ArrayList<String>());
 		setPath(new ArrayList<String[]>());
-		setTravelTimeId(0);
+		setTravelTimeId(-1);
 
 		if (getCharacteristics().getNumberOfPes() == 0) {
 			throw new Exception(super.getName()

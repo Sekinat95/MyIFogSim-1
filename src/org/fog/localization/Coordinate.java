@@ -1,7 +1,6 @@
 package org.fog.localization;
 
 import java.util.ArrayList;
-import java.util.List;
 
 import org.fog.entities.MobileDevice;
 import org.fog.vmmobile.constants.Directions;
@@ -110,7 +109,7 @@ public class Coordinate { //extends Map {
 		if(!path.isEmpty()){
 			String[] coodinates = path.get(0);
 
-			smartThing.setTravelTimeId(1);
+			smartThing.setTravelTimeId(-1);
 
 			int time = (int) Double.parseDouble(coodinates[0]);
 			int direction = convertDirection(Double.parseDouble(coodinates[1]));
