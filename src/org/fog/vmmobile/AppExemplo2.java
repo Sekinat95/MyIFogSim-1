@@ -7,6 +7,7 @@ import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
+import java.io.PrintStream;
 import java.io.PrintWriter;
 import java.io.UnsupportedEncodingException;
 import java.util.ArrayList;
@@ -609,7 +610,7 @@ public class AppExemplo2 {
 
 		}
 
-		//System.setOut(new PrintStream("0out.txt"));
+		System.setOut(new PrintStream("out.txt"));
 
 		CloudSim.startSimulation();
 		System.out.println("Simulation over");

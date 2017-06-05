@@ -67,6 +67,7 @@ public class AggregateSwitch extends Switch {
 		// add packet in the host list
 		NetworkPacket hspkt = (NetworkPacket) ev.getData();
 		int recvVMid = hspkt.pkt.reciever;
+		System.out.println("AggregateSwitch processpacket_down 70");
 		CloudSim.cancelAll(getId(), new PredicateType(CloudSimTags.Network_Event_send));
 		schedule(getId(), latency, CloudSimTags.Network_Event_send);
 
@@ -100,6 +101,7 @@ public class AggregateSwitch extends Switch {
 		// int src=ev.getSource();
 		NetworkPacket hspkt = (NetworkPacket) ev.getData();
 		int recvVMid = hspkt.pkt.reciever;
+		System.out.println("AggregateSwith processpacket_up 104");
 		CloudSim.cancelAll(getId(), new PredicateType(CloudSimTags.Network_Event_send));
 		schedule(getId(), switching_delay, CloudSimTags.Network_Event_send);
 

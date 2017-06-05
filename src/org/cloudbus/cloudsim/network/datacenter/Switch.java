@@ -131,6 +131,7 @@ public class Switch extends SimEntity {
 		// int src=ev.getSource();
 		NetworkPacket hspkt = (NetworkPacket) ev.getData();
 		int recvVMid = hspkt.pkt.reciever;
+		System.out.println("Swith processpacket_down 134");
 		CloudSim.cancelAll(getId(), new PredicateType(CloudSimTags.Network_Event_send));
 		schedule(getId(), latency, CloudSimTags.Network_Event_send);
 		if (level == NetworkConstants.EDGE_LEVEL) {
@@ -169,6 +170,7 @@ public class Switch extends SimEntity {
 		// int src=ev.getSource();
 		NetworkPacket hspkt = (NetworkPacket) ev.getData();
 		int recvVMid = hspkt.pkt.reciever;
+		System.out.println("Switch processpacket_up 173");
 		CloudSim.cancelAll(getId(), new PredicateType(CloudSimTags.Network_Event_send));
 		schedule(getId(), switching_delay, CloudSimTags.Network_Event_send);
 		if (level == NetworkConstants.EDGE_LEVEL) {
@@ -265,6 +267,7 @@ public class Switch extends SimEntity {
 
 	protected void processpacket(SimEvent ev) {
 		// send packet to itself with switching delay (discarding other)
+		System.out.println("Switch processpacket 270");
 		CloudSim.cancelAll(getId(), new PredicateType(CloudSimTags.Network_Event_UP));
 		schedule(getId(), switching_delay, CloudSimTags.Network_Event_UP);
 		pktlist.add((NetworkPacket) ev.getData());

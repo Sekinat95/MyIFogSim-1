@@ -210,6 +210,7 @@ public abstract class NetworkOperatingSystem extends SimEntity {
 	}
 	
 	private void sendInternalEvent() {
+		System.out.println("NetworkOperatingSystem semdInternalEvent 213");
 		CloudSim.cancelAll(getId(), new PredicateType(Constants.SDN_INTERNAL_PACKAGE_PROCESS));
 		
 		if(channelTable.size() != 0) {
